@@ -375,36 +375,35 @@ bool KWebKitPart::openUrl(const QUrl &_u)
     WebPage* p = page();
     Q_ASSERT(p);
 
-//TODO: Porting
-//    // Handle error conditions...
-//    if (u.protocol().compare(QL1S("error"), Qt::CaseInsensitive) == 0 && u.hasSubUrl()) {
-//        /**
-//         * The format of the error url is that two variables are passed in the query:
-//         * error = int kio error code, errText = QString error text from kio
-//         * and the URL where the error happened is passed as a sub URL.
-//         */
-//        KUrl::List urls = KUrl::split(u);
+    // Handle error conditions...
+    if (u.scheme() == QL1S("error")) {
+        /**
+         * The format of the error url is that two variables are passed in the query:
+         * error = int kio error code, errText = QString error text from kio
+         * and the URL where the error happened is passed as a sub URL.
+         */
+        const QUrl mainUrl(u.fragment());
 
-//        if ( urls.count() > 1 ) {
-//            KUrl mainURL = urls.first();
-//            int error = convertStr2Int(mainURL.queryItem("error"));
+        if (mainUrl.isValid()) {
+            QString query = u.query(QUrl::FullyDecoded);
+            QRegularExpression pattern("error=(\\d+)&errText=(.*)");
+            QRegularExpressionMatch match = pattern.match(query);
+            int error = match.captured(1).toInt();
+            // error=0 isn't a valid error code, so 0 means it's missing from the URL
+            if (error == 0) {
+                error = KIO::ERR_UNKNOWN;
+            }
+            const QString errorText = match.captured(2);
 
-//            // error=0 isn't a valid error code, so 0 means it's missing from the URL
-//            if ( error == 0 )
-//                error = KIO::ERR_UNKNOWN;
+            emit m_browserExtension->setLocationBarUrl(mainUrl.toDisplayString());
+            if (p) {
+                m_webView->setHtml(p->errorPage(error, errorText, mainUrl));
+                return true;
+            }
+        }
 
-//            const QString errorText = mainURL.queryItem( "errText" );
-//            urls.pop_front();
-//            KUrl reqUrl = KUrl::join( urls );
-//            emit m_browserExtension->setLocationBarUrl(reqUrl.prettyUrl());
-//            if (p) {
-//                m_webView->setHtml(p->errorPage(error, errorText, reqUrl));
-//                return true;
-//            }
-//        }
-
-//        return false;
-//    }
+        return false;
+    }
 
     KParts::BrowserArguments bargs (m_browserExtension->browserArguments());
     KParts::OpenUrlArguments args (arguments());
