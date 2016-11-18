@@ -223,17 +223,21 @@ void KWebKitPart::initActions()
 
     action = new QAction(KIcon("zoom-in"), i18nc("zoom in action", "Zoom In"), this);
     actionCollection()->addAction("zoomIn", action);
-    action->setShortcut(QKeySequence("CTRL++; CTRL+="));
+    actionCollection()->setDefaultShortcuts(action,
+                                            QList<QKeySequence>() << QKeySequence(Qt::CTRL+Qt::Key_Plus)
+                                                                  << QKeySequence(Qt::CTRL+Qt::Key_Equal));
     connect(action, SIGNAL(triggered(bool)), m_browserExtension, SLOT(zoomIn()));
 
     action = new QAction(KIcon("zoom-out"), i18nc("zoom out action", "Zoom Out"), this);
     actionCollection()->addAction("zoomOut", action);
-    action->setShortcut(QKeySequence("CTRL+-; CTRL+_"));
+    actionCollection()->setDefaultShortcuts(action,
+                                            QList<QKeySequence>() << QKeySequence(Qt::CTRL+Qt::Key_Minus)
+                                                                  << QKeySequence(Qt::CTRL+Qt::Key_Underscore));
     connect(action, SIGNAL(triggered(bool)), m_browserExtension, SLOT(zoomOut()));
 
     action = new QAction(KIcon("zoom-original"), i18nc("reset zoom action", "Actual Size"), this);
     actionCollection()->addAction("zoomNormal", action);
-    action->setShortcut(QKeySequence("CTRL+0"));
+    actionCollection()->setDefaultShortcut(action, QKeySequence(Qt::CTRL+Qt::Key_0));
     connect(action, SIGNAL(triggered(bool)), m_browserExtension, SLOT(zoomNormal()));
 
     action = new QAction(i18n("Zoom Text Only"), this);
@@ -262,7 +266,7 @@ void KWebKitPart::initActions()
 
     action = new QAction(i18n("View Do&cument Source"), this);
     actionCollection()->addAction("viewDocumentSource", action);
-    action->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_U));
+    actionCollection()->setDefaultShortcut(action, QKeySequence(Qt::CTRL+Qt::Key_U));
     connect(action, SIGNAL(triggered(bool)), m_browserExtension, SLOT(slotViewDocumentSource()));
 
     action = new QAction(i18nc("Secure Sockets Layer", "SSL"), this);
@@ -271,7 +275,7 @@ void KWebKitPart::initActions()
 
     action = new KToggleAction(i18n("Toggle Caret Mode"), this);
     actionCollection()->addAction("caretMode", action);
-    action->setShortcut( QKeySequence(Qt::Key_F7) );
+    actionCollection()->setDefaultShortcut(action, QKeySequence(Qt::Key_F7));
     action->setChecked(isCaretMode());
     connect(action, SIGNAL(triggered(bool)), SLOT(slotToggleCaretMode()));
     
