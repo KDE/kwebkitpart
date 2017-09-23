@@ -65,12 +65,12 @@
 #include <KDE/KToggleAction>
 #include <KParts/StatusBarExtension>
 #include <KDE/KAction>
-#include <KDE/KIcon>
 #include <KDE/KShortcut>
 #include <KParts/GUIActivateEvent>
 
 #include <QUrl>
 #include <QFile>
+#include <QIcon>
 #include <QTextCodec>
 #include <QCoreApplication>
 #include <QVBoxLayout>
@@ -217,25 +217,25 @@ void KWebKitPart::initActions()
     actionCollection()->addAction("saveFrame", action);
     connect(action, SIGNAL(triggered(bool)), m_browserExtension, SLOT(slotSaveFrame()));
 
-    action = new QAction(KIcon("document-print-preview"), i18n("Print Preview"), this);
+    action = new QAction(QIcon::fromTheme(QStringLiteral("document-print-preview")), i18n("Print Preview"), this);
     actionCollection()->addAction("printPreview", action);
     connect(action, SIGNAL(triggered(bool)), m_browserExtension, SLOT(slotPrintPreview()));
 
-    action = new QAction(KIcon("zoom-in"), i18nc("zoom in action", "Zoom In"), this);
+    action = new QAction(QIcon::fromTheme(QStringLiteral("zoom-in")), i18nc("zoom in action", "Zoom In"), this);
     actionCollection()->addAction("zoomIn", action);
     actionCollection()->setDefaultShortcuts(action,
                                             QList<QKeySequence>() << QKeySequence(Qt::CTRL+Qt::Key_Plus)
                                                                   << QKeySequence(Qt::CTRL+Qt::Key_Equal));
     connect(action, SIGNAL(triggered(bool)), m_browserExtension, SLOT(zoomIn()));
 
-    action = new QAction(KIcon("zoom-out"), i18nc("zoom out action", "Zoom Out"), this);
+    action = new QAction(QIcon::fromTheme(QStringLiteral("zoom-out")), i18nc("zoom out action", "Zoom Out"), this);
     actionCollection()->addAction("zoomOut", action);
     actionCollection()->setDefaultShortcuts(action,
                                             QList<QKeySequence>() << QKeySequence(Qt::CTRL+Qt::Key_Minus)
                                                                   << QKeySequence(Qt::CTRL+Qt::Key_Underscore));
     connect(action, SIGNAL(triggered(bool)), m_browserExtension, SLOT(zoomOut()));
 
-    action = new QAction(KIcon("zoom-original"), i18nc("reset zoom action", "Actual Size"), this);
+    action = new QAction(QIcon::fromTheme(QStringLiteral("zoom-original")), i18nc("reset zoom action", "Actual Size"), this);
     actionCollection()->addAction("zoomNormal", action);
     actionCollection()->setDefaultShortcut(action, QKeySequence(Qt::CTRL+Qt::Key_0));
     connect(action, SIGNAL(triggered(bool)), m_browserExtension, SLOT(zoomNormal()));
@@ -260,7 +260,7 @@ void KWebKitPart::initActions()
     action->setShortcutContext(Qt::WidgetShortcut);
     m_webView->addAction(action);
 
-    KCodecAction *codecAction = new KCodecAction( KIcon("character-set"), i18n( "Set &Encoding" ), this, true );
+    KCodecAction *codecAction = new KCodecAction( QIcon::fromTheme(QStringLiteral("character-set")), i18n( "Set &Encoding" ), this, true );
     actionCollection()->addAction( "setEncoding", codecAction );
     connect(codecAction, SIGNAL(triggered(QTextCodec*)), SLOT(slotSetTextEncoding(QTextCodec*)));
 

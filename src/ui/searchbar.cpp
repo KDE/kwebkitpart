@@ -27,9 +27,9 @@
 
 #include <KDE/KLineEdit>
 #include <KDE/KColorScheme>
-#include <KDE/KIcon>
 #include <KDE/KLocalizedString>
 
+#include <QIcon>
 #include <QResizeEvent>
 
 
@@ -47,9 +47,9 @@ SearchBar::SearchBar(QWidget *parent)
     m_ui.optionsButton->addAction(m_ui.actionMatchCase);
     m_ui.optionsButton->addAction(m_ui.actionHighlightMatch);
     m_ui.optionsButton->addAction(m_ui.actionSearchAutomatically);
-    m_ui.closeButton->setIcon(KIcon("dialog-close"));
-    m_ui.previousButton->setIcon(KIcon("go-up-search"));
-    m_ui.nextButton->setIcon(KIcon("go-down-search"));
+    m_ui.closeButton->setIcon(QIcon::fromTheme(QStringLiteral("dialog-close")));
+    m_ui.previousButton->setIcon(QIcon::fromTheme(QStringLiteral("go-up-search")));
+    m_ui.nextButton->setIcon(QIcon::fromTheme(QStringLiteral("go-down-search")));
     m_ui.previousButton->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
     m_ui.nextButton->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
     m_ui.searchInfo->setText(i18nc("label for input line to find text", "&Find:"));

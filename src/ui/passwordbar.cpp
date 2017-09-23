@@ -24,7 +24,6 @@
 #include "kwebkitpart_debug.h"
 #include "settings/webkitsettings.h"
 
-#include <KDE/KIcon>
 #include <KDE/KColorScheme>
 #include <KDE/KLocalizedString>
 

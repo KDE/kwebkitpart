@@ -32,6 +32,7 @@
 #include "webpluginfactory.h"
 
 #include <kdeversion.h>
+#include <KIconLoader>
 #include <KDE/KMessageBox>
 #include <KDE/KGlobalSettings>
 #include <KDE/KGlobal>
@@ -43,7 +44,6 @@
 #include <KDE/KFileDialog>
 #include <KDE/KProtocolInfo>
 #include <KDE/KStringHandler>
-#include <KDE/KIconLoader>
 #include <KDE/KMimeType>
 #include <KDE/KUrlAuthorized>
 #include <KIO/Job>

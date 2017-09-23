@@ -40,8 +40,8 @@
 #include <KDE/KIO/AccessManager>
 #include <KDE/KStringHandler>
 #include <KDE/KLocalizedString>
-#include <KDE/KIcon>
 
+#include <QIcon>
 #include <QTimer>
 #include <QMimeData>
 #include <QDropEvent>
@@ -533,7 +533,7 @@ void WebView::partActionPopupMenu(KParts::BrowserExtension::ActionGroupMap& part
     } else if (m_result.frame() && m_result.frame()->parentFrame() && !m_result.isContentSelected() && m_result.linkUrl().isEmpty()) {
         KActionMenu * menu = new KActionMenu(i18nc("@title:menu HTML frame/iframe", "Frame"), this);
 
-        QAction* action = new QAction(KIcon("window-new"), i18n("Open in New &Window"), this);
+        QAction* action = new QAction(QIcon::fromTheme(QStringLiteral("window-new")), i18n("Open in New &Window"), this);
         m_actionCollection->addAction(QL1S("frameinwindow"), action);
         connect(action, SIGNAL(triggered(bool)), m_part->browserExtension(), SLOT(slotFrameInWindow()));
         menu->addAction(action);
@@ -543,7 +543,7 @@ void WebView::partActionPopupMenu(KParts::BrowserExtension::ActionGroupMap& part
         connect(action, SIGNAL(triggered(bool)), m_part->browserExtension(), SLOT(slotFrameInTop()));
         menu->addAction(action);
 
-        action = new QAction(KIcon("tab-new"), i18n("Open in &New Tab"), this);
+        action = new QAction(QIcon::fromTheme(QStringLiteral("tab-new")), i18n("Open in &New Tab"), this);
         m_actionCollection->addAction(QL1S("frameintab"), action);
         connect(action, SIGNAL(triggered(bool)), m_part->browserExtension(), SLOT(slotFrameInTab()));
         menu->addAction(action);
@@ -557,7 +557,7 @@ void WebView::partActionPopupMenu(KParts::BrowserExtension::ActionGroupMap& part
         connect(action, SIGNAL(triggered(bool)), m_part->browserExtension(), SLOT(slotReloadFrame()));
         menu->addAction(action);
 
-        action = new QAction(KIcon("document-print-frame"), i18n("Print Frame..."), this);
+        action = new QAction(QIcon::fromTheme(QStringLiteral("document-print-frame")), i18n("Print Frame..."), this);
         m_actionCollection->addAction(QL1S("printFrame"), action);
         connect(action, SIGNAL(triggered(bool)), m_part->browserExtension(), SLOT(print()));
         menu->addAction(action);
@@ -636,7 +636,7 @@ void WebView::selectActionPopupMenu(KParts::BrowserExtension::ActionGroupMap& se
     data.setCheckForExecutables(false);
     if (KUriFilter::self()->filterUri(data, QStringList() << "kshorturifilter" << "fixhosturifilter") &&
         data.uri().isValid() && data.uriType() == KUriFilterData::NetProtocol) {
-        QAction *action = new QAction(KIcon("window-new"), i18nc("open selected url", "Open '%1'",
+        QAction *action = new QAction(QIcon::fromTheme(QStringLiteral("window-new")), i18nc("open selected url", "Open '%1'",
                                             KStringHandler::rsqueeze(data.uri().url(), 18)), this);
         m_actionCollection->addAction(QL1S("openSelection"), action);
         action->setData(QUrl(data.uri()));
@@ -671,7 +671,7 @@ void WebView::linkActionPopupMenu(KParts::BrowserExtension::ActionGroupMap& link
         linkActions.append(action);
     } else {
         if (!m_result.isContentSelected()) {
-            action = new QAction(KIcon("edit-copy"), i18n("Copy Link &Text"), this);
+            action = new QAction(QIcon::fromTheme(QStringLiteral("edit-copy")), i18n("Copy Link &Text"), this);
             m_actionCollection->addAction(QL1S("copylinktext"), action);
             connect(action, SIGNAL(triggered(bool)), m_part->browserExtension(), SLOT(slotCopyLinkText()));
             linkActions.append(action);
@@ -783,7 +783,7 @@ void WebView::addSearchActions(QList<QAction*>& selectActions, QWebView* view)
 
     if (KUriFilter::self()->filterSearchUri(data, KUriFilter::NormalTextFilter)) {
         const QString squeezedText = KStringHandler::rsqueeze(selectedText, 20);
-        QAction *action = new QAction(KIcon(data.iconName()),
+        QAction *action = new QAction(QIcon::fromTheme(data.iconName()),
                                       i18nc("Search \"search provider\" for \"text\"", "Search %1 for '%2'",
                                             data.searchProvider(), squeezedText), view);
         action->setData(QUrl(data.uri()));
@@ -800,7 +800,7 @@ void WebView::addSearchActions(QList<QAction*>& selectActions, QWebView* view)
                 if (searchProvider == data.searchProvider())
                     continue;
 
-                QAction *action = new QAction(KIcon(data.iconNameForPreferredSearchProvider(searchProvider)), searchProvider, view);
+                QAction *action = new QAction(QIcon::fromTheme(data.iconNameForPreferredSearchProvider(searchProvider)), searchProvider, view);
                 action->setData(data.queryForPreferredSearchProvider(searchProvider));
                 m_actionCollection->addAction(searchProvider, action);
                 connect(action, SIGNAL(triggered(bool)), m_part->browserExtension(), SLOT(searchProvider()));
