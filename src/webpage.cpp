@@ -33,8 +33,6 @@
 
 #include <KIconLoader>
 #include <KMessageBox>
-#include <KGlobalSettings>
-#include <KGlobal>
 #include <KLocale>
 #include <KRun>
 #include <KShell>
@@ -59,6 +57,7 @@
 #include <QWebHistory>
 #include <QWebHistoryItem>
 #include <QWebSecurityOrigin>
+#include <QDesktopWidget>
 
 #define QL1S(x)  QLatin1String(x)
 #define QL1C(x)  QLatin1Char(x)
@@ -139,7 +138,6 @@ void WebPage::setSslInfo (const WebSslInfo& info)
 static void checkForDownloadManager(QWidget* widget, QString& cmd)
 {
     cmd.clear();
-    KGlobal::locale();
     KConfigGroup cfg (KSharedConfig::openConfig("konquerorrc", KConfig::NoGlobals), "HTML Settings");
     const QString fileName (cfg.readPathEntry("DownloadManager", QString()));
     if (fileName.isEmpty())
@@ -231,25 +229,25 @@ QString WebPage::errorPage(int code, const QString& text, const QUrl& reqUrl) co
     doc += i18n( "Details of the Request:" );
     doc += QL1S( "</h3><ul><li>" );
     // escape URL twice: once for i18n, and once for HTML.
-    doc += i18n( "URL: %1", Qt::escape( Qt::escape( reqUrl.toDisplayString() ) ) );
+    doc += i18n( "URL: %1", reqUrl.toDisplayString().toHtmlEscaped().toHtmlEscaped() );
     doc += QL1S( "</li><li>" );
 
     const QString protocol (reqUrl.scheme());
     if ( !protocol.isNull() ) {
         // escape protocol twice: once for i18n, and once for HTML.
-        doc += i18n( "Protocol: %1", Qt::escape( Qt::escape( protocol ) ) );
+        doc += i18n( "Protocol: %1", protocol.toHtmlEscaped().toHtmlEscaped() );
         doc += QL1S( "</li><li>" );
     }
 
     doc += i18n( "Date and Time: %1",
-                 KGlobal::locale()->formatDateTime(QDateTime::currentDateTime(), KLocale::LongDate) );
+                 KLocale::global()->formatDateTime(QDateTime::currentDateTime(), KLocale::LongDate) );
     doc += QL1S( "</li><li>" );
     // escape text twice: once for i18n, and once for HTML.
-    doc += i18n( "Additional Information: %1", Qt::escape( Qt::escape( text ) ) );
+    doc += i18n( "Additional Information: %1", text.toHtmlEscaped().toHtmlEscaped() );
     doc += QL1S( "</li></ul><h3>" );
     doc += i18n( "Description:" );
     doc += QL1S( "</h3><p>" );
-    doc += Qt::escape( description );
+    doc += description.toHtmlEscaped();
     doc += QL1S( "</p>" );
 
     if ( causes.count() ) {
@@ -684,7 +682,7 @@ void WebPage::slotGeometryChangeRequested(const QRect & rect)
         return;
     }
 
-    QRect sg = KGlobalSettings::desktopGeometry(view());
+    QRect sg = QApplication::desktop()->screenGeometry(view());
 
     if (width > sg.width() || height > sg.height()) {
         qCWarning(KWEBKITPART_LOG) << "Window resize refused, window would be too big (" << width << "," << height << ")";
@@ -729,7 +727,7 @@ bool WebPage::checkLinkSecurity(const QNetworkRequest &req, NavigationType type)
         } else {
             title = i18n("Security Alert");
             message = i18n("<qt>Access by untrusted page to<br/><b>%1</b><br/> denied.</qt>",
-                           Qt::escape(linkUrl.toDisplayString()));
+                           linkUrl.toDisplayString().toHtmlEscaped());
         }
 
         if (buttonText.isEmpty()) {
@@ -914,7 +912,7 @@ bool NewWindowPage::acceptNavigationRequest(QWebFrame *frame, const QNetworkRequ
                                                "Do you want to allow this?") :
                                           i18n("<qt>This site is requesting to open a popup window to"
                                                "<p>%1</p><br/>Do you want to allow this?</qt>",
-                                               KStringHandler::rsqueeze(Qt::escape(reqUrl.toDisplayString()), 100)));
+                                               KStringHandler::rsqueeze(reqUrl.toDisplayString().toHtmlEscaped(), 100)));
                 if (KMessageBox::questionYesNo(view(), message,
                                                i18n("Javascript Popup Confirmation"),
                                                KGuiItem(i18n("Allow")),

@@ -28,8 +28,9 @@
 #include <KIO/Job>
 #include <KGlobal>
 #include <KGlobalSettings>
-#include <KLocale>
+#include <KLocalizedString>
 #include <KMessageBox>
+#include <KSharedConfig>
 #include <KStandardDirs>
 
 #include <QWebSettings>
@@ -319,7 +320,7 @@ void WebKitSettings::init()
   KConfig global( "khtmlrc", KConfig::NoGlobals );
   init( &global, true );
 
-  KSharedConfig::Ptr local = KGlobal::config();
+  KSharedConfig::Ptr local = KSharedConfig::openConfig();
   if ( local ) {
       init( local.data(), false );
   }
@@ -412,8 +413,8 @@ void WebKitSettings::init( KConfig * config, bool reset )
     // Fonts and colors
     if( reset ) {
         d->defaultFonts = QStringList();
-        d->defaultFonts.append( cgHtml.readEntry( "StandardFont", KGlobalSettings::generalFont().family() ) );
-        d->defaultFonts.append( cgHtml.readEntry( "FixedFont", KGlobalSettings::fixedFont().family() ) );
+        d->defaultFonts.append( cgHtml.readEntry( "StandardFont", QFontDatabase::systemFont(QFontDatabase::GeneralFont).family() ) );
+        d->defaultFonts.append( cgHtml.readEntry( "FixedFont", QFontDatabase::systemFont(QFontDatabase::FixedFont).family() ) );
         d->defaultFonts.append( cgHtml.readEntry( "SerifFont", HTML_DEFAULT_VIEW_SERIF_FONT ) );
         d->defaultFonts.append( cgHtml.readEntry( "SansSerifFont", HTML_DEFAULT_VIEW_SANSSERIF_FONT ) );
         d->defaultFonts.append( cgHtml.readEntry( "CursiveFont", HTML_DEFAULT_VIEW_CURSIVE_FONT ) );
@@ -748,7 +749,7 @@ void WebKitSettings::setZoomToDPI(bool enabled)
 {
   d->m_zoomToDPI = enabled;
   // save it
-  KConfigGroup cg( KGlobal::config(), "HTML Settings");
+  KConfigGroup cg( KSharedConfig::openConfig(), "HTML Settings");
   cg.writeEntry("ZoomToDPI", enabled);
   cg.sync();
 }
@@ -1139,7 +1140,7 @@ void WebKitSettings::setJSErrorsEnabled(bool enabled)
 {
   d->m_jsErrorsEnabled = enabled;
   // save it
-  KConfigGroup cg( KGlobal::config(), "HTML Settings");
+  KConfigGroup cg( KSharedConfig::openConfig(), "HTML Settings");
   cg.writeEntry("ReportJSErrors", enabled);
   cg.sync();
 }
@@ -1163,7 +1164,7 @@ void WebKitSettings::setJSPopupBlockerPassivePopup(bool enabled)
 {
     d->m_jsPopupBlockerPassivePopup = enabled;
     // save it
-    KConfigGroup cg( KGlobal::config(), "Java/JavaScript Settings");
+    KConfigGroup cg( KSharedConfig::openConfig(), "Java/JavaScript Settings");
     cg.writeEntry("PopupBlockerPassivePopup", enabled);
     cg.sync();
 }

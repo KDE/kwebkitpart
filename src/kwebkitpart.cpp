@@ -44,13 +44,13 @@
 
 #include <kcodecaction.h>
 #include <kio/global.h>
-#include <kglobal.h>
 #include <kiconloader.h>
 
 #include <KActionCollection>
 #include <KAboutData>
 #include <KComponentData>
 #include <KUrlLabel>
+#include <KLocalizedString>
 #include <KMessageBox>
 #include <KStringHandler>
 #include <KMenu>
@@ -78,7 +78,7 @@
 #define QL1S(x)  QLatin1String(x)
 #define QL1C(x)  QLatin1Char(x)
 
-K_GLOBAL_STATIC_WITH_ARGS(QUrl, globalBlankUrl, ("about:blank"))
+Q_GLOBAL_STATIC_WITH_ARGS(QUrl, globalBlankUrl, ("about:blank"))
 
 static inline int convertStr2Int(const QString& value)
 {
@@ -232,7 +232,7 @@ void KWebKitPart::initActions()
 
     action = new QAction(i18n("Zoom Text Only"), this);
     action->setCheckable(true);
-    KConfigGroup cgHtml(KGlobal::config(), "HTML Settings");
+    KConfigGroup cgHtml(KSharedConfig::openConfig(), "HTML Settings");
     bool zoomTextOnly = cgHtml.readEntry("ZoomTextOnly", false);
     action->setChecked(zoomTextOnly);
     actionCollection()->addAction("zoomTextOnly", action);

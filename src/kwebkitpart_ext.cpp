@@ -31,7 +31,6 @@
 #include <KDesktopFile>
 #include <KConfigGroup>
 #include <KToolInvocation>
-#include <KGlobal>
 #include <KSharedConfig>
 #include <KRun>
 #include <KPrintPreview>
