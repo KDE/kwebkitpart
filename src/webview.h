@@ -24,8 +24,8 @@
 #define WEBVIEW_H
 
 #include <QPointer>
-#include <KDE/KParts/BrowserExtension>
-#include <KDE/KWebView>
+#include <KParts/BrowserExtension>
+#include <KWebView>
 
 #include <QWebHitTestResult>
 

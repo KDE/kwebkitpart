@@ -24,7 +24,7 @@
 
 #include <QWebPage>
 
-#include <KDE/KParts/ReadOnlyPart>
+#include <KParts/ReadOnlyPart>
 #include <QUrl>
 
 namespace KParts {

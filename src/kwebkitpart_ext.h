@@ -23,9 +23,11 @@
 
 #include <QPointer>
 
-#include <KDE/KParts/BrowserExtension>
-#include <KDE/KParts/TextExtension>
-#include <KDE/KParts/HtmlExtension>
+#include <KParts/BrowserExtension>
+#include <KParts/TextExtension>
+#include <KParts/HtmlExtension>
+#include <kparts/htmlsettingsinterface.h>
+#include <kparts/selectorinterface.h>
 #include <kparts/scriptableextension.h>
 
 class QUrl;

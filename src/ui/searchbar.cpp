@@ -25,9 +25,9 @@
 
 #include "searchbar.h"
 
-#include <KDE/KLineEdit>
-#include <KDE/KColorScheme>
-#include <KDE/KLocalizedString>
+#include <KLineEdit>
+#include <KColorScheme>
+#include <KLocalizedString>
 
 #include <QIcon>
 #include <QResizeEvent>

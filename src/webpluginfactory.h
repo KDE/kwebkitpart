@@ -21,7 +21,7 @@
 #ifndef WEBPLUGINFACTORY_H
 #define WEBPLUGINFACTORY_H
 
-#include <KDE/KWebPluginFactory>
+#include <KWebPluginFactory>
 
 #include <QList>
 #include <QUrl>

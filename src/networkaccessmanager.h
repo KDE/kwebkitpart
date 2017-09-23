@@ -20,7 +20,7 @@
 #ifndef NETWORKACCESSMANAGER_H
 #define NETWORKACCESSMANAGER_H
 
-#include <KDE/KIO/AccessManager>
+#include <KIO/AccessManager>
 
 #include <QMultiHash>
 

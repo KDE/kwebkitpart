@@ -25,11 +25,12 @@
 #include "kwebkitpart.h"
 #include "settings/webkitsettings.h"
 
-#include <KDE/KConfigGroup>
-#include <KDE/KSharedConfig>
-#include <KDE/KLocalizedString>
-#include <KDE/KParts/ReadOnlyPart>
-#include <KDE/KParts/BrowserExtension>
+#include <KConfigGroup>
+#include <KSharedConfig>
+#include <KLocalizedString>
+#include <KParts/ReadOnlyPart>
+#include <KParts/BrowserExtension>
+#include <kparts/liveconnectextension.h>
 #include <kparts/scriptableextension.h>
 
 #include <QHBoxLayout>

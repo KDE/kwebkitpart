@@ -33,13 +33,13 @@
 
 #include <kwebview.h>
 
-#include <KDE/KApplication>
-#include <KDE/KAboutData>
-#include <KDE/KCmdLineArgs>
-#include <KDE/KIO/AccessManager>
-#include <KDE/KUriFilter>
-#include <KDE/KInputDialog>
-#include <KDE/KLineEdit>
+#include <KApplication>
+#include <KAboutData>
+#include <KCmdLineArgs>
+#include <KIO/AccessManager>
+#include <KUriFilter>
+#include <KInputDialog>
+#include <KLineEdit>
 
 #include <QUiLoader>
 #include <QWebPage>

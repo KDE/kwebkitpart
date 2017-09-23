@@ -26,21 +26,21 @@
 #include "webpage.h"
 #include "settings/webkitsettings.h"
 
-#include <KDE/KAction>
-#include <KDE/KUriFilterData>
-#include <KDE/KDesktopFile>
-#include <KDE/KConfigGroup>
-#include <KDE/KToolInvocation>
-#include <KDE/KGlobal>
-#include <KDE/KSharedConfig>
-#include <KDE/KRun>
-#include <KDE/KPrintPreview>
-#include <KDE/KSaveFile>
-#include <KDE/KComponentData>
-#include <KDE/KProtocolInfo>
-#include <KDE/KInputDialog>
-#include <KDE/KLocalizedString>
-#include <KDE/KTemporaryFile>
+#include <KAction>
+#include <KUriFilterData>
+#include <KDesktopFile>
+#include <KConfigGroup>
+#include <KToolInvocation>
+#include <KGlobal>
+#include <KSharedConfig>
+#include <KRun>
+#include <KPrintPreview>
+#include <KSaveFile>
+#include <KComponentData>
+#include <KProtocolInfo>
+#include <KInputDialog>
+#include <KLocalizedString>
+#include <KTemporaryFile>
 #include <Sonnet/Dialog>
 #include <sonnet/backgroundchecker.h>
 

@@ -24,8 +24,8 @@
 #include "kwebkitpart_debug.h"
 #include "settings/webkitsettings.h"
 
-#include <KDE/KColorScheme>
-#include <KDE/KLocalizedString>
+#include <KColorScheme>
+#include <KLocalizedString>
 
 #include <QCoreApplication>
 #include <QAction>
