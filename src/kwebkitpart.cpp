@@ -42,7 +42,6 @@
 #include "ui/featurepermissionbar.h"
 #include "settings/webkitsettings.h"
 
-#include <kdeversion.h>
 #include <kcodecaction.h>
 #include <kio/global.h>
 #include <kglobal.h>
@@ -120,15 +119,6 @@ KWebKitPart::KWebKitPart(QWidget *parentWidget, QObject *parent,
     about.setProductName("kwebkitpart/general");
 //    KComponentData componentData(&about);
     setComponentData(about, false /*don't load plugins yet*/);
-
-    // NOTE: If the application does not set its version number, we automatically
-    // set it to KDE's version number so that the default user-agent string contains
-    // proper application version number information. See QWebPage::userAgentForUrl...
-    if (QCoreApplication::applicationVersion().isEmpty())
-        QCoreApplication::setApplicationVersion(QString("%1.%2.%3")
-                                                .arg(KDE::versionMajor())
-                                                .arg(KDE::versionMinor())
-                                                .arg(KDE::versionRelease()));
 
     setXMLFile(QL1S("kwebkitpart.rc"));
 

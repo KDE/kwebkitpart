@@ -31,7 +31,6 @@
 #include "settings/webkitsettings.h"
 #include "webpluginfactory.h"
 
-#include <kdeversion.h>
 #include <KIconLoader>
 #include <KDE/KMessageBox>
 #include <KDE/KGlobalSettings>

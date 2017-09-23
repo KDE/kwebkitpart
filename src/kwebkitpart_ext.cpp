@@ -43,7 +43,6 @@
 #include <KDE/KTemporaryFile>
 #include <Sonnet/Dialog>
 #include <sonnet/backgroundchecker.h>
-#include <kdeversion.h>
 
 #include <QBuffer>
 #include <QVariant>
