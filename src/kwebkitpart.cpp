@@ -29,6 +29,7 @@
 #include <QWebHistoryItem>
 #include <QWebSettings>
 
+#include "kwebkitpart_debug.h"
 #include "kwebkitpart_ext.h"
 #include "sslinfodialog_p.h"
 #include "webview.h"
@@ -50,7 +51,6 @@
 #include <KDE/KActionCollection>
 #include <KDE/KAboutData>
 #include <KDE/KComponentData>
-#include <KDE/KDebug>
 #include <KDE/KUrlLabel>
 #include <KDE/KMessageBox>
 #include <KDE/KStringHandler>
@@ -357,7 +357,7 @@ bool KWebKitPart::openUrl(const QUrl &_u)
 {
     QUrl u (_u);
 
-    kDebug() << u;
+    qCDebug(KWEBKITPART_LOG) << u;
 
     // Ignore empty requests...
     if (u.isEmpty())
@@ -484,8 +484,8 @@ void KWebKitPart::slotFrameLoadFinished(bool ok)
 
     if (ok) {
         const QUrl currentUrl (frame->baseUrl().resolved(frame->url()));
-        // kDebug() << "mainframe:" << m_webView->page()->mainFrame() << "frame:" << sender();
-        // kDebug() << "url:" << frame->url() << "base url:" << frame->baseUrl() << "request url:" << frame->requestedUrl();
+        // qCDebug(KWEBKITPART_LOG) << "mainframe:" << m_webView->page()->mainFrame() << "frame:" << sender();
+        // qCDebug(KWEBKITPART_LOG) << "url:" << frame->url() << "base url:" << frame->baseUrl() << "request url:" << frame->requestedUrl();
         if (currentUrl != *globalBlankUrl) {
             m_hasCachedFormData = false;
 
@@ -540,7 +540,7 @@ void KWebKitPart::slotMainFrameLoadFinished (bool ok)
         QUrl shortcutIconUrl;
         if (!element.isNull()) {
             shortcutIconUrl = frame->baseUrl().resolved(QUrl(element.attribute("href")));
-            //kDebug() << "setting favicon to" << shortcutIconUrl;
+            //qCDebug(KWEBKITPART_LOG) << "setting favicon to" << shortcutIconUrl;
             m_browserExtension->setIconUrl(shortcutIconUrl);
         }
     }
@@ -600,7 +600,7 @@ void KWebKitPart::slotUrlChanged(const QUrl& url)
 
     // Do not update the location bar with about:blank
     if (url != *globalBlankUrl) {
-        //kDebug() << "Setting location bar to" << u.prettyUrl() << "current URL:" << this->url();
+        //qCDebug(KWEBKITPART_LOG) << "Setting location bar to" << u.prettyUrl() << "current URL:" << this->url();
         emit m_browserExtension->setLocationBarUrl(u.toDisplayString());
     }
 }
@@ -652,7 +652,7 @@ void KWebKitPart::slotSaveFrameState(QWebFrame *frame, QWebHistoryItem *item)
 
         // Only emit open url notify for the main frame. Do not
         if (m_emitOpenUrlNotify && !doNotEmitOpenUrl) {
-            // kDebug() << "***** EMITTING openUrlNotify" << item->url();
+            // qCDebug(KWEBKITPART_LOG) << "***** EMITTING openUrlNotify" << item->url();
             emit m_browserExtension->openUrlNotify();
         }
     }
@@ -663,7 +663,7 @@ void KWebKitPart::slotSaveFrameState(QWebFrame *frame, QWebHistoryItem *item)
     // slotRestoreFrameState.
     const QPoint scrollPos (frame->scrollPosition());
     if (!scrollPos.isNull()) {
-        // kDebug() << "Saving scroll position:" << scrollPos;
+        // qCDebug(KWEBKITPART_LOG) << "Saving scroll position:" << scrollPos;
         item->setUserData(scrollPos);
     }
 }
@@ -717,7 +717,7 @@ void KWebKitPart::slotLinkHovered(const QString& _link, const QString& /*title*/
 
             for(int i = 0; i < count; ++i) {
                 const QPair<QString, QString> queryItem (queryItems.at(i));
-                //kDebug() << "query: " << queryItem.first << queryItem.second;
+                //qCDebug(KWEBKITPART_LOG) << "query: " << queryItem.first << queryItem.second;
                 if (queryItem.first.contains(QL1C('@')) && queryItem.second.isEmpty())
                     fields["to"] << queryItem.first;
                 if (QString::compare(queryItem.first, QL1S("to"), Qt::CaseInsensitive) == 0)
@@ -775,7 +775,7 @@ void KWebKitPart::slotSearchForText(const QString &text, bool backward)
     if (m_searchBar->highlightMatches())
         flags |= QWebPage::HighlightAllOccurrences;
 
-    //kDebug() << "search for text:" << text << ", backward ?" << backward;
+    //qCDebug(KWEBKITPART_LOG) << "search for text:" << text << ", backward ?" << backward;
     m_searchBar->setFoundMatch(page()->findText(text, flags));
 }
 
@@ -883,7 +883,7 @@ void KWebKitPart::slotSetTextEncoding(QTextCodec * codec)
     if (!localSettings)
         return;
 
-    kDebug() << "Encoding: new=>" << localSettings->defaultTextEncoding() << ", old=>" << codec->name();
+    qCDebug(KWEBKITPART_LOG) << "Encoding: new=>" << localSettings->defaultTextEncoding() << ", old=>" << codec->name();
 
     localSettings->setDefaultTextEncoding(codec->name());
     page()->triggerAction(QWebPage::Reload);
@@ -964,7 +964,7 @@ void KWebKitPart::slotSaveFormDataRequested (const QString& key, const QUrl& url
         m_passwordBar = new PasswordBar(widget());
         KWebWallet* wallet = page()->wallet();
         if (!wallet) {
-            kWarning() << "No wallet instance found! This should never happen!";
+            qCWarning(KWEBKITPART_LOG) << "No wallet instance found! This should never happen!";
             return;
         }
         connect(m_passwordBar, SIGNAL(saveFormDataAccepted(QString)),

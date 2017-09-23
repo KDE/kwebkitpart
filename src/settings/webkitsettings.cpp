@@ -19,13 +19,13 @@
 
 #include "webkitsettings.h"
 
+#include "kwebkitpart_debug.h"
 #include "webkit_filter.h"
 
 #include <KDE/KConfig>
 #include <KDE/KConfigGroup>
 #include <KDE/KJob>
 #include <KDE/KIO/Job>
-#include <KDE/KDebug>
 #include <KDE/KGlobal>
 #include <KDE/KGlobalSettings>
 #include <KDE/KLocale>
@@ -67,15 +67,15 @@ struct KPerDomainSettings {
 
 #ifdef DEBUG_SETTINGS
     void dump(const QString &infix = QString()) const {
-      kDebug() << "KPerDomainSettings " << infix << " @" << this << ":";
-      kDebug() << "  m_bEnableJava: " << m_bEnableJava;
-      kDebug() << "  m_bEnableJavaScript: " << m_bEnableJavaScript;
-      kDebug() << "  m_bEnablePlugins: " << m_bEnablePlugins;
-      kDebug() << "  m_windowOpenPolicy: " << m_windowOpenPolicy;
-      kDebug() << "  m_windowStatusPolicy: " << m_windowStatusPolicy;
-      kDebug() << "  m_windowFocusPolicy: " << m_windowFocusPolicy;
-      kDebug() << "  m_windowMovePolicy: " << m_windowMovePolicy;
-      kDebug() << "  m_windowResizePolicy: " << m_windowResizePolicy;
+      qCDebug(KWEBKITPART_LOG) << "KPerDomainSettings " << infix << " @" << this << ":";
+      qCDebug(KWEBKITPART_LOG) << "  m_bEnableJava: " << m_bEnableJava;
+      qCDebug(KWEBKITPART_LOG) << "  m_bEnableJavaScript: " << m_bEnableJavaScript;
+      qCDebug(KWEBKITPART_LOG) << "  m_bEnablePlugins: " << m_bEnablePlugins;
+      qCDebug(KWEBKITPART_LOG) << "  m_windowOpenPolicy: " << m_windowOpenPolicy;
+      qCDebug(KWEBKITPART_LOG) << "  m_windowStatusPolicy: " << m_windowStatusPolicy;
+      qCDebug(KWEBKITPART_LOG) << "  m_windowFocusPolicy: " << m_windowFocusPolicy;
+      qCDebug(KWEBKITPART_LOG) << "  m_windowMovePolicy: " << m_windowMovePolicy;
+      qCDebug(KWEBKITPART_LOG) << "  m_windowResizePolicy: " << m_windowResizePolicy;
     }
 #endif
 };
@@ -159,7 +159,7 @@ public:
             QTextStream ts(&file);
             QString line = ts.readLine();
             while (!line.isEmpty()) {
-                //kDebug() << "Adding filter:" << line;
+                //qCDebug(KWEBKITPART_LOG) << "Adding filter:" << line;
                 /** white list lines start with "@@" */
                 if (line.startsWith(QLatin1String("@@")))
                     adWhiteList.addFilter(line);
@@ -189,14 +189,14 @@ public Q_SLOTS:
                 if ( success )
                     adblockFilterLoadList(localFileName);
                 else
-                    kWarning() << "Could not write" << byteArray.size() << "to file" << localFileName;
+                    qCWarning(KWEBKITPART_LOG) << "Could not write" << byteArray.size() << "to file" << localFileName;
                 file.close();
             }
             else
-                kDebug() << "Cannot open file" << localFileName << "for filter list";
+                qCDebug(KWEBKITPART_LOG) << "Cannot open file" << localFileName << "for filter list";
         }
         else
-            kDebug() << "Downloading" << tJob->url() << "failed with message:" << job->errorText();
+            qCDebug(KWEBKITPART_LOG) << "Downloading" << tJob->url() << "failed with message:" << job->errorText();
     }
 };
 
@@ -207,7 +207,7 @@ public Q_SLOTS:
 static KPerDomainSettings &setup_per_domain_policy(WebKitSettingsPrivate* const d, const QString &domain)
 {
   if (domain.isEmpty())
-    kWarning() << "setup_per_domain_policy: domain is empty";
+    qCWarning(KWEBKITPART_LOG) << "setup_per_domain_policy: domain is empty";
 
   const QString ldomain = domain.toLower();
   PolicyMap::iterator it = d->domainPolicy.find(ldomain);
@@ -395,7 +395,7 @@ void WebKitSettings::init( KConfig * config, bool reset )
                   if (!fileInfo.exists() || fileInfo.lastModified().daysTo(QDateTime::currentDateTime()) > htmlFilterListMaxAgeDays)
                   {
                       /** ... in this case, refetch list asynchronously */
-                      // kDebug() << "Fetching filter list from" << url << "to" << localFile;
+                      // qCDebug(KWEBKITPART_LOG) << "Fetching filter list from" << url << "to" << localFile;
                       KIO::StoredTransferJob *job = KIO::storedGet( url, KIO::Reload, KIO::HideProgressInfo );
                       QObject::connect( job, SIGNAL(result(KJob*)), d, SLOT(adblockFilterResult(KJob*)) );
                       /** for later reference, store name of cache file */
@@ -761,7 +761,7 @@ static const KPerDomainSettings& lookup_hostname_policy(const WebKitSettingsPriv
                                                         const QString& hostname)
 {
 #ifdef DEBUG_SETTINGS
-  kDebug() << "lookup_hostname_policy(" << hostname << ")";
+  qCDebug(KWEBKITPART_LOG) << "lookup_hostname_policy(" << hostname << ")";
 #endif
   if (hostname.isEmpty()) {
 #ifdef DEBUG_SETTINGS
@@ -776,7 +776,7 @@ static const KPerDomainSettings& lookup_hostname_policy(const WebKitSettingsPriv
   PolicyMap::const_iterator it = d->domainPolicy.find(hostname);
   if( it != notfound ) {
 #ifdef DEBUG_SETTINGS
-    kDebug() << "perfect match";
+    qCDebug(KWEBKITPART_LOG) << "perfect match";
     (*it).dump(hostname);
 #endif
     // yes, use it (unless dunno)
@@ -793,7 +793,7 @@ static const KPerDomainSettings& lookup_hostname_policy(const WebKitSettingsPriv
     Q_ASSERT(notfound == d->domainPolicy.end());
     if( it != notfound ) {
 #ifdef DEBUG_SETTINGS
-      kDebug() << "partial match";
+      qCDebug(KWEBKITPART_LOG) << "partial match";
       (*it).dump(host_part);
 #endif
       return *it;
@@ -804,7 +804,7 @@ static const KPerDomainSettings& lookup_hostname_policy(const WebKitSettingsPriv
 
   // No domain-specific entry: use global domain
 #ifdef DEBUG_SETTINGS
-  kDebug() << "no match";
+  qCDebug(KWEBKITPART_LOG) << "no match";
   d->global.dump("global");
 #endif
   return d->global;

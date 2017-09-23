@@ -20,6 +20,7 @@
 
 #include "kwebkitpart_ext.h"
 
+#include "kwebkitpart_debug.h"
 #include "kwebkitpart.h"
 #include "webview.h"
 #include "webpage.h"
@@ -33,7 +34,6 @@
 #include <KDE/KGlobal>
 #include <KDE/KSharedConfig>
 #include <KDE/KRun>
-#include <KDE/KDebug>
 #include <KDE/KPrintPreview>
 #include <KDE/KSaveFile>
 #include <KDE/KComponentData>
@@ -165,7 +165,7 @@ void WebKitBrowserExtension::restoreState(QDataStream &stream)
                         if (QCoreApplication::applicationName() == QLatin1String("konqueror")) {
                             history->clear();
                         }
-                        //kDebug() << "Restoring URL:" << currentItem.url();
+                        //qCDebug(KWEBKITPART_LOG) << "Restoring URL:" << currentItem.url();
                         m_part->setProperty("NoEmitOpenUrlNotification", true);
                         history->goToItem(currentItem);
                     }
@@ -173,10 +173,10 @@ void WebKitBrowserExtension::restoreState(QDataStream &stream)
             }
             success = (history->count() > 0);
         } else {        // Handle navigation: back and forward button navigation.
-            //kDebug() << "history count:" << history->count() << "request index:" << historyItemIndex;
+            //qCDebug(KWEBKITPART_LOG) << "history count:" << history->count() << "request index:" << historyItemIndex;
             if (history->count() > historyItemIndex && historyItemIndex > -1) {
                 QWebHistoryItem item (history->itemAt(historyItemIndex));
-                //kDebug() << "URL:" << u << "Item URL:" << item.url();
+                //qCDebug(KWEBKITPART_LOG) << "URL:" << u << "Item URL:" << item.url();
                 if (u == item.url()) {
                     if (item.userData().isNull() && (xOfs != -1 || yOfs != -1)) {
                         const QPoint scrollPos (xOfs, yOfs);
@@ -196,7 +196,7 @@ void WebKitBrowserExtension::restoreState(QDataStream &stream)
 
     // As a last resort, in case the history restoration logic above fails,
     // attempt to open the requested URL directly.
-    kDebug() << "Normal history navgation logic failed! Falling back to opening url directly.";
+    qCDebug(KWEBKITPART_LOG) << "Normal history navgation logic failed! Falling back to opening url directly.";
     m_part->openUrl(u);
 }
 
@@ -764,7 +764,7 @@ void WebKitBrowserExtension::slotSpellCheckSelection()
 
     m_spellTextSelectionStart = qMax(0, execJScript(view(), QL1S("this.selectionStart")).toInt());
     m_spellTextSelectionEnd = qMax(0, execJScript(view(), QL1S("this.selectionEnd")).toInt());
-    // kDebug() << "selection start:" << m_spellTextSelectionStart << "end:" << m_spellTextSelectionEnd;
+    // qCDebug(KWEBKITPART_LOG) << "selection start:" << m_spellTextSelectionStart << "end:" << m_spellTextSelectionEnd;
 
     Sonnet::BackgroundChecker *backgroundSpellCheck = new Sonnet::BackgroundChecker;
     Sonnet::Dialog* spellDialog = new Sonnet::Dialog(backgroundSpellCheck, view());
@@ -794,13 +794,13 @@ void WebKitBrowserExtension::spellCheckerCorrected(const QString& original, int 
     script += QString::number(index + original.length());
     script += QL1S(")");
 
-    //kDebug() << "**** script:" << script;
+    //qCDebug(KWEBKITPART_LOG) << "**** script:" << script;
     execJScript(view(), script);
 }
 
 void WebKitBrowserExtension::spellCheckerMisspelling(const QString& text, int pos)
 {
-    // kDebug() << text << pos;
+    // qCDebug(KWEBKITPART_LOG) << text << pos;
     QString selectionScript (QL1S("this.setSelectionRange("));
     selectionScript += QString::number(pos + m_spellTextSelectionStart);
     selectionScript += QL1C(',');
@@ -829,7 +829,7 @@ void WebKitBrowserExtension::saveHistory()
     QWebHistory* history = (view() ? view()->history() : 0);
 
     if (history && history->count() > 0) {
-        //kDebug() << "Current history: index=" << history->currentItemIndex() << "url=" << history->currentItem().url();
+        //qCDebug(KWEBKITPART_LOG) << "Current history: index=" << history->currentItemIndex() << "url=" << history->currentItem().url();
         QByteArray histData;
         QBuffer buff (&histData);
         m_historyData.clear();
@@ -842,7 +842,7 @@ void WebKitBrowserExtension::saveHistory()
         QWidget* frameWidget = mainWidget ? mainWidget->parentWidget() : 0;
         if (frameWidget) {
             emit saveHistory(frameWidget, m_historyData);
-            // kDebug() << "# of items:" << history->count() << "current item:" << history->currentItemIndex() << "url:" << history->currentItem().url();
+            // qCDebug(KWEBKITPART_LOG) << "# of items:" << history->count() << "current item:" << history->currentItemIndex() << "url:" << history->currentItem().url();
         }
     } else {
         Q_ASSERT(false); // should never happen!!!
@@ -1158,7 +1158,7 @@ bool KWebKitHtmlExtension::setHtmlSettingsProperty(KParts::HtmlSettingsInterface
             settings->setAttribute(QWebSettings::PrivateBrowsingEnabled, value.toBool());
             return true;
         case KParts::HtmlSettingsInterface::UserDefinedStyleSheetURL:
-            //kDebug() << "Setting user style sheet for" << page << "to" << value.toUrl();
+            //qCDebug(KWEBKITPART_LOG) << "Setting user style sheet for" << page << "to" << value.toUrl();
             settings->setUserStyleSheetUrl(value.toUrl());
             return true;
         default:
@@ -1191,7 +1191,7 @@ bool KWebKitScriptableExtension::setException (KParts::ScriptableExtension* call
 
 QVariant KWebKitScriptableExtension::get (KParts::ScriptableExtension* callerPrincipal, quint64 objId, const QString& propName)
 {
-    //kDebug() << "caller:" << callerPrincipal << "id:" << objId << "propName:" << propName;
+    //qCDebug(KWEBKITPART_LOG) << "caller:" << callerPrincipal << "id:" << objId << "propName:" << propName;
     return callerPrincipal->get (0, objId, propName);
 }
 
@@ -1202,7 +1202,7 @@ bool KWebKitScriptableExtension::put (KParts::ScriptableExtension* callerPrincip
 
 static QVariant exception(const char* msg)
 {
-    kWarning() << msg;
+    qCWarning(KWEBKITPART_LOG) << msg;
     return QVariant::fromValue(KParts::ScriptableExtension::Exception(QString::fromLatin1(msg)));
 }
 
@@ -1212,7 +1212,7 @@ QVariant KWebKitScriptableExtension::evaluateScript (KParts::ScriptableExtension
                                                      KParts::ScriptableExtension::ScriptLanguage lang)
 {
     Q_UNUSED(contextObjectId);
-    //kDebug() << "principal:" << callerPrincipal << "id:" << contextObjectId << "language:" << lang << "code:" << code;
+    //qCDebug(KWEBKITPART_LOG) << "principal:" << callerPrincipal << "id:" << contextObjectId << "language:" << lang << "code:" << code;
 
     if (lang != ECMAScript)
         return exception("unsupported language");

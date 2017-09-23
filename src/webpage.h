@@ -29,7 +29,7 @@
 #include <KDE/KParts/BrowserExtension>
 
 #include <QUrl>
-#include <QDebug>
+#include "kwebkitpart_debug.h"
 #include <QMultiHash>
 #include <QPointer>
 

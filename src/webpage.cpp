@@ -22,6 +22,7 @@
 
 #include "webpage.h"
 
+#include "kwebkitpart_debug.h"
 #include "kwebkitpart.h"
 #include "websslinfo.h"
 #include "webview.h"
@@ -39,7 +40,6 @@
 #include <KDE/KShell>
 #include <KDE/KStandardDirs>
 #include <KDE/KAuthorized>
-#include <KDE/KDebug>
 #include <KDE/KFileDialog>
 #include <KDE/KProtocolInfo>
 #include <KDE/KStringHandler>
@@ -124,7 +124,7 @@ WebPage::WebPage(KWebKitPart *part, QWidget *parent)
 
 WebPage::~WebPage()
 {
-    //kDebug() << this;
+    //qCDebug(KWEBKITPART_LOG) << this;
 }
 
 const WebSslInfo& WebPage::sslInfo() const
@@ -168,7 +168,7 @@ void WebPage::downloadRequest(const QNetworkRequest &request)
         QString managerExe;
         checkForDownloadManager(view(), managerExe);
         if (!managerExe.isEmpty()) {
-            //kDebug() << "Calling command" << cmd;
+            //qCDebug(KWEBKITPART_LOG) << "Calling command" << cmd;
             KRun::runCommand((managerExe + QLatin1Char(' ') + KShell::quoteArg(url.url())), view());
             return;
         }
@@ -312,7 +312,7 @@ bool WebPage::extension(Extension extension, const ExtensionOption *option, Exte
 
 bool WebPage::supportsExtension(Extension extension) const
 {
-    //kDebug() << extension << m_ignoreError;
+    //qCDebug(KWEBKITPART_LOG) << extension << m_ignoreError;
     switch (extension) {
     case QWebPage::ErrorPageExtension:
         return (!m_ignoreError);
@@ -327,7 +327,7 @@ bool WebPage::supportsExtension(Extension extension) const
 
 QWebPage *WebPage::createWindow(WebWindowType type)
 {
-    // kDebug() << "window type:" << type;
+    // qCDebug(KWEBKITPART_LOG) << "window type:" << type;
     // Crete an instance of NewWindowPage class to capture all the
     // information we need to create a new window. See documentation of
     // the class for more information...
@@ -412,10 +412,10 @@ bool WebPage::acceptNavigationRequest(QWebFrame *frame, const QNetworkRequest &r
             // If history navigation is locked, ignore all such requests...
             if (property("HistoryNavigationLocked").toBool()) {
                 setProperty("HistoryNavigationLocked", QVariant());
-                kDebug() << "Rejected history navigation because 'HistoryNavigationLocked' property is set!";
+                qCDebug(KWEBKITPART_LOG) << "Rejected history navigation because 'HistoryNavigationLocked' property is set!";
                 return false;
             }
-            //kDebug() << "Navigating to item (" << history()->currentItemIndex()
+            //qCDebug(KWEBKITPART_LOG) << "Navigating to item (" << history()->currentItemIndex()
             //         << "of" << history()->count() << "):" << history()->currentItem().url();
             inPageRequest = false;
             if (!isBlankUrl(reqUrl)) {
@@ -553,7 +553,7 @@ void WebPage::slotRequestFinished(QNetworkReply *reply)
     }
 
     const int errCode = errorCodeFromReply(reply);
-    kDebug() << frame << "is main frame request?" << isMainFrameRequest << requestUrl;
+    qCDebug(KWEBKITPART_LOG) << frame << "is main frame request?" << isMainFrameRequest << requestUrl;
     // Handle any error...
     switch (errCode) {
         case 0:
@@ -566,7 +566,7 @@ void WebPage::slotRequestFinished(QNetworkReply *reply)
             break;
         case KIO::ERR_ABORTED:
         case KIO::ERR_USER_CANCELED: // Do nothing if request is cancelled/aborted
-            //kDebug() << "User aborted request!";
+            //qCDebug(KWEBKITPART_LOG) << "User aborted request!";
             m_ignoreError = true;
             emit loadAborted(QUrl());
             return;
@@ -595,7 +595,7 @@ void WebPage::slotRequestFinished(QNetworkReply *reply)
 
 void WebPage::slotUnsupportedContent(QNetworkReply* reply)
 {
-    //kDebug() << reply->url();
+    //qCDebug(KWEBKITPART_LOG) << reply->url();
     QString mimeType;
     KIO::MetaData metaData;
 
@@ -619,7 +619,7 @@ void WebPage::slotUnsupportedContent(QNetworkReply* reply)
         return;
     }
 
-    //kDebug() << "mimetype=" << mimeType << "metadata:" << metaData;
+    //qCDebug(KWEBKITPART_LOG) << "mimetype=" << mimeType << "metadata:" << metaData;
 
     if (reply->request().originatingObject() == this->mainFrame()) {
         KParts::OpenUrlArguments args;
@@ -681,19 +681,19 @@ void WebPage::slotGeometryChangeRequested(const QRect & rect)
     // parts of following code are based on kjs_window.cpp
     // Security check: within desktop limits and bigger than 100x100 (per spec)
     if (width < 100 || height < 100) {
-        kWarning() << "Window resize refused, window would be too small (" << width << "," << height << ")";
+        qCWarning(KWEBKITPART_LOG) << "Window resize refused, window would be too small (" << width << "," << height << ")";
         return;
     }
 
     QRect sg = KGlobalSettings::desktopGeometry(view());
 
     if (width > sg.width() || height > sg.height()) {
-        kWarning() << "Window resize refused, window would be too big (" << width << "," << height << ")";
+        qCWarning(KWEBKITPART_LOG) << "Window resize refused, window would be too big (" << width << "," << height << ")";
         return;
     }
 
     if (WebKitSettings::self()->windowResizePolicy(host) == KParts::HtmlSettingsInterface::JSWindowResizeAllow) {
-        //kDebug() << "resizing to " << width << "x" << height;
+        //qCDebug(KWEBKITPART_LOG) << "resizing to " << width << "x" << height;
         emit m_part->browserExtension()->resizeTopLevelWidget(width, height);
     }
 
@@ -716,7 +716,7 @@ bool WebPage::checkLinkSecurity(const QNetworkRequest &req, NavigationType type)
     // Check whether the request is authorized or not...
     if (!KUrlAuthorized::authorizeUrlAction("redirect", mainFrame()->url(), req.url())) {
 
-        //kDebug() << "*** Failed security check: base-url=" << mainFrame()->url() << ", dest-url=" << req.url();
+        //qCDebug(KWEBKITPART_LOG) << "*** Failed security check: base-url=" << mainFrame()->url() << ", dest-url=" << req.url();
         QString buttonText, title, message;
 
         int response = KMessageBox::Cancel;
@@ -850,7 +850,7 @@ bool WebPage::handleMailToUrl (const QUrl &url, NavigationType type) const
                  break;
         }
 
-        //kDebug() << "Emitting openUrlRequest with " << mailtoUrl;
+        //qCDebug(KWEBKITPART_LOG) << "Emitting openUrlRequest with " << mailtoUrl;
         emit m_part->browserExtension()->openUrlRequest(mailtoUrl);
         return true;
     }
@@ -893,12 +893,12 @@ NewWindowPage::NewWindowPage(WebWindowType type, KWebKitPart* part, bool disable
 
 NewWindowPage::~NewWindowPage()
 {
-    //kDebug() << this;
+    //qCDebug(KWEBKITPART_LOG) << this;
 }
 
 bool NewWindowPage::acceptNavigationRequest(QWebFrame *frame, const QNetworkRequest &request, NavigationType type)
 {
-    // kDebug() << "url:" << request.url() << ",type:" << type << ",frame:" << frame;
+    // qCDebug(KWEBKITPART_LOG) << "url:" << request.url() << ",type:" << type << ",frame:" << frame;
     if (m_createNewWindow) {
         const QUrl reqUrl (request.url());
 
@@ -950,7 +950,7 @@ bool NewWindowPage::acceptNavigationRequest(QWebFrame *frame, const QNetworkRequ
 
         KParts::ReadOnlyPart* newWindowPart =0;
         part()->browserExtension()->createNewWindow(QUrl(), uargs, bargs, wargs, &newWindowPart);
-        kDebug() << "Created new window" << newWindowPart;
+        qCDebug(KWEBKITPART_LOG) << "Created new window" << newWindowPart;
 
         if (!newWindowPart) {
             return false;
@@ -1003,26 +1003,26 @@ void NewWindowPage::slotGeometryChangeRequested(const QRect & rect)
 
 void NewWindowPage::slotMenuBarVisibilityChangeRequested(bool visible)
 {
-    //kDebug() << visible;
+    //qCDebug(KWEBKITPART_LOG) << visible;
     m_windowArgs.setMenuBarVisible(visible);
 }
 
 void NewWindowPage::slotStatusBarVisibilityChangeRequested(bool visible)
 {
-    //kDebug() << visible;
+    //qCDebug(KWEBKITPART_LOG) << visible;
     m_windowArgs.setStatusBarVisible(visible);
 }
 
 void NewWindowPage::slotToolBarVisibilityChangeRequested(bool visible)
 {
-    //kDebug() << visible;
+    //qCDebug(KWEBKITPART_LOG) << visible;
     m_windowArgs.setToolBarsVisible(visible);
 }
 
 void NewWindowPage::slotLoadFinished(bool ok)
 {
     Q_UNUSED(ok)
-    //kDebug() << ok;
+    //qCDebug(KWEBKITPART_LOG) << ok;
     if (!m_createNewWindow)
         return;
 
@@ -1043,7 +1043,7 @@ void NewWindowPage::slotLoadFinished(bool ok)
     KParts::ReadOnlyPart* newWindowPart =0;
     part()->browserExtension()->createNewWindow(QUrl(), uargs, bargs, wargs, &newWindowPart);
 
-    kDebug() << "Created new window" << newWindowPart;
+    qCDebug(KWEBKITPART_LOG) << "Created new window" << newWindowPart;
 
     // Get the webview...
     KWebKitPart* webkitPart = newWindowPart ? qobject_cast<KWebKitPart*>(newWindowPart) : 0;

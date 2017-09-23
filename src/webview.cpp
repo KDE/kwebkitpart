@@ -23,6 +23,7 @@
 
 #include "webview.h"
 #include "webpage.h"
+#include "kwebkitpart_debug.h"
 #include "kwebkitpart.h"
 #include "settings/webkitsettings.h"
 
@@ -38,7 +39,6 @@
 #include <KDE/KActionMenu>
 #include <KDE/KIO/AccessManager>
 #include <KDE/KStringHandler>
-#include <KDE/KDebug>
 #include <KDE/KLocalizedString>
 #include <KDE/KIcon>
 
@@ -86,7 +86,7 @@ WebView::WebView(KWebKitPart* part, QWidget* parent)
 
 WebView::~WebView()
 {
-    //kDebug();
+    //qCDebug(KWEBKITPART_LOG);
 }
 
 void WebView::loadUrl(const QUrl& url, const KParts::OpenUrlArguments& args, const KParts::BrowserArguments& bargs)
@@ -299,7 +299,7 @@ void WebView::keyPressEvent(QKeyEvent* e)
                 break;
             }
         } else if (m_autoScrollTimerId != -1) {
-            // kDebug() << "scroll timer id:" << m_autoScrollTimerId;
+            // qCDebug(KWEBKITPART_LOG) << "scroll timer id:" << m_autoScrollTimerId;
             slotStopAutoScroll();
             e->accept();
             return;
@@ -876,9 +876,9 @@ static void handleDuplicateLinkElements(const QWebElement& element, QHash<QStrin
 {
     if (element.tagName().compare(QL1S("A"), Qt::CaseInsensitive) == 0) {
         const QString linkKey (linkElementKey(element));
-        // kDebug() << "LINK KEY:" << linkKey;
+        // qCDebug(KWEBKITPART_LOG) << "LINK KEY:" << linkKey;
         if (dupLinkList->contains(linkKey)) {
-            // kDebug() << "***** Found duplicate link element:" << linkKey << endl;
+            // qCDebug(KWEBKITPART_LOG) << "***** Found duplicate link element:" << linkKey << endl;
             *accessKey = dupLinkList->value(linkKey);
         } else if (!linkKey.isEmpty()) {
             dupLinkList->insert(linkKey, *accessKey);

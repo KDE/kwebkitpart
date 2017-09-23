@@ -12,6 +12,7 @@ include(KDECMakeSettings)
 include(KDECompilerSettings NO_POLICY_SCOPE)
 include(FeatureSummary)
 include(ECMInstallIcons)
+include(ECMQtDeclareLoggingCategory)
 
 find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS Core DBus Gui Widgets WebKit WebKitWidgets UiTools)
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
@@ -37,5 +38,7 @@ add_definitions(-DTRANSLATION_DOMAIN=\"kwebkitpart\")
 add_subdirectory(icons)
 add_subdirectory(src)
 add_subdirectory(kdelauncher)
+
+install(FILES kwebkitpart.categories DESTINATION ${KDE_INSTALL_CONFDIR})
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)

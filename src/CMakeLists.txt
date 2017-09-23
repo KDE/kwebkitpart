@@ -21,6 +21,12 @@ qt5_wrap_ui(kwebkit_LIB_SRCS
                   ui/searchbar.ui
 )
 
+ecm_qt_declare_logging_category(kwebkit_LIB_SRCS
+    HEADER kwebkitpart_debug.h
+    IDENTIFIER KWEBKITPART_LOG
+    CATEGORY_NAME org.kde.kwebkitpart
+)
+
 ########################### kwebkitpart #############################
 add_library(kwebkitpart ${kwebkit_LIB_SRCS})
 

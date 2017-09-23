@@ -1,0 +1,3 @@
+# KWebKitPart's logging categories (for the kdebugsettings tool)
+org.kde.kwebkitpart KWebKitPart
+

@@ -29,12 +29,13 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+#include "kwebkitpart_demo_debug.h"
+
 #include <kwebview.h>
 
 #include <KDE/KApplication>
 #include <KDE/KAboutData>
 #include <KDE/KCmdLineArgs>
-#include <KDE/KDebug>
 #include <KDE/KIO/AccessManager>
 #include <KDE/KUriFilter>
 #include <KDE/KInputDialog>
@@ -187,7 +188,7 @@ protected slots:
     }
 
     void dumpHtml() {
-        kDebug() << "HTML: " << view->page()->mainFrame()->toHtml();
+        qCDebug(KWEBKITPART_DEMO_LOG) << "HTML: " << view->page()->mainFrame()->toHtml();
     }
 
     void selectElements() {
@@ -357,7 +358,7 @@ private:
                 m_urls.append(line);
             }
         } else {
-            kDebug() << "Can't open list file";
+            qCDebug(KWEBKITPART_DEMO_LOG) << "Can't open list file";
             exit(0);
         }
         m_index = 0;
@@ -409,7 +410,7 @@ int main(int argc, char **argv)
         // robotized
         QString listFile = args.at(2);
         if (!(args.count() == 3) && QFile::exists(listFile)) {
-            kDebug() << "Usage: KDELauncher -r listfile";
+            qCDebug(KWEBKITPART_DEMO_LOG) << "Usage: KDELauncher -r listfile";
             exit(0);
         }
         MainWindow window;

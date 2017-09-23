@@ -21,10 +21,10 @@
 #include "webpluginfactory.h"
 
 #include "webpage.h"
+#include "kwebkitpart_debug.h"
 #include "kwebkitpart.h"
 #include "settings/webkitsettings.h"
 
-#include <KDE/KDebug>
 #include <KDE/KConfigGroup>
 #include <KDE/KSharedConfig>
 #include <KDE/KLocalizedString>
@@ -186,7 +186,7 @@ static uint pluginId(const QUrl& url, const QStringList& argumentNames, const QS
 
 QObject* WebPluginFactory::create (const QString& _mimeType, const QUrl& url, const QStringList& argumentNames, const QStringList& argumentValues) const
 {
-    //kDebug() << _mimeType << url << argumentNames;
+    //qCDebug(KWEBKITPART_LOG) << _mimeType << url << argumentNames;
     QString mimeType (_mimeType.trimmed());
     if (mimeType.isEmpty()) {
         extractGuessedMimeType (url, &mimeType);
@@ -215,7 +215,7 @@ QObject* WebPluginFactory::create (const QString& _mimeType, const QUrl& url, co
             }
         }
 
-        kDebug() << "Asked for" << mimeType << "plugin, got" << part;
+        qCDebug(KWEBKITPART_LOG) << "Asked for" << mimeType << "plugin, got" << part;
 
         if (part) {
             connect (part->browserExtension(), SIGNAL (openUrlNotify()),

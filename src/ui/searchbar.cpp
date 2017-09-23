@@ -117,7 +117,7 @@ void SearchBar::setSearchText(const QString& text)
 
 void SearchBar::setFoundMatch(bool match)
 {
-    //kDebug() << match;
+    //qCDebug(KWEBKITPART_LOG) << match;
     if (m_ui.searchComboBox->currentText().isEmpty()) {
         m_ui.searchComboBox->setPalette(QPalette());
         return;

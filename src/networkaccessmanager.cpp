@@ -21,7 +21,7 @@
 #include "networkaccessmanager.h"
 #include "settings/webkitsettings.h"
 
-#include <KDebug>
+#include "kwebkitpart_debug.h"
 #include <KDE/KLocalizedString>
 #include <KProtocolInfo>
 #include <KRun>
@@ -88,7 +88,7 @@ static bool blockRequest(QNetworkAccessManager::Operation op, const QUrl& reques
    if (!WebKitSettings::self()->isAdFiltered(requestUrl.toString()))
        return false;
 
-   kDebug() << "*** REQUEST BLOCKED: URL" << requestUrl << "RULE" << WebKitSettings::self()->adFilteredBy(requestUrl.toString());
+   qCDebug(KWEBKITPART_LOG) << "*** REQUEST BLOCKED: URL" << requestUrl << "RULE" << WebKitSettings::self()->adFilteredBy(requestUrl.toString());
    return true;
 }
 
@@ -129,7 +129,7 @@ static void hideBlockedElements(const QUrl& url, QWebElementCollection& collecti
             continue;
         const QUrl resolvedUrl(baseUrl.resolved(QUrl(src)));
         if (url == resolvedUrl) {
-            //kDebug() << "*** HIDING ELEMENT: " << (*it).tagName() << resolvedUrl;
+            //qCDebug(KWEBKITPART_LOG) << "*** HIDING ELEMENT: " << (*it).tagName() << resolvedUrl;
             (*it).removeFromDocument();
         }
     }

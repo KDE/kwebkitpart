@@ -21,10 +21,10 @@
 
 #include "passwordbar.h"
 
+#include "kwebkitpart_debug.h"
 #include "settings/webkitsettings.h"
 
 #include <KDE/KIcon>
-#include <KDE/KDebug>
 #include <KDE/KColorScheme>
 #include <KDE/KLocalizedString>
 

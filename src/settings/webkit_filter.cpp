@@ -20,8 +20,8 @@
    Boston, MA 02110-1301, USA.
 */
 
+#include "kwebkitpart_debug.h"
 #include "webkit_filter.h"
-#include <KDE/KDebug>
 
 #include <QHash>
 #include <QBitArray>
@@ -257,7 +257,7 @@ void FilterSet::addFilter(const QString& filterStr)
         QString inside = filter.mid(1, filter.length()-2);
         QRegExp rx(inside);
         reFilters.append(rx);
-//         qDebug() << "R:" << inside;
+//         qCDebug(KWEBKITPART_LOG) << "R:" << inside;
     }
     else
     {
