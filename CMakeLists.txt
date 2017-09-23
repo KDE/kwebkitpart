@@ -11,6 +11,7 @@ include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(KDECompilerSettings NO_POLICY_SCOPE)
 include(FeatureSummary)
+include(ECMInstallIcons)
 
 find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS Core DBus Gui Widgets WebKit WebKitWidgets UiTools)
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
