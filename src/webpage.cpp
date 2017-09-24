@@ -36,7 +36,7 @@
 #include <KLocale>
 #include <KRun>
 #include <KShell>
-#include <KStandardDirs>
+
 #include <KAuthorized>
 #include <KFileDialog>
 #include <KProtocolInfo>
@@ -47,6 +47,7 @@
 #include <KIO/AccessManager>
 #include <KIO/Scheduler>
 #include <KParts/HtmlExtension>
+#include <KSharedConfig>
 
 #include <QFile>
 #include <QApplication>
@@ -58,6 +59,7 @@
 #include <QWebHistoryItem>
 #include <QWebSecurityOrigin>
 #include <QDesktopWidget>
+#include <QStandardPaths>
 
 #define QL1S(x)  QLatin1String(x)
 #define QL1C(x)  QLatin1Char(x)
@@ -143,7 +145,7 @@ static void checkForDownloadManager(QWidget* widget, QString& cmd)
     if (fileName.isEmpty())
         return;
 
-    const QString exeName = KStandardDirs::findExe(fileName);
+    const QString exeName = QStandardPaths::findExecutable(fileName);
     if (exeName.isEmpty()) {
         KMessageBox::detailedSorry(widget,
                                    i18n("The download manager (%1) could not be found in your installation.", fileName),
@@ -201,7 +203,7 @@ QString WebPage::errorPage(int code, const QString& text, const QUrl& reqUrl) co
 
     stream >> errorName >> techName >> description >> causes >> solutions;
 
-    QFile file (KStandardDirs::locate ("data", QL1S("kwebkitpart/error.html")));
+    QFile file (QStandardPaths::locate(QStandardPaths::GenericDataLocation, QL1S("kwebkitpart/error.html")));
     if ( !file.open( QIODevice::ReadOnly ) )
         return i18n("<html><body><h3>Unable to display error message</h3>"
                     "<p>The error template file <em>error.html</em> could not be "

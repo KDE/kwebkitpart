@@ -31,11 +31,11 @@
 #include <KLocalizedString>
 #include <KMessageBox>
 #include <KSharedConfig>
-#include <KStandardDirs>
 
 #include <QWebSettings>
 #include <QFontDatabase>
 #include <QFileInfo>
+#include <QStandardPaths>
 
 // browser window color defaults -- Bernd
 #define HTML_DEFAULT_LNK_COLOR Qt::blue
@@ -383,7 +383,7 @@ void WebKitSettings::init( KConfig * config, bool reset )
               if (filterEnabled && url.isValid()) {
                   /** determine where to cache HTMLFilterList file */
                   QString localFile = cgFilter.readEntry(QString("HTMLFilterListLocalFilename-").append(QString::number(id)));
-                  localFile = KStandardDirs::locateLocal("data", "khtml/" + localFile);
+                  localFile = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1Char('/') + "khtml/" + localFile;
 
                   /** determine existence and age of cache file */
                   QFileInfo fileInfo(localFile);
@@ -1183,7 +1183,7 @@ bool WebKitSettings::isCookieJarEnabled() const
 static KConfigGroup nonPasswordStorableSitesCg(KSharedConfig::Ptr& configPtr)
 {
     if (!configPtr) {
-        configPtr = KSharedConfig::openConfig(KStandardDirs::locateLocal("data", "khtml/formcompletions"), KConfig::NoGlobals);
+        configPtr = KSharedConfig::openConfig(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1Char('/') + "khtml/formcompletions"), KConfig::NoGlobals;
     }
 
     return KConfigGroup(configPtr, "NonPasswordStorableSites");

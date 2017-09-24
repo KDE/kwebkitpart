@@ -35,7 +35,7 @@
 #include <KMimeType>
 #include <KService>
 #include <KUriFilter>
-#include <KStandardDirs>
+
 #include <KActionMenu>
 #include <KIO/AccessManager>
 #include <KStringHandler>

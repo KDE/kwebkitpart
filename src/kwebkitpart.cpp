@@ -66,6 +66,7 @@
 #include <KAction>
 #include <KShortcut>
 #include <KParts/GUIActivateEvent>
+#include <KSharedConfig>
 
 #include <QUrl>
 #include <QFile>
