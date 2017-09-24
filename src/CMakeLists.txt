@@ -17,7 +17,7 @@ set(kwebkit_LIB_SRCS
     ui/featurepermissionbar.cpp
 )
 
-qt5_wrap_ui(kwebkit_LIB_SRCS
+ki18n_wrap_ui(kwebkit_LIB_SRCS
                   ui/searchbar.ui
 )
 
