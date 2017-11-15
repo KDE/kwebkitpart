@@ -37,7 +37,6 @@
 #include <KSaveFile>
 #include <KComponentData>
 #include <KProtocolInfo>
-#include <KInputDialog>
 #include <KLocalizedString>
 #include <KTemporaryFile>
 #include <Sonnet/Dialog>
@@ -47,6 +46,7 @@
 #include <QVariant>
 #include <QClipboard>
 #include <QApplication>
+#include <QInputDialog>
 #include <QPrinter>
 #include <QPrintDialog>
 #include <QPrintPreviewDialog>
@@ -424,10 +424,12 @@ void WebKitBrowserExtension::slotBlockIFrame()
 
     bool ok = false;
     const QString urlStr = iframeUrl(view()->contextMenuResult().frame());
-    const QString url = KInputDialog::getText(i18n("Add URL to Filter"),
+    const QString url = QInputDialog::getText(view(), 
+                                              i18n("Add URL to Filter"),
                                               i18n("Enter the URL:"),
+                                              QLineEdit::Normal,
                                               urlStr, &ok);
-    if (ok) {
+    if (ok && !url.isEmpty()) {
         WebKitSettings::self()->addAdFilter(url);
         reparseConfiguration();
     }
@@ -509,11 +511,13 @@ void WebKitBrowserExtension::slotBlockImage()
         return;
 
     bool ok = false;
-    const QString url = KInputDialog::getText(i18n("Add URL to Filter"),
+    const QString url = QInputDialog::getText(view(),
+                                              i18n("Add URL to Filter"),
                                               i18n("Enter the URL:"),
+                                              QLineEdit::Normal,
                                               view()->contextMenuResult().imageUrl().toString(),
                                               &ok);
-    if (ok) {
+    if (ok && !url.isEmpty()) {
         WebKitSettings::self()->addAdFilter(url);
         reparseConfiguration();
     }
