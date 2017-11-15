@@ -53,7 +53,6 @@
 #include <KLocalizedString>
 #include <KMessageBox>
 #include <KStringHandler>
-#include <KMenu>
 #include <KWebWallet>
 #include <KToolInvocation>
 #include <KAcceleratorManager>
@@ -71,6 +70,7 @@
 #include <QUrl>
 #include <QFile>
 #include <QIcon>
+#include <QMenu>
 #include <QTextCodec>
 #include <QCoreApplication>
 #include <QVBoxLayout>
@@ -825,7 +825,7 @@ void KWebKitPart::slotWalletClosed()
 
 void KWebKitPart::slotShowWalletMenu()
 {
-    KMenu *menu = new KMenu(0);
+    QMenu *menu = new QMenu;
 
     if (m_webView && WebKitSettings::self()->isNonPasswordStorableSite(m_webView->url().host()))
       menu->addAction(i18n("&Allow password caching for this site"), this, SLOT(slotDeleteNonPasswordStorableSite()));
