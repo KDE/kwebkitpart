@@ -38,18 +38,20 @@
 #include <KComponentData>
 #include <KProtocolInfo>
 #include <KLocalizedString>
-#include <KTemporaryFile>
 #include <Sonnet/Dialog>
 #include <sonnet/backgroundchecker.h>
 
 #include <QBuffer>
 #include <QVariant>
 #include <QClipboard>
+#include <QDir>
 #include <QApplication>
 #include <QInputDialog>
 #include <QPrinter>
 #include <QPrintDialog>
 #include <QPrintPreviewDialog>
+#include <QTemporaryFile>
+#include <QMimeData>
 #include <QWebFrame>
 #include <QWebHistory>
 #include <QWebElement>
@@ -424,7 +426,7 @@ void WebKitBrowserExtension::slotBlockIFrame()
 
     bool ok = false;
     const QString urlStr = iframeUrl(view()->contextMenuResult().frame());
-    const QString url = QInputDialog::getText(view(), 
+    const QString url = QInputDialog::getText(view(),
                                               i18n("Add URL to Filter"),
                                               i18n("Enter the URL:"),
                                               QLineEdit::Normal,
@@ -572,14 +574,17 @@ void WebKitBrowserExtension::slotViewDocumentSource()
 
     const QUrl pageUrl (view()->url());
     if (pageUrl.isLocalFile()) {
-        KRun::runUrl(pageUrl, QL1S("text/plain"), view(), false);
+        KRun::runUrl(pageUrl, QL1S("text/plain"), view(), static_cast<KRun::RunFlags>(0));
     } else {
-        KTemporaryFile tempFile;
-        tempFile.setSuffix(QL1S(".html"));
+        QTemporaryFile tempFile(QDir::tempPath() +
+                                QLatin1Char('/') +
+                                QCoreApplication::applicationName() +
+                                QLatin1String("XXXXXX.html"));
         tempFile.setAutoRemove(false);
         if (tempFile.open()) {
             tempFile.write(view()->page()->mainFrame()->toHtml().toUtf8());
-            KRun::runUrl(QUrl::fromLocalFile(tempFile.fileName()), QL1S("text/plain"), view(), true, false);
+            KRun::runUrl(QUrl::fromLocalFile(tempFile.fileName()), QL1S("text/plain"), view(),
+                         static_cast<KRun::RunFlags>(KRun::DeleteTemporaryFiles));
         }
     }
 }
@@ -591,14 +596,17 @@ void WebKitBrowserExtension::slotViewFrameSource()
 
     const QUrl frameUrl(view()->page()->currentFrame()->url());
     if (frameUrl.isLocalFile()) {
-        KRun::runUrl(frameUrl, QL1S("text/plain"), view(), false);
+        KRun::runUrl(frameUrl, QL1S("text/plain"), view(), static_cast<KRun::RunFlags>(0));
     } else {
-        KTemporaryFile tempFile;
-        tempFile.setSuffix(QL1S(".html"));
+        QTemporaryFile tempFile(QDir::tempPath() +
+                                QLatin1Char('/') +
+                                QCoreApplication::applicationName() +
+                                QLatin1String("XXXXXX.html"));
         tempFile.setAutoRemove(false);
         if (tempFile.open()) {
             tempFile.write(view()->page()->currentFrame()->toHtml().toUtf8());
-            KRun::runUrl(QUrl::fromLocalFile(tempFile.fileName()), QL1S("text/plain"), view(), true, false);
+            KRun::runUrl(QUrl::fromLocalFile(tempFile.fileName()), QL1S("text/plain"), view(),
+                         static_cast<KRun::RunFlags>(KRun::DeleteTemporaryFiles));
         }
     }
 }
