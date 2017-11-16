@@ -31,7 +31,6 @@
 
 #include <KIconLoader>
 #include <KMessageBox>
-#include <KLocale>
 #include <KRun>
 #include <KShell>
 
@@ -46,6 +45,7 @@
 #include <KParts/HtmlExtension>
 #include <KSharedConfig>
 #include <KConfigGroup>
+#include <KLocalizedString>
 
 #include <QFile>
 #include <QApplication>
@@ -59,6 +59,7 @@
 #include <QStandardPaths>
 #include <QMimeType>
 #include <QMimeDatabase>
+#include <QLocale>
 
 #define QL1S(x)  QLatin1String(x)
 #define QL1C(x)  QLatin1Char(x)
@@ -243,7 +244,7 @@ QString WebPage::errorPage(int code, const QString& text, const QUrl& reqUrl) co
     }
 
     doc += i18n( "Date and Time: %1",
-                 KLocale::global()->formatDateTime(QDateTime::currentDateTime(), KLocale::LongDate) );
+                 QLocale().toString(QDateTime::currentDateTime(), QLocale::LongFormat) );
     doc += QL1S( "</li><li>" );
     // escape text twice: once for i18n, and once for HTML.
     doc += i18n( "Additional Information: %1", text.toHtmlEscaped().toHtmlEscaped() );

@@ -26,8 +26,6 @@
 #include <KConfigGroup>
 #include <KJob>
 #include <KIO/Job>
-#include <KGlobal>
-#include <KGlobalSettings>
 #include <KLocalizedString>
 #include <KMessageBox>
 #include <KSharedConfig>
@@ -36,6 +34,7 @@
 #include <QFontDatabase>
 #include <QFileInfo>
 #include <QStandardPaths>
+#include <QGlobalStatic>
 
 // browser window color defaults -- Bernd
 #define HTML_DEFAULT_LNK_COLOR Qt::blue
@@ -438,7 +437,7 @@ void WebKitSettings::init( KConfig * config, bool reset )
 
     // Behavior
     if ( reset || cgHtml.hasKey( "ChangeCursor" ) )
-        d->m_bChangeCursor = cgHtml.readEntry( "ChangeCursor", KDE_DEFAULT_CHANGECURSOR );
+        d->m_bChangeCursor = cgHtml.readEntry( "ChangeCursor", true );
 
     if ( reset || cgHtml.hasKey("UnderlineLinks") )
         d->m_underlineLink = cgHtml.readEntry( "UnderlineLinks", true );
@@ -1183,7 +1182,8 @@ bool WebKitSettings::isCookieJarEnabled() const
 static KConfigGroup nonPasswordStorableSitesCg(KSharedConfig::Ptr& configPtr)
 {
     if (!configPtr) {
-        configPtr = KSharedConfig::openConfig(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1Char('/') + "khtml/formcompletions"), KConfig::NoGlobals;
+        configPtr = KSharedConfig::openConfig((QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1Char('/') + "khtml/formcompletions"),
+                                              KConfig::NoGlobals);
     }
 
     return KConfigGroup(configPtr, "NonPasswordStorableSites");
@@ -1270,10 +1270,10 @@ void WebKitSettings::initNSPluginSettings()
     d->m_loadPluginsOnDemand = cookieCfg.readEntry("demandLoad", false);
 }
 
+Q_GLOBAL_STATIC(WebKitSettings, s_webKitSettings)
 
 WebKitSettings* WebKitSettings::self()
 {
-    K_GLOBAL_STATIC(WebKitSettings, s_webKitSettings)
     return s_webKitSettings;
 }
 

@@ -53,6 +53,11 @@ public:
     };
 
     /**
+     * @internal Constructor
+     */
+    WebKitSettings();
+
+    /**
      * Called by constructor and reparseConfiguration
      */
     void init();
@@ -201,11 +206,6 @@ private:
     void initWebKitSettings();
     void initCookieJarSettings();
     void initNSPluginSettings();
-
-    /**
-     * @internal Constructor
-     */
-    WebKitSettings();
 
     WebKitSettingsPrivate* const d;
 };
