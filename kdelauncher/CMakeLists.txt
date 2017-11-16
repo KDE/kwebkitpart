@@ -1,5 +1,3 @@
-find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS PrintSupport)
-
 link_directories(${CMAKE_BINARY_DIR}/../src)
 include_directories(${CMAKE_SOURCE_DIR}/../src)
 

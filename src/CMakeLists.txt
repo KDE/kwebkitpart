@@ -30,7 +30,7 @@ ecm_qt_declare_logging_category(kwebkit_LIB_SRCS
 ########################### kwebkitpart #############################
 add_library(kwebkitpart ${kwebkit_LIB_SRCS})
 
-target_link_libraries(kwebkitpart Qt5::Core Qt5::DBus Qt5::Gui Qt5::Widgets Qt5::WebKit Qt5::WebKitWidgets KF5::WebKit KF5::Parts KF5::IconThemes KF5::KDELibs4Support KF5::SonnetCore)
+target_link_libraries(kwebkitpart Qt5::Core Qt5::DBus Qt5::Gui Qt5::Widgets Qt5::WebKit Qt5::WebKitWidgets Qt5::PrintSupport KF5::WebKit KF5::Parts KF5::IconThemes KF5::SonnetCore KF5::KIOCore)
 ########################### kwebkitpart #############################
 
 install(TARGETS kwebkitpart DESTINATION ${KDE_INSTALL_PLUGINDIR}/kf5/parts)

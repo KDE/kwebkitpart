@@ -26,15 +26,12 @@
 #include "webpage.h"
 #include "settings/webkitsettings.h"
 
-#include <KUriFilterData>
+#include <KUriFilter>
 #include <KDesktopFile>
 #include <KConfigGroup>
 #include <KToolInvocation>
 #include <KSharedConfig>
 #include <KRun>
-#include <KPrintPreview>
-#include <KSaveFile>
-#include <KComponentData>
 #include <KProtocolInfo>
 #include <KLocalizedString>
 #include <Sonnet/Dialog>
@@ -47,7 +44,6 @@
 #include <QDir>
 #include <QApplication>
 #include <QInputDialog>
-#include <QPrinter>
 #include <QPrintDialog>
 #include <QPrintPreviewDialog>
 #include <QTemporaryFile>
