@@ -39,7 +39,6 @@
 #include <KFileDialog>
 #include <KProtocolInfo>
 #include <KStringHandler>
-#include <KMimeType>
 #include <KUrlAuthorized>
 #include <KIO/Job>
 #include <KIO/AccessManager>
@@ -58,6 +57,8 @@
 #include <QWebSecurityOrigin>
 #include <QDesktopWidget>
 #include <QStandardPaths>
+#include <QMimeType>
+#include <QMimeDatabase>
 
 #define QL1S(x)  QLatin1String(x)
 #define QL1C(x)  QLatin1Char(x)
@@ -180,11 +181,13 @@ static QString warningIconData()
     QFile f (KIconLoader::global()->iconPath("dialog-warning", -KIconLoader::SizeHuge));
 
     if (f.open(QIODevice::ReadOnly)) {
-        KMimeType::Ptr mime = KMimeType::mimeType(f.fileName(), KMimeType::ResolveAliases);
+        QByteArray fileData = f.readAll();
+        QMimeDatabase db;
+        QMimeType mime = db.mimeTypeForFileNameAndData(f.fileName(), fileData);
         data += QL1S("data:");
-        data += mime ? mime->name() : KMimeType::defaultMimeType();
+        data += mime.name();
         data += QL1S(";base64,");
-        data += f.readAll().toBase64();
+        data += fileData.toBase64();
         f.close();
     }
 

@@ -25,7 +25,6 @@
 #include <KLocalizedString>
 #include <KProtocolInfo>
 #include <KRun>
-#include <KMimeType>
 
 #include <QTimer>
 #include <QWidget>
@@ -34,6 +33,8 @@
 #include <QWebPage>
 #include <QWebSettings>
 #include <QWebElementCollection>
+#include <QMimeType>
+#include <QMimeDatabase>
 
 
 #define QL1S(x) QLatin1String(x)
@@ -164,8 +165,9 @@ void MyNetworkAccessManager::slotFinished(bool ok)
 
 static bool isActiveContent(const QString& contentType)
 {
-    const KMimeType::Ptr mime = KMimeType::mimeType(contentType);
-    return mime && mime->is(QLatin1String("application/javascript"));
+    QMimeDatabase db;
+    const QMimeType mime = db.mimeTypeForName(contentType);
+    return (mime.isValid() && mime.inherits(QLatin1String("application/javascript")));
 }
 
 void MyNetworkAccessManager::slotMetaDataChanged()

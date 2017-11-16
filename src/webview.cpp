@@ -31,8 +31,6 @@
 #include <KAboutData>
 #include <KActionCollection>
 #include <KConfigGroup>
-#include <KMimeType>
-#include <KService>
 #include <KUriFilter>
 
 #include <KActionMenu>
@@ -52,6 +50,9 @@
 #include <QWebInspector>
 #include <QToolTip>
 #include <QCoreApplication>
+#include <QMimeType>
+#include <QMimeDatabase>
+
 #include <unistd.h>
 
 #define QL1S(x)   QLatin1String(x)
@@ -127,27 +128,26 @@ static bool isMultimediaElement(const QWebElement& element)
 
 static void extractMimeTypeFor(const QUrl& url, QString& mimeType)
 {
-    const QString fname(url.fileName());
- 
-    if (fname.isEmpty() || url.hasFragment() || url.hasQuery())
+    if (url.fileName().isEmpty() || url.hasFragment() || url.hasQuery())
         return;
- 
-    KMimeType::Ptr pmt = KMimeType::findByPath(fname, 0, true);
+
+    QMimeDatabase db;
+    QMimeType pmt = db.mimeTypeForUrl(url);
 
     // Further check for mime types guessed from the extension which,
     // on a web page, are more likely to be a script delivering content
     // of undecidable type. If the mime type from the extension is one
     // of these, don't use it.  Retain the original type 'text/html'.
-    if (pmt->name() == KMimeType::defaultMimeType() ||
-        pmt->is(QL1S("application/x-perl")) ||
-        pmt->is(QL1S("application/x-perl-module")) ||
-        pmt->is(QL1S("application/x-php")) ||
-        pmt->is(QL1S("application/x-python-bytecode")) ||
-        pmt->is(QL1S("application/x-python")) ||
-        pmt->is(QL1S("application/x-shellscript")))
+    if (pmt.isDefault() ||
+        pmt.inherits(QL1S("application/x-perl")) ||
+        pmt.inherits(QL1S("application/x-perl-module")) ||
+        pmt.inherits(QL1S("application/x-php")) ||
+        pmt.inherits(QL1S("application/x-python-bytecode")) ||
+        pmt.inherits(QL1S("application/x-python")) ||
+        pmt.inherits(QL1S("application/x-shellscript")))
         return;
 
-    mimeType = pmt->name();
+    mimeType = pmt.name();
 }
 
 void WebView::contextMenuEvent(QContextMenuEvent* e)
@@ -195,10 +195,13 @@ void WebView::contextMenuEvent(QContextMenuEvent* e)
         flags |= KParts::BrowserExtension::IsLink;
         emitUrl = m_result.linkUrl();
         linkActionPopupMenu(mapAction);
-        if (emitUrl.isLocalFile())
-            mimeType = KMimeType::findByUrl(emitUrl, 0, true, false)->name();
-        else
+        if (emitUrl.isLocalFile()) {
+            QMimeDatabase db;
+            mimeType = db.mimeTypeForUrl(emitUrl).name();
+        }
+        else {
             extractMimeTypeFor(emitUrl, mimeType);
+        }
         partActionPopupMenu(mapAction);
 
         // Show the OpenInThisWindow context menu item
