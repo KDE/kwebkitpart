@@ -26,7 +26,6 @@
 #include "webpage.h"
 #include "settings/webkitsettings.h"
 
-#include <KAction>
 #include <KUriFilterData>
 #include <KDesktopFile>
 #include <KConfigGroup>
@@ -41,6 +40,7 @@
 #include <Sonnet/Dialog>
 #include <sonnet/backgroundchecker.h>
 
+#include <QAction>
 #include <QBuffer>
 #include <QVariant>
 #include <QClipboard>

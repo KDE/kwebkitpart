@@ -62,7 +62,7 @@
 #include <KProtocolInfo>
 #include <KToggleAction>
 #include <KParts/StatusBarExtension>
-#include <KAction>
+//#include <KAction>
 #include <KShortcut>
 #include <KParts/GUIActivateEvent>
 #include <KSharedConfig>

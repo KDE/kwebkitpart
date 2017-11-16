@@ -29,7 +29,6 @@
 
 #include <kio/global.h>
 #include <KAboutData>
-#include <KAction>
 #include <KActionCollection>
 #include <KConfigGroup>
 #include <KMimeType>
