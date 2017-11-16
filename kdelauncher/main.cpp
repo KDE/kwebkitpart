@@ -33,15 +33,12 @@
 
 #include <kwebview.h>
 
-#include <KApplication>
 #include <KAboutData>
-#include <KCmdLineArgs>
-#include <KIO/AccessManager>
 #include <KUriFilter>
-#include <KInputDialog>
 #include <KLineEdit>
+#include <KLocalizedString>
 
-#include <QUiLoader>
+#include <QInputDialog>
 #include <QWebPage>
 #include <QWebView>
 #include <QWebFrame>
@@ -53,7 +50,6 @@
 #include <QPrintPreviewDialog>
 #endif
 
-#include <QAction>
 #include <QCompleter>
 #include <QMainWindow>
 #include <QMenu>
@@ -65,11 +61,7 @@
 #include <QToolTip>
 #include <QDir>
 #include <QFile>
-#include <QVector>
-#include <QTextStream>
 #include <QApplication>
-#include <KAboutData>
-#include <KLocalizedString>
 #include <QCommandLineParser>
 
 
@@ -193,9 +185,11 @@ protected slots:
 
     void selectElements() {
         bool ok;
-        QString str = KInputDialog::getText(i18nc("input dialog window title for selecting html elements", "Select elements"),
+        QString str = QInputDialog::getText(this,
+                                            i18nc("input dialog window title for selecting html elements", "Select elements"),
                                             i18nc("input dialog text for selecting html elements", "Choose elements"),
-                                            QLatin1String("a"), &ok, this);
+                                            QLineEdit::Normal,
+                                            QLatin1String("a"), &ok);
         if (ok && !str.isEmpty()) {
             QWebElementCollection collection = view->page()->mainFrame()->findAllElements(str);
             const int count = collection.count();

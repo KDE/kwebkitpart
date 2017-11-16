@@ -1,3 +1,5 @@
+find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS PrintSupport)
+
 link_directories(${CMAKE_BINARY_DIR}/../src)
 include_directories(${CMAKE_SOURCE_DIR}/../src)
 
@@ -20,10 +22,10 @@ target_link_libraries(kdelauncher
     Qt5::Widgets
     Qt5::WebKitWidgets
     Qt5::UiTools
+    Qt5::PrintSupport
     KF5::KIOCore
     KF5::KIOWidgets
     KF5::I18n
-    KF5::KDELibs4Support
     KF5::WebKit
 )
 set_target_properties(kdelauncher PROPERTIES CXX_STANDARD 11 CXX_STANDARD_REQUIRED ON)
