@@ -24,9 +24,9 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
     DBusAddons
     KIO
     KDELibs4Support
+    IconThemes
     Parts
     Sonnet
-    Activities
     WebKit
     I18n
 )

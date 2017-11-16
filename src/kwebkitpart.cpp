@@ -43,32 +43,29 @@
 
 #include <kcodecaction.h>
 #include <kio/global.h>
-#include <kiconloader.h>
 #include <ksslinfodialog.h>
 
 #include <KActionCollection>
 #include <KAboutData>
-#include <KComponentData>
 #include <KUrlLabel>
+#include <KIconLoader>
 #include <KLocalizedString>
 #include <KMessageBox>
 #include <KStringHandler>
 #include <KWebWallet>
 #include <KToolInvocation>
 #include <KAcceleratorManager>
-#include <KStatusBar>
 #include <KFileItem>
 #include <KMessageWidget>
 #include <KProtocolInfo>
 #include <KToggleAction>
 #include <KParts/StatusBarExtension>
-//#include <KAction>
-#include <KShortcut>
 #include <KParts/GUIActivateEvent>
 #include <KSharedConfig>
 #include <KConfigGroup>
 
 #include <QUrl>
+#include <QUrlQuery>
 #include <QFile>
 #include <QIcon>
 #include <QMenu>
@@ -76,6 +73,7 @@
 #include <QCoreApplication>
 #include <QVBoxLayout>
 #include <QDBusInterface>
+#include <QStatusBar>
 
 #define QL1S(x)  QLatin1String(x)
 #define QL1C(x)  QLatin1Char(x)
@@ -703,7 +701,7 @@ void KWebKitPart::slotLinkHovered(const QString& _link, const QString& /*title*/
               linkUrl = QUrl(scheme + '?' + linkUrl.path());
 
             QMap<QString, QStringList> fields;
-            QList<QPair<QString, QString> > queryItems = linkUrl.queryItems();
+            QList<QPair<QString, QString> > queryItems = QUrlQuery(linkUrl).queryItems();
             const int count = queryItems.count();
 
             for(int i = 0; i < count; ++i) {
@@ -1000,7 +998,7 @@ void KWebKitPart::addWalletStatusBarIcon ()
         m_statusBarWalletLabel = new KUrlLabel(m_statusBarExtension->statusBar());
         m_statusBarWalletLabel->setSizePolicy(QSizePolicy(QSizePolicy::Fixed, QSizePolicy::Minimum));
         m_statusBarWalletLabel->setUseCursor(false);
-        m_statusBarWalletLabel->setPixmap(SmallIcon("wallet-open"));
+        m_statusBarWalletLabel->setPixmap(QIcon::fromTheme("wallet-open").pixmap(KIconLoader::SizeSmall));
         connect(m_statusBarWalletLabel, SIGNAL(leftClickedUrl()), SLOT(slotLaunchWalletManager()));
         connect(m_statusBarWalletLabel, SIGNAL(rightClickedUrl()), SLOT(slotShowWalletMenu()));
     }
