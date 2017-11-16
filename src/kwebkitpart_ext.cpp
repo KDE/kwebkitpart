@@ -574,7 +574,7 @@ void WebKitBrowserExtension::slotViewDocumentSource()
 
     const QUrl pageUrl (view()->url());
     if (pageUrl.isLocalFile()) {
-        KRun::runUrl(pageUrl, QL1S("text/plain"), view(), static_cast<KRun::RunFlags>(0));
+        KRun::runUrl(pageUrl, QL1S("text/plain"), view(), 0, QString());
     } else {
         QTemporaryFile tempFile(QDir::tempPath() +
                                 QLatin1Char('/') +
@@ -584,7 +584,7 @@ void WebKitBrowserExtension::slotViewDocumentSource()
         if (tempFile.open()) {
             tempFile.write(view()->page()->mainFrame()->toHtml().toUtf8());
             KRun::runUrl(QUrl::fromLocalFile(tempFile.fileName()), QL1S("text/plain"), view(),
-                         static_cast<KRun::RunFlags>(KRun::DeleteTemporaryFiles));
+                         KRun::DeleteTemporaryFiles, QString());
         }
     }
 }
@@ -596,7 +596,7 @@ void WebKitBrowserExtension::slotViewFrameSource()
 
     const QUrl frameUrl(view()->page()->currentFrame()->url());
     if (frameUrl.isLocalFile()) {
-        KRun::runUrl(frameUrl, QL1S("text/plain"), view(), static_cast<KRun::RunFlags>(0));
+        KRun::runUrl(frameUrl, QL1S("text/plain"), view(), 0, QString());
     } else {
         QTemporaryFile tempFile(QDir::tempPath() +
                                 QLatin1Char('/') +
@@ -606,7 +606,7 @@ void WebKitBrowserExtension::slotViewFrameSource()
         if (tempFile.open()) {
             tempFile.write(view()->page()->currentFrame()->toHtml().toUtf8());
             KRun::runUrl(QUrl::fromLocalFile(tempFile.fileName()), QL1S("text/plain"), view(),
-                         static_cast<KRun::RunFlags>(KRun::DeleteTemporaryFiles));
+                         KRun::DeleteTemporaryFiles, QString());
         }
     }
 }
