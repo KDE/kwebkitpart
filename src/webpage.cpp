@@ -35,7 +35,6 @@
 #include <KShell>
 
 #include <KAuthorized>
-#include <KFileDialog>
 #include <KProtocolInfo>
 #include <KStringHandler>
 #include <KUrlAuthorized>
@@ -60,6 +59,8 @@
 #include <QMimeType>
 #include <QMimeDatabase>
 #include <QLocale>
+#include <QFileDialog>
+#include <QUrlQuery>
 
 #define QL1S(x)  QLatin1String(x)
 #define QL1C(x)  QLatin1Char(x)
@@ -295,11 +296,14 @@ bool WebPage::extension(Extension extension, const ExtensionOption *option, Exte
         QWebPage::ChooseMultipleFilesExtensionReturn *extOutput = static_cast<QWebPage::ChooseMultipleFilesExtensionReturn*>(output);
         if (extOutput && extOption && currentFrame() == extOption->parentFrame) {
             if (extOption->suggestedFileNames.isEmpty())
-                extOutput->fileNames = KFileDialog::getOpenFileNames(QUrl(), QString(), view(),
-                                                                     i18n("Choose files to upload"));
+                extOutput->fileNames = QFileDialog::getOpenFileNames(view(),
+                                                                     i18n("Choose files to upload"),
+                                                                     QString(), QString());
             else
-                extOutput->fileNames = KFileDialog::getOpenFileNames(QUrl(extOption->suggestedFileNames.first()),
-                                                                     QString(), view(), i18n("Choose files to upload"));
+                extOutput->fileNames = QFileDialog::getOpenFileNames(view(),
+                                                                     i18n("Choose files to upload"),
+                                                                     extOption->suggestedFileNames.first(),
+                                                                     QString());
             return true;
         }
         break;
@@ -797,8 +801,8 @@ static QUrl sanitizeMailToUrl(const QUrl &url, QStringList& files) {
     else
       sanitizedUrl = QUrl(url.scheme() + QL1S(":?") + url.path());
 
-    QListIterator<QPair<QString, QString> > it (sanitizedUrl.queryItems());
-    sanitizedUrl.setEncodedQuery(QByteArray());    // clear out the query componenet
+    QListIterator<QPair<QString, QString> > it (QUrlQuery(sanitizedUrl).queryItems());
+    QUrlQuery newQuery;
 
     while (it.hasNext()) {
         QPair<QString, QString> queryItem = it.next();
@@ -810,9 +814,10 @@ static QUrl sanitizeMailToUrl(const QUrl &url, QStringList& files) {
             files << queryItem.second;
             continue;
         }
-        sanitizedUrl.addQueryItem(queryItem.first, queryItem.second);
+        newQuery.addQueryItem(queryItem.first, queryItem.second);
     }
 
+    sanitizedUrl.setQuery(newQuery);			// replace the query component
     return sanitizedUrl;
 }
 
@@ -832,10 +837,12 @@ bool WebPage::handleMailToUrl (const QUrl &url, NavigationType type) const
                                                                                KGuiItem(i18n("&Ignore attachments")), QL1S("WarnEmailAttachment")) == KMessageBox::Continue) {
 
                    // Re-add the attachments...
+                    QUrlQuery newQuery(mailtoUrl);
                     QStringListIterator filesIt (files);
                     while (filesIt.hasNext()) {
-                        mailtoUrl.addQueryItem(QL1S("attach"), filesIt.next());
+                        newQuery.addQueryItem(QL1S("attach"), filesIt.next());
                     }
+                    mailtoUrl.setQuery(newQuery);
                 }
                 break;
             case QWebPage::NavigationTypeFormSubmitted:
