@@ -60,7 +60,7 @@ WebSslInfo::~WebSslInfo()
 
 bool WebSslInfo::isValid() const
 {
-  return (d ? !d->peerAddress.isNull() : false);
+  return (d ? !d->protocol.isEmpty() : false);
 }
 
 QUrl WebSslInfo::url() const

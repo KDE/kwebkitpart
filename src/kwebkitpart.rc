@@ -1,5 +1,5 @@
 <!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
-<kpartgui name="kwebkitpart" version="8">
+<kpartgui name="kwebkitpart" version="9">
 <MenuBar>
  <Menu name="file">
   <Action name="saveDocument" />
@@ -21,6 +21,7 @@
   <Separator />
   <Action name="setEncoding" />
   <Action name="viewDocumentSource" />
+  <Action name="security" />
   <ActionList name="debugScriptList" />
  </Menu>
 </MenuBar>

@@ -24,9 +24,7 @@
 
 #include "kwebkitpart_debug.h"
 #include "kwebkitpart.h"
-#include "websslinfo.h"
 #include "webview.h"
-#include "sslinfodialog_p.h"
 #include "networkaccessmanager.h"
 #include "settings/webkitsettings.h"
 #include "webpluginfactory.h"
@@ -48,10 +46,10 @@
 #include <KIO/Scheduler>
 #include <KParts/HtmlExtension>
 #include <KSharedConfig>
+#include <KConfigGroup>
 
 #include <QFile>
 #include <QApplication>
-#include <QTextDocument> // Qt::escape
 #include <QNetworkReply>
 #include <QWebFrame>
 #include <QWebElement>

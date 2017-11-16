@@ -31,7 +31,6 @@
 
 #include "kwebkitpart_debug.h"
 #include "kwebkitpart_ext.h"
-#include "sslinfodialog_p.h"
 #include "webview.h"
 #include "webpage.h"
 #include "websslinfo.h"
@@ -45,6 +44,7 @@
 #include <kcodecaction.h>
 #include <kio/global.h>
 #include <kiconloader.h>
+#include <ksslinfodialog.h>
 
 #include <KActionCollection>
 #include <KAboutData>
@@ -66,6 +66,7 @@
 #include <KShortcut>
 #include <KParts/GUIActivateEvent>
 #include <KSharedConfig>
+#include <KConfigGroup>
 
 #include <QUrl>
 #include <QFile>
@@ -260,7 +261,7 @@ void KWebKitPart::initActions()
     actionCollection()->setDefaultShortcut(action, QKeySequence(Qt::CTRL+Qt::Key_U));
     connect(action, SIGNAL(triggered(bool)), m_browserExtension, SLOT(slotViewDocumentSource()));
 
-    action = new QAction(i18nc("Secure Sockets Layer", "SSL"), this);
+    action = new QAction(i18nc("Secure Sockets Layer", "View SSL Information"), this);
     actionCollection()->addAction("security", action);
     connect(action, SIGNAL(triggered(bool)), SLOT(slotShowSecurity()));
 
@@ -603,8 +604,7 @@ void KWebKitPart::slotShowSecurity()
 
     const WebSslInfo& sslInfo = page()->sslInfo();
     if (!sslInfo.isValid()) {
-        KMessageBox::information(0, i18n("The SSL information for this site "
-                                    "appears to be corrupt."),
+        KMessageBox::information(0, i18n("This site is not secured with SSL, or its SSL information is not valid."),
                             i18nc("Secure Sockets Layer", "SSL"));
         return;
     }
