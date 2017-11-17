@@ -33,29 +33,20 @@
 #include <KMessageBox>
 #include <KRun>
 #include <KShell>
-
-#include <KAuthorized>
 #include <KProtocolInfo>
 #include <KStringHandler>
 #include <KUrlAuthorized>
-#include <KIO/Job>
-#include <KIO/AccessManager>
-#include <KIO/Scheduler>
-#include <KParts/HtmlExtension>
 #include <KSharedConfig>
 #include <KConfigGroup>
 #include <KLocalizedString>
 
-#include <QFile>
+#include <KIO/Job>
+#include <KParts/HtmlExtension>
+
 #include <QApplication>
 #include <QNetworkReply>
-#include <QWebFrame>
-#include <QWebElement>
-#include <QWebHistory>
-#include <QWebHistoryItem>
 #include <QWebSecurityOrigin>
 #include <QDesktopWidget>
-#include <QStandardPaths>
 #include <QMimeType>
 #include <QMimeDatabase>
 #include <QLocale>

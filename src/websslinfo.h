@@ -20,9 +20,8 @@
 #ifndef WEBSSLINFO_H
 #define WEBSSLINFO_H
 
+#include <QMap>
 #include <QUrl>
-#include <QList>
-#include <QString>
 #include <QHostAddress>
 #include <QSslCertificate>
 

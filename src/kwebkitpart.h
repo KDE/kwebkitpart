@@ -25,7 +25,6 @@
 #include <QWebPage>
 
 #include <KParts/ReadOnlyPart>
-#include <QUrl>
 
 namespace KParts {
   class BrowserExtension;

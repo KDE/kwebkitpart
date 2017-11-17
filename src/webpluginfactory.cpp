@@ -25,11 +25,7 @@
 #include "kwebkitpart.h"
 #include "settings/webkitsettings.h"
 
-#include <KConfigGroup>
-#include <KSharedConfig>
 #include <KLocalizedString>
-#include <KParts/ReadOnlyPart>
-#include <KParts/BrowserExtension>
 #include <kparts/liveconnectextension.h>
 #include <kparts/scriptableextension.h>
 

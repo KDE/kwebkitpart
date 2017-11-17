@@ -38,15 +38,9 @@
 #include <KStringHandler>
 #include <KLocalizedString>
 
-#include <QIcon>
-#include <QTimer>
-#include <QMimeData>
 #include <QDropEvent>
 #include <QLabel>
-#include <QNetworkRequest>
-#include <QWebFrame>
 #include <QWebElement>
-#include <QWebHitTestResult>
 #include <QWebInspector>
 #include <QToolTip>
 #include <QCoreApplication>

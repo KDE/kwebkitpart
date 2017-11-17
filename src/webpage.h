@@ -28,13 +28,9 @@
 #include <KWebPage>
 #include <KParts/BrowserExtension>
 
-#include <QUrl>
-#include "kwebkitpart_debug.h"
-#include <QMultiHash>
 #include <QPointer>
 
 class QUrl;
-class WebSslInfo;
 class KWebKitPart;
 class QWebFrame;
 

@@ -27,19 +27,17 @@
 #include "settings/webkitsettings.h"
 
 #include <KUriFilter>
-#include <KDesktopFile>
 #include <KConfigGroup>
 #include <KToolInvocation>
 #include <KSharedConfig>
 #include <KRun>
-#include <KProtocolInfo>
 #include <KLocalizedString>
+
 #include <Sonnet/Dialog>
 #include <sonnet/backgroundchecker.h>
 
 #include <QAction>
 #include <QBuffer>
-#include <QVariant>
 #include <QClipboard>
 #include <QDir>
 #include <QApplication>
@@ -48,9 +46,7 @@
 #include <QPrintPreviewDialog>
 #include <QTemporaryFile>
 #include <QMimeData>
-#include <QWebFrame>
 #include <QWebHistory>
-#include <QWebElement>
 #include <QWebElementCollection>
 
 #define QL1S(x)     QLatin1String(x)

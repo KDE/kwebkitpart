@@ -25,13 +25,11 @@
 
 #include <QPointer>
 #include <KParts/BrowserExtension>
+#include <QWebFrame>
 #include <KWebView>
-
-#include <QWebHitTestResult>
 
 class QUrl;
 class KWebKitPart;
-class QWebHitTestResult;
 class QWebInspector;
 class QLabel;
 

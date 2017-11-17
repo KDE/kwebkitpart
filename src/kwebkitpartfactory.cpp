@@ -23,8 +23,6 @@
 #include "kwebkitpart_ext.h"
 #include "kwebkitpart.h"
 
-#include <QWidget>
-
 KWebKitFactory::~KWebKitFactory()
 {
     // qCDebug(KWEBKITPART_LOG) << this;

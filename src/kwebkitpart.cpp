@@ -24,10 +24,8 @@
 
 #include "kwebkitpart.h"
 
-#include <QWebFrame>
 #include <QWebElement>
 #include <QWebHistoryItem>
-#include <QWebSettings>
 
 #include "kwebkitpart_debug.h"
 #include "kwebkitpart_ext.h"
@@ -42,7 +40,6 @@
 #include "settings/webkitsettings.h"
 
 #include <kcodecaction.h>
-#include <kio/global.h>
 #include <ksslinfodialog.h>
 
 #include <KActionCollection>
@@ -56,9 +53,7 @@
 #include <KToolInvocation>
 #include <KAcceleratorManager>
 #include <KFileItem>
-#include <KMessageWidget>
 #include <KProtocolInfo>
-#include <KToggleAction>
 #include <KParts/StatusBarExtension>
 #include <KParts/GUIActivateEvent>
 #include <KSharedConfig>
@@ -66,7 +61,6 @@
 
 #include <QUrl>
 #include <QUrlQuery>
-#include <QFile>
 #include <QIcon>
 #include <QMenu>
 #include <QTextCodec>

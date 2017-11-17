@@ -14,13 +14,19 @@ include(FeatureSummary)
 include(ECMInstallIcons)
 include(ECMQtDeclareLoggingCategory)
 
-find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS Core DBus Gui Widgets WebKit WebKitWidgets UiTools PrintSupport)
+find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS
+    Core
+    DBus
+    Gui
+    Widgets
+    WebKit
+    WebKitWidgets
+    UiTools
+    PrintSupport
+)
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
-    Archive
-    Bookmarks
     CoreAddons
     Config
-    ConfigWidgets
     DBusAddons
     KIO
     IconThemes

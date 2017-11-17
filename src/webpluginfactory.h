@@ -23,8 +23,6 @@
 
 #include <KWebPluginFactory>
 
-#include <QList>
-#include <QUrl>
 #include <QWidget>
 #include <QPointer>
 
