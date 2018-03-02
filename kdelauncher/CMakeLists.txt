@@ -19,7 +19,6 @@ target_link_libraries(kdelauncher
     Qt5::Gui
     Qt5::Widgets
     Qt5::WebKitWidgets
-    Qt5::UiTools
     Qt5::PrintSupport
     KF5::KIOCore
     KF5::KIOWidgets
