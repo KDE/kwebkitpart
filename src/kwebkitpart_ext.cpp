@@ -361,9 +361,9 @@ void WebKitBrowserExtension::slotFrameInWindow()
     uargs.setActionRequestedByUser(true);
 
     QUrl url (view()->page()->currentFrame()->baseUrl());
-    url.resolved(view()->page()->currentFrame()->url());
+    url = url.resolved(view()->page()->currentFrame()->url());
 
-    emit createNewWindow(QUrl(url), uargs, bargs);
+    emit createNewWindow(url, uargs, bargs);
 }
 
 void WebKitBrowserExtension::slotFrameInTab()
@@ -378,9 +378,9 @@ void WebKitBrowserExtension::slotFrameInTab()
     bargs.setNewTab(true);
 
     QUrl url (view()->page()->currentFrame()->baseUrl());
-    url.resolved(view()->page()->currentFrame()->url());
+    url = url.resolved(view()->page()->currentFrame()->url());
 
-    emit createNewWindow(QUrl(url), uargs, bargs);
+    emit createNewWindow(url, uargs, bargs);
 }
 
 void WebKitBrowserExtension::slotFrameInTop()
@@ -395,9 +395,9 @@ void WebKitBrowserExtension::slotFrameInTop()
     bargs.frameName = QL1S("_top");
 
     QUrl url (view()->page()->currentFrame()->baseUrl());
-    url.resolved(view()->page()->currentFrame()->url());
+    url = url.resolved(view()->page()->currentFrame()->url());
 
-    emit openUrlRequest(QUrl(url), uargs, bargs);
+    emit openUrlRequest(url, uargs, bargs);
 }
 
 void WebKitBrowserExtension::slotReloadFrame()
