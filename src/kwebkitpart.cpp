@@ -39,8 +39,8 @@
 #include "ui/featurepermissionbar.h"
 #include "settings/webkitsettings.h"
 
-#include <kcodecaction.h>
-#include <ksslinfodialog.h>
+#include <KCodecAction>
+#include <KSslInfoDialog>
 
 #include <KActionCollection>
 #include <KAboutData>

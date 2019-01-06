@@ -27,7 +27,7 @@
 #include "kwebkitpart.h"
 #include "settings/webkitsettings.h"
 
-#include <kio/global.h>
+#include <KIO/Global>
 #include <KAboutData>
 #include <KActionCollection>
 #include <KConfigGroup>

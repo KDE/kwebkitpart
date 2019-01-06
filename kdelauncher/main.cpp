@@ -31,7 +31,7 @@
 
 #include "kwebkitpart_demo_debug.h"
 
-#include <kwebview.h>
+#include <KWebView>
 
 #include <KAboutData>
 #include <KUriFilter>

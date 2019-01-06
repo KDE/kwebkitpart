@@ -26,8 +26,8 @@
 #include "settings/webkitsettings.h"
 
 #include <KLocalizedString>
-#include <kparts/liveconnectextension.h>
-#include <kparts/scriptableextension.h>
+#include <KParts/LiveConnectExtension>
+#include <KParts/ScriptableExtension>
 
 #include <QHBoxLayout>
 #include <QSpacerItem>

@@ -21,7 +21,7 @@
 #ifndef WEBKITPARTFACTORY
 #define WEBKITPARTFACTORY
 
-#include <kpluginfactory.h>
+#include <KPluginFactory>
 
 #include <QHash>
 

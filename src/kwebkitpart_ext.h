@@ -26,9 +26,9 @@
 #include <KParts/BrowserExtension>
 #include <KParts/TextExtension>
 #include <KParts/HtmlExtension>
-#include <kparts/htmlsettingsinterface.h>
-#include <kparts/selectorinterface.h>
-#include <kparts/scriptableextension.h>
+#include <KParts/HtmlSettingsInterface>
+#include <KParts/SelectorInterface>
+#include <KParts/ScriptableExtension>
 
 class QUrl;
 class KWebKitPart;
