@@ -39,7 +39,7 @@ public:
     MyNetworkAccessManager(QObject *parent = 0);
 
 protected:
-    virtual QNetworkReply *createRequest(Operation op, const QNetworkRequest &req, QIODevice *outgoingData = 0);
+    QNetworkReply *createRequest(Operation op, const QNetworkRequest &req, QIODevice *outgoingData = 0) override;
 
 private Q_SLOTS:
     void slotFinished(bool);

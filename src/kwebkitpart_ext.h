@@ -42,12 +42,12 @@ class WebKitBrowserExtension : public KParts::BrowserExtension
 
 public:
     WebKitBrowserExtension(KWebKitPart *parent, const QByteArray& cachedHistoryData);
-    ~WebKitBrowserExtension();
+    ~WebKitBrowserExtension() override;
 
-    virtual int xOffset();
-    virtual int yOffset();
-    virtual void saveState(QDataStream &);
-    virtual void restoreState(QDataStream &);
+    int xOffset() override;
+    int yOffset() override;
+    void saveState(QDataStream &) override;
+    void restoreState(QDataStream &) override;
     void saveHistory();
 
 Q_SIGNALS:
@@ -135,9 +135,9 @@ class KWebKitTextExtension : public KParts::TextExtension
 public:
     KWebKitTextExtension(KWebKitPart* part);
 
-    virtual bool hasSelection() const;
-    virtual QString selectedText(Format format) const;
-    virtual QString completeText(Format format) const;
+    bool hasSelection() const override;
+    QString selectedText(Format format) const override;
+    QString completeText(Format format) const override;
 
 private:
     KWebKitPart* part() const;
@@ -159,17 +159,17 @@ public:
     KWebKitHtmlExtension(KWebKitPart* part);
 
     // HtmlExtension
-    virtual QUrl baseUrl() const;
-    virtual bool hasSelection() const;
+    QUrl baseUrl() const override;
+    bool hasSelection() const override;
 
     // SelectorInterface
-    virtual QueryMethods supportedQueryMethods() const;
-    virtual Element querySelector(const QString& query, KParts::SelectorInterface::QueryMethod method) const;
-    virtual QList<Element> querySelectorAll(const QString& query, KParts::SelectorInterface::QueryMethod method) const;
+    QueryMethods supportedQueryMethods() const override;
+    Element querySelector(const QString& query, KParts::SelectorInterface::QueryMethod method) const override;
+    QList<Element> querySelectorAll(const QString& query, KParts::SelectorInterface::QueryMethod method) const override;
 
     // HtmlSettingsInterface
-    virtual QVariant htmlSettingsProperty(HtmlSettingsType type) const;
-    virtual bool setHtmlSettingsProperty(HtmlSettingsType type, const QVariant& value);
+    QVariant htmlSettingsProperty(HtmlSettingsType type) const override;
+    bool setHtmlSettingsProperty(HtmlSettingsType type, const QVariant& value) override;
 
 private:
     KWebKitPart* part() const;
@@ -182,23 +182,23 @@ class KWebKitScriptableExtension : public KParts::ScriptableExtension
 public:
     KWebKitScriptableExtension(KWebKitPart* part);
 
-    virtual QVariant rootObject();
+    QVariant rootObject() override;
 
-    virtual QVariant get(ScriptableExtension* callerPrincipal, quint64 objId, const QString& propName);
+    QVariant get(ScriptableExtension* callerPrincipal, quint64 objId, const QString& propName) override;
 
-    virtual bool put(ScriptableExtension* callerPrincipal, quint64 objId, const QString& propName, const QVariant& value);
+    bool put(ScriptableExtension* callerPrincipal, quint64 objId, const QString& propName, const QVariant& value) override;
 
-    virtual bool setException(ScriptableExtension* callerPrincipal, const QString& message);
+    bool setException(ScriptableExtension* callerPrincipal, const QString& message) override;
 
-    virtual QVariant evaluateScript(ScriptableExtension* callerPrincipal,
+    QVariant evaluateScript(ScriptableExtension* callerPrincipal,
                                     quint64 contextObjectId,
                                     const QString& code,
-                                    ScriptLanguage language = ECMAScript);
+                                    ScriptLanguage language = ECMAScript) override;
 
-    virtual bool isScriptLanguageSupported(ScriptLanguage lang) const;
+    bool isScriptLanguageSupported(ScriptLanguage lang) const override;
 
 private:
-     virtual QVariant encloserForKid(KParts::ScriptableExtension* kid);
+     QVariant encloserForKid(KParts::ScriptableExtension* kid) override;
      KWebKitPart* part();
 };
 

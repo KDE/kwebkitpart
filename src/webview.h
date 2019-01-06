@@ -38,7 +38,7 @@ class WebView : public KWebView
     Q_OBJECT
 public:
     WebView(KWebKitPart* part, QWidget* parent);
-    ~WebView();
+    ~WebView() override;
 
     /**
      * Same as QWebPage::load, but with KParts style arguments instead.
@@ -60,7 +60,7 @@ protected:
      * @see QWidget::contextMenuEvent
      * @internal
      */
-    virtual void contextMenuEvent(QContextMenuEvent*);
+    void contextMenuEvent(QContextMenuEvent*) override;
 
     /**
      * Reimplemented for internal reasons, the API is not affected.
@@ -68,7 +68,7 @@ protected:
      * @see QWidget::keyPressEvent
      * @internal
      */
-    virtual void keyPressEvent(QKeyEvent*);
+    void keyPressEvent(QKeyEvent*) override;
 
     /**
      * Reimplemented for internal reasons, the API is not affected.
@@ -76,7 +76,7 @@ protected:
      * @see QWidget::keyReleaseEvent
      * @internal
      */
-    virtual void keyReleaseEvent(QKeyEvent*);
+    void keyReleaseEvent(QKeyEvent*) override;
 
     /**
      * Reimplemented for internal reasons, the API is not affected.
@@ -84,7 +84,7 @@ protected:
      * @see QWidget::mouseReleaseEvent
      * @internal
      */
-    virtual void mouseReleaseEvent(QMouseEvent*);
+    void mouseReleaseEvent(QMouseEvent*) override;
 
     /**
      * Reimplemented for internal reasons, the API is not affected.
@@ -92,7 +92,7 @@ protected:
      * @see QObject::timerEvent
      * @internal
      */
-    virtual void timerEvent(QTimerEvent*);
+    void timerEvent(QTimerEvent*) override;
 
     /**
      * Reimplemented for internal reasons, the API is not affected.
@@ -100,7 +100,7 @@ protected:
      * @see QWidget::wheelEvent
      * @internal
      */
-    virtual void wheelEvent(QWheelEvent*);
+    void wheelEvent(QWheelEvent*) override;
 
 private Q_SLOTS:
     void slotStopAutoScroll();

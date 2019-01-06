@@ -40,7 +40,7 @@ class WebPage : public KWebPage
     Q_OBJECT
 public:
     explicit WebPage(KWebKitPart *wpart, QWidget *parent = 0);
-    ~WebPage();
+    ~WebPage() override;
 
     /**
      * Returns the SSL information for the current page.
@@ -62,7 +62,7 @@ public:
      * @internal
      * @see KWebPage::downloadRequest.
      */
-    void downloadRequest(const QNetworkRequest &request);
+    void downloadRequest(const QNetworkRequest &request) override;
 
     /**
      * Returns the error page associated with the KIO error @p code.
@@ -79,14 +79,14 @@ public:
      *
      * @see QWebPage::extension()
      */
-    bool extension(Extension extension, const ExtensionOption *option, ExtensionReturn *output);
+    bool extension(Extension extension, const ExtensionOption *option, ExtensionReturn *output) override;
 
     /**
      * Re-implemented to handle ErrorPageExtension.
      *
      * @see QWebPage::supportsExtension()
      */
-    bool supportsExtension(Extension extension) const;
+    bool supportsExtension(Extension extension) const override;
 
 Q_SIGNALS:
     /**
@@ -112,19 +112,19 @@ protected:
      * Reimplemented for internal reasons, the API is not affected.
      * @internal
      */
-    virtual QWebPage* createWindow(WebWindowType type);
+    QWebPage* createWindow(WebWindowType type) override;
 
     /**
      * Reimplemented for internal reasons, the API is not affected.
      * @internal
      */
-    virtual bool acceptNavigationRequest(QWebFrame* frame, const QNetworkRequest& request, NavigationType type);
+    bool acceptNavigationRequest(QWebFrame* frame, const QNetworkRequest& request, NavigationType type) override;
 
     /**
      * Reimplemented for internal reasons, the API is not affected.
      * @internal
      */
-    virtual QString userAgentForUrl(const QUrl& url) const;
+    QString userAgentForUrl(const QUrl& url) const override;
 
 protected Q_SLOTS:
     void slotRequestFinished(QNetworkReply* reply);
@@ -169,13 +169,13 @@ class NewWindowPage : public WebPage
 public:
     NewWindowPage(WebWindowType windowType, KWebKitPart* part,
                   bool disableJSWindowOpenCheck= false, QWidget* parent = 0);
-    virtual ~NewWindowPage();
+    ~NewWindowPage() override;
 
 protected:
-    virtual bool acceptNavigationRequest(QWebFrame* frame, const QNetworkRequest& request, NavigationType type);
+    bool acceptNavigationRequest(QWebFrame* frame, const QNetworkRequest& request, NavigationType type) override;
 
 private Q_SLOTS:
-    void slotGeometryChangeRequested(const QRect& rect);
+    void slotGeometryChangeRequested(const QRect& rect) override;
     void slotMenuBarVisibilityChangeRequested(bool visible);
     void slotStatusBarVisibilityChangeRequested(bool visible);
     void slotToolBarVisibilityChangeRequested(bool visible);

@@ -40,7 +40,7 @@ class SearchBar : public QWidget
 
 public:
     SearchBar(QWidget *parent = 0);
-    ~SearchBar();
+    ~SearchBar() override;
 
     QString searchText() const;
     bool caseSensitive() const;
@@ -48,10 +48,10 @@ public:
     void setFoundMatch(bool match);
     void setSearchText(const QString&);
 
-    virtual bool event(QEvent* e);
+    bool event(QEvent* e) override;
 
 public Q_SLOTS:
-    virtual void setVisible(bool visible);
+    void setVisible(bool visible) override;
     void clear();
     void findNext();
     void findPrevious();

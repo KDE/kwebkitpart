@@ -28,8 +28,8 @@ class WebHistoryInterface : public QWebHistoryInterface
 {
 public:
     WebHistoryInterface(QObject* parent = 0);
-    void addHistoryEntry (const QString & url);
-    bool historyContains (const QString & url) const;
+    void addHistoryEntry (const QString & url) override;
+    bool historyContains (const QString & url) const override;
 };
 
 #endif //WEBHISTORYINTERFACE_H

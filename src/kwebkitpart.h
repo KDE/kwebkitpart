@@ -60,21 +60,21 @@ public:
     explicit KWebKitPart(QWidget* parentWidget = 0, QObject* parent = 0,
                          const QByteArray& cachedHistory = QByteArray(),
                          const QStringList& = QStringList());
-    ~KWebKitPart();
+    ~KWebKitPart() override;
 
     /**
      * Re-implemented for internal reasons. API remains unaffected.
      *
      * @see KParts::ReadOnlyPart::openUrl
      */
-    virtual bool openUrl(const QUrl &);
+    bool openUrl(const QUrl &) override;
 
     /**
      * Re-implemented for internal reasons. API remains unaffected.
      *
      * @see KParts::ReadOnlyPart::closeUrl
      */
-    virtual bool closeUrl();
+    bool closeUrl() override;
 
     /**
      * Returns a pointer to the render widget used to display a web page.
@@ -108,14 +108,14 @@ protected:
      *
      * @see KParts::ReadOnlyPart::guiActivateEvent
      */
-    virtual void guiActivateEvent(KParts::GUIActivateEvent *);
+    void guiActivateEvent(KParts::GUIActivateEvent *) override;
 
     /**
      * Re-implemented for internal reasons. API remains unaffected.
      *
      * @see KParts::ReadOnlyPart::openFile
      */
-    virtual bool openFile();
+    bool openFile() override;
 
 private Q_SLOTS:
     void slotShowSecurity();

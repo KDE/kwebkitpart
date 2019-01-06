@@ -32,7 +32,7 @@ class PasswordBar : public KMessageWidget
     Q_OBJECT
 public:
     explicit PasswordBar(QWidget *parent = 0);
-    ~PasswordBar();
+    ~PasswordBar() override;
 
     QUrl url() const;
     QString requestKey() const;

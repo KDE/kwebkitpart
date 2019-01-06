@@ -54,11 +54,11 @@ public:
         QTimer::singleShot(0, this, SIGNAL(finished()));
     }
 
-    virtual void abort() {}
-    virtual qint64 bytesAvailable() const { return 0; }
+    void abort() override {}
+    qint64 bytesAvailable() const override { return 0; }
 
 protected:
-    virtual qint64 readData(char*, qint64) {return -1;}
+    qint64 readData(char*, qint64) override {return -1;}
 };
 
 namespace KDEPrivate {

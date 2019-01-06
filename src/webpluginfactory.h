@@ -59,7 +59,7 @@ class WebPluginFactory : public KWebPluginFactory
     Q_OBJECT
 public:
     WebPluginFactory (KWebKitPart* part, QObject* parent = 0);
-    virtual QObject* create (const QString&, const QUrl&, const QStringList&, const QStringList&) const;
+    QObject* create (const QString&, const QUrl&, const QStringList&, const QStringList&) const override;
     void resetPluginOnDemandList();
 
 private Q_SLOTS:
