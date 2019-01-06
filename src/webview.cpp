@@ -59,7 +59,7 @@ WebView::WebView(KWebKitPart* part, QWidget* parent)
         :KWebView(parent, false),
          m_actionCollection(new KActionCollection(this)),
          m_part(part),
-         m_webInspector(0),
+         m_webInspector(nullptr),
          m_autoScrollTimerId(-1),
          m_verticalAutoScrollSpeed(0),
          m_horizontalAutoScrollSpeed(0),
@@ -217,7 +217,7 @@ void WebView::contextMenuEvent(QContextMenuEvent* e)
 
 static bool isEditableElement(QWebPage* page)
 {
-    const QWebFrame* frame = (page ? page->currentFrame() : 0);
+    const QWebFrame* frame = (page ? page->currentFrame() : nullptr);
     QWebElement element = (frame ? frame->findFirstElement(QL1S(":focus")) : QWebElement());
     if (!element.isNull()) {
         const QString tagName(element.tagName());
@@ -610,7 +610,7 @@ void WebView::partActionPopupMenu(KParts::BrowserExtension::ActionGroupMap& part
     } else {
         if (m_webInspector) {
             delete m_webInspector;
-            m_webInspector = 0;
+            m_webInspector = nullptr;
         }
     }
 
@@ -828,9 +828,9 @@ bool WebView::checkForAccessKey(QKeyEvent *event)
             p -= frame->scrollPosition();
             frame = frame->parentFrame();
         } while (frame && frame != page()->mainFrame());
-        QMouseEvent pevent(QEvent::MouseButtonPress, p, Qt::LeftButton, 0, 0);
+        QMouseEvent pevent(QEvent::MouseButtonPress, p, Qt::LeftButton, nullptr, nullptr);
         QCoreApplication::sendEvent(this, &pevent);
-        QMouseEvent revent(QEvent::MouseButtonRelease, p, Qt::LeftButton, 0, 0);
+        QMouseEvent revent(QEvent::MouseButtonRelease, p, Qt::LeftButton, nullptr, nullptr);
         QCoreApplication::sendEvent(this, &revent);
         handled = true;
     }

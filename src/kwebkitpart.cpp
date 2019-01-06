@@ -91,10 +91,10 @@ KWebKitPart::KWebKitPart(QWidget *parentWidget, QObject *parent,
              m_emitOpenUrlNotify(true),
              m_hasCachedFormData(false),
              m_doLoadFinishedActions(false),
-             m_statusBarWalletLabel(0),
-             m_searchBar(0),
-             m_passwordBar(0),
-             m_featurePermissionBar(0)
+             m_statusBarWalletLabel(nullptr),
+             m_searchBar(nullptr),
+             m_passwordBar(nullptr),
+             m_featurePermissionBar(nullptr)
 {
     KAboutData about = KAboutData("kwebkitpart",
                                   i18nc("Program Name", "KWebKitPart"),
@@ -182,14 +182,14 @@ WebPage* KWebKitPart::page()
 {
     if (m_webView)
         return qobject_cast<WebPage*>(m_webView->page());
-    return 0;
+    return nullptr;
 }
 
 const WebPage* KWebKitPart::page() const
 {
     if (m_webView)
         return qobject_cast<const WebPage*>(m_webView->page());
-    return 0;
+    return nullptr;
 }
 
 void KWebKitPart::initActions()
@@ -458,7 +458,7 @@ bool KWebKitPart::openFile()
 
 void KWebKitPart::slotLoadStarted()
 {
-    emit started(0);
+    emit started(nullptr);
     updateActions();
 }
 
@@ -477,7 +477,7 @@ void KWebKitPart::slotFrameLoadFinished(bool ok)
                 addWalletStatusBarIcon();
             } else {
                 // Attempt to fill the web form...
-                KWebWallet *webWallet = page() ? page()->wallet() : 0;
+                KWebWallet *webWallet = page() ? page()->wallet() : nullptr;
                 if (webWallet) {
                     webWallet->fillFormData(frame, false);
                 }
@@ -538,7 +538,7 @@ void KWebKitPart::slotLoadFinished(bool ok)
 
     if (m_doLoadFinishedActions) {
         updateActions();
-        QWebFrame* frame = (page() ? page()->currentFrame() : 0);
+        QWebFrame* frame = (page() ? page()->currentFrame() : nullptr);
         if (ok &&
             frame == page()->mainFrame() &&
             !frame->findFirstElement(QL1S("head>meta[http-equiv=refresh]")).isNull()) {
@@ -596,7 +596,7 @@ void KWebKitPart::slotShowSecurity()
 
     const WebSslInfo& sslInfo = page()->sslInfo();
     if (!sslInfo.isValid()) {
-        KMessageBox::information(0, i18n("This site is not secured with SSL, or its SSL information is not valid."),
+        KMessageBox::information(nullptr, i18n("This site is not secured with SSL, or its SSL information is not valid."),
                             i18nc("Secure Sockets Layer", "SSL"));
         return;
     }
@@ -653,8 +653,8 @@ void KWebKitPart::slotSaveFrameState(QWebFrame *frame, QWebHistoryItem *item)
 
 void KWebKitPart::slotRestoreFrameState(QWebFrame *frame)
 {
-    QWebPage* page = (frame ? frame->page() : 0);
-    QWebHistory* history = (page ? page->history() : 0);
+    QWebPage* page = (frame ? frame->page() : nullptr);
+    QWebHistory* history = (page ? page->history() : nullptr);
 
     // No history item...
     if (!history || history->count() < 1)
@@ -727,7 +727,7 @@ void KWebKitPart::slotLinkHovered(const QString& _link, const QString& /*title*/
                 message += i18n(" (In new window)");
         } else {
             message = link;
-            QWebFrame* frame = page() ? page()->currentFrame() : 0;
+            QWebFrame* frame = page() ? page()->currentFrame() : nullptr;
             if (frame) {
                 QWebHitTestResult result = frame->hitTestContent(page()->view()->mapFromGlobal(QCursor::pos()));
                 QWebFrame* target = result.linkTargetFrame();
@@ -811,7 +811,7 @@ void KWebKitPart::slotWalletClosed()
 
     m_statusBarExtension->removeStatusBarItem(m_statusBarWalletLabel);
     delete m_statusBarWalletLabel;
-    m_statusBarWalletLabel = 0;
+    m_statusBarWalletLabel = nullptr;
     m_hasCachedFormData = false;
 }
 

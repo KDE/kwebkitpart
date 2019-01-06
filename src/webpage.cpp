@@ -72,8 +72,8 @@ WebPage::WebPage(KWebKitPart *part, QWidget *parent)
     // KIO::Integration::AccessManager...
     KDEPrivate::MyNetworkAccessManager *manager = new KDEPrivate::MyNetworkAccessManager(this);
     manager->setEmitReadyReadOnMetaDataChange(true);
-    manager->setCache(0);
-    QWidget* window = parent ? parent->window() : 0;
+    manager->setCache(nullptr);
+    QWidget* window = parent ? parent->window() : nullptr;
     if (window) {
         manager->setWindow(window);
     }
@@ -576,7 +576,7 @@ void WebPage::slotRequestFinished(QNetworkReply *reply)
             // Make sure the saveFrameStateRequested signal is emitted so
             // the page can restored properly.
             if (isMainFrameRequest)
-                emit saveFrameStateRequested(frame, 0);
+                emit saveFrameStateRequested(frame, nullptr);
 
             m_ignoreError = (reply->attribute(QNetworkRequest::User).toInt() == QNetworkReply::ContentAccessDenied);
             m_kioErrorCode = errCode;
@@ -639,7 +639,7 @@ void WebPage::slotFeaturePermissionRequested(QWebFrame* frame, QWebPage::Feature
         setFeaturePermission(frame, feature, QWebPage::PermissionGrantedByUser);
         break;
     case QWebPage::Geolocation:
-        if (KMessageBox::warningContinueCancel(0, i18n("This site is attempting to "
+        if (KMessageBox::warningContinueCancel(nullptr, i18n("This site is attempting to "
                                                        "access information about your "
                                                        "physical location.\n"
                                                        "Do you want to allow it access?"),
@@ -730,10 +730,10 @@ bool WebPage::checkLinkSecurity(const QNetworkRequest &req, NavigationType type)
         }
 
         if (buttonText.isEmpty()) {
-            KMessageBox::error( 0, message, title);
+            KMessageBox::error( nullptr, message, title);
         } else {
             // Dangerous flag makes the Cancel button the default
-            response = KMessageBox::warningContinueCancel(0, message, title,
+            response = KMessageBox::warningContinueCancel(nullptr, message, title,
                                                           KGuiItem(buttonText),
                                                           KStandardGuiItem::cancel(),
                                                           QString(), // no don't ask again info
@@ -752,7 +752,7 @@ bool WebPage::checkFormData(const QNetworkRequest &req) const
 
     if (m_sslInfo.isValid() &&
         !scheme.compare(QL1S("https")) && !scheme.compare(QL1S("mailto")) &&
-        (KMessageBox::warningContinueCancel(0,
+        (KMessageBox::warningContinueCancel(nullptr,
                                            i18n("Warning: This is a secure form "
                                                 "but it is attempting to send "
                                                 "your data back unencrypted.\n"
@@ -768,7 +768,7 @@ bool WebPage::checkFormData(const QNetworkRequest &req) const
 
 
     if (scheme.compare(QL1S("mailto")) == 0 &&
-        (KMessageBox::warningContinueCancel(0, i18n("This site is attempting to "
+        (KMessageBox::warningContinueCancel(nullptr, i18n("This site is attempting to "
                                                     "submit form data via email.\n"
                                                     "Do you want to continue?"),
                                             i18n("Network Transmission"),
@@ -820,7 +820,7 @@ bool WebPage::handleMailToUrl (const QUrl &url, NavigationType type) const
 
         switch (type) {
             case QWebPage::NavigationTypeLinkClicked:
-                if (!files.isEmpty() && KMessageBox::warningContinueCancelList(0,
+                if (!files.isEmpty() && KMessageBox::warningContinueCancelList(nullptr,
                                                                                i18n("<qt>Do you want to allow this site to attach "
                                                                                     "the following files to the email message?</qt>"),
                                                                                files, i18n("Email Attachment Confirmation"),
@@ -839,7 +839,7 @@ bool WebPage::handleMailToUrl (const QUrl &url, NavigationType type) const
             case QWebPage::NavigationTypeFormSubmitted:
             case QWebPage::NavigationTypeFormResubmitted:
                 if (!files.isEmpty()) {
-                    KMessageBox::information(0, i18n("This site attempted to attach a file from your "
+                    KMessageBox::information(nullptr, i18n("This site attempted to attach a file from your "
                                                      "computer in the form submission. The attachment "
                                                      "was removed for your protection."),
                                              i18n("Attachment Removed"), "InfoTriedAttach");
@@ -947,7 +947,7 @@ bool NewWindowPage::acceptNavigationRequest(QWebFrame *frame, const QNetworkRequ
         // Window args...
         KParts::WindowArgs wargs (m_windowArgs);
 
-        KParts::ReadOnlyPart* newWindowPart =0;
+        KParts::ReadOnlyPart* newWindowPart =nullptr;
         part()->browserExtension()->createNewWindow(QUrl(), uargs, bargs, wargs, &newWindowPart);
         qCDebug(KWEBKITPART_LOG) << "Created new window" << newWindowPart;
 
@@ -961,7 +961,7 @@ bool NewWindowPage::acceptNavigationRequest(QWebFrame *frame, const QNetworkRequ
 
         // Get the webview...
         KWebKitPart* webkitPart = qobject_cast<KWebKitPart*>(newWindowPart);
-        WebView* webView = webkitPart ? qobject_cast<WebView*>(webkitPart->view()) : 0;
+        WebView* webView = webkitPart ? qobject_cast<WebView*>(webkitPart->view()) : nullptr;
 
         // If the newly created window is NOT a webkitpart...
         if (!webView) {
@@ -1039,14 +1039,14 @@ void NewWindowPage::slotLoadFinished(bool ok)
     // Window args...
     KParts::WindowArgs wargs (m_windowArgs);
 
-    KParts::ReadOnlyPart* newWindowPart =0;
+    KParts::ReadOnlyPart* newWindowPart =nullptr;
     part()->browserExtension()->createNewWindow(QUrl(), uargs, bargs, wargs, &newWindowPart);
 
     qCDebug(KWEBKITPART_LOG) << "Created new window" << newWindowPart;
 
     // Get the webview...
-    KWebKitPart* webkitPart = newWindowPart ? qobject_cast<KWebKitPart*>(newWindowPart) : 0;
-    WebView* webView = webkitPart ? qobject_cast<WebView*>(webkitPart->view()) : 0;
+    KWebKitPart* webkitPart = newWindowPart ? qobject_cast<KWebKitPart*>(newWindowPart) : nullptr;
+    WebView* webView = webkitPart ? qobject_cast<WebView*>(webkitPart->view()) : nullptr;
 
     if (webView) {
         // if a new window is created, set a new window meta-data flag.

@@ -57,7 +57,7 @@ class KWebKitPart : public KParts::ReadOnlyPart
     Q_OBJECT
     Q_PROPERTY( bool modified READ isModified )
 public:
-    explicit KWebKitPart(QWidget* parentWidget = 0, QObject* parent = 0,
+    explicit KWebKitPart(QWidget* parentWidget = nullptr, QObject* parent = nullptr,
                          const QByteArray& cachedHistory = QByteArray(),
                          const QStringList& = QStringList());
     ~KWebKitPart() override;

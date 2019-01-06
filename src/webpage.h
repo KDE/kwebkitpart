@@ -39,7 +39,7 @@ class WebPage : public KWebPage
 {
     Q_OBJECT
 public:
-    explicit WebPage(KWebKitPart *wpart, QWidget *parent = 0);
+    explicit WebPage(KWebKitPart *wpart, QWidget *parent = nullptr);
     ~WebPage() override;
 
     /**
@@ -168,7 +168,7 @@ class NewWindowPage : public WebPage
     Q_OBJECT
 public:
     NewWindowPage(WebWindowType windowType, KWebKitPart* part,
-                  bool disableJSWindowOpenCheck= false, QWidget* parent = 0);
+                  bool disableJSWindowOpenCheck= false, QWidget* parent = nullptr);
     ~NewWindowPage() override;
 
 protected:

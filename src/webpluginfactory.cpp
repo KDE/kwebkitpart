@@ -43,7 +43,7 @@
 static QWebView* webViewFrom(QWidget* widget)
 {
     QWidget* parent = widget;
-    QWebView *view = 0;
+    QWebView *view = nullptr;
     while (parent) {
         if (QWebView *aView = qobject_cast<QWebView*>(parent)) {
             view = aView;
@@ -166,7 +166,7 @@ WebPluginFactory::WebPluginFactory (KWebKitPart* part, QObject* parent)
 
 static uint pluginId(const QUrl& url, const QStringList& argumentNames, const QStringList& argumentValues)
 {
-    static const char* properties[] = {"src","data","width","height","type","id","name",0};
+    static const char* properties[] = {"src","data","width","height","type","id","name",nullptr};
 
     QString signature = url.toString();
     for (int i = 0; properties[i]; ++i) {
@@ -201,8 +201,8 @@ QObject* WebPluginFactory::create (const QString& _mimeType, const QUrl& url, co
     }
 
     Q_ASSERT(mPart); // should never happen!!
-    KParts::ReadOnlyPart* part = 0;
-    QWebView* view = (mPart ? mPart->view() : 0);
+    KParts::ReadOnlyPart* part = nullptr;
+    QWebView* view = (mPart ? mPart->view() : nullptr);
 
     if (view) {
         if (noPluginHandling || !excludedMimeType(mimeType)) {
@@ -263,7 +263,7 @@ QObject* WebPluginFactory::create (const QString& _mimeType, const QUrl& url, co
         }
     }
 
-    return 0;
+    return nullptr;
 }
 
 void WebPluginFactory::loadedPlugin (uint id)

@@ -35,7 +35,7 @@ class FakePluginWidget : public QWidget
     Q_PROPERTY(bool swapping READ swapping)
 
 public:
-    FakePluginWidget(uint id, const QUrl& url, const QString& mimeType, QWidget* parent = 0);
+    FakePluginWidget(uint id, const QUrl& url, const QString& mimeType, QWidget* parent = nullptr);
     bool swapping() const { return m_swapping; }
 
 Q_SIGNALS:
@@ -58,7 +58,7 @@ class WebPluginFactory : public KWebPluginFactory
 {
     Q_OBJECT
 public:
-    WebPluginFactory (KWebKitPart* part, QObject* parent = 0);
+    WebPluginFactory (KWebKitPart* part, QObject* parent = nullptr);
     QObject* create (const QString&, const QUrl&, const QStringList&, const QStringList&) const override;
     void resetPluginOnDemandList();
 

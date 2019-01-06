@@ -113,7 +113,7 @@ int WebKitBrowserExtension::yOffset()
 void WebKitBrowserExtension::saveState(QDataStream &stream)
 {
     // TODO: Save information such as form data from the current page.
-    QWebHistory* history = (view() ? view()->history() : 0);
+    QWebHistory* history = (view() ? view()->history() : nullptr);
     const int historyIndex = (history ? history->currentItemIndex() : -1);
     const QUrl historyUrl = (history ? QUrl(history->currentItem().url()) : m_part->url());
 
@@ -131,7 +131,7 @@ void WebKitBrowserExtension::restoreState(QDataStream &stream)
     qint32 xOfs = -1, yOfs = -1, historyItemIndex = -1;
     stream >> u >> xOfs >> yOfs >> historyItemIndex >> historyData;
 
-    QWebHistory* history = (view() ? view()->page()->history() : 0);
+    QWebHistory* history = (view() ? view()->page()->history() : nullptr);
     if (history) {
         bool success = false;
         if (history->count() == 0) {   // Handle restoration: crash recovery, tab close undo, session restore
@@ -281,8 +281,8 @@ void WebKitBrowserExtension::reparseConfiguration()
 void WebKitBrowserExtension::disableScrolling()
 {
     QWebView* currentView = view();
-    QWebPage* page = currentView ? currentView->page() : 0;
-    QWebFrame* frame = page ? page->mainFrame() : 0;
+    QWebPage* page = currentView ? currentView->page() : nullptr;
+    QWebFrame* frame = page ? page->mainFrame() : nullptr;
 
     if (!frame)
         return;
@@ -566,7 +566,7 @@ void WebKitBrowserExtension::slotViewDocumentSource()
 
     const QUrl pageUrl (view()->url());
     if (pageUrl.isLocalFile()) {
-        KRun::runUrl(pageUrl, QL1S("text/plain"), view(), 0, QString());
+        KRun::runUrl(pageUrl, QL1S("text/plain"), view(), nullptr, QString());
     } else {
         QTemporaryFile tempFile(QDir::tempPath() +
                                 QLatin1Char('/') +
@@ -588,7 +588,7 @@ void WebKitBrowserExtension::slotViewFrameSource()
 
     const QUrl frameUrl(view()->page()->currentFrame()->url());
     if (frameUrl.isLocalFile()) {
-        KRun::runUrl(frameUrl, QL1S("text/plain"), view(), 0, QString());
+        KRun::runUrl(frameUrl, QL1S("text/plain"), view(), nullptr, QString());
     } else {
         QTemporaryFile tempFile(QDir::tempPath() +
                                 QLatin1Char('/') +
@@ -828,7 +828,7 @@ void WebKitBrowserExtension::slotSpellCheckDone(const QString&)
 
 void WebKitBrowserExtension::saveHistory()
 {
-    QWebHistory* history = (view() ? view()->history() : 0);
+    QWebHistory* history = (view() ? view()->history() : nullptr);
 
     if (history && history->count() > 0) {
         //qCDebug(KWEBKITPART_LOG) << "Current history: index=" << history->currentItemIndex() << "url=" << history->currentItem().url();
@@ -840,8 +840,8 @@ void WebKitBrowserExtension::saveHistory()
             stream << *history;
             m_historyData = qCompress(histData, 9);
         }
-        QWidget* mainWidget = m_part ? m_part->widget() : 0;
-        QWidget* frameWidget = mainWidget ? mainWidget->parentWidget() : 0;
+        QWidget* mainWidget = m_part ? m_part->widget() : nullptr;
+        QWidget* frameWidget = mainWidget ? mainWidget->parentWidget() : nullptr;
         if (frameWidget) {
             emit saveHistory(frameWidget, m_historyData);
             // qCDebug(KWEBKITPART_LOG) << "# of items:" << history->count() << "current item:" << history->currentItemIndex() << "url:" << history->currentItem().url();
@@ -1085,9 +1085,9 @@ QList<KParts::SelectorInterface::Element> KWebKitHtmlExtension::querySelectorAll
 
 QVariant KWebKitHtmlExtension::htmlSettingsProperty(KParts::HtmlSettingsInterface::HtmlSettingsType type) const
 {
-    QWebView* view = part() ? part()->view() : 0;
-    QWebPage* page = view ? view->page() : 0;
-    QWebSettings* settings = page ? page->settings() : 0;
+    QWebView* view = part() ? part()->view() : nullptr;
+    QWebPage* page = view ? view->page() : nullptr;
+    QWebSettings* settings = page ? page->settings() : nullptr;
 
     if (settings) {
         switch (type) {
@@ -1123,9 +1123,9 @@ QVariant KWebKitHtmlExtension::htmlSettingsProperty(KParts::HtmlSettingsInterfac
 
 bool KWebKitHtmlExtension::setHtmlSettingsProperty(KParts::HtmlSettingsInterface::HtmlSettingsType type, const QVariant& value)
 {
-    QWebView* view = part() ? part()->view() : 0;
-    QWebPage* page = view ? view->page() : 0;
-    QWebSettings* settings = page ? page->settings() : 0;
+    QWebView* view = part() ? part()->view() : nullptr;
+    QWebPage* page = view ? view->page() : nullptr;
+    QWebSettings* settings = page ? page->settings() : nullptr;
 
     if (settings) {
         switch (type) {
@@ -1194,7 +1194,7 @@ bool KWebKitScriptableExtension::setException (KParts::ScriptableExtension* call
 QVariant KWebKitScriptableExtension::get (KParts::ScriptableExtension* callerPrincipal, quint64 objId, const QString& propName)
 {
     //qCDebug(KWEBKITPART_LOG) << "caller:" << callerPrincipal << "id:" << objId << "propName:" << propName;
-    return callerPrincipal->get (0, objId, propName);
+    return callerPrincipal->get (nullptr, objId, propName);
 }
 
 bool KWebKitScriptableExtension::put (KParts::ScriptableExtension* callerPrincipal, quint64 objId, const QString& propName, const QVariant& value)
@@ -1220,8 +1220,8 @@ QVariant KWebKitScriptableExtension::evaluateScript (KParts::ScriptableExtension
         return exception("unsupported language");
 
 
-    KParts::ReadOnlyPart* part = callerPrincipal ? qobject_cast<KParts::ReadOnlyPart*>(callerPrincipal->parent()) : 0;
-    QWebFrame* frame = part ? qobject_cast<QWebFrame*>(part->parent()) : 0;
+    KParts::ReadOnlyPart* part = callerPrincipal ? qobject_cast<KParts::ReadOnlyPart*>(callerPrincipal->parent()) : nullptr;
+    QWebFrame* frame = part ? qobject_cast<QWebFrame*>(part->parent()) : nullptr;
     if (!frame)
         return exception("failed to resolve principal");
 
@@ -1247,8 +1247,8 @@ bool KWebKitScriptableExtension::isScriptLanguageSupported (KParts::ScriptableEx
 
 QVariant KWebKitScriptableExtension::encloserForKid (KParts::ScriptableExtension* kid)
 {
-    KParts::ReadOnlyPart* part = kid ? qobject_cast<KParts::ReadOnlyPart*>(kid->parent()) : 0;
-    QWebFrame* frame = part ? qobject_cast<QWebFrame*>(part->parent()) : 0;
+    KParts::ReadOnlyPart* part = kid ? qobject_cast<KParts::ReadOnlyPart*>(kid->parent()) : nullptr;
+    QWebFrame* frame = part ? qobject_cast<QWebFrame*>(part->parent()) : nullptr;
     if (frame) {
         return QVariant::fromValue(KParts::ScriptableExtension::Object(kid, reinterpret_cast<quint64>(kid)));
     }

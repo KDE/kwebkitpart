@@ -36,10 +36,10 @@ class MyNetworkAccessManager : public KIO::AccessManager
     Q_OBJECT
 
 public:
-    MyNetworkAccessManager(QObject *parent = 0);
+    MyNetworkAccessManager(QObject *parent = nullptr);
 
 protected:
-    QNetworkReply *createRequest(Operation op, const QNetworkRequest &req, QIODevice *outgoingData = 0) override;
+    QNetworkReply *createRequest(Operation op, const QNetworkRequest &req, QIODevice *outgoingData = nullptr) override;
 
 private Q_SLOTS:
     void slotFinished(bool);
