@@ -133,7 +133,7 @@ class KWebKitTextExtension : public KParts::TextExtension
 {
     Q_OBJECT
 public:
-    KWebKitTextExtension(KWebKitPart* part);
+    explicit KWebKitTextExtension(KWebKitPart* part);
 
     bool hasSelection() const override;
     QString selectedText(Format format) const override;
@@ -156,7 +156,7 @@ class KWebKitHtmlExtension : public KParts::HtmlExtension,
     Q_INTERFACES(KParts::HtmlSettingsInterface)
 
 public:
-    KWebKitHtmlExtension(KWebKitPart* part);
+    explicit KWebKitHtmlExtension(KWebKitPart* part);
 
     // HtmlExtension
     QUrl baseUrl() const override;
@@ -180,7 +180,7 @@ class KWebKitScriptableExtension : public KParts::ScriptableExtension
   Q_OBJECT
 
 public:
-    KWebKitScriptableExtension(KWebKitPart* part);
+    explicit KWebKitScriptableExtension(KWebKitPart* part);
 
     QVariant rootObject() override;
 
