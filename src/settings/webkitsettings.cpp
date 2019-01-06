@@ -710,7 +710,7 @@ void WebKitSettings::init( KConfig * config, bool reset )
   QWebSettings::globalSettings()->setFontFamily(QWebSettings::CursiveFont, cursiveFontName());
   QWebSettings::globalSettings()->setFontFamily(QWebSettings::FantasyFont, fantasyFontName());
 
-  // TODO: Create a webkit config module that gets embeded into Konqueror's kcm.
+  // TODO: Create a webkit config module that gets embedded into Konqueror's kcm.
   // Turn on WebGL support
   QWebSettings::globalSettings()->setAttribute(QWebSettings::WebGLEnabled, d->m_enableWebGL);
   // Turn on HTML 5 local and offline storage capabilities...

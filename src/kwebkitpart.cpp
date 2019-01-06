@@ -149,7 +149,7 @@ KWebKitPart::KWebKitPart(QWidget *parentWidget, QObject *parent,
     // Set the part's widget
     setWidget(mainWidget);
 
-    // Set the web view as the the focus object
+    // Set the web view as the focus object
     mainWidget->setFocusProxy(m_webView);
 
     // Connect the signals from the webview
