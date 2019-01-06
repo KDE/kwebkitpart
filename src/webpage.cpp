@@ -1070,5 +1070,3 @@ void NewWindowPage::slotLoadFinished(bool ok)
 }
 
 /****************************** End NewWindowPage *************************************************/
-
-#include "webpage.moc"

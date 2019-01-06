@@ -1260,5 +1260,3 @@ KWebKitPart* KWebKitScriptableExtension::part()
 {
     return qobject_cast<KWebKitPart*>(parent());
 }
-
-#include "kwebkitpart_ext.moc"

@@ -181,5 +181,3 @@ void MyNetworkAccessManager::slotMetaDataChanged()
     }
 }
 }
-
-#include "networkaccessmanager.moc"

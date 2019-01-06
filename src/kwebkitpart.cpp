@@ -1011,5 +1011,3 @@ void KWebKitPart::slotFrameCreated (QWebFrame* frame)
         connect(frame, SIGNAL(loadFinished(bool)), this, SLOT(slotFrameLoadFinished(bool)), Qt::UniqueConnection);
     }
 }
-
-#include "kwebkitpart.moc"

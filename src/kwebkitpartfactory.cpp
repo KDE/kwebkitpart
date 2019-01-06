@@ -63,5 +63,3 @@ void KWebKitFactory::slotDestroyed(QObject* object)
 
 
 K_EXPORT_PLUGIN(KWebKitFactory)
-
-#include "kwebkitpartfactory.moc"
