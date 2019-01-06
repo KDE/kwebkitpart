@@ -108,8 +108,8 @@ WebPage::WebPage(KWebKitPart *part, QWidget *parent)
             this, SLOT(downloadRequest(QNetworkRequest)));
     connect(this, SIGNAL(unsupportedContent(QNetworkReply*)),
             this, SLOT(slotUnsupportedContent(QNetworkReply*)));
-    connect(this, SIGNAL(featurePermissionRequested(QWebFrame*, QWebPage::Feature)),
-            this, SLOT(slotFeaturePermissionRequested(QWebFrame*, QWebPage::Feature)));
+    connect(this, SIGNAL(featurePermissionRequested(QWebFrame*,QWebPage::Feature)),
+            this, SLOT(slotFeaturePermissionRequested(QWebFrame*,QWebPage::Feature)));
     connect(networkAccessManager(), SIGNAL(finished(QNetworkReply*)),
             this, SLOT(slotRequestFinished(QNetworkReply*)));
 }
