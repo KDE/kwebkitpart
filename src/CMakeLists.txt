@@ -1,5 +1,3 @@
-include_directories(${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_BINARY_DIR})
-
 set(kwebkit_LIB_SRCS
     kwebkitpart.cpp
     kwebkitpart_ext.cpp

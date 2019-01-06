@@ -1,8 +1,3 @@
-link_directories(${CMAKE_BINARY_DIR}/../src)
-include_directories(${CMAKE_SOURCE_DIR}/../src)
-
-include_directories(${CMAKE_CURRENT_SOURCE_DIR})
-
 set(kwebkit_DEMO_SRCS
     main.cpp
 )
