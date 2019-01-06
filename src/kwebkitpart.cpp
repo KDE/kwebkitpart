@@ -74,16 +74,6 @@
 
 Q_GLOBAL_STATIC_WITH_ARGS(QUrl, globalBlankUrl, ("about:blank"))
 
-static inline int convertStr2Int(const QString& value)
-{
-   bool ok;
-   const int tempValue = value.toInt(&ok);
-
-   if (ok)
-     return tempValue;
-
-   return 0;
-}
 
 KWebKitPart::KWebKitPart(QWidget *parentWidget, QObject *parent,
                          const QByteArray& cachedHistory, const QStringList& /*args*/)
