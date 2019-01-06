@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.12)
+cmake_minimum_required(VERSION 3.0)
 project(kwebkitpart)
 
 set(QT_MIN_VERSION "5.3.0")
