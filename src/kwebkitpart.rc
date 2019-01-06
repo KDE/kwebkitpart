@@ -1,5 +1,5 @@
-<!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
-<kpartgui name="kwebkitpart" version="9">
+<!DOCTYPE gui SYSTEM "kpartgui.dtd">
+<gui name="kwebkitpart" version="9">
 <MenuBar>
  <Menu name="file">
   <Action name="saveDocument" />
@@ -30,4 +30,4 @@
   <Action name="zoomOut" />
   <Action name="zoomNormal" />
 </ToolBar>
-</kpartgui>
+</gui>
