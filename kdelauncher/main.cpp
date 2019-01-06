@@ -103,7 +103,7 @@ public:
         return view;
     }
 
-protected slots:
+protected Q_SLOTS:
 
     void changeLocation() {
         QUrl url (KUriFilter::self()->filteredUri(urlEdit->text(), QStringList() << "kshorturifilter"));
@@ -199,7 +199,7 @@ protected slots:
         }
     }
 
-public slots:
+public Q_SLOTS:
 
     void newWindow(const QString &url = QString()) {
         MainWindow *mw = new MainWindow(url);
@@ -323,7 +323,7 @@ public:
         init(inputFileName);
     }
 
-public slots:
+public Q_SLOTS:
     void loadNext()
     {
         QString qstr;
