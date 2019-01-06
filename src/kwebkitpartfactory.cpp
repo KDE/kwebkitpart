@@ -60,6 +60,3 @@ void KWebKitFactory::slotDestroyed(QObject* object)
     // qCDebug(KWEBKITPART_LOG) << "Removing cached history data of" << object;
     m_historyBufContainer.remove(object);
 }
-
-
-K_EXPORT_PLUGIN(KWebKitFactory)
