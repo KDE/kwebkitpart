@@ -20,8 +20,8 @@
    Boston, MA 02110-1301, USA.
 */
 
-#include "kwebkitpart_debug.h"
 #include "webkit_filter.h"
+#include "kwebkitpart_debug.h"
 
 #include <QHash>
 #include <QBitArray>
