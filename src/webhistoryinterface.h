@@ -27,7 +27,7 @@
 class WebHistoryInterface : public QWebHistoryInterface
 {
 public:
-    WebHistoryInterface(QObject* parent = nullptr);
+    explicit WebHistoryInterface(QObject* parent = nullptr);
     void addHistoryEntry (const QString & url) override;
     bool historyContains (const QString & url) const override;
 };
