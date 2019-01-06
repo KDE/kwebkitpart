@@ -26,7 +26,7 @@ ecm_qt_declare_logging_category(kwebkit_LIB_SRCS
 )
 
 ########################### kwebkitpart #############################
-add_library(kwebkitpart ${kwebkit_LIB_SRCS})
+add_library(kwebkitpart MODULE ${kwebkit_LIB_SRCS})
 
 target_link_libraries(kwebkitpart
     Qt5::Core
