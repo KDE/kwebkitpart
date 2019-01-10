@@ -420,7 +420,7 @@ bool KWebKitPart::closeUrl()
     return true;
 }
 
-QWebView* KWebKitPart::view()
+QWebView* KWebKitPart::view() const
 {
     return m_webView;
 }
