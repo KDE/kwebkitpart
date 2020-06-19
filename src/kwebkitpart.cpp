@@ -58,6 +58,7 @@
 #include <KParts/GUIActivateEvent>
 #include <KSharedConfig>
 #include <KConfigGroup>
+#include <KParts/BrowserRun>
 
 #include <QUrl>
 #include <QUrlQuery>
@@ -352,6 +353,14 @@ bool KWebKitPart::openUrl(const QUrl &_u)
     // Pointer to the page object...
     WebPage* p = page();
     Q_ASSERT(p);
+    
+    //The new konq protocol used by Konqueror is not implemented using an ioslave
+    //and it isn't (currently) supported by kwebkitpart.
+    //If support for the konq protocol si added to kwebkitpart, remove the following
+    //if statement
+    if (u.scheme() == "konq") {
+        u = KParts::BrowserRun::makeErrorUrl(KIO::ERR_UNSUPPORTED_PROTOCOL, u.url(), u);
+    }
 
     // Handle error conditions...
     if (u.scheme() == QL1S("error")) {
