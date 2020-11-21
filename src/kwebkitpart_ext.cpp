@@ -26,11 +26,17 @@
 #include "webpage.h"
 #include "settings/webkitsettings.h"
 
+#include <kio_version.h>
 #include <KUriFilter>
 #include <KConfigGroup>
 #include <KToolInvocation>
 #include <KSharedConfig>
+#if KIO_VERSION >= QT_VERSION_CHECK(5, 71, 0)
+#include <KIO/OpenUrlJob>
+#include <KIO/JobUiDelegate>
+#else
 #include <KRun>
+#endif
 #include <KLocalizedString>
 
 #include <Sonnet/Dialog>
@@ -566,7 +572,13 @@ void WebKitBrowserExtension::slotViewDocumentSource()
 
     const QUrl pageUrl (view()->url());
     if (pageUrl.isLocalFile()) {
+#if KIO_VERSION >= QT_VERSION_CHECK(5, 71, 0)
+        auto* job = new KIO::OpenUrlJob(pageUrl, QL1S("text/plain"));
+        job->setUiDelegate(new KIO::JobUiDelegate(KJobUiDelegate::AutoHandlingEnabled, view()));
+        job->start();
+#else
         KRun::runUrl(pageUrl, QL1S("text/plain"), view(), {}, QString());
+#endif
     } else {
         QTemporaryFile tempFile(QDir::tempPath() +
                                 QLatin1Char('/') +
@@ -575,8 +587,16 @@ void WebKitBrowserExtension::slotViewDocumentSource()
         tempFile.setAutoRemove(false);
         if (tempFile.open()) {
             tempFile.write(view()->page()->mainFrame()->toHtml().toUtf8());
+            tempFile.close();
+#if KIO_VERSION >= QT_VERSION_CHECK(5, 71, 0)
+            auto* job = new KIO::OpenUrlJob(QUrl::fromLocalFile(tempFile.fileName()), QL1S("text/plain"));
+            job->setUiDelegate(new KIO::JobUiDelegate(KJobUiDelegate::AutoHandlingEnabled, view()));
+            job->setDeleteTemporaryFile(true);
+            job->start();
+#else
             KRun::runUrl(QUrl::fromLocalFile(tempFile.fileName()), QL1S("text/plain"), view(),
                          KRun::DeleteTemporaryFiles, QString());
+#endif
         }
     }
 }
@@ -588,7 +608,13 @@ void WebKitBrowserExtension::slotViewFrameSource()
 
     const QUrl frameUrl(view()->page()->currentFrame()->url());
     if (frameUrl.isLocalFile()) {
+#if KIO_VERSION >= QT_VERSION_CHECK(5, 71, 0)
+        auto* job = new KIO::OpenUrlJob(frameUrl, QL1S("text/plain"));
+        job->setUiDelegate(new KIO::JobUiDelegate(KJobUiDelegate::AutoHandlingEnabled, view()));
+        job->start();
+#else
         KRun::runUrl(frameUrl, QL1S("text/plain"), view(), {}, QString());
+#endif
     } else {
         QTemporaryFile tempFile(QDir::tempPath() +
                                 QLatin1Char('/') +
@@ -597,8 +623,16 @@ void WebKitBrowserExtension::slotViewFrameSource()
         tempFile.setAutoRemove(false);
         if (tempFile.open()) {
             tempFile.write(view()->page()->currentFrame()->toHtml().toUtf8());
+            tempFile.close();
+#if KIO_VERSION >= QT_VERSION_CHECK(5, 71, 0)
+            auto* job = new KIO::OpenUrlJob(QUrl::fromLocalFile(tempFile.fileName()), QL1S("text/plain"));
+            job->setUiDelegate(new KIO::JobUiDelegate(KJobUiDelegate::AutoHandlingEnabled, view()));
+            job->setDeleteTemporaryFile(true);
+            job->start();
+#else
             KRun::runUrl(QUrl::fromLocalFile(tempFile.fileName()), QL1S("text/plain"), view(),
                          KRun::DeleteTemporaryFiles, QString());
+#endif
         }
     }
 }

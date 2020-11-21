@@ -29,9 +29,15 @@
 #include "settings/webkitsettings.h"
 #include "webpluginfactory.h"
 
+#include <kio_version.h>
+#if KIO_VERSION >= QT_VERSION_CHECK(5, 71, 0)
+#include <KDialogJobUiDelegate>
+#include <KIO/CommandLauncherJob>
+#else
+#include <KRun>
+#endif
 #include <KIconLoader>
 #include <KMessageBox>
-#include <KRun>
 #include <KShell>
 #include <KProtocolInfo>
 #include <KStringHandler>
@@ -160,7 +166,13 @@ void WebPage::downloadRequest(const QNetworkRequest &request)
         checkForDownloadManager(view(), managerExe);
         if (!managerExe.isEmpty()) {
             //qCDebug(KWEBKITPART_LOG) << "Calling command" << cmd;
+#if KIO_VERSION >= QT_VERSION_CHECK(5, 71, 0)
+            KIO::CommandLauncherJob *job = new KIO::CommandLauncherJob(managerExe, {url.toString()});
+            job->setUiDelegate(new KDialogJobUiDelegate(KJobUiDelegate::AutoHandlingEnabled, view()));
+            job->start();
+#else
             KRun::runCommand((managerExe + QLatin1Char(' ') + KShell::quoteArg(url.url())), view());
+#endif
             return;
         }
     }
