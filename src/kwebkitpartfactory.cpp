@@ -23,6 +23,11 @@
 #include "kwebkitpart_ext.h"
 #include "kwebkitpart.h"
 
+#include <kparts_version.h>
+#if KPARTS_VERSION >= QT_VERSION_CHECK(5, 77, 0)
+#include <KPluginMetaData>
+#endif
+
 KWebKitFactory::~KWebKitFactory()
 {
     // qCDebug(KWEBKITPART_LOG) << this;
@@ -41,7 +46,11 @@ QObject *KWebKitFactory::create(const char* iface, QWidget *parentWidget, QObjec
     // history management with any KParts based application.
     QByteArray histData (m_historyBufContainer.value(parentWidget));
     if (!histData.isEmpty()) histData = qUncompress(histData);
+#if KPARTS_VERSION >= QT_VERSION_CHECK(5, 77, 0)
+    KWebKitPart* part = new KWebKitPart(parentWidget, parent, metaData(), histData);
+#else
     KWebKitPart* part = new KWebKitPart(parentWidget, parent, histData);
+#endif
     WebKitBrowserExtension* ext = qobject_cast<WebKitBrowserExtension*>(part->browserExtension());
     if (ext) {
         connect(ext, SIGNAL(saveHistory(QObject*,QByteArray)), this, SLOT(slotSaveHistory(QObject*,QByteArray)));

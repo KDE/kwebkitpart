@@ -44,7 +44,9 @@
 #include <KSslInfoDialog>
 
 #include <KActionCollection>
+#if KPARTS_VERSION < QT_VERSION_CHECK(5, 77, 0)
 #include <KAboutData>
+#endif
 #include <KUrlLabel>
 #include <KIconLoader>
 #include <KLocalizedString>
@@ -78,6 +80,9 @@ Q_GLOBAL_STATIC_WITH_ARGS(QUrl, globalBlankUrl, ("about:blank"))
 
 
 KWebKitPart::KWebKitPart(QWidget *parentWidget, QObject *parent,
+#if KPARTS_VERSION >= QT_VERSION_CHECK(5, 77, 0)
+                         const KPluginMetaData& metaData,
+#endif
                          const QByteArray& cachedHistory, const QStringList& /*args*/)
             :KParts::ReadOnlyPart(parent),
              m_emitOpenUrlNotify(true),
@@ -88,6 +93,9 @@ KWebKitPart::KWebKitPart(QWidget *parentWidget, QObject *parent,
              m_passwordBar(nullptr),
              m_featurePermissionBar(nullptr)
 {
+#if KPARTS_VERSION >= QT_VERSION_CHECK(5, 77, 0)
+    setMetaData(metaData);
+#else
     KAboutData about = KAboutData("kwebkitpart",
                                   i18nc("Program Name", "KWebKitPart"),
                                   /*version*/ "1.3.0",
@@ -105,6 +113,7 @@ KWebKitPart::KWebKitPart(QWidget *parentWidget, QObject *parent,
     about.setProductName("kwebkitpart/general");
 //    KComponentData componentData(&about);
     setComponentData(about, false /*don't load plugins yet*/);
+#endif
 
     setXMLFile(QL1S("kwebkitpart.rc"));
 

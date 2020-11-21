@@ -24,6 +24,7 @@
 
 #include <QWebPage>
 
+#include <kparts_version.h>
 #include <KParts/ReadOnlyPart>
 
 namespace KParts {
@@ -57,7 +58,10 @@ class KWebKitPart : public KParts::ReadOnlyPart
     Q_OBJECT
     Q_PROPERTY( bool modified READ isModified )
 public:
-    explicit KWebKitPart(QWidget* parentWidget = nullptr, QObject* parent = nullptr,
+    explicit KWebKitPart(QWidget* parentWidget, QObject* parent,
+#if KPARTS_VERSION >= QT_VERSION_CHECK(5, 77, 0)
+                         const KPluginMetaData& metaData,
+#endif
                          const QByteArray& cachedHistory = QByteArray(),
                          const QStringList& = QStringList());
     ~KWebKitPart() override;

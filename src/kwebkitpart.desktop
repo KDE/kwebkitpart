@@ -115,3 +115,11 @@ X-KDE-Default-UserAgent=Mozilla/5.0 (%PLATFORM%; %SECURITY%; %OSNAME% %OSVERSION
 X-KDE-ServiceTypes=KParts/ReadOnlyPart,Browser/View
 X-KDE-Library=kf5/parts/kwebkitpart
 InitialPreference=11
+
+X-KDE-PluginInfo-Name=kwebkitpart
+X-KDE-PluginInfo-Version=1.3.0
+X-KDE-PluginInfo-License=LGPL
+X-KDE-PluginInfo-Copyright=Copyright 2009-2010 Dawit Alemayehu, 2008-2010 Urs Wolfer, 2007 Trolltech ASA
+X-KDE-PluginInfo-Authors=Dawit Alemayehu,Urs Wolfer,Michael Howell,Laurent Montel,Dirk Mueller
+X-KDE-PluginInfo-Emails=adawit@kde.org,uwolfer@kde.org,mhowell123@gmail.com,montel@kde.org,mueller@kde.org
+X-KDE-PluginInfo-Website=https://commits.kde.org/kwebkitpart
