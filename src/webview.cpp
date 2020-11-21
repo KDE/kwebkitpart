@@ -828,9 +828,9 @@ bool WebView::checkForAccessKey(QKeyEvent *event)
             p -= frame->scrollPosition();
             frame = frame->parentFrame();
         } while (frame && frame != page()->mainFrame());
-        QMouseEvent pevent(QEvent::MouseButtonPress, p, Qt::LeftButton, nullptr, nullptr);
+        QMouseEvent pevent(QEvent::MouseButtonPress, p, Qt::LeftButton, {}, {});
         QCoreApplication::sendEvent(this, &pevent);
-        QMouseEvent revent(QEvent::MouseButtonRelease, p, Qt::LeftButton, nullptr, nullptr);
+        QMouseEvent revent(QEvent::MouseButtonRelease, p, Qt::LeftButton, {}, {});
         QCoreApplication::sendEvent(this, &revent);
         handled = true;
     }
