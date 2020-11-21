@@ -39,6 +39,7 @@
 #include "ui/featurepermissionbar.h"
 #include "settings/webkitsettings.h"
 
+#include <kio_version.h>
 #include <KCodecAction>
 #include <KSslInfoDialog>
 
@@ -608,8 +609,11 @@ void KWebKitPart::slotShowSecurity()
                     sslInfo.ciphers(),
                     sslInfo.usedChiperBits(),
                     sslInfo.supportedChiperBits(),
+#if KIO_VERSION >= QT_VERSION_CHECK(5, 65, 0)
+                    KSslInfoDialog::certificateErrorsFromString(sslInfo.certificateErrors()));
+#else
                     KSslInfoDialog::errorsFromString(sslInfo.certificateErrors()));
-
+#endif
     dlg->open();
 }
 
