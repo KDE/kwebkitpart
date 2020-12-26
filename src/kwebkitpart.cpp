@@ -40,6 +40,7 @@
 #include "settings/webkitsettings.h"
 
 #include <kio_version.h>
+#include <kconfigwidgets_version.h>
 #include <KCodecAction>
 #include <KSslInfoDialog>
 
@@ -247,7 +248,11 @@ void KWebKitPart::initActions()
 
     KCodecAction *codecAction = new KCodecAction( QIcon::fromTheme(QStringLiteral("character-set")), i18n( "Set &Encoding" ), this, true );
     actionCollection()->addAction( "setEncoding", codecAction );
+#if KCONFIGWIDGETS_VERSION >= QT_VERSION_CHECK(5, 78, 0)
+    connect(codecAction, &KCodecAction::codecTriggered, this, &KWebKitPart::slotSetTextEncoding);
+#else
     connect(codecAction, SIGNAL(triggered(QTextCodec*)), SLOT(slotSetTextEncoding(QTextCodec*)));
+#endif
 
     action = new QAction(i18n("View Do&cument Source"), this);
     actionCollection()->addAction("viewDocumentSource", action);
