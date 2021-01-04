@@ -19,11 +19,19 @@ ki18n_wrap_ui(kwebkit_LIB_SRCS
                   ui/searchbar.ui
 )
 
-ecm_qt_declare_logging_category(kwebkit_LIB_SRCS
+if (${ECM_VERSION} STRGREATER "5.68.0")
+  ecm_qt_declare_logging_category(kwebkit_LIB_SRCS
     HEADER kwebkitpart_debug.h
     IDENTIFIER KWEBKITPART_LOG
-    CATEGORY_NAME org.kde.kwebkitpart
-)
+    EXPORT kwebkitpartlogging
+    DESCRIPTION KWebKitPart
+    CATEGORY_NAME org.kde.kwebkitpart)
+else()
+  ecm_qt_declare_logging_category(kwebkit_LIB_SRCS
+    HEADER kwebkitpart_debug.h
+    IDENTIFIER KWEBKITPART_LOG
+    CATEGORY_NAME org.kde.kwebkitpart)
+endif()
 
 ########################### kwebkitpart #############################
 add_library(kwebkitpart MODULE ${kwebkit_LIB_SRCS})

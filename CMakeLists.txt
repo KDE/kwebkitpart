@@ -54,7 +54,14 @@ add_subdirectory(src)
 add_subdirectory(kdelauncher)
 
 if (${ECM_VERSION} STRGREATER "5.58.0")
+  if (${ECM_VERSION} STRGREATER "5.68.0")
+    ecm_qt_install_logging_categories(
+      EXPORT kwebkitpartlogging
+      FILE kwebkitpart.categories
+      DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
+  else()
     install(FILES kwebkitpart.categories DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
+  endif()
 else()
     install(FILES kwebkitpart.categories DESTINATION ${KDE_INSTALL_CONFDIR})
 endif()
