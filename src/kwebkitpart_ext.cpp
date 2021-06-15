@@ -21,7 +21,7 @@
 #include <KLocalizedString>
 
 #include <Sonnet/Dialog>
-#include <sonnet/backgroundchecker.h>
+#include <Sonnet/BackgroundChecker>
 
 #include <QAction>
 #include <QBuffer>
