@@ -1,14 +1,15 @@
-set(kwebkit_DEMO_SRCS
+add_executable(kdelauncher)
+
+target_sources(kdelauncher PRIVATE
     main.cpp
 )
 
-ecm_qt_declare_logging_category(kwebkit_DEMO_SRCS
+ecm_qt_declare_logging_category(kdelauncher
     HEADER kwebkitpart_demo_debug.h
     IDENTIFIER KWEBKITPART_DEMO_LOG
     CATEGORY_NAME org.kde.kwebkitpart.demo
 )
 
-add_executable(kdelauncher ${kwebkit_DEMO_SRCS})
 target_link_libraries(kdelauncher
     Qt5::Core
     Qt5::Gui

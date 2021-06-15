@@ -1,4 +1,6 @@
-set(kwebkit_LIB_SRCS
+add_library(kwebkitpart MODULE)
+
+target_sources(kwebkitpart PRIVATE
     kwebkitpart.cpp
     kwebkitpart_ext.cpp
     kwebkitpartfactory.cpp
@@ -15,11 +17,11 @@ set(kwebkit_LIB_SRCS
     ui/featurepermissionbar.cpp
 )
 
-ki18n_wrap_ui(kwebkit_LIB_SRCS
-                  ui/searchbar.ui
+ki18n_wrap_ui(kwebkitpart
+    ui/searchbar.ui
 )
 
-ecm_qt_declare_logging_category(kwebkit_LIB_SRCS
+ecm_qt_declare_logging_category(kwebkitpart
     HEADER kwebkitpart_debug.h
     IDENTIFIER KWEBKITPART_LOG
     EXPORT kwebkitpartlogging
@@ -27,8 +29,6 @@ ecm_qt_declare_logging_category(kwebkit_LIB_SRCS
     CATEGORY_NAME org.kde.kwebkitpart
 )
 
-########################### kwebkitpart #############################
-add_library(kwebkitpart MODULE ${kwebkit_LIB_SRCS})
 kcoreaddons_desktop_to_json(kwebkitpart kwebkitpart.desktop)
 
 target_link_libraries(kwebkitpart
@@ -44,7 +44,6 @@ target_link_libraries(kwebkitpart
     KF5::IconThemes
     KF5::SonnetCore
     KF5::KIOCore)
-########################### kwebkitpart #############################
 
 install(TARGETS kwebkitpart DESTINATION ${KDE_INSTALL_PLUGINDIR}/kf5/parts)
 
