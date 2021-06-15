@@ -1,8 +1,8 @@
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.16)
 project(kwebkitpart)
 
-set(QT_MIN_VERSION "5.6.0")
-set(KF5_MIN_VERSION "5.14.0")
+set(QT_MIN_VERSION "5.15.0")
+set(KF5_MIN_VERSION "5.83.0")
 
 # search packages used by the project
 find_package(ECM ${KF5_MIN_VERSION} REQUIRED CONFIG)
@@ -36,7 +36,7 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
 
 add_definitions(
     -DQT_DEPRECATED_WARNINGS
-    -DQT_DISABLE_DEPRECATED_BEFORE=0x050600
+    -DQT_DISABLE_DEPRECATED_BEFORE=0x050E00
     -DQT_USE_FAST_OPERATOR_PLUS
     -DQT_NO_CAST_TO_ASCII
 #     -DQT_NO_CAST_FROM_ASCII
@@ -53,17 +53,10 @@ add_subdirectory(icons)
 add_subdirectory(src)
 add_subdirectory(kdelauncher)
 
-if (${ECM_VERSION} STRGREATER "5.58.0")
-  if (${ECM_VERSION} STRGREATER "5.68.0")
-    ecm_qt_install_logging_categories(
-      EXPORT kwebkitpartlogging
-      FILE kwebkitpart.categories
-      DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
-  else()
-    install(FILES kwebkitpart.categories DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
-  endif()
-else()
-    install(FILES kwebkitpart.categories DESTINATION ${KDE_INSTALL_CONFDIR})
-endif()
+ecm_qt_install_logging_categories(
+    EXPORT kwebkitpartlogging
+    FILE kwebkitpart.categories
+    DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR}
+)
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)

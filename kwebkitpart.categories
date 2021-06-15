@@ -1,6 +1,0 @@
-# KWebKitPart's logging categories (for the kdebugsettings tool)
-#
-# With ECM>=5.68.0 this source file is not used and the categories file
-# is generated and installed by ecm_qt_install_logging_categories().
-
-org.kde.kwebkitpart KWebKitPart
