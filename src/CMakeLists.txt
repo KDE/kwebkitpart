@@ -15,6 +15,8 @@ target_sources(kwebkitpart PRIVATE
     ui/searchbar.cpp
     ui/passwordbar.cpp
     ui/featurepermissionbar.cpp
+
+    kwebkitpart.qrc
 )
 
 ki18n_wrap_ui(kwebkitpart
@@ -48,7 +50,5 @@ target_link_libraries(kwebkitpart
 install(TARGETS kwebkitpart DESTINATION ${KDE_INSTALL_PLUGINDIR}/kf5/parts)
 
 install(FILES kwebkitpart.desktop DESTINATION ${KDE_INSTALL_KSERVICES5DIR})
-
-install(FILES kwebkitpart.rc DESTINATION ${KDE_INSTALL_KXMLGUI5DIR}/kwebkitpart)
 
 install(FILES error.html DESTINATION ${KDE_INSTALL_DATADIR}/kwebkitpart)
