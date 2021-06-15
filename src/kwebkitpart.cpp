@@ -39,15 +39,10 @@
 #include "ui/featurepermissionbar.h"
 #include "settings/webkitsettings.h"
 
-#include <kio_version.h>
-#include <kconfigwidgets_version.h>
 #include <KCodecAction>
 #include <KSslInfoDialog>
 
 #include <KActionCollection>
-#if KPARTS_VERSION < QT_VERSION_CHECK(5, 77, 0)
-#include <KAboutData>
-#endif
 #include <KUrlLabel>
 #include <KIconLoader>
 #include <KLocalizedString>
@@ -81,9 +76,7 @@ Q_GLOBAL_STATIC_WITH_ARGS(QUrl, globalBlankUrl, ("about:blank"))
 
 
 KWebKitPart::KWebKitPart(QWidget *parentWidget, QObject *parent,
-#if KPARTS_VERSION >= QT_VERSION_CHECK(5, 77, 0)
                          const KPluginMetaData& metaData,
-#endif
                          const QByteArray& cachedHistory, const QStringList& /*args*/)
             :KParts::ReadOnlyPart(parent),
              m_emitOpenUrlNotify(true),
@@ -94,27 +87,7 @@ KWebKitPart::KWebKitPart(QWidget *parentWidget, QObject *parent,
              m_passwordBar(nullptr),
              m_featurePermissionBar(nullptr)
 {
-#if KPARTS_VERSION >= QT_VERSION_CHECK(5, 77, 0)
     setMetaData(metaData);
-#else
-    KAboutData about = KAboutData("kwebkitpart",
-                                  i18nc("Program Name", "KWebKitPart"),
-                                  /*version*/ "1.3.0",
-                                  i18nc("Short Description", "QtWebKit Browser Engine Component"),
-                                  KAboutLicense::LGPL,
-                                  i18n("(C) 2009-2010 Dawit Alemayehu\n"
-                                        "(C) 2008-2010 Urs Wolfer\n"
-                                        "(C) 2007 Trolltech ASA"));
-
-    about.addAuthor(i18n("Dawit Alemayehu"), i18n("Maintainer, Developer"), "adawit@kde.org");
-    about.addAuthor(i18n("Urs Wolfer"), i18n("Maintainer, Developer"), "uwolfer@kde.org");
-    about.addAuthor(i18n("Michael Howell"), i18n("Developer"), "mhowell123@gmail.com");
-    about.addAuthor(i18n("Laurent Montel"), i18n("Developer"), "montel@kde.org");
-    about.addAuthor(i18n("Dirk Mueller"), i18n("Developer"), "mueller@kde.org");
-    about.setProductName("kwebkitpart/general");
-//    KComponentData componentData(&about);
-    setComponentData(about, false /*don't load plugins yet*/);
-#endif
 
     setXMLFile(QL1S("kwebkitpart.rc"));
 
@@ -248,11 +221,7 @@ void KWebKitPart::initActions()
 
     KCodecAction *codecAction = new KCodecAction( QIcon::fromTheme(QStringLiteral("character-set")), i18n( "Set &Encoding" ), this, true );
     actionCollection()->addAction( "setEncoding", codecAction );
-#if KCONFIGWIDGETS_VERSION >= QT_VERSION_CHECK(5, 78, 0)
     connect(codecAction, &KCodecAction::codecTriggered, this, &KWebKitPart::slotSetTextEncoding);
-#else
-    connect(codecAction, SIGNAL(triggered(QTextCodec*)), SLOT(slotSetTextEncoding(QTextCodec*)));
-#endif
 
     action = new QAction(i18n("View Do&cument Source"), this);
     actionCollection()->addAction("viewDocumentSource", action);
@@ -623,11 +592,7 @@ void KWebKitPart::slotShowSecurity()
                     sslInfo.ciphers(),
                     sslInfo.usedChiperBits(),
                     sslInfo.supportedChiperBits(),
-#if KIO_VERSION >= QT_VERSION_CHECK(5, 65, 0)
                     KSslInfoDialog::certificateErrorsFromString(sslInfo.certificateErrors()));
-#else
-                    KSslInfoDialog::errorsFromString(sslInfo.certificateErrors()));
-#endif
     dlg->open();
 }
 
