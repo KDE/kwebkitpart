@@ -1,0 +1,959 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# Sönke Dibbern <s_dibbern@web.de>, 2008, 2009, 2014.
+# Manfred Wiese <m.j.wiese@web.de>, 2009, 2010, 2011, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: webkitkde\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-06-16 00:17+0000\n"
+"PO-Revision-Date: 2014-07-02 23:14+0200\n"
+"Last-Translator: Sönke Dibbern <s_dibbern@web.de>\n"
+"Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
+"Language: nds\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Sönke Dibbern, Manfred Wiese"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "s_dibbern@web.de, m.j.wiese@web.de"
+
+#: kwebkitpart.cpp:161 webview.cpp:547
+#, kde-format
+msgid "Save &Frame As..."
+msgstr "&Rahmen sekern as..."
+
+#: kwebkitpart.cpp:165
+#, kde-format
+msgid "Print Preview"
+msgstr "Druckvöransicht"
+
+#: kwebkitpart.cpp:169
+#, kde-format
+msgctxt "zoom in action"
+msgid "Zoom In"
+msgstr "Grötter"
+
+#: kwebkitpart.cpp:176
+#, kde-format
+msgctxt "zoom out action"
+msgid "Zoom Out"
+msgstr "Lütter"
+
+#: kwebkitpart.cpp:183
+#, kde-format
+msgctxt "reset zoom action"
+msgid "Actual Size"
+msgstr "Redig Grött"
+
+#: kwebkitpart.cpp:188
+#, kde-format
+msgid "Zoom Text Only"
+msgstr "Bloots Text grötter maken"
+
+#: kwebkitpart.cpp:196
+#, kde-format
+msgid "Zoom To DPI"
+msgstr "Grött  topassen op DPI"
+
+#: kwebkitpart.cpp:208
+#, kde-format
+msgid "Set &Encoding"
+msgstr "&Koderen instellen"
+
+#: kwebkitpart.cpp:212
+#, kde-format
+msgid "View Do&cument Source"
+msgstr "Do&kmentborn ankieken"
+
+#: kwebkitpart.cpp:217
+#, fuzzy, kde-format
+#| msgid "Resubmit Information"
+msgctxt "Secure Sockets Layer"
+msgid "View SSL Information"
+msgstr "Informatschonen nochmaal loosstüern"
+
+#: kwebkitpart.cpp:221
+#, kde-format
+msgid "Toggle Caret Mode"
+msgstr "Blinkerbedrief an- oder utmaken"
+
+#: kwebkitpart.cpp:228
+#, kde-format
+msgctxt "find action \"whats this\" text"
+msgid ""
+"<h3>Find text</h3>Shows a dialog that allows you to find text on the "
+"displayed page."
+msgstr ""
+"<h3>Text söken</h3>Wiest en Dialoog, mit den Du Text op disse Siet söken "
+"kannst."
+
+#: kwebkitpart.cpp:568
+#, kde-format
+msgid "This site is not secured with SSL, or its SSL information is not valid."
+msgstr ""
+
+#: kwebkitpart.cpp:569
+#, kde-format
+msgctxt "Secure Sockets Layer"
+msgid "SSL"
+msgstr "SSL"
+
+#: kwebkitpart.cpp:659
+#, kde-format
+msgctxt ""
+"status bar text when hovering email links; looks like \"Email: xy@kde.org - "
+"CC: z@kde.org -BCC: x@kde.org - Subject: Hi translator\""
+msgid "Email: "
+msgstr "Nettpost: "
+
+#: kwebkitpart.cpp:687
+#, kde-format
+msgctxt ""
+"status bar text when hovering email links; looks like \"Email: xy@kde.org - "
+"CC: z@kde.org -BCC: x@kde.org - Subject: Hi translator\""
+msgid " - CC: "
+msgstr " - Kopie (CC): "
+
+#: kwebkitpart.cpp:689
+#, kde-format
+msgctxt ""
+"status bar text when hovering email links; looks like \"Email: xy@kde.org - "
+"CC: z@kde.org -BCC: x@kde.org - Subject: Hi translator\""
+msgid " - BCC: "
+msgstr " - Blindkopie: "
+
+#: kwebkitpart.cpp:691
+#, kde-format
+msgctxt ""
+"status bar text when hovering email links; looks like \"Email: xy@kde.org - "
+"CC: z@kde.org -BCC: x@kde.org - Subject: Hi translator\""
+msgid " - Subject: "
+msgstr " - Bedröppt: "
+
+#: kwebkitpart.cpp:695 kwebkitpart.cpp:705
+#, kde-format
+msgid " (In new window)"
+msgstr " (In'n nieg Finster)"
+
+#: kwebkitpart.cpp:703
+#, kde-format
+msgid " (In parent frame)"
+msgstr " (In'n överornt Rahmen)"
+
+#: kwebkitpart.cpp:767
+#, kde-format
+msgid "<qt>Do you want to search for <b>%1</b>?</qt>"
+msgstr "<qt>Wullt Du na <b>%1</b> söken?</qt>"
+
+#: kwebkitpart.cpp:768
+#, kde-format
+msgid "Internet Search"
+msgstr "In't Internet söken"
+
+#: kwebkitpart.cpp:768
+#, kde-format
+msgid "&Search"
+msgstr "&Söken"
+
+#: kwebkitpart.cpp:791
+#, kde-format
+msgid "&Allow password caching for this site"
+msgstr "Passwoort-Twischenspiekern för disse Siet &tolaten"
+
+#: kwebkitpart.cpp:794
+#, kde-format
+msgid "Remove all cached passwords for this site"
+msgstr "All twischenspiekert Passwöör för disse Siet wegmaken"
+
+#: kwebkitpart.cpp:797
+#, kde-format
+msgid "&Close Wallet"
+msgstr "&Knipp tomaken"
+
+#: kwebkitpart.cpp:855
+#, kde-format
+msgid "Close window?"
+msgstr "Finster tomaken?"
+
+#: kwebkitpart.cpp:855
+#, kde-format
+msgid "Confirmation Required"
+msgstr "Beglööfnis nödig"
+
+#. i18n("<html>Do you want to grant the site <b>%1</b> "
+#. "access to information about your current physical location?",
+#. url.host()));
+#: kwebkitpart.cpp:886
+#, kde-format
+msgid ""
+"<html>Do you want to grant the site access to information about your current "
+"physical location?"
+msgstr ""
+"<html>Wullt Du dat tolaten, de Nettsiet griept op Informatschonen dor över "
+"to, woneem Du jüst büst?"
+
+#: kwebkitpart.cpp:933
+#, kde-format
+msgid ""
+"<html>Do you want %1 to remember the login information for <b>%2</b>?</html>"
+msgstr "<html>Schall %1 de Anmellinformatschonen för <b>%2</b> wohren?</html>"
+
+#. i18n: ectx: ToolBar (htmlToolBar)
+#: kwebkitpart.rc:28
+#, kde-format
+msgid "HTML Toolbar"
+msgstr "HTML-Warktüüchbalken"
+
+#: kwebkitpart_ext.cpp:409 kwebkitpart_ext.cpp:496
+#, kde-format
+msgid "Add URL to Filter"
+msgstr "Adress (URL) to Filter tofögen"
+
+#: kwebkitpart_ext.cpp:410 kwebkitpart_ext.cpp:497
+#, kde-format
+msgid "Enter the URL:"
+msgstr "Giff de URL in:"
+
+#: networkaccessmanager.cpp:38
+#, kde-format
+msgid "Blocked by ad filter"
+msgstr "Vun Warvenfilter blockeert"
+
+#: settings/webkitsettings.cpp:891
+#, kde-format
+msgid "Filter error"
+msgstr "Filterfehler"
+
+#: ui/featurepermissionbar.cpp:21
+#, kde-format
+msgctxt "@action:deny access"
+msgid "&Deny access"
+msgstr "Togriep &verbeden"
+
+#: ui/featurepermissionbar.cpp:25
+#, kde-format
+msgctxt "@action:grant access"
+msgid "&Grant access"
+msgstr "&Togriep verlöven"
+
+#: ui/passwordbar.cpp:26
+#, kde-format
+msgctxt "@action:remember password"
+msgid "&Remember"
+msgstr "&Wohren"
+
+#: ui/passwordbar.cpp:30
+#, kde-format
+msgctxt "@action:never for this site"
+msgid "Ne&ver for this site"
+msgstr "N&ienich för disse Siet"
+
+#: ui/passwordbar.cpp:34
+#, kde-format
+msgctxt "@action:not now"
+msgid "N&ot now"
+msgstr "&Nu nich"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, closeButton)
+#: ui/searchbar.ui:23
+#, kde-format
+msgid "Close the search bar"
+msgstr "Söökbalken tomaken"
+
+#. i18n: ectx: property (text), widget (QLabel, searchInfo)
+#: ui/searchbar.ui:36
+#, kde-format
+msgctxt "label for input line to find text"
+msgid "&Find:"
+msgstr "&Söken:"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, nextButton)
+#: ui/searchbar.ui:59
+#, kde-format
+msgid "Find the next match for the current search phrase"
+msgstr "Dat nakamen Vörkamen vun den Söökutdruck söken"
+
+#. i18n: ectx: property (text), widget (QToolButton, nextButton)
+#: ui/searchbar.ui:62
+#, kde-format
+msgid "&Next"
+msgstr "&Nakamen"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, previousButton)
+#. i18n: ectx: property (toolTip), widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:78 ui/searchbar.ui:94
+#, kde-format
+msgid "Find the previous match for the current search phrase"
+msgstr "Dat verleden Vörkamen vun den Söökutdruck söken"
+
+#. i18n: ectx: property (text), widget (QToolButton, previousButton)
+#: ui/searchbar.ui:81
+#, kde-format
+msgid "&Previous"
+msgstr "&Verleden"
+
+#. i18n: ectx: property (text), widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:97
+#, kde-format
+msgid "&Options"
+msgstr "&Optschonen"
+
+#. i18n: ectx: property (text), item, widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:126
+#, kde-format
+msgid "&Match Case"
+msgstr "Op &Grootschrieven oppassen"
+
+#. i18n: ectx: property (text), item, widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:137
+#, kde-format
+msgid "&Search As You Type"
+msgstr "Al bi't Ingeven &söken"
+
+#. i18n: ectx: property (text), item, widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:145
+#, kde-format
+msgid "&Highlight All Matches"
+msgstr "All Drepers &rutheven"
+
+#. i18n: ectx: property (toolTip), item, widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:148
+#, kde-format
+msgid "Highlight Matches"
+msgstr "Drepers rutheven"
+
+#: webpage.cpp:130
+#, kde-format
+msgid "The download manager (%1) could not be found in your installation."
+msgstr "De Daallaadpleger (%1) lett sik op Dien Installatschoon nich finnen."
+
+#: webpage.cpp:131
+#, kde-format
+msgid ""
+"Try to reinstall it and make sure that it is available in $PATH. \n"
+"\n"
+"The integration will be disabled."
+msgstr ""
+"Versöök dat un installeer dat nochmaal. Beseker, dat lett sik över Dien PATH-"
+"Variabel finnen. \n"
+"\n"
+"De Inbetten warrt utmaakt."
+
+#: webpage.cpp:191
+#, kde-format
+msgid ""
+"<html><body><h3>Unable to display error message</h3><p>The error template "
+"file <em>error.html</em> could not be found.</p></body></html>"
+msgstr ""
+"<html><body><h3>Fehlermellen lett sik nich wiesen</h3><p>De Datei för "
+"Fehlervörlagen <em>error.html</em> lett sik nich finnen.</p></body></html>"
+
+#: webpage.cpp:197
+#, kde-format
+msgid "Error: %1"
+msgstr "Fehler: %1"
+
+#: webpage.cpp:202
+#, kde-format
+msgid "The requested operation could not be completed"
+msgstr "De anfraagte Akschoon lett sik nich afsluten"
+
+#: webpage.cpp:209
+#, kde-format
+msgid "Technical Reason: %1"
+msgstr "Technisch Oorsaak: %1"
+
+#: webpage.cpp:214
+#, kde-format
+msgid "Details of the Request:"
+msgstr "Enkelheiten vun de Anfraag:"
+
+#. i18n, and once for HTML.
+#: webpage.cpp:217
+#, kde-format
+msgid "URL: %1"
+msgstr "URL: %1"
+
+#. i18n, and once for HTML.
+#: webpage.cpp:223
+#, kde-format
+msgid "Protocol: %1"
+msgstr "Protokoll: %1"
+
+#: webpage.cpp:227
+#, kde-format
+msgid "Date and Time: %1"
+msgstr "Datum un Tiet: %1"
+
+#. i18n, and once for HTML.
+#: webpage.cpp:231
+#, kde-format
+msgid "Additional Information: %1"
+msgstr "Anner Informatschonen: %1"
+
+#: webpage.cpp:233
+#, kde-format
+msgid "Description:"
+msgstr "Beschrieven:"
+
+#: webpage.cpp:240
+#, kde-format
+msgid "Possible Causes:"
+msgstr "Mööglich Oorsaken:"
+
+#: webpage.cpp:248
+#, kde-format
+msgid "Possible Solutions:"
+msgstr "Mööglich Lösen:"
+
+#: webpage.cpp:280 webpage.cpp:284
+#, kde-format
+msgid "Choose files to upload"
+msgstr "Dateien utsöken, de Du hoochladen wullt"
+
+#: webpage.cpp:385
+#, kde-format
+msgid ""
+"<qt><p>To display the requested web page again, the browser needs to resend "
+"information you have previously submitted.</p><p>If you were shopping online "
+"and made a purchase, click the Cancel button to prevent a duplicate purchase."
+"Otherwise, click the Continue button to display the webpage again.</p>"
+msgstr ""
+"<qt><p>De Nettkieker mutt Informatschonen, de Du al loosstüert harrst, "
+"nochmaal loosstüern, wenn Du de Nettsiet nochmaal ankieken wullt.</"
+"p><p>Weerst Du bi't Inköpen un hest över't Nett wat köfft, klick man beter "
+"op afbreken, anners kööpst Du dat villicht tweemaal. Klick op Wiedermaken, "
+"wenn Du de Nettsiet nochmaal ankieken wullt.</p>"
+
+#: webpage.cpp:392
+#, kde-format
+msgid "Resubmit Information"
+msgstr "Informatschonen nochmaal loosstüern"
+
+#: webpage.cpp:631
+#, kde-format
+msgid ""
+"This site is attempting to access information about your physical location.\n"
+"Do you want to allow it access?"
+msgstr ""
+"De Nettsiet will op Informatschonen dor över togriepen, woneem Du jüst "
+"büst.\n"
+"Wullt Du ehr dat verlöven?"
+
+#: webpage.cpp:635 webpage.cpp:752 webpage.cpp:763
+#, kde-format
+msgid "Network Transmission"
+msgstr "Nettwark-Överdregen"
+
+#: webpage.cpp:636
+#, kde-format
+msgid "Allow access"
+msgstr "&Togriep verlöven"
+
+#: webpage.cpp:711
+#, kde-format
+msgid ""
+"<qt>This untrusted page links to<br/><b>%1</b>.<br/>Do you want to follow "
+"the link?</qt>"
+msgstr ""
+"<qt>Disse Siet is nich seker, man bargt en Link na<br /><b>%1</b>.<br /"
+">Wullt Du den Link nagahn?</qt>"
+
+#: webpage.cpp:713
+#, kde-format
+msgid "Security Warning"
+msgstr "Sekerheitwohrschoen"
+
+#: webpage.cpp:714
+#, kde-format
+msgctxt "follow link despite of security warning"
+msgid "Follow"
+msgstr "Nagahn"
+
+#: webpage.cpp:716
+#, kde-format
+msgid "Security Alert"
+msgstr "Sekerheitwohrschoen"
+
+#: webpage.cpp:717
+#, kde-format
+msgid "<qt>Access by untrusted page to<br/><b>%1</b><br/> denied.</qt>"
+msgstr ""
+"<qt>Togriep op <br /><b>%1</b><br /> dör en Siet, de nich troot warrt, wöör "
+"afwiest</qt>"
+
+#: webpage.cpp:745
+#, kde-format
+msgid ""
+"Warning: This is a secure form but it is attempting to send your data back "
+"unencrypted.\n"
+"A third party may be able to intercept and view this information.\n"
+"Are you sure you want to send the data unencrypted?"
+msgstr ""
+"Wohrschoen: Dat is en seker Formulor, man de torüchschickten Daten warrt "
+"nich verslötelt.\n"
+"Annere Lüüd köönt disse Informatschonen villicht ankieken.\n"
+"Büst Du seker, wat Du de Daten ahn Verslöteln loosstüern wullt?"
+
+#: webpage.cpp:753
+#, kde-format
+msgid "&Send Unencrypted"
+msgstr "Ahn Verslöteln &loosstüern"
+
+#: webpage.cpp:760
+#, kde-format
+msgid ""
+"This site is attempting to submit form data via email.\n"
+"Do you want to continue?"
+msgstr ""
+"De Siet versöcht, Formulordaten mit en Nettbreef to verschicken.\n"
+"Wullt Du wiedermaken?"
+
+#: webpage.cpp:764
+#, kde-format
+msgid "&Send Email"
+msgstr "&Nettbreef loosstüern"
+
+#: webpage.cpp:813
+#, kde-format
+msgid ""
+"<qt>Do you want to allow this site to attach the following files to the "
+"email message?</qt>"
+msgstr ""
+"<qt>Wullt Du tolaten, dat disse Siet den Nettbreef de nakamen Dateien "
+"bileggt?</qt>"
+
+#: webpage.cpp:815
+#, kde-format
+msgid "Email Attachment Confirmation"
+msgstr "Nettpostbilaag beglöven"
+
+#: webpage.cpp:816
+#, kde-format
+msgid "&Allow attachments"
+msgstr "Bilagen &tolaten"
+
+#: webpage.cpp:817
+#, kde-format
+msgid "&Ignore attachments"
+msgstr "Bilagen ö&vergahn"
+
+#: webpage.cpp:831
+#, kde-format
+msgid ""
+"This site attempted to attach a file from your computer in the form "
+"submission. The attachment was removed for your protection."
+msgstr ""
+"Disse Siet wull bi't Afschicken vun't Formulor en Datei vun Dien Reekner "
+"bileggen. För Dien Sekerheit wöör de Bilaag wegdaan."
+
+#: webpage.cpp:834
+#, kde-format
+msgid "Attachment Removed"
+msgstr "Bilaag wegdaan"
+
+#: webpage.cpp:902
+#, kde-format
+msgid ""
+"This site is requesting to open a new popup window.\n"
+"Do you want to allow this?"
+msgstr ""
+"Disse Siet will en nieg Opdukfinster opmaken.\n"
+"Wullt Du dat verlöven?"
+
+#: webpage.cpp:904
+#, kde-format
+msgid ""
+"<qt>This site is requesting to open a popup window to<p>%1</p><br/>Do you "
+"want to allow this?</qt>"
+msgstr ""
+"<qt>Disse Siet will en nieg Opdukfinster na<br /><p>%1</p> opmaken.<br/"
+">Wullt Du dat verlöven?</qt>"
+
+#: webpage.cpp:908
+#, kde-format
+msgid "Javascript Popup Confirmation"
+msgstr "JavaScript-Opduker verlöven"
+
+#: webpage.cpp:909
+#, kde-format
+msgid "Allow"
+msgstr "Verlöven"
+
+#: webpage.cpp:910
+#, kde-format
+msgid "Do Not Allow"
+msgstr "Nich verlöven"
+
+#: webpluginfactory.cpp:58
+#, kde-format
+msgid "Start Plugin"
+msgstr "Moduul opropen"
+
+#: webview.cpp:299
+#, kde-format
+msgid "Access keys activated"
+msgstr "Togrieptasten anmaakt"
+
+#: webview.cpp:378
+#, kde-format
+msgctxt "Text direction"
+msgid "Direction"
+msgstr "Richt"
+
+#: webview.cpp:383
+#, kde-format
+msgid "Default"
+msgstr "Standard"
+
+#: webview.cpp:392
+#, kde-format
+msgid "Left to right"
+msgstr "Vun links na rechts"
+
+#: webview.cpp:401
+#, kde-format
+msgid "Right to left"
+msgstr "Vun rechts na links"
+
+#: webview.cpp:441
+#, kde-format
+msgid "Check Spelling..."
+msgstr "Klookschriever..."
+
+#: webview.cpp:447
+#, kde-format
+msgid "Spellcheck selection..."
+msgstr "Klookschriever binnen Köör..."
+
+#: webview.cpp:474
+#, kde-format
+msgid "Save Image As..."
+msgstr "Bild sekern as..."
+
+#: webview.cpp:479
+#, kde-format
+msgid "Send Image..."
+msgstr "Bild loosstüern..."
+
+#: webview.cpp:484
+#, kde-format
+msgid "Copy Image URL"
+msgstr "Bildadress koperen"
+
+#: webview.cpp:489
+#, kde-format
+msgid "Copy Image"
+msgstr "Bild koperen"
+
+#: webview.cpp:495
+#, kde-format
+msgid "View Image (%1)"
+msgstr "Bild ankieken (%1)"
+
+#: webview.cpp:501
+#, kde-format
+msgid "Block Image..."
+msgstr "Bild blockeren..."
+
+#: webview.cpp:509
+#, kde-format
+msgid "Block Images From %1"
+msgstr "Biller vun %1 blockeren"
+
+#: webview.cpp:516
+#, kde-format
+msgctxt "@title:menu HTML frame/iframe"
+msgid "Frame"
+msgstr "Finster"
+
+#: webview.cpp:518
+#, kde-format
+msgid "Open in New &Window"
+msgstr "As nieg &Finster opmaken"
+
+#: webview.cpp:523
+#, kde-format
+msgid "Open in &This Window"
+msgstr "In &dit Finster opmaken"
+
+#: webview.cpp:528
+#, kde-format
+msgid "Open in &New Tab"
+msgstr "As &nieg Paneel opmaken"
+
+#: webview.cpp:537
+#, kde-format
+msgid "Reload Frame"
+msgstr "Finster nieg laden"
+
+#: webview.cpp:542
+#, kde-format
+msgid "Print Frame..."
+msgstr "Rahmen drucken..."
+
+#: webview.cpp:552
+#, kde-format
+msgid "View Frame Source"
+msgstr "Finsterborn ankieken"
+
+#: webview.cpp:566
+#, kde-format
+msgid "Block IFrame..."
+msgstr "Binnenreegrahmen blockeren…"
+
+#: webview.cpp:611 webview.cpp:644
+#, kde-format
+msgid "&Copy Text"
+msgstr "Text &koperen"
+
+#: webview.cpp:621
+#, kde-format
+msgctxt "open selected url"
+msgid "Open '%1'"
+msgstr "\"%1\" opmaken"
+
+#: webview.cpp:650
+#, kde-format
+msgid "&Copy Email Address"
+msgstr "Nettpostadress &koperen"
+
+#: webview.cpp:656
+#, kde-format
+msgid "Copy Link &Text"
+msgstr "Link&text koperen"
+
+#: webview.cpp:662
+#, kde-format
+msgid "Copy Link &URL"
+msgstr "Link&adress koperen"
+
+#: webview.cpp:667
+#, kde-format
+msgid "&Save Link As..."
+msgstr "Link &sekern as..."
+
+#: webview.cpp:688
+#, kde-format
+msgid "&Play"
+msgstr "&Afspelen"
+
+#: webview.cpp:688
+#, kde-format
+msgid "&Pause"
+msgstr "&Paus"
+
+#: webview.cpp:693
+#, kde-format
+msgid "Un&mute"
+msgstr "Wedder &luut"
+
+#: webview.cpp:693
+#, kde-format
+msgid "&Mute"
+msgstr "&Still"
+
+#: webview.cpp:698
+#, kde-format
+msgid "&Loop"
+msgstr "&Wedderhalen"
+
+#: webview.cpp:705
+#, kde-format
+msgid "Show &Controls"
+msgstr "Stüer&knööp wiesen"
+
+#: webview.cpp:718
+#, kde-format
+msgid "Sa&ve Video As..."
+msgstr "&Video sekern as…"
+
+#: webview.cpp:719
+#, kde-format
+msgid "C&opy Video URL"
+msgstr "Videoadress k&operen"
+
+#: webview.cpp:721
+#, kde-format
+msgid "Sa&ve Audio As..."
+msgstr "Klang &sekern as…"
+
+#: webview.cpp:722
+#, kde-format
+msgid "C&opy Audio URL"
+msgstr "Klangadress (URL) k&operen"
+
+#: webview.cpp:724
+#, kde-format
+msgid "Sa&ve Media As..."
+msgstr "Mediendatei seke&rn as…"
+
+#: webview.cpp:725
+#, kde-format
+msgid "C&opy Media URL"
+msgstr "Medienadress k&operen"
+
+#: webview.cpp:769
+#, kde-format
+msgctxt "Search \"search provider\" for \"text\""
+msgid "Search %1 for '%2'"
+msgstr "Mit %1 na \"%2\" söken"
+
+#: webview.cpp:780
+#, kde-format
+msgctxt "Search for \"text\" with"
+msgid "Search for '%1' with"
+msgstr "Na \"%1\" söken mit"
+
+#~ msgctxt "Program Name"
+#~ msgid "KWebKitPart"
+#~ msgstr "Nettbuukasten-Komponent för KDE"
+
+#~ msgctxt "Short Description"
+#~ msgid "QtWebKit Browser Engine Component"
+#~ msgstr "Kieker-Karnkomponent för Qt-Nettbuukasten"
+
+#~ msgid ""
+#~ "(C) 2009-2010 Dawit Alemayehu\n"
+#~ "(C) 2008-2010 Urs Wolfer\n"
+#~ "(C) 2007 Trolltech ASA"
+#~ msgstr ""
+#~ "© 2009-2010 Dawit Alemayehu\n"
+#~ "© 2008-2010 Urs Wolfer\n"
+#~ "© 2007 Trolltech ASA"
+
+#~ msgid "Dawit Alemayehu"
+#~ msgstr "Dawit Alemayehu"
+
+#~ msgid "Maintainer, Developer"
+#~ msgstr "Pleger un Schriever"
+
+#~ msgid "Urs Wolfer"
+#~ msgstr "Urs Wolfer"
+
+#~ msgid "Michael Howell"
+#~ msgstr "Michael Howell"
+
+#~ msgid "Developer"
+#~ msgstr "Schriever"
+
+#~ msgid "Laurent Montel"
+#~ msgstr "Laurent Montel"
+
+#~ msgid "Dirk Mueller"
+#~ msgstr "Dirk Mueller"
+
+#~ msgid "&Find:"
+#~ msgstr "&Söken:"
+
+#~ msgid "The SSL information for this site appears to be corrupt."
+#~ msgstr "As't lett sünd de SSL-Informatschonen för disse Siet leeg."
+
+#~ msgctxt "input dialog window title for selecting html elements"
+#~ msgid "Select elements"
+#~ msgstr "Indrääg utsöken"
+
+#~ msgctxt "input dialog text for selecting html elements"
+#~ msgid "Choose elements"
+#~ msgstr "Indrääg utsöken"
+
+#~ msgid "%1 element selected"
+#~ msgid_plural "%1 elements selected"
+#~ msgstr[0] "%1 Indrääg utsöcht"
+#~ msgstr[1] "%1 Indrääg utsöcht"
+
+#~ msgid "&File"
+#~ msgstr "&Datei"
+
+#~ msgid "New Window"
+#~ msgstr "Nieg Finster"
+
+#~ msgid "Print"
+#~ msgstr "Drucken"
+
+#~ msgid "Close"
+#~ msgstr "Tomaken"
+
+#~ msgid "&Edit"
+#~ msgstr "&Bewerken"
+
+#~ msgid "Set Editable"
+#~ msgstr "As bewerkbor fastleggen"
+
+#~ msgid "&View"
+#~ msgstr "&Ansicht"
+
+#~ msgid "Zoom &In"
+#~ msgstr "&Grötter"
+
+#~ msgid "Zoom &Out"
+#~ msgstr "&Lütter"
+
+#~ msgid "Reset Zoom"
+#~ msgstr "Ansichtgrött torüchsetten "
+
+#~ msgid "Dump HTML"
+#~ msgstr "HTML utgeven"
+
+#~ msgid "F&ormat"
+#~ msgstr "F&ormaat"
+
+#~ msgid "Writing Direction"
+#~ msgstr "Schrievricht"
+
+#~ msgid "&Tools"
+#~ msgstr "&Warktüüch"
+
+#~ msgid "Select elements..."
+#~ msgstr "Indrääg utsöken..."
+
+#~ msgid "KDELauncher"
+#~ msgstr "KDE-Starter"
+
+#~ msgid "Accept"
+#~ msgstr "Annehmen"
+
+#~ msgid "Reject"
+#~ msgstr "Afwiesen"
+
+#~ msgid "Esc"
+#~ msgstr "Esc"
+
+#~ msgid "Enter the text to search for here"
+#~ msgstr "Hier den Sööktext ingeven"
+
+#~ msgid "Do you want to store this password?"
+#~ msgstr "Wullt Du dit Passwoort sekern?"
+
+#~ msgctxt "Search for \"text\" with \"search provider\""
+#~ msgid "Search for '%1' with %2"
+#~ msgstr "Na \"%1\" mit %2 söken"
+
+#~ msgid "JavaScript"
+#~ msgstr "JavaScript"
+
+#~ msgid "Text to find:"
+#~ msgstr "Sööktext:"
+
+#~ msgid "Search Automatically"
+#~ msgstr "Automaatsch söken"
+
+#~ msgid "Blocked request."
+#~ msgstr "Anfraag blockeert."
+
+#~ msgid "Enlarge Font"
+#~ msgstr "Schrift grötter maken"
+
+#~ msgid "Shrink Font"
+#~ msgstr "Schrift lütter maken"

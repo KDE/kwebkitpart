@@ -1,0 +1,799 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kdeorg\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-06-16 00:17+0000\n"
+"PO-Revision-Date: 2022-09-20 01:56\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Simplified\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: kdeorg\n"
+"X-Crowdin-Project-ID: 269464\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /kf5-trunk/messages/kwebkitpart/kwebkitpart.pot\n"
+"X-Crowdin-File-ID: 6027\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Ni Hui,Wang Jiajun"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "shuizhuyuanluo@126.com,amesists@gmail.com"
+
+#: kwebkitpart.cpp:161 webview.cpp:547
+#, kde-format
+msgid "Save &Frame As..."
+msgstr "帧另存为(&F)..."
+
+#: kwebkitpart.cpp:165
+#, kde-format
+msgid "Print Preview"
+msgstr "打印预览"
+
+#: kwebkitpart.cpp:169
+#, kde-format
+msgctxt "zoom in action"
+msgid "Zoom In"
+msgstr "放大"
+
+#: kwebkitpart.cpp:176
+#, kde-format
+msgctxt "zoom out action"
+msgid "Zoom Out"
+msgstr "缩小"
+
+#: kwebkitpart.cpp:183
+#, kde-format
+msgctxt "reset zoom action"
+msgid "Actual Size"
+msgstr "实际大小"
+
+#: kwebkitpart.cpp:188
+#, kde-format
+msgid "Zoom Text Only"
+msgstr "只缩放文本"
+
+#: kwebkitpart.cpp:196
+#, kde-format
+msgid "Zoom To DPI"
+msgstr "缩放至 DPI"
+
+#: kwebkitpart.cpp:208
+#, kde-format
+msgid "Set &Encoding"
+msgstr "设置编码(&E)"
+
+#: kwebkitpart.cpp:212
+#, kde-format
+msgid "View Do&cument Source"
+msgstr "查看文档源文件(&C)"
+
+#: kwebkitpart.cpp:217
+#, kde-format
+msgctxt "Secure Sockets Layer"
+msgid "View SSL Information"
+msgstr "查看 SSL 信息"
+
+#: kwebkitpart.cpp:221
+#, kde-format
+msgid "Toggle Caret Mode"
+msgstr "切换键盘浏览模式"
+
+#: kwebkitpart.cpp:228
+#, kde-format
+msgctxt "find action \"whats this\" text"
+msgid ""
+"<h3>Find text</h3>Shows a dialog that allows you to find text on the "
+"displayed page."
+msgstr "<h3>查找文本</h3>显示一个对话框，让您可以在所显示的页面中查找文本。"
+
+#: kwebkitpart.cpp:568
+#, kde-format
+msgid "This site is not secured with SSL, or its SSL information is not valid."
+msgstr "该站点未用 SSL 保护安全性，或它的 SSL 信息无效。"
+
+#: kwebkitpart.cpp:569
+#, kde-format
+msgctxt "Secure Sockets Layer"
+msgid "SSL"
+msgstr "SSL"
+
+#: kwebkitpart.cpp:659
+#, kde-format
+msgctxt ""
+"status bar text when hovering email links; looks like \"Email: xy@kde.org - "
+"CC: z@kde.org -BCC: x@kde.org - Subject: Hi translator\""
+msgid "Email: "
+msgstr "电子邮件："
+
+#: kwebkitpart.cpp:687
+#, kde-format
+msgctxt ""
+"status bar text when hovering email links; looks like \"Email: xy@kde.org - "
+"CC: z@kde.org -BCC: x@kde.org - Subject: Hi translator\""
+msgid " - CC: "
+msgstr " - 抄送："
+
+#: kwebkitpart.cpp:689
+#, kde-format
+msgctxt ""
+"status bar text when hovering email links; looks like \"Email: xy@kde.org - "
+"CC: z@kde.org -BCC: x@kde.org - Subject: Hi translator\""
+msgid " - BCC: "
+msgstr " - 密送："
+
+#: kwebkitpart.cpp:691
+#, kde-format
+msgctxt ""
+"status bar text when hovering email links; looks like \"Email: xy@kde.org - "
+"CC: z@kde.org -BCC: x@kde.org - Subject: Hi translator\""
+msgid " - Subject: "
+msgstr " - 主题："
+
+#: kwebkitpart.cpp:695 kwebkitpart.cpp:705
+#, kde-format
+msgid " (In new window)"
+msgstr " (在新窗口中)"
+
+#: kwebkitpart.cpp:703
+#, kde-format
+msgid " (In parent frame)"
+msgstr " (在父框架中)"
+
+#: kwebkitpart.cpp:767
+#, kde-format
+msgid "<qt>Do you want to search for <b>%1</b>?</qt>"
+msgstr "<qt>您想要搜索 <b>%1</b> 吗？</qt>"
+
+#: kwebkitpart.cpp:768
+#, kde-format
+msgid "Internet Search"
+msgstr "互联网搜索"
+
+#: kwebkitpart.cpp:768
+#, kde-format
+msgid "&Search"
+msgstr "搜索(&S)"
+
+#: kwebkitpart.cpp:791
+#, kde-format
+msgid "&Allow password caching for this site"
+msgstr "允许缓存此网站的密码(&A)"
+
+#: kwebkitpart.cpp:794
+#, kde-format
+msgid "Remove all cached passwords for this site"
+msgstr "删除全部此网站的缓存密码"
+
+#: kwebkitpart.cpp:797
+#, kde-format
+msgid "&Close Wallet"
+msgstr "关闭密码库(&C)"
+
+#: kwebkitpart.cpp:855
+#, kde-format
+msgid "Close window?"
+msgstr "关闭窗口吗？"
+
+#: kwebkitpart.cpp:855
+#, kde-format
+msgid "Confirmation Required"
+msgstr "需要确认"
+
+#. i18n("<html>Do you want to grant the site <b>%1</b> "
+#. "access to information about your current physical location?",
+#. url.host()));
+#: kwebkitpart.cpp:886
+#, kde-format
+msgid ""
+"<html>Do you want to grant the site access to information about your current "
+"physical location?"
+msgstr "<html>您是否想允许当前站点访问您当前的物理位置？"
+
+#: kwebkitpart.cpp:933
+#, kde-format
+msgid ""
+"<html>Do you want %1 to remember the login information for <b>%2</b>?</html>"
+msgstr "<html>您想要让 %1 记住 <b>%2</b> 的登录信息吗？</html>"
+
+#. i18n: ectx: ToolBar (htmlToolBar)
+#: kwebkitpart.rc:28
+#, kde-format
+msgid "HTML Toolbar"
+msgstr "HTML 工具栏"
+
+#: kwebkitpart_ext.cpp:409 kwebkitpart_ext.cpp:496
+#, kde-format
+msgid "Add URL to Filter"
+msgstr "将 URL 添加到过滤器"
+
+#: kwebkitpart_ext.cpp:410 kwebkitpart_ext.cpp:497
+#, kde-format
+msgid "Enter the URL:"
+msgstr "输入 URL："
+
+#: networkaccessmanager.cpp:38
+#, kde-format
+msgid "Blocked by ad filter"
+msgstr "被广告过滤器屏蔽"
+
+#: settings/webkitsettings.cpp:891
+#, kde-format
+msgid "Filter error"
+msgstr "过滤器错误"
+
+#: ui/featurepermissionbar.cpp:21
+#, kde-format
+msgctxt "@action:deny access"
+msgid "&Deny access"
+msgstr "拒绝访问(&D)"
+
+#: ui/featurepermissionbar.cpp:25
+#, kde-format
+msgctxt "@action:grant access"
+msgid "&Grant access"
+msgstr "允许访问(&G)"
+
+#: ui/passwordbar.cpp:26
+#, kde-format
+msgctxt "@action:remember password"
+msgid "&Remember"
+msgstr "记住(&R)"
+
+#: ui/passwordbar.cpp:30
+#, kde-format
+msgctxt "@action:never for this site"
+msgid "Ne&ver for this site"
+msgstr "对此网站不记住密码(&V)"
+
+#: ui/passwordbar.cpp:34
+#, kde-format
+msgctxt "@action:not now"
+msgid "N&ot now"
+msgstr "暂不记住(&N)"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, closeButton)
+#: ui/searchbar.ui:23
+#, kde-format
+msgid "Close the search bar"
+msgstr "关闭搜索栏"
+
+#. i18n: ectx: property (text), widget (QLabel, searchInfo)
+#: ui/searchbar.ui:36
+#, kde-format
+msgctxt "label for input line to find text"
+msgid "&Find:"
+msgstr "查找(&F)："
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, nextButton)
+#: ui/searchbar.ui:59
+#, kde-format
+msgid "Find the next match for the current search phrase"
+msgstr "查找下一个和搜索字串匹配的文本"
+
+#. i18n: ectx: property (text), widget (QToolButton, nextButton)
+#: ui/searchbar.ui:62
+#, kde-format
+msgid "&Next"
+msgstr "下一个(&N)"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, previousButton)
+#. i18n: ectx: property (toolTip), widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:78 ui/searchbar.ui:94
+#, kde-format
+msgid "Find the previous match for the current search phrase"
+msgstr "查找上一个和搜索字串匹配的文本"
+
+#. i18n: ectx: property (text), widget (QToolButton, previousButton)
+#: ui/searchbar.ui:81
+#, kde-format
+msgid "&Previous"
+msgstr "上一个(&P)"
+
+#. i18n: ectx: property (text), widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:97
+#, kde-format
+msgid "&Options"
+msgstr "选项(&O)"
+
+#. i18n: ectx: property (text), item, widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:126
+#, kde-format
+msgid "&Match Case"
+msgstr "区分大小写(&M)"
+
+#. i18n: ectx: property (text), item, widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:137
+#, kde-format
+msgid "&Search As You Type"
+msgstr "即输即搜(&S)"
+
+#. i18n: ectx: property (text), item, widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:145
+#, kde-format
+msgid "&Highlight All Matches"
+msgstr "突出显示全部匹配(&H)"
+
+#. i18n: ectx: property (toolTip), item, widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:148
+#, kde-format
+msgid "Highlight Matches"
+msgstr "突出显示匹配文本"
+
+#: webpage.cpp:130
+#, kde-format
+msgid "The download manager (%1) could not be found in your installation."
+msgstr "无法在您的安装路径中找到下载管理器 (%1)。"
+
+#: webpage.cpp:131
+#, kde-format
+msgid ""
+"Try to reinstall it and make sure that it is available in $PATH. \n"
+"\n"
+"The integration will be disabled."
+msgstr ""
+"请尝试重新安装以确保它于搜索路径 $PATH 中可用。\n"
+"\n"
+"集成特性将被禁用。"
+
+#: webpage.cpp:191
+#, kde-format
+msgid ""
+"<html><body><h3>Unable to display error message</h3><p>The error template "
+"file <em>error.html</em> could not be found.</p></body></html>"
+msgstr ""
+"<html><body><h3>无法显示错误消息</h3><p>无法找到错误模板文件<em>error.html</"
+"em>。</p></body></html>"
+
+#: webpage.cpp:197
+#, kde-format
+msgid "Error: %1"
+msgstr "错误：%1"
+
+#: webpage.cpp:202
+#, kde-format
+msgid "The requested operation could not be completed"
+msgstr "所请求的操作无法完成"
+
+#: webpage.cpp:209
+#, kde-format
+msgid "Technical Reason: %1"
+msgstr "技术原因：%1"
+
+#: webpage.cpp:214
+#, kde-format
+msgid "Details of the Request:"
+msgstr "请求细节："
+
+#. i18n, and once for HTML.
+#: webpage.cpp:217
+#, kde-format
+msgid "URL: %1"
+msgstr "URL：%1"
+
+#. i18n, and once for HTML.
+#: webpage.cpp:223
+#, kde-format
+msgid "Protocol: %1"
+msgstr "协议：%1"
+
+#: webpage.cpp:227
+#, kde-format
+msgid "Date and Time: %1"
+msgstr "日期和时间：%1"
+
+#. i18n, and once for HTML.
+#: webpage.cpp:231
+#, kde-format
+msgid "Additional Information: %1"
+msgstr "额外信息：%1"
+
+#: webpage.cpp:233
+#, kde-format
+msgid "Description:"
+msgstr "描述："
+
+#: webpage.cpp:240
+#, kde-format
+msgid "Possible Causes:"
+msgstr "可能原因："
+
+#: webpage.cpp:248
+#, kde-format
+msgid "Possible Solutions:"
+msgstr "可能解决方案："
+
+#: webpage.cpp:280 webpage.cpp:284
+#, kde-format
+msgid "Choose files to upload"
+msgstr "选择要上传的文件"
+
+#: webpage.cpp:385
+#, kde-format
+msgid ""
+"<qt><p>To display the requested web page again, the browser needs to resend "
+"information you have previously submitted.</p><p>If you were shopping online "
+"and made a purchase, click the Cancel button to prevent a duplicate purchase."
+"Otherwise, click the Continue button to display the webpage again.</p>"
+msgstr ""
+"<qt><p>为了再次显示请求的页面，浏览器需要重新发送您之前提交的信息。</p><p>如"
+"果您正在网上购物，请点击取消按钮以免产生重复的交易。否则，请点击继续以再次显"
+"示网页。</p>"
+
+#: webpage.cpp:392
+#, kde-format
+msgid "Resubmit Information"
+msgstr "重新提交信息"
+
+#: webpage.cpp:631
+#, kde-format
+msgid ""
+"This site is attempting to access information about your physical location.\n"
+"Do you want to allow it access?"
+msgstr ""
+"该站点试图通过电子邮件来提交表格数据。\n"
+"您想继续吗？"
+
+#: webpage.cpp:635 webpage.cpp:752 webpage.cpp:763
+#, kde-format
+msgid "Network Transmission"
+msgstr "网络传送"
+
+#: webpage.cpp:636
+#, kde-format
+msgid "Allow access"
+msgstr "允许访问"
+
+#: webpage.cpp:711
+#, kde-format
+msgid ""
+"<qt>This untrusted page links to<br/><b>%1</b>.<br/>Do you want to follow "
+"the link?</qt>"
+msgstr ""
+"<qt>此不信任的页面链接到 <br/><b>%1</b>。<br/>您是否想要跟随这个链接？</qt>"
+
+#: webpage.cpp:713
+#, kde-format
+msgid "Security Warning"
+msgstr "安全警告"
+
+#: webpage.cpp:714
+#, kde-format
+msgctxt "follow link despite of security warning"
+msgid "Follow"
+msgstr "跟随"
+
+#: webpage.cpp:716
+#, kde-format
+msgid "Security Alert"
+msgstr "安全警报"
+
+#: webpage.cpp:717
+#, kde-format
+msgid "<qt>Access by untrusted page to<br/><b>%1</b><br/> denied.</qt>"
+msgstr "<qt>无法访问不信任的页面<br/><b>%1</b><br/>。</qt>"
+
+#: webpage.cpp:745
+#, kde-format
+msgid ""
+"Warning: This is a secure form but it is attempting to send your data back "
+"unencrypted.\n"
+"A third party may be able to intercept and view this information.\n"
+"Are you sure you want to send the data unencrypted?"
+msgstr ""
+"警告：这是一个加密的表格，但是它正试图把您的数据明文发送回来。\n"
+"第三方可能可以截获并查看该信息。\n"
+"您确定要发送未加密的数据吗？"
+
+#: webpage.cpp:753
+#, kde-format
+msgid "&Send Unencrypted"
+msgstr "不加密发送(&S)"
+
+#: webpage.cpp:760
+#, kde-format
+msgid ""
+"This site is attempting to submit form data via email.\n"
+"Do you want to continue?"
+msgstr ""
+"该站点试图通过电子邮件来提交表格数据。\n"
+"您想继续吗？"
+
+#: webpage.cpp:764
+#, kde-format
+msgid "&Send Email"
+msgstr "发送电子邮件(&S)"
+
+#: webpage.cpp:813
+#, kde-format
+msgid ""
+"<qt>Do you want to allow this site to attach the following files to the "
+"email message?</qt>"
+msgstr "<qt>您想要允许此站点附加以下文件到电子邮件信件中吗？</qt>"
+
+#: webpage.cpp:815
+#, kde-format
+msgid "Email Attachment Confirmation"
+msgstr "电子邮件附件确认"
+
+#: webpage.cpp:816
+#, kde-format
+msgid "&Allow attachments"
+msgstr "允许附件(&A)"
+
+#: webpage.cpp:817
+#, kde-format
+msgid "&Ignore attachments"
+msgstr "忽略附件(&I)"
+
+#: webpage.cpp:831
+#, kde-format
+msgid ""
+"This site attempted to attach a file from your computer in the form "
+"submission. The attachment was removed for your protection."
+msgstr ""
+"该网站在提交表格时试图从您的计算机中附加文件。为了保护您的隐私，附件已被删"
+"除。"
+
+#: webpage.cpp:834
+#, kde-format
+msgid "Attachment Removed"
+msgstr "附件已删除"
+
+#: webpage.cpp:902
+#, kde-format
+msgid ""
+"This site is requesting to open a new popup window.\n"
+"Do you want to allow this?"
+msgstr ""
+"该站点试图打开一个新的弹出窗口。\n"
+"您想继续吗？"
+
+#: webpage.cpp:904
+#, kde-format
+msgid ""
+"<qt>This site is requesting to open a popup window to<p>%1</p><br/>Do you "
+"want to allow this?</qt>"
+msgstr "<qt>该站点试图在一个新的弹出窗口中打开 <b>%1</b><br/>您想继续吗？</qt>"
+
+#: webpage.cpp:908
+#, kde-format
+msgid "Javascript Popup Confirmation"
+msgstr "Javascript 弹出确认"
+
+#: webpage.cpp:909
+#, kde-format
+msgid "Allow"
+msgstr "允许"
+
+#: webpage.cpp:910
+#, kde-format
+msgid "Do Not Allow"
+msgstr "不允许"
+
+#: webpluginfactory.cpp:58
+#, kde-format
+msgid "Start Plugin"
+msgstr "启动插件"
+
+#: webview.cpp:299
+#, kde-format
+msgid "Access keys activated"
+msgstr "激活了访问键"
+
+#: webview.cpp:378
+#, kde-format
+msgctxt "Text direction"
+msgid "Direction"
+msgstr "方向"
+
+#: webview.cpp:383
+#, kde-format
+msgid "Default"
+msgstr "默认"
+
+#: webview.cpp:392
+#, kde-format
+msgid "Left to right"
+msgstr "从左到右"
+
+#: webview.cpp:401
+#, kde-format
+msgid "Right to left"
+msgstr "从右到左"
+
+#: webview.cpp:441
+#, kde-format
+msgid "Check Spelling..."
+msgstr "检查拼写..."
+
+#: webview.cpp:447
+#, kde-format
+msgid "Spellcheck selection..."
+msgstr "检查选中文本拼写..."
+
+#: webview.cpp:474
+#, kde-format
+msgid "Save Image As..."
+msgstr "图像另存为..."
+
+#: webview.cpp:479
+#, kde-format
+msgid "Send Image..."
+msgstr "发送图像..."
+
+#: webview.cpp:484
+#, kde-format
+msgid "Copy Image URL"
+msgstr "复制图像 URL"
+
+#: webview.cpp:489
+#, kde-format
+msgid "Copy Image"
+msgstr "复制图像"
+
+#: webview.cpp:495
+#, kde-format
+msgid "View Image (%1)"
+msgstr "查看图像(%1)"
+
+#: webview.cpp:501
+#, kde-format
+msgid "Block Image..."
+msgstr "屏蔽图像..."
+
+#: webview.cpp:509
+#, kde-format
+msgid "Block Images From %1"
+msgstr "屏蔽来自 %1 的图像"
+
+#: webview.cpp:516
+#, kde-format
+msgctxt "@title:menu HTML frame/iframe"
+msgid "Frame"
+msgstr "帧"
+
+#: webview.cpp:518
+#, kde-format
+msgid "Open in New &Window"
+msgstr "在新窗口中打开(&W)"
+
+#: webview.cpp:523
+#, kde-format
+msgid "Open in &This Window"
+msgstr "在此窗口中打开(&T)"
+
+#: webview.cpp:528
+#, kde-format
+msgid "Open in &New Tab"
+msgstr "在新标签页中打开(&N)"
+
+#: webview.cpp:537
+#, kde-format
+msgid "Reload Frame"
+msgstr "重新加载框架"
+
+#: webview.cpp:542
+#, kde-format
+msgid "Print Frame..."
+msgstr "打印帧..."
+
+#: webview.cpp:552
+#, kde-format
+msgid "View Frame Source"
+msgstr "查看帧源文件"
+
+#: webview.cpp:566
+#, kde-format
+msgid "Block IFrame..."
+msgstr "屏蔽 IFrame..."
+
+#: webview.cpp:611 webview.cpp:644
+#, kde-format
+msgid "&Copy Text"
+msgstr "复制文本(&C)"
+
+#: webview.cpp:621
+#, kde-format
+msgctxt "open selected url"
+msgid "Open '%1'"
+msgstr "打开“%1”"
+
+#: webview.cpp:650
+#, kde-format
+msgid "&Copy Email Address"
+msgstr "复制电子邮件地址(&C)"
+
+#: webview.cpp:656
+#, kde-format
+msgid "Copy Link &Text"
+msgstr "复制链接文本(&T)"
+
+#: webview.cpp:662
+#, kde-format
+msgid "Copy Link &URL"
+msgstr "复制链接 &URL"
+
+#: webview.cpp:667
+#, kde-format
+msgid "&Save Link As..."
+msgstr "链接另存为(&S)..."
+
+#: webview.cpp:688
+#, kde-format
+msgid "&Play"
+msgstr "播放(&P)"
+
+#: webview.cpp:688
+#, kde-format
+msgid "&Pause"
+msgstr "暂停(&P)"
+
+#: webview.cpp:693
+#, kde-format
+msgid "Un&mute"
+msgstr "取消静音(&M)"
+
+#: webview.cpp:693
+#, kde-format
+msgid "&Mute"
+msgstr "静音(&M)"
+
+#: webview.cpp:698
+#, kde-format
+msgid "&Loop"
+msgstr "循环(&L)"
+
+#: webview.cpp:705
+#, kde-format
+msgid "Show &Controls"
+msgstr "显示控制(&C)"
+
+#: webview.cpp:718
+#, kde-format
+msgid "Sa&ve Video As..."
+msgstr "视频另存为(&V)..."
+
+#: webview.cpp:719
+#, kde-format
+msgid "C&opy Video URL"
+msgstr "复制视频 URL(&O)"
+
+#: webview.cpp:721
+#, kde-format
+msgid "Sa&ve Audio As..."
+msgstr "音频另存为(&V)..."
+
+#: webview.cpp:722
+#, kde-format
+msgid "C&opy Audio URL"
+msgstr "复制音频 URL(&O)"
+
+#: webview.cpp:724
+#, kde-format
+msgid "Sa&ve Media As..."
+msgstr "媒体另存为(&V)..."
+
+#: webview.cpp:725
+#, kde-format
+msgid "C&opy Media URL"
+msgstr "复制媒体 URL(&O)"
+
+#: webview.cpp:769
+#, kde-format
+msgctxt "Search \"search provider\" for \"text\""
+msgid "Search %1 for '%2'"
+msgstr "用 %1 搜索“%2”"
+
+#: webview.cpp:780
+#, kde-format
+msgctxt "Search for \"text\" with"
+msgid "Search for '%1' with"
+msgstr "搜索“%1”于"

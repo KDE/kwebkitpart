@@ -1,0 +1,965 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Petros <pvidalis@gmail.com>, 2009.
+# nikos, 2011.
+# Dimitrios Glentadakis <dglent@gmail.com>, 2011, 2012.
+# Stelios <sstavra@gmail.com>, 2011, 2012, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: webkitkde\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-06-16 00:17+0000\n"
+"PO-Revision-Date: 2019-07-29 10:33+0300\n"
+"Last-Translator: Stelios <sstavra@gmail.com>\n"
+"Language-Team: Greek <kde-i18n-el@kde.org>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Greek\n"
+"X-Poedit-Country: GREECE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 18.12.3\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Πέτρος Βιδάλης, Stelios"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "p_vidalis@hotmail.com, sstavra@gmail.com"
+
+#: kwebkitpart.cpp:161 webview.cpp:547
+#, kde-format
+msgid "Save &Frame As..."
+msgstr "Αποθήκευση &πλαισίου ως..."
+
+#: kwebkitpart.cpp:165
+#, kde-format
+msgid "Print Preview"
+msgstr "Προεπισκόπηση εκτύπωσης"
+
+#: kwebkitpart.cpp:169
+#, kde-format
+msgctxt "zoom in action"
+msgid "Zoom In"
+msgstr "Μεγέθυνση"
+
+#: kwebkitpart.cpp:176
+#, kde-format
+msgctxt "zoom out action"
+msgid "Zoom Out"
+msgstr "Σμίκρυνση"
+
+#: kwebkitpart.cpp:183
+#, kde-format
+msgctxt "reset zoom action"
+msgid "Actual Size"
+msgstr "Πραγματικό μέγεθος"
+
+#: kwebkitpart.cpp:188
+#, kde-format
+msgid "Zoom Text Only"
+msgstr "Μεγέθυνση μόνο του κειμένου"
+
+#: kwebkitpart.cpp:196
+#, kde-format
+msgid "Zoom To DPI"
+msgstr "Μεγέθυνση σε DPI"
+
+#: kwebkitpart.cpp:208
+#, kde-format
+msgid "Set &Encoding"
+msgstr "Ορισμός &κωδικοποίησης"
+
+#: kwebkitpart.cpp:212
+#, kde-format
+msgid "View Do&cument Source"
+msgstr "Προβολή Προέλευσης Εγ&γράφου"
+
+#: kwebkitpart.cpp:217
+#, kde-format
+msgctxt "Secure Sockets Layer"
+msgid "View SSL Information"
+msgstr "Προβολή SSL πληροφορίας"
+
+#: kwebkitpart.cpp:221
+#, kde-format
+msgid "Toggle Caret Mode"
+msgstr "Εναλλαγή πλοήγησης με το πληκτρολόγιο"
+
+#: kwebkitpart.cpp:228
+#, kde-format
+msgctxt "find action \"whats this\" text"
+msgid ""
+"<h3>Find text</h3>Shows a dialog that allows you to find text on the "
+"displayed page."
+msgstr ""
+"<h3>Βρείτε κείμενο</h3>Δείχνει ένα διάλογο που σας επιτρέπει να βρείτε "
+"κείμενο στην εμφανιζόμενη σελίδα."
+
+#: kwebkitpart.cpp:568
+#, kde-format
+msgid "This site is not secured with SSL, or its SSL information is not valid."
+msgstr ""
+"Αυτός ο ιστότοπος δεν έχει SSL ασφάλεια, ή η SSL πληροφορία δεν είναι έγκυρη."
+
+#: kwebkitpart.cpp:569
+#, kde-format
+msgctxt "Secure Sockets Layer"
+msgid "SSL"
+msgstr "SSL"
+
+#: kwebkitpart.cpp:659
+#, kde-format
+msgctxt ""
+"status bar text when hovering email links; looks like \"Email: xy@kde.org - "
+"CC: z@kde.org -BCC: x@kde.org - Subject: Hi translator\""
+msgid "Email: "
+msgstr "Ηλ. αλληλογραφία: "
+
+#: kwebkitpart.cpp:687
+#, kde-format
+msgctxt ""
+"status bar text when hovering email links; looks like \"Email: xy@kde.org - "
+"CC: z@kde.org -BCC: x@kde.org - Subject: Hi translator\""
+msgid " - CC: "
+msgstr " - Κοιν.: "
+
+#: kwebkitpart.cpp:689
+#, kde-format
+msgctxt ""
+"status bar text when hovering email links; looks like \"Email: xy@kde.org - "
+"CC: z@kde.org -BCC: x@kde.org - Subject: Hi translator\""
+msgid " - BCC: "
+msgstr " - Κρ.Κοιν.: "
+
+#: kwebkitpart.cpp:691
+#, kde-format
+msgctxt ""
+"status bar text when hovering email links; looks like \"Email: xy@kde.org - "
+"CC: z@kde.org -BCC: x@kde.org - Subject: Hi translator\""
+msgid " - Subject: "
+msgstr " - Θέμα: "
+
+#: kwebkitpart.cpp:695 kwebkitpart.cpp:705
+#, kde-format
+msgid " (In new window)"
+msgstr " (Σε νέο παράθυρο)"
+
+#: kwebkitpart.cpp:703
+#, kde-format
+msgid " (In parent frame)"
+msgstr " (Σε γονικό πλαίσιο)"
+
+#: kwebkitpart.cpp:767
+#, kde-format
+msgid "<qt>Do you want to search for <b>%1</b>?</qt>"
+msgstr "<qt>Θέλετε να κάνετε αναζήτηση για το <b>%1</b>?</qt>"
+
+#: kwebkitpart.cpp:768
+#, kde-format
+msgid "Internet Search"
+msgstr "Αναζήτηση στο Διαδίκτυο"
+
+#: kwebkitpart.cpp:768
+#, kde-format
+msgid "&Search"
+msgstr "Ανα&ζήτηση"
+
+#: kwebkitpart.cpp:791
+#, kde-format
+msgid "&Allow password caching for this site"
+msgstr "Ν&α επιτρέπεται προσωρινή αποθήκευση κωδικού για αυτόν τον ιστοχώρο"
+
+#: kwebkitpart.cpp:794
+#, kde-format
+msgid "Remove all cached passwords for this site"
+msgstr "Αφαίρεση όλων των προσωρινών κωδικών πρόσβασης για αυτόν τον ιστοχώρο"
+
+#: kwebkitpart.cpp:797
+#, kde-format
+msgid "&Close Wallet"
+msgstr "&Κλείσιμο πορτοφολιού"
+
+#: kwebkitpart.cpp:855
+#, kde-format
+msgid "Close window?"
+msgstr "Κλείσιμο παραθύρου;"
+
+#: kwebkitpart.cpp:855
+#, kde-format
+msgid "Confirmation Required"
+msgstr "Απαιτείται Επιβεβαίωση"
+
+#. i18n("<html>Do you want to grant the site <b>%1</b> "
+#. "access to information about your current physical location?",
+#. url.host()));
+#: kwebkitpart.cpp:886
+#, kde-format
+msgid ""
+"<html>Do you want to grant the site access to information about your current "
+"physical location?"
+msgstr ""
+"<html>Θέλετε να παραχωρήσετε στον ιστότοπο πρόσβαση σε πληροφορίες σχετικά "
+"με τη φυσική σας θέση;"
+
+#: kwebkitpart.cpp:933
+#, kde-format
+msgid ""
+"<html>Do you want %1 to remember the login information for <b>%2</b>?</html>"
+msgstr ""
+"<html>Θέλετε %1 να θυμάστε τις πληροφορίες εισόδου για <b>%2</b>;</html>"
+
+#. i18n: ectx: ToolBar (htmlToolBar)
+#: kwebkitpart.rc:28
+#, kde-format
+msgid "HTML Toolbar"
+msgstr "Γραμμή εργαλείων HTML"
+
+#: kwebkitpart_ext.cpp:409 kwebkitpart_ext.cpp:496
+#, kde-format
+msgid "Add URL to Filter"
+msgstr "Προσθήκη URL στο φίλτρο"
+
+#: kwebkitpart_ext.cpp:410 kwebkitpart_ext.cpp:497
+#, kde-format
+msgid "Enter the URL:"
+msgstr "Δώστε το URL:"
+
+#: networkaccessmanager.cpp:38
+#, kde-format
+msgid "Blocked by ad filter"
+msgstr "Μπλοκαρισμένο από φίλτρο διαφήμισης"
+
+#: settings/webkitsettings.cpp:891
+#, kde-format
+msgid "Filter error"
+msgstr "Σφάλμα φίλτρου"
+
+#: ui/featurepermissionbar.cpp:21
+#, kde-format
+msgctxt "@action:deny access"
+msgid "&Deny access"
+msgstr "Άι&ρνηση πρόσβασης"
+
+#: ui/featurepermissionbar.cpp:25
+#, kde-format
+msgctxt "@action:grant access"
+msgid "&Grant access"
+msgstr "Π&αραχώρηση πρόσβασης"
+
+#: ui/passwordbar.cpp:26
+#, kde-format
+msgctxt "@action:remember password"
+msgid "&Remember"
+msgstr "Α&πομνημόνευση"
+
+#: ui/passwordbar.cpp:30
+#, kde-format
+msgctxt "@action:never for this site"
+msgid "Ne&ver for this site"
+msgstr "Πο&τέ για αυτόν τον ιστότοπο"
+
+#: ui/passwordbar.cpp:34
+#, kde-format
+msgctxt "@action:not now"
+msgid "N&ot now"
+msgstr "Ό&χι τώρα"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, closeButton)
+#: ui/searchbar.ui:23
+#, kde-format
+msgid "Close the search bar"
+msgstr "Κλείσιμο της γραμμής αναζήτησης"
+
+#. i18n: ectx: property (text), widget (QLabel, searchInfo)
+#: ui/searchbar.ui:36
+#, kde-format
+msgctxt "label for input line to find text"
+msgid "&Find:"
+msgstr "&Αναζήτηση:"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, nextButton)
+#: ui/searchbar.ui:59
+#, kde-format
+msgid "Find the next match for the current search phrase"
+msgstr "Βρείτε την επόμενη αντιστοιχία για την τρέχουσα φράση προς αναζήτηση"
+
+#. i18n: ectx: property (text), widget (QToolButton, nextButton)
+#: ui/searchbar.ui:62
+#, kde-format
+msgid "&Next"
+msgstr "&Επόμενο"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, previousButton)
+#. i18n: ectx: property (toolTip), widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:78 ui/searchbar.ui:94
+#, kde-format
+msgid "Find the previous match for the current search phrase"
+msgstr ""
+"Βρείτε την προηγούμενη αντιστοιχία για τη τρέχουσα φράση προς αναζήτηση"
+
+#. i18n: ectx: property (text), widget (QToolButton, previousButton)
+#: ui/searchbar.ui:81
+#, kde-format
+msgid "&Previous"
+msgstr "&Προηγούμενο"
+
+#. i18n: ectx: property (text), widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:97
+#, kde-format
+msgid "&Options"
+msgstr "Επιλο&γές"
+
+#. i18n: ectx: property (text), item, widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:126
+#, kde-format
+msgid "&Match Case"
+msgstr "&Ταίριασμα πεζών/κεφαλαίων"
+
+#. i18n: ectx: property (text), item, widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:137
+#, kde-format
+msgid "&Search As You Type"
+msgstr "&Αναζήτηση κατά την πληκτρολόγηση"
+
+#. i18n: ectx: property (text), item, widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:145
+#, kde-format
+msgid "&Highlight All Matches"
+msgstr "Έμφασ&η σε όλα τα ταιριάσματα"
+
+#. i18n: ectx: property (toolTip), item, widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:148
+#, kde-format
+msgid "Highlight Matches"
+msgstr "Έμφαση στα ταιριάσματα"
+
+#: webpage.cpp:130
+#, kde-format
+msgid "The download manager (%1) could not be found in your installation."
+msgstr "Ο διαχειριστής λήψεων (%1) δεν βρέθηκε στην εγκατάστασή σας."
+
+#: webpage.cpp:131
+#, kde-format
+msgid ""
+"Try to reinstall it and make sure that it is available in $PATH. \n"
+"\n"
+"The integration will be disabled."
+msgstr ""
+"Προσπαθήστε να το επανεγκαταστήσετε και βεβαιωθείτε ότι είναι διαθέσιμο στο "
+"$PATH. \n"
+"\n"
+"Η ενοποίηση θα απενεργοποιηθεί."
+
+#: webpage.cpp:191
+#, kde-format
+msgid ""
+"<html><body><h3>Unable to display error message</h3><p>The error template "
+"file <em>error.html</em> could not be found.</p></body></html>"
+msgstr ""
+"<html><body><h3>Αδυναμία εμφάνισης μηνύματος σφάλματος</h3><p>Το πρότυπο "
+"αρχείο σφαλμάτων <em>error.html</em> δεν βρέθηκε.</p></body></html>"
+
+#: webpage.cpp:197
+#, kde-format
+msgid "Error: %1"
+msgstr "Σφάλμα: %1"
+
+#: webpage.cpp:202
+#, kde-format
+msgid "The requested operation could not be completed"
+msgstr "Η ζητούμενη λειτουργία δεν μπορεί να ολοκληρωθεί"
+
+#: webpage.cpp:209
+#, kde-format
+msgid "Technical Reason: %1"
+msgstr "Τεχνικός λόγος: %1"
+
+#: webpage.cpp:214
+#, kde-format
+msgid "Details of the Request:"
+msgstr "Λεπτομέρειες της αίτησης:"
+
+#. i18n, and once for HTML.
+#: webpage.cpp:217
+#, kde-format
+msgid "URL: %1"
+msgstr "URL (Ενιαίος Εντοπιστής Πόρων): %1"
+
+#. i18n, and once for HTML.
+#: webpage.cpp:223
+#, kde-format
+msgid "Protocol: %1"
+msgstr "Πρωτόκολλο: %1"
+
+#: webpage.cpp:227
+#, kde-format
+msgid "Date and Time: %1"
+msgstr "Ημερομηνία και Ώρα: %1"
+
+#. i18n, and once for HTML.
+#: webpage.cpp:231
+#, kde-format
+msgid "Additional Information: %1"
+msgstr "Επιπρόσθετη Πληροφορία: %1"
+
+#: webpage.cpp:233
+#, kde-format
+msgid "Description:"
+msgstr "Περιγραφή:"
+
+#: webpage.cpp:240
+#, kde-format
+msgid "Possible Causes:"
+msgstr "Πιθανές αιτίες:"
+
+#: webpage.cpp:248
+#, kde-format
+msgid "Possible Solutions:"
+msgstr "Πιθανές λύσεις:"
+
+#: webpage.cpp:280 webpage.cpp:284
+#, kde-format
+msgid "Choose files to upload"
+msgstr "Επιλογή αρχείων για αποστολή"
+
+#: webpage.cpp:385
+#, kde-format
+msgid ""
+"<qt><p>To display the requested web page again, the browser needs to resend "
+"information you have previously submitted.</p><p>If you were shopping online "
+"and made a purchase, click the Cancel button to prevent a duplicate purchase."
+"Otherwise, click the Continue button to display the webpage again.</p>"
+msgstr ""
+"<qt><p>Για να εμφανίσετε ξανά τη ζητούμενη ιστοσελίδα, ο περιηγητής "
+"χρειάζεται να ξαναστείλει πληροφορίες που έχετε προηγουμένως υποβάλλει.</"
+"p><p>Αν ψωνίζατε online και έχετε κάνει αγορά, κάντε κλικ στο κουμπί Ακύρωση "
+"για να μη γίνει διπλή αγορά. Διαφορετικά, με κλικ στο κουμπί Συνέχεια "
+"εμφανίζεται ξανά η ιστοσελίδα.</p>"
+
+#: webpage.cpp:392
+#, kde-format
+msgid "Resubmit Information"
+msgstr "Επανυποβολή πληροφορίας"
+
+#: webpage.cpp:631
+#, kde-format
+msgid ""
+"This site is attempting to access information about your physical location.\n"
+"Do you want to allow it access?"
+msgstr ""
+"Αυτός ο ιστότοπος προσπαθεί να αποκτήσει πρόσβαση σε πληροφορίες σχετικά με "
+"τη φυσική σας θέση.\n"
+"Θα επιτρέψετε την πρόσβαση;"
+
+#: webpage.cpp:635 webpage.cpp:752 webpage.cpp:763
+#, kde-format
+msgid "Network Transmission"
+msgstr "Μετάδοση δικτύου"
+
+#: webpage.cpp:636
+#, kde-format
+msgid "Allow access"
+msgstr "Να επιτρέπεται η πρόσβαση"
+
+#: webpage.cpp:711
+#, kde-format
+msgid ""
+"<qt>This untrusted page links to<br/><b>%1</b>.<br/>Do you want to follow "
+"the link?</qt>"
+msgstr ""
+"<qt>Αυτή η μη έμπιστη σελίδα περιέχει έναν σύνδεσμο προς<br/><b>%1</b>.<br/"
+">Επιθυμείτε να ακολουθήσετε το σύνδεσμο;</qt>"
+
+#: webpage.cpp:713
+#, kde-format
+msgid "Security Warning"
+msgstr "Προειδοποίηση ασφαλείας"
+
+#: webpage.cpp:714
+#, kde-format
+msgctxt "follow link despite of security warning"
+msgid "Follow"
+msgstr "Ακολούθησε"
+
+#: webpage.cpp:716
+#, kde-format
+msgid "Security Alert"
+msgstr "Συναγερμός ασφαλείας"
+
+#: webpage.cpp:717
+#, kde-format
+msgid "<qt>Access by untrusted page to<br/><b>%1</b><br/> denied.</qt>"
+msgstr ""
+"<qt>Η πρόσβαση από τη μη έμπιστη σελίδα προς <br/><b>%1</b><br/> "
+"απαγορεύθηκε.</qt>"
+
+#: webpage.cpp:745
+#, kde-format
+msgid ""
+"Warning: This is a secure form but it is attempting to send your data back "
+"unencrypted.\n"
+"A third party may be able to intercept and view this information.\n"
+"Are you sure you want to send the data unencrypted?"
+msgstr ""
+"Προειδοποίηση: Αυτή είναι μια ασφαλής φόρμα αλλά προσπαθεί να στείλει πίσω "
+"τα δεδομένα σας ακρυπτογράφητα.\n"
+"Τρίτοι μπορούν να παρεμβληθούν και να δουν αυτές τις πληροφορίες.\n"
+"Σίγουρα θέλετε να στείλει πίσω τα δεδομένα σας ακρυπτογράφητα;"
+
+#: webpage.cpp:753
+#, kde-format
+msgid "&Send Unencrypted"
+msgstr "&Αποστολή μη κρυπτογραφημένου"
+
+#: webpage.cpp:760
+#, kde-format
+msgid ""
+"This site is attempting to submit form data via email.\n"
+"Do you want to continue?"
+msgstr ""
+"Αυτός ο ιστότοπος προσπαθεί να υποβάλει δεδομένα φόρμας μέσω ηλ. "
+"ταχυδρομείου.\n"
+"Θέλετε να συνεχίσετε;"
+
+#: webpage.cpp:764
+#, kde-format
+msgid "&Send Email"
+msgstr "&Αποστολή ηλ. αλληλογραφίας"
+
+#: webpage.cpp:813
+#, kde-format
+msgid ""
+"<qt>Do you want to allow this site to attach the following files to the "
+"email message?</qt>"
+msgstr ""
+"<qt>Θέλετε να επιτρέψετε στον ιστότοπο να επισυνάψει τα ακόλουθα αρχεία στο "
+"μήνυμα ηλ αλληλογραφίας;</qt>"
+
+#: webpage.cpp:815
+#, kde-format
+msgid "Email Attachment Confirmation"
+msgstr "Επιβεβαίωση συνημμένων ηλ.αλληλογραφίας"
+
+#: webpage.cpp:816
+#, kde-format
+msgid "&Allow attachments"
+msgstr "Να επιτρέπονται συνημμέν&α"
+
+#: webpage.cpp:817
+#, kde-format
+msgid "&Ignore attachments"
+msgstr "Αγνόηση &συνημμένων"
+
+#: webpage.cpp:831
+#, kde-format
+msgid ""
+"This site attempted to attach a file from your computer in the form "
+"submission. The attachment was removed for your protection."
+msgstr ""
+"Αυτός ο ιστότοπος επιχείρησε να επισυνάψει ένα αρχείο από τον υπολογιστή σας "
+"κατά την υποβολή της φόρμας. Το συνημμένο αφαιρέθηκε για δική σας προστασία."
+
+#: webpage.cpp:834
+#, kde-format
+msgid "Attachment Removed"
+msgstr "Το συνημμένο αφαιρέθηκε"
+
+#: webpage.cpp:902
+#, kde-format
+msgid ""
+"This site is requesting to open a new popup window.\n"
+"Do you want to allow this?"
+msgstr ""
+"Αυτός ο ιστότοπος ζητάει να ανοίξει ένα νέο αναδυόμενο παράθυρο.\n"
+"Θα το επιτρέψετε αυτό;"
+
+#: webpage.cpp:904
+#, kde-format
+msgid ""
+"<qt>This site is requesting to open a popup window to<p>%1</p><br/>Do you "
+"want to allow this?</qt>"
+msgstr ""
+"<qt>Αυτός ο ιστότοπος ζητάει να ανοίξει ένα αναδυόμενο παράθυρο στο<p>%1</"
+"p><br/>Θα το επιτρέψετε αυτό;</qt>"
+
+#: webpage.cpp:908
+#, kde-format
+msgid "Javascript Popup Confirmation"
+msgstr "Επιβεβαίωση ανάδυσης Javascript"
+
+#: webpage.cpp:909
+#, kde-format
+msgid "Allow"
+msgstr "Να επιτρέπεται"
+
+#: webpage.cpp:910
+#, kde-format
+msgid "Do Not Allow"
+msgstr "Να μην επιτρέπεται"
+
+#: webpluginfactory.cpp:58
+#, kde-format
+msgid "Start Plugin"
+msgstr "Εκκίνηση προσθέτου"
+
+#: webview.cpp:299
+#, kde-format
+msgid "Access keys activated"
+msgstr "Κλειδιά πρόσβασης ενεργοποιήθηκαν"
+
+#: webview.cpp:378
+#, kde-format
+msgctxt "Text direction"
+msgid "Direction"
+msgstr "Κατεύθυνση"
+
+#: webview.cpp:383
+#, kde-format
+msgid "Default"
+msgstr "Προκαθορισμένο"
+
+#: webview.cpp:392
+#, kde-format
+msgid "Left to right"
+msgstr "Αριστερά προς δεξιά"
+
+#: webview.cpp:401
+#, kde-format
+msgid "Right to left"
+msgstr "Δεξιά προς αριστερά"
+
+#: webview.cpp:441
+#, kde-format
+msgid "Check Spelling..."
+msgstr "Έλεγχος ορθογραφίας..."
+
+#: webview.cpp:447
+#, kde-format
+msgid "Spellcheck selection..."
+msgstr "Επιλογή ορθογραφικού ελέγχου..."
+
+#: webview.cpp:474
+#, kde-format
+msgid "Save Image As..."
+msgstr "Αποθήκευση εικόνας ως..."
+
+#: webview.cpp:479
+#, kde-format
+msgid "Send Image..."
+msgstr "Αποστολή εικόνας..."
+
+#: webview.cpp:484
+#, kde-format
+msgid "Copy Image URL"
+msgstr "Αντιγραφή εικόνας URL"
+
+#: webview.cpp:489
+#, kde-format
+msgid "Copy Image"
+msgstr "Αντιγραφή εικόνας"
+
+#: webview.cpp:495
+#, kde-format
+msgid "View Image (%1)"
+msgstr "Προβολή εικόνας (%1)"
+
+#: webview.cpp:501
+#, kde-format
+msgid "Block Image..."
+msgstr "Παρεμπόδιση εικόνας..."
+
+#: webview.cpp:509
+#, kde-format
+msgid "Block Images From %1"
+msgstr "Παρεμπόδιση εικόνων από %1"
+
+#: webview.cpp:516
+#, kde-format
+msgctxt "@title:menu HTML frame/iframe"
+msgid "Frame"
+msgstr "Πλαίσιο"
+
+#: webview.cpp:518
+#, kde-format
+msgid "Open in New &Window"
+msgstr "Άνοιγμα σε νέο &παράθυρο"
+
+#: webview.cpp:523
+#, kde-format
+msgid "Open in &This Window"
+msgstr "Άνοιγμα σε &αυτό το παράθυρο"
+
+#: webview.cpp:528
+#, kde-format
+msgid "Open in &New Tab"
+msgstr "Άνοιγμα σε &νέα καρτέλα"
+
+#: webview.cpp:537
+#, kde-format
+msgid "Reload Frame"
+msgstr "Επαναφόρτωση πλαισίου"
+
+#: webview.cpp:542
+#, kde-format
+msgid "Print Frame..."
+msgstr "Εκτύπωση πλαισίου..."
+
+#: webview.cpp:552
+#, kde-format
+msgid "View Frame Source"
+msgstr "Προβολή πηγαίου κώδικα πλαισίου"
+
+#: webview.cpp:566
+#, kde-format
+msgid "Block IFrame..."
+msgstr "Παρεμπόδιση IFrame..."
+
+#: webview.cpp:611 webview.cpp:644
+#, kde-format
+msgid "&Copy Text"
+msgstr "&Αντιγραφή κειμένου"
+
+#: webview.cpp:621
+#, kde-format
+msgctxt "open selected url"
+msgid "Open '%1'"
+msgstr "Άνοιγμα '%1'"
+
+#: webview.cpp:650
+#, kde-format
+msgid "&Copy Email Address"
+msgstr "&Αντιγραφή διεύθυνσης ηλ. αλληλογραφίας"
+
+#: webview.cpp:656
+#, kde-format
+msgid "Copy Link &Text"
+msgstr "Αντιγραφή &κειμένου συνδέσμου"
+
+#: webview.cpp:662
+#, kde-format
+msgid "Copy Link &URL"
+msgstr "Αντιγραφή &URL συνδέσμου"
+
+#: webview.cpp:667
+#, kde-format
+msgid "&Save Link As..."
+msgstr "&Αποθήκευση συνδέσμου ως..."
+
+#: webview.cpp:688
+#, kde-format
+msgid "&Play"
+msgstr "Α&ναπαραγωγή"
+
+#: webview.cpp:688
+#, kde-format
+msgid "&Pause"
+msgstr "&Παύση"
+
+#: webview.cpp:693
+#, kde-format
+msgid "Un&mute"
+msgstr "Επαν&αφορά ήχου"
+
+#: webview.cpp:693
+#, kde-format
+msgid "&Mute"
+msgstr "Σίγ&αση"
+
+#: webview.cpp:698
+#, kde-format
+msgid "&Loop"
+msgstr "&Επανάληψη"
+
+#: webview.cpp:705
+#, kde-format
+msgid "Show &Controls"
+msgstr "Εμφάνιση ελέ&γχων"
+
+#: webview.cpp:718
+#, kde-format
+msgid "Sa&ve Video As..."
+msgstr "Απο&θήκευση βίντεο ως..."
+
+#: webview.cpp:719
+#, kde-format
+msgid "C&opy Video URL"
+msgstr "Αντιγραφή URL του βίντε&ο"
+
+#: webview.cpp:721
+#, kde-format
+msgid "Sa&ve Audio As..."
+msgstr "Απο&θήκευση ήχου ως..."
+
+#: webview.cpp:722
+#, kde-format
+msgid "C&opy Audio URL"
+msgstr "Αντιγραφή URL του ήχ&ου"
+
+#: webview.cpp:724
+#, kde-format
+msgid "Sa&ve Media As..."
+msgstr "Απο&θήκευση μέσου ως..."
+
+#: webview.cpp:725
+#, kde-format
+msgid "C&opy Media URL"
+msgstr "Αντιγραφή URL του μέσ&ου"
+
+#: webview.cpp:769
+#, kde-format
+msgctxt "Search \"search provider\" for \"text\""
+msgid "Search %1 for '%2'"
+msgstr "Αναζήτηση σε %1 για '%2'"
+
+#: webview.cpp:780
+#, kde-format
+msgctxt "Search for \"text\" with"
+msgid "Search for '%1' with"
+msgstr "Αναζήτηση για '%1' με"
+
+#~ msgctxt "Program Name"
+#~ msgid "KWebKitPart"
+#~ msgstr "KWebKitPart"
+
+#~ msgctxt "Short Description"
+#~ msgid "QtWebKit Browser Engine Component"
+#~ msgstr "Συστατικό μηχανής περιηγητή QtWebKit"
+
+#~ msgid ""
+#~ "(C) 2009-2010 Dawit Alemayehu\n"
+#~ "(C) 2008-2010 Urs Wolfer\n"
+#~ "(C) 2007 Trolltech ASA"
+#~ msgstr ""
+#~ "(c) 2009-2010 Dawit Alemayehu\n"
+#~ "(c) 2008-2010 Urs Wolfer\n"
+#~ "(c) 2007 Trolltech ASA"
+
+#~ msgid "Dawit Alemayehu"
+#~ msgstr "Dawit Alemayehu"
+
+#~ msgid "Maintainer, Developer"
+#~ msgstr "Συντηρητής, προγραμματιστής"
+
+#~ msgid "Urs Wolfer"
+#~ msgstr "Urs Wolfer"
+
+#~ msgid "Michael Howell"
+#~ msgstr "Michael Howell"
+
+#~ msgid "Developer"
+#~ msgstr "Προγραμματιστής"
+
+#~ msgid "Laurent Montel"
+#~ msgstr "Laurent Montel"
+
+#~ msgid "Dirk Mueller"
+#~ msgstr "Dirk Mueller"
+
+#~ msgid "&Find:"
+#~ msgstr "&Αναζήτηση:"
+
+#~ msgid "The SSL information for this site appears to be corrupt."
+#~ msgstr "Η πληροφορία SSL του υπολογιστή φαίνεται να είναι κατεστραμμένη."
+
+#~ msgctxt "input dialog window title for selecting html elements"
+#~ msgid "Select elements"
+#~ msgstr "Επιλέξτε στοιχεία"
+
+#~ msgctxt "input dialog text for selecting html elements"
+#~ msgid "Choose elements"
+#~ msgstr "Επιλέξτε στοιχεία"
+
+#~ msgid "%1 element selected"
+#~ msgid_plural "%1 elements selected"
+#~ msgstr[0] "%1 στοιχείο επιλέχθηκε"
+#~ msgstr[1] "%1 στοιχεία επιλέχθηκαν"
+
+#~ msgid "&File"
+#~ msgstr "Αρ&χείο"
+
+#~ msgid "New Window"
+#~ msgstr "Νέο Παράθυρο"
+
+#~ msgid "Print"
+#~ msgstr "Εκτύπωση"
+
+#~ msgid "Close"
+#~ msgstr "Κλείσιμο"
+
+#~ msgid "&Edit"
+#~ msgstr "&Επεξεργασία"
+
+#~ msgid "Set Editable"
+#~ msgstr "Ορισμός επεξεργάσιμου"
+
+#~ msgid "&View"
+#~ msgstr "&Προβολή"
+
+#~ msgid "Zoom &In"
+#~ msgstr "Μεγέ&θυνση"
+
+#~ msgid "Zoom &Out"
+#~ msgstr "Σμίκρ&υνση"
+
+#~ msgid "Reset Zoom"
+#~ msgstr "Επαναφορά Μεταβλητής Εστίασης"
+
+#~ msgid "Dump HTML"
+#~ msgstr "Απόρριψη HTML"
+
+#~ msgid "F&ormat"
+#~ msgstr "Δια&μόρφωση"
+
+#~ msgid "Writing Direction"
+#~ msgstr "Κατεύθυνση εγγραφής"
+
+#~ msgid "&Tools"
+#~ msgstr "&Εργαλεία"
+
+#~ msgid "Select elements..."
+#~ msgstr "Επιλογή στοιχείων..."
+
+#~ msgid "KDELauncher"
+#~ msgstr "KDELauncher"
+
+#~ msgid "Accept"
+#~ msgstr "Αποδοχή"
+
+#~ msgid "Reject"
+#~ msgstr "Απόρριψη"
+
+#~ msgid "Esc"
+#~ msgstr "Esc"
+
+#~ msgid "Enter the text to search for here"
+#~ msgstr "Εισάγετε το κείμενο για αναζήτηση εδώ"
+
+#~ msgid "Do you want to store this password?"
+#~ msgstr "Επιθυμείτε την αποθήκευση αυτού του κωδικού;"
+
+#, fuzzy
+#~ msgctxt "Search for \"text\" with \"search provider\""
+#~ msgid "Search for '%1' with %2"
+#~ msgstr "Αναζήτηση για '%1' με %2"
+
+#~ msgid "KDE"
+#~ msgstr "KDE"
+
+#~ msgid "Overwrite File?"
+#~ msgstr "Αντικατάσταση του αρχείου;"
+
+#~ msgid "JavaScript"
+#~ msgstr "JavaScript"
+
+#~ msgid "Text to find:"
+#~ msgstr "Κείμενο προς αναζήτηση:"
+
+#~ msgid "Search Automatically"
+#~ msgstr "Αυτόματη Αναζήτηση"

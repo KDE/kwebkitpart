@@ -1,0 +1,813 @@
+# Translation of webenginepart to Norwegian Bokmål
+#
+# Bjørn Steensrud <bjornst@skogkatt.homelinux.org>, 2010, 2011, 2012, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-06-16 00:17+0000\n"
+"PO-Revision-Date: 2013-08-09 12:30+0200\n"
+"Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
+"Language-Team: Norwegian Bokmål <l10n-no@lister.huftis.org>\n"
+"Language: nb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Bjørn Steensrud"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "bjornst@skogkatt.homelinux.org"
+
+#: kwebkitpart.cpp:161 webview.cpp:547
+#, kde-format
+msgid "Save &Frame As..."
+msgstr "Lagre &ramma som …"
+
+#: kwebkitpart.cpp:165
+#, kde-format
+msgid "Print Preview"
+msgstr "Forhåndsvis utskrift"
+
+#: kwebkitpart.cpp:169
+#, kde-format
+msgctxt "zoom in action"
+msgid "Zoom In"
+msgstr "Vis større"
+
+#: kwebkitpart.cpp:176
+#, kde-format
+msgctxt "zoom out action"
+msgid "Zoom Out"
+msgstr "Vis mindre"
+
+#: kwebkitpart.cpp:183
+#, kde-format
+msgctxt "reset zoom action"
+msgid "Actual Size"
+msgstr "Virkelig størrelse"
+
+#: kwebkitpart.cpp:188
+#, kde-format
+msgid "Zoom Text Only"
+msgstr "Forstørr/forminsk bare tekst"
+
+#: kwebkitpart.cpp:196
+#, kde-format
+msgid "Zoom To DPI"
+msgstr "Forstørr til PPT"
+
+#: kwebkitpart.cpp:208
+#, kde-format
+msgid "Set &Encoding"
+msgstr "Velg &tegnkoding"
+
+#: kwebkitpart.cpp:212
+#, kde-format
+msgid "View Do&cument Source"
+msgstr "Vis &kildekode for dokumentet"
+
+#: kwebkitpart.cpp:217
+#, kde-format
+msgctxt "Secure Sockets Layer"
+msgid "View SSL Information"
+msgstr ""
+
+#: kwebkitpart.cpp:221
+#, kde-format
+msgid "Toggle Caret Mode"
+msgstr "Slå  av/på innskuddstegn (caret mode)"
+
+#: kwebkitpart.cpp:228
+#, kde-format
+msgctxt "find action \"whats this\" text"
+msgid ""
+"<h3>Find text</h3>Shows a dialog that allows you to find text on the "
+"displayed page."
+msgstr ""
+"<h3>Finn tekst</h3>Viser et dialogvindu du kan bruke til å finne tekst på "
+"den viste sida."
+
+#: kwebkitpart.cpp:568
+#, kde-format
+msgid "This site is not secured with SSL, or its SSL information is not valid."
+msgstr ""
+
+#: kwebkitpart.cpp:569
+#, kde-format
+msgctxt "Secure Sockets Layer"
+msgid "SSL"
+msgstr "SSL"
+
+#: kwebkitpart.cpp:659
+#, kde-format
+msgctxt ""
+"status bar text when hovering email links; looks like \"Email: xy@kde.org - "
+"CC: z@kde.org -BCC: x@kde.org - Subject: Hi translator\""
+msgid "Email: "
+msgstr "E-post: "
+
+#: kwebkitpart.cpp:687
+#, kde-format
+msgctxt ""
+"status bar text when hovering email links; looks like \"Email: xy@kde.org - "
+"CC: z@kde.org -BCC: x@kde.org - Subject: Hi translator\""
+msgid " - CC: "
+msgstr " – Kopi til: "
+
+#: kwebkitpart.cpp:689
+#, kde-format
+msgctxt ""
+"status bar text when hovering email links; looks like \"Email: xy@kde.org - "
+"CC: z@kde.org -BCC: x@kde.org - Subject: Hi translator\""
+msgid " - BCC: "
+msgstr " – Blindkopi til: "
+
+#: kwebkitpart.cpp:691
+#, kde-format
+msgctxt ""
+"status bar text when hovering email links; looks like \"Email: xy@kde.org - "
+"CC: z@kde.org -BCC: x@kde.org - Subject: Hi translator\""
+msgid " - Subject: "
+msgstr " – Emne: "
+
+#: kwebkitpart.cpp:695 kwebkitpart.cpp:705
+#, kde-format
+msgid " (In new window)"
+msgstr " (I nytt vindu)"
+
+#: kwebkitpart.cpp:703
+#, kde-format
+msgid " (In parent frame)"
+msgstr " (i forelderramme)"
+
+#: kwebkitpart.cpp:767
+#, kde-format
+msgid "<qt>Do you want to search for <b>%1</b>?</qt>"
+msgstr "<qt>Vil du søke etter <b>%1</b>?</qt>"
+
+#: kwebkitpart.cpp:768
+#, kde-format
+msgid "Internet Search"
+msgstr "Internettsøk"
+
+#: kwebkitpart.cpp:768
+#, kde-format
+msgid "&Search"
+msgstr "&Søk"
+
+#: kwebkitpart.cpp:791
+#, kde-format
+msgid "&Allow password caching for this site"
+msgstr "Till&at passordlagring for dette stedet"
+
+#: kwebkitpart.cpp:794
+#, kde-format
+msgid "Remove all cached passwords for this site"
+msgstr "Fjern alle lagrede passord for dette stedet"
+
+#: kwebkitpart.cpp:797
+#, kde-format
+msgid "&Close Wallet"
+msgstr "Lu&kk lommebok"
+
+#: kwebkitpart.cpp:855
+#, kde-format
+msgid "Close window?"
+msgstr "Vil du lukke vinduet?"
+
+#: kwebkitpart.cpp:855
+#, kde-format
+msgid "Confirmation Required"
+msgstr "Du må bekrefte"
+
+#. i18n("<html>Do you want to grant the site <b>%1</b> "
+#. "access to information about your current physical location?",
+#. url.host()));
+#: kwebkitpart.cpp:886
+#, kde-format
+msgid ""
+"<html>Do you want to grant the site access to information about your current "
+"physical location?"
+msgstr ""
+"<html>Vil du gi nettstedet tilgang til opplysninger om hvor du befinner deg "
+"nå?"
+
+#: kwebkitpart.cpp:933
+#, kde-format
+msgid ""
+"<html>Do you want %1 to remember the login information for <b>%2</b>?</html>"
+msgstr ""
+"<html>Vil du at %1 skal huske innloggingsinformasjonen for <b>%2</b>?</html>"
+
+#. i18n: ectx: ToolBar (htmlToolBar)
+#: kwebkitpart.rc:28
+#, kde-format
+msgid "HTML Toolbar"
+msgstr "HTML-verktøylinje"
+
+#: kwebkitpart_ext.cpp:409 kwebkitpart_ext.cpp:496
+#, kde-format
+msgid "Add URL to Filter"
+msgstr "Legg til URL til filter"
+
+#: kwebkitpart_ext.cpp:410 kwebkitpart_ext.cpp:497
+#, kde-format
+msgid "Enter the URL:"
+msgstr "Skriv inn URL-en:"
+
+#: networkaccessmanager.cpp:38
+#, kde-format
+msgid "Blocked by ad filter"
+msgstr "Blokkert av reklamefilter"
+
+#: settings/webkitsettings.cpp:891
+#, kde-format
+msgid "Filter error"
+msgstr "Filterfeil"
+
+#: ui/featurepermissionbar.cpp:21
+#, kde-format
+msgctxt "@action:deny access"
+msgid "&Deny access"
+msgstr "&Nekt tilgang"
+
+#: ui/featurepermissionbar.cpp:25
+#, kde-format
+msgctxt "@action:grant access"
+msgid "&Grant access"
+msgstr "&Gi tilgang"
+
+#: ui/passwordbar.cpp:26
+#, kde-format
+msgctxt "@action:remember password"
+msgid "&Remember"
+msgstr "&Husk"
+
+#: ui/passwordbar.cpp:30
+#, kde-format
+msgctxt "@action:never for this site"
+msgid "Ne&ver for this site"
+msgstr "A&ldri for dette nettstedet"
+
+#: ui/passwordbar.cpp:34
+#, kde-format
+msgctxt "@action:not now"
+msgid "N&ot now"
+msgstr "I&kke nå"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, closeButton)
+#: ui/searchbar.ui:23
+#, kde-format
+msgid "Close the search bar"
+msgstr "Lukk søkelinja"
+
+#. i18n: ectx: property (text), widget (QLabel, searchInfo)
+#: ui/searchbar.ui:36
+#, kde-format
+msgctxt "label for input line to find text"
+msgid "&Find:"
+msgstr "&Finn:"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, nextButton)
+#: ui/searchbar.ui:59
+#, kde-format
+msgid "Find the next match for the current search phrase"
+msgstr "Finn neste treff for gjeldende søkebegrep"
+
+#. i18n: ectx: property (text), widget (QToolButton, nextButton)
+#: ui/searchbar.ui:62
+#, kde-format
+msgid "&Next"
+msgstr "&Neste"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, previousButton)
+#. i18n: ectx: property (toolTip), widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:78 ui/searchbar.ui:94
+#, kde-format
+msgid "Find the previous match for the current search phrase"
+msgstr "Finn forrige treff for gjeldende søkebegrep"
+
+#. i18n: ectx: property (text), widget (QToolButton, previousButton)
+#: ui/searchbar.ui:81
+#, kde-format
+msgid "&Previous"
+msgstr "&Forrige"
+
+#. i18n: ectx: property (text), widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:97
+#, kde-format
+msgid "&Options"
+msgstr "&Valg"
+
+#. i18n: ectx: property (text), item, widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:126
+#, kde-format
+msgid "&Match Case"
+msgstr "&Ta hensyn til store/små bokstaver"
+
+#. i18n: ectx: property (text), item, widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:137
+#, kde-format
+msgid "&Search As You Type"
+msgstr "&Søk mens du skriver"
+
+#. i18n: ectx: property (text), item, widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:145
+#, kde-format
+msgid "&Highlight All Matches"
+msgstr "Frem&hev alle samsvar"
+
+#. i18n: ectx: property (toolTip), item, widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:148
+#, kde-format
+msgid "Highlight Matches"
+msgstr "Fremhev samsvar"
+
+#: webpage.cpp:130
+#, kde-format
+msgid "The download manager (%1) could not be found in your installation."
+msgstr "Fant ikke nedlastingsbehandleren (%1) i din installasjon."
+
+#: webpage.cpp:131
+#, kde-format
+msgid ""
+"Try to reinstall it and make sure that it is available in $PATH. \n"
+"\n"
+"The integration will be disabled."
+msgstr ""
+"Forsøk å installere den på nytt og kontroller at den finnes i $PATH.\n"
+"\n"
+"Integreringen blir slått av."
+
+#: webpage.cpp:191
+#, kde-format
+msgid ""
+"<html><body><h3>Unable to display error message</h3><p>The error template "
+"file <em>error.html</em> could not be found.</p></body></html>"
+msgstr ""
+"<html><body><h3>Kan ikke vises feilmelding</h3><p>Feilmal-fila <em>error."
+"html</em> finnes ikke.</p></body></html>"
+
+#: webpage.cpp:197
+#, kde-format
+msgid "Error: %1"
+msgstr "Feil: %1"
+
+#: webpage.cpp:202
+#, kde-format
+msgid "The requested operation could not be completed"
+msgstr "Klarte ikke å fullføre denne handlinga"
+
+#: webpage.cpp:209
+#, kde-format
+msgid "Technical Reason: %1"
+msgstr "Teknisk grunn: %1"
+
+#: webpage.cpp:214
+#, kde-format
+msgid "Details of the Request:"
+msgstr "Detaljer ved forespørselen:"
+
+#. i18n, and once for HTML.
+#: webpage.cpp:217
+#, kde-format
+msgid "URL: %1"
+msgstr "URL: %1"
+
+#. i18n, and once for HTML.
+#: webpage.cpp:223
+#, kde-format
+msgid "Protocol: %1"
+msgstr "Protokoll: %1"
+
+#: webpage.cpp:227
+#, kde-format
+msgid "Date and Time: %1"
+msgstr "Dato og tidspunkt: %1"
+
+#. i18n, and once for HTML.
+#: webpage.cpp:231
+#, kde-format
+msgid "Additional Information: %1"
+msgstr "Annen informasjon: %1"
+
+#: webpage.cpp:233
+#, kde-format
+msgid "Description:"
+msgstr "Beskrivelse:"
+
+#: webpage.cpp:240
+#, kde-format
+msgid "Possible Causes:"
+msgstr "Mulige årsaker:"
+
+#: webpage.cpp:248
+#, kde-format
+msgid "Possible Solutions:"
+msgstr "Mulige løsninger:"
+
+#: webpage.cpp:280 webpage.cpp:284
+#, kde-format
+msgid "Choose files to upload"
+msgstr "Velg filer som skal lastes opp"
+
+#: webpage.cpp:385
+#, kde-format
+msgid ""
+"<qt><p>To display the requested web page again, the browser needs to resend "
+"information you have previously submitted.</p><p>If you were shopping online "
+"and made a purchase, click the Cancel button to prevent a duplicate purchase."
+"Otherwise, click the Continue button to display the webpage again.</p>"
+msgstr ""
+"<qt> <p>Nettleseren trenger å sende over på nytt opplysninger du alt har "
+"oppgitt, for å kunne vise den etterspurte nettsida igjen.</p> <p>Hvis du "
+"gjorde et innkjøp over nettet, så trykk Avbryt for å hindre dobbeltkjøp, "
+"ellers trykk Fortsett-knappen for å vise nettsida igjen.</p>"
+
+#: webpage.cpp:392
+#, kde-format
+msgid "Resubmit Information"
+msgstr "Send informasjon på nytt"
+
+#: webpage.cpp:631
+#, kde-format
+msgid ""
+"This site is attempting to access information about your physical location.\n"
+"Do you want to allow it access?"
+msgstr ""
+"Dette nettstedet forsøker å hente opplysninger om hvor du befinner deg..\n"
+"Vil du gi nettstedet tillatelse?"
+
+#: webpage.cpp:635 webpage.cpp:752 webpage.cpp:763
+#, kde-format
+msgid "Network Transmission"
+msgstr "Nettverksoverføring"
+
+#: webpage.cpp:636
+#, kde-format
+msgid "Allow access"
+msgstr "Tillat tilgang"
+
+#: webpage.cpp:711
+#, kde-format
+msgid ""
+"<qt>This untrusted page links to<br/><b>%1</b>.<br/>Do you want to follow "
+"the link?</qt>"
+msgstr ""
+"<qt>Denne sida er ikke sikret, men den har en lenke til <br /><b>%1</b>.<br /"
+"> Vil du følge lenka?</qt>"
+
+#: webpage.cpp:713
+#, kde-format
+msgid "Security Warning"
+msgstr "Sikkerhetsadvarsel"
+
+#: webpage.cpp:714
+#, kde-format
+msgctxt "follow link despite of security warning"
+msgid "Follow"
+msgstr "Følg"
+
+#: webpage.cpp:716
+#, kde-format
+msgid "Security Alert"
+msgstr "Sikkerhetsadvarsel"
+
+#: webpage.cpp:717
+#, kde-format
+msgid "<qt>Access by untrusted page to<br/><b>%1</b><br/> denied.</qt>"
+msgstr "<qt>Tilgang fra usikret side til <br /><b>%1</b><br/> nektet.</qt>"
+
+#: webpage.cpp:745
+#, kde-format
+msgid ""
+"Warning: This is a secure form but it is attempting to send your data back "
+"unencrypted.\n"
+"A third party may be able to intercept and view this information.\n"
+"Are you sure you want to send the data unencrypted?"
+msgstr ""
+"Advarsel: Dette er et sikret skjema, men det forsøker å sende data ukryptert "
+"tilbake til tjeneren.\n"
+"En tredjepart kan ha mulighet til å gå i mellom og se denne informasjonen.\n"
+"Er du sikker på at du vil sende data ukryptert?"
+
+#: webpage.cpp:753
+#, kde-format
+msgid "&Send Unencrypted"
+msgstr "&Send ukryptert"
+
+#: webpage.cpp:760
+#, kde-format
+msgid ""
+"This site is attempting to submit form data via email.\n"
+"Do you want to continue?"
+msgstr ""
+"Dette nettstedet forsøker å sende skjemadata via e-post.\n"
+"Vil du fortsette?"
+
+#: webpage.cpp:764
+#, kde-format
+msgid "&Send Email"
+msgstr "&Send e-post"
+
+#: webpage.cpp:813
+#, kde-format
+msgid ""
+"<qt>Do you want to allow this site to attach the following files to the "
+"email message?</qt>"
+msgstr ""
+"<qt>Vil du tillate dette nettstedet å legge ved følgende filer til e-"
+"postmeldinga?</qt>"
+
+#: webpage.cpp:815
+#, kde-format
+msgid "Email Attachment Confirmation"
+msgstr "Bekreftelse på e-postvedlegg"
+
+#: webpage.cpp:816
+#, kde-format
+msgid "&Allow attachments"
+msgstr "Till&at vedlegg"
+
+#: webpage.cpp:817
+#, kde-format
+msgid "&Ignore attachments"
+msgstr "&Ignorer vedlegg"
+
+#: webpage.cpp:831
+#, kde-format
+msgid ""
+"This site attempted to attach a file from your computer in the form "
+"submission. The attachment was removed for your protection."
+msgstr ""
+"Dette nettstedet prøvde å legge ved en fil fra datamaskinen din under "
+"innsendingen av skjemaet. Vedlegget ble fjernet for å beskytte dine data."
+
+#: webpage.cpp:834
+#, kde-format
+msgid "Attachment Removed"
+msgstr "Vedlegg fjernet"
+
+#: webpage.cpp:902
+#, kde-format
+msgid ""
+"This site is requesting to open a new popup window.\n"
+"Do you want to allow this?"
+msgstr ""
+"Dette nettstedet forsøker å åpne et nytt oppsprettvindu.\n"
+"Vil du tillate dette?"
+
+#: webpage.cpp:904
+#, kde-format
+msgid ""
+"<qt>This site is requesting to open a popup window to<p>%1</p><br/>Do you "
+"want to allow this?</qt>"
+msgstr ""
+"<qt>Dette nettstedet forsøker å åpne et oppsprettvindu til <p>%1</p> <br/"
+">Vil du tillate dette?</qt>"
+
+#: webpage.cpp:908
+#, kde-format
+msgid "Javascript Popup Confirmation"
+msgstr "Bekreft JavaScript oppsprett"
+
+#: webpage.cpp:909
+#, kde-format
+msgid "Allow"
+msgstr "Tillat"
+
+#: webpage.cpp:910
+#, kde-format
+msgid "Do Not Allow"
+msgstr "Ikke tillat"
+
+#: webpluginfactory.cpp:58
+#, kde-format
+msgid "Start Plugin"
+msgstr "Start programtillegg"
+
+#: webview.cpp:299
+#, kde-format
+msgid "Access keys activated"
+msgstr "Tilgangsnøkler aktivert"
+
+#: webview.cpp:378
+#, kde-format
+msgctxt "Text direction"
+msgid "Direction"
+msgstr "Retning"
+
+#: webview.cpp:383
+#, kde-format
+msgid "Default"
+msgstr "Standard"
+
+#: webview.cpp:392
+#, kde-format
+msgid "Left to right"
+msgstr "Fra venstre til høyre"
+
+#: webview.cpp:401
+#, kde-format
+msgid "Right to left"
+msgstr "Fra høyre til venstre"
+
+#: webview.cpp:441
+#, kde-format
+msgid "Check Spelling..."
+msgstr "Kjør stavekontroll …"
+
+#: webview.cpp:447
+#, kde-format
+msgid "Spellcheck selection..."
+msgstr "Stavekontroller utvalg …"
+
+#: webview.cpp:474
+#, kde-format
+msgid "Save Image As..."
+msgstr "Lagre bilde som …"
+
+#: webview.cpp:479
+#, kde-format
+msgid "Send Image..."
+msgstr "Send bilde …"
+
+#: webview.cpp:484
+#, kde-format
+msgid "Copy Image URL"
+msgstr "Kopier bilde-URL"
+
+#: webview.cpp:489
+#, kde-format
+msgid "Copy Image"
+msgstr "Kopier bilde"
+
+#: webview.cpp:495
+#, kde-format
+msgid "View Image (%1)"
+msgstr "Vis bilde (%1)"
+
+#: webview.cpp:501
+#, kde-format
+msgid "Block Image..."
+msgstr "Blokker bilde …"
+
+#: webview.cpp:509
+#, kde-format
+msgid "Block Images From %1"
+msgstr "Blokker bilder fra %1"
+
+#: webview.cpp:516
+#, kde-format
+msgctxt "@title:menu HTML frame/iframe"
+msgid "Frame"
+msgstr "Ramme"
+
+#: webview.cpp:518
+#, kde-format
+msgid "Open in New &Window"
+msgstr "Åpne i nytt &vindu"
+
+#: webview.cpp:523
+#, kde-format
+msgid "Open in &This Window"
+msgstr "Åpne i de&tte vinduet"
+
+#: webview.cpp:528
+#, kde-format
+msgid "Open in &New Tab"
+msgstr "Åpne i en &ny fane"
+
+#: webview.cpp:537
+#, kde-format
+msgid "Reload Frame"
+msgstr "Last ramma på nytt"
+
+#: webview.cpp:542
+#, kde-format
+msgid "Print Frame..."
+msgstr "Skriv ut ramma …"
+
+#: webview.cpp:552
+#, kde-format
+msgid "View Frame Source"
+msgstr "Vis rammekilden"
+
+#: webview.cpp:566
+#, kde-format
+msgid "Block IFrame..."
+msgstr "Blokker IFrame …"
+
+#: webview.cpp:611 webview.cpp:644
+#, kde-format
+msgid "&Copy Text"
+msgstr "&Kopier tekst"
+
+#: webview.cpp:621
+#, kde-format
+msgctxt "open selected url"
+msgid "Open '%1'"
+msgstr "Åpne «%1»"
+
+#: webview.cpp:650
+#, kde-format
+msgid "&Copy Email Address"
+msgstr "&Kopier e-postadresse"
+
+#: webview.cpp:656
+#, kde-format
+msgid "Copy Link &Text"
+msgstr "Kopier lenke&tekst"
+
+#: webview.cpp:662
+#, kde-format
+msgid "Copy Link &URL"
+msgstr "Kopier lenke-&URL"
+
+#: webview.cpp:667
+#, kde-format
+msgid "&Save Link As..."
+msgstr "&Lagre lenka som …"
+
+#: webview.cpp:688
+#, kde-format
+msgid "&Play"
+msgstr "S&pill"
+
+#: webview.cpp:688
+#, kde-format
+msgid "&Pause"
+msgstr "&Pause"
+
+#: webview.cpp:693
+#, kde-format
+msgid "Un&mute"
+msgstr "Ikke de&mpet"
+
+#: webview.cpp:693
+#, kde-format
+msgid "&Mute"
+msgstr "&Demp"
+
+#: webview.cpp:698
+#, kde-format
+msgid "&Loop"
+msgstr "&Løkke"
+
+#: webview.cpp:705
+#, kde-format
+msgid "Show &Controls"
+msgstr "Vis &kontroller"
+
+#: webview.cpp:718
+#, kde-format
+msgid "Sa&ve Video As..."
+msgstr "&Lagre video som …"
+
+#: webview.cpp:719
+#, kde-format
+msgid "C&opy Video URL"
+msgstr "K&opier video-URL"
+
+#: webview.cpp:721
+#, kde-format
+msgid "Sa&ve Audio As..."
+msgstr "&Lagre lyd som …"
+
+#: webview.cpp:722
+#, kde-format
+msgid "C&opy Audio URL"
+msgstr "K&opier lyd-URL"
+
+#: webview.cpp:724
+#, kde-format
+msgid "Sa&ve Media As..."
+msgstr "La&gre media som …"
+
+#: webview.cpp:725
+#, kde-format
+msgid "C&opy Media URL"
+msgstr "K&opier medie-URL"
+
+#: webview.cpp:769
+#, kde-format
+msgctxt "Search \"search provider\" for \"text\""
+msgid "Search %1 for '%2'"
+msgstr "Søk i %1 etter «%2»"
+
+#: webview.cpp:780
+#, kde-format
+msgctxt "Search for \"text\" with"
+msgid "Search for '%1' with"
+msgstr "Søk etter «%1» med"

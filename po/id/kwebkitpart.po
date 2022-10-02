@@ -1,0 +1,856 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# Wantoyo <wantoyek@gmail.com>, 2017, 2018, 2019, 2020, 2021, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-06-16 00:17+0000\n"
+"PO-Revision-Date: 2022-09-27 18:12+0700\n"
+"Last-Translator: Wantoyèk <wantoyek@gmail.com>\n"
+"Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 21.12.3\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Arif Budiman, Wantoyèk"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "arifpedia@gmail.com,wantoyek@gmail.com"
+
+#: kwebkitpart.cpp:161 webview.cpp:547
+#, kde-format
+msgid "Save &Frame As..."
+msgstr "Simpan &Bingkai Sebagai..."
+
+#: kwebkitpart.cpp:165
+#, kde-format
+msgid "Print Preview"
+msgstr "Pratayang Cetakan"
+
+#: kwebkitpart.cpp:169
+#, kde-format
+msgctxt "zoom in action"
+msgid "Zoom In"
+msgstr "Zoom Perbesar"
+
+#: kwebkitpart.cpp:176
+#, kde-format
+msgctxt "zoom out action"
+msgid "Zoom Out"
+msgstr "Zoom Perkecil"
+
+#: kwebkitpart.cpp:183
+#, kde-format
+msgctxt "reset zoom action"
+msgid "Actual Size"
+msgstr "Ukuran Asli"
+
+#: kwebkitpart.cpp:188
+#, kde-format
+msgid "Zoom Text Only"
+msgstr "Hanya Zoom Teks"
+
+#: kwebkitpart.cpp:196
+#, kde-format
+msgid "Zoom To DPI"
+msgstr "Zoom Ke DPI"
+
+#: kwebkitpart.cpp:208
+#, kde-format
+msgid "Set &Encoding"
+msgstr "Set &Enkoding"
+
+#: kwebkitpart.cpp:212
+#, kde-format
+msgid "View Do&cument Source"
+msgstr "Tampilan &Sumber Dokumen"
+
+#: kwebkitpart.cpp:217
+#, kde-format
+msgctxt "Secure Sockets Layer"
+msgid "View SSL Information"
+msgstr "Tampilan Informasi SSL"
+
+#: kwebkitpart.cpp:221
+#, kde-format
+msgid "Toggle Caret Mode"
+msgstr "Mode Toggle Caret"
+
+#: kwebkitpart.cpp:228
+#, kde-format
+msgctxt "find action \"whats this\" text"
+msgid ""
+"<h3>Find text</h3>Shows a dialog that allows you to find text on the "
+"displayed page."
+msgstr ""
+"<h3>Temukan teks</h3>Menampilkan jendela dialog yang memungkinkan Anda "
+"menemukan teks pada halaman yang ditampilkan."
+
+#: kwebkitpart.cpp:568
+#, kde-format
+msgid "This site is not secured with SSL, or its SSL information is not valid."
+msgstr ""
+"Situs ini tidaklah aman dengan SSL, atau informasi SSL-nya tidak absah."
+
+#: kwebkitpart.cpp:569
+#, kde-format
+msgctxt "Secure Sockets Layer"
+msgid "SSL"
+msgstr "SSL"
+
+#: kwebkitpart.cpp:659
+#, kde-format
+msgctxt ""
+"status bar text when hovering email links; looks like \"Email: xy@kde.org - "
+"CC: z@kde.org -BCC: x@kde.org - Subject: Hi translator\""
+msgid "Email: "
+msgstr "Surel: "
+
+#: kwebkitpart.cpp:687
+#, kde-format
+msgctxt ""
+"status bar text when hovering email links; looks like \"Email: xy@kde.org - "
+"CC: z@kde.org -BCC: x@kde.org - Subject: Hi translator\""
+msgid " - CC: "
+msgstr " - CC: "
+
+#: kwebkitpart.cpp:689
+#, kde-format
+msgctxt ""
+"status bar text when hovering email links; looks like \"Email: xy@kde.org - "
+"CC: z@kde.org -BCC: x@kde.org - Subject: Hi translator\""
+msgid " - BCC: "
+msgstr " - BCC: "
+
+#: kwebkitpart.cpp:691
+#, kde-format
+msgctxt ""
+"status bar text when hovering email links; looks like \"Email: xy@kde.org - "
+"CC: z@kde.org -BCC: x@kde.org - Subject: Hi translator\""
+msgid " - Subject: "
+msgstr " - Judul: "
+
+#: kwebkitpart.cpp:695 kwebkitpart.cpp:705
+#, kde-format
+msgid " (In new window)"
+msgstr " (Di jendela baru)"
+
+#: kwebkitpart.cpp:703
+#, kde-format
+msgid " (In parent frame)"
+msgstr " (Di bingkai induk)"
+
+#: kwebkitpart.cpp:767
+#, kde-format
+msgid "<qt>Do you want to search for <b>%1</b>?</qt>"
+msgstr "<qt>Apakah Anda ingin mencari <b>%1</b>?</qt>"
+
+#: kwebkitpart.cpp:768
+#, kde-format
+msgid "Internet Search"
+msgstr "Pencarian Internet"
+
+#: kwebkitpart.cpp:768
+#, kde-format
+msgid "&Search"
+msgstr "&Cari"
+
+#: kwebkitpart.cpp:791
+#, kde-format
+msgid "&Allow password caching for this site"
+msgstr "&Memungkinkan penyinggahan kata sandi untuk situs ini"
+
+#: kwebkitpart.cpp:794
+#, kde-format
+msgid "Remove all cached passwords for this site"
+msgstr "Hapus semua kata sandi yang disimpan sementara untuk situs ini"
+
+#: kwebkitpart.cpp:797
+#, kde-format
+msgid "&Close Wallet"
+msgstr "&Tutup Wallet"
+
+#: kwebkitpart.cpp:855
+#, kde-format
+msgid "Close window?"
+msgstr "Tutup jendela?"
+
+#: kwebkitpart.cpp:855
+#, kde-format
+msgid "Confirmation Required"
+msgstr "Diperlukan Konfirmasi"
+
+#. i18n("<html>Do you want to grant the site <b>%1</b> "
+#. "access to information about your current physical location?",
+#. url.host()));
+#: kwebkitpart.cpp:886
+#, kde-format
+msgid ""
+"<html>Do you want to grant the site access to information about your current "
+"physical location?"
+msgstr ""
+"<html> Apakah Anda ingin memberikan akses pada situs ini ke informasi "
+"tentang lokasi fisik Anda saat ini?"
+
+#: kwebkitpart.cpp:933
+#, kde-format
+msgid ""
+"<html>Do you want %1 to remember the login information for <b>%2</b>?</html>"
+msgstr ""
+"<html>Apakah Anda ingin %1 mengingat informasi login untuk <b>%2</b>?</html>"
+
+#. i18n: ectx: ToolBar (htmlToolBar)
+#: kwebkitpart.rc:28
+#, kde-format
+msgid "HTML Toolbar"
+msgstr "Bilah Alat HTML"
+
+#: kwebkitpart_ext.cpp:409 kwebkitpart_ext.cpp:496
+#, kde-format
+msgid "Add URL to Filter"
+msgstr "Tambah URL untuk Filter"
+
+#: kwebkitpart_ext.cpp:410 kwebkitpart_ext.cpp:497
+#, kde-format
+msgid "Enter the URL:"
+msgstr "Masukkan URL:"
+
+#: networkaccessmanager.cpp:38
+#, kde-format
+msgid "Blocked by ad filter"
+msgstr "Dihalang oleh filter iklan"
+
+#: settings/webkitsettings.cpp:891
+#, kde-format
+msgid "Filter error"
+msgstr "Galat filter"
+
+#: ui/featurepermissionbar.cpp:21
+#, kde-format
+msgctxt "@action:deny access"
+msgid "&Deny access"
+msgstr "&Tolak akses"
+
+#: ui/featurepermissionbar.cpp:25
+#, kde-format
+msgctxt "@action:grant access"
+msgid "&Grant access"
+msgstr "&Berikan akses"
+
+#: ui/passwordbar.cpp:26
+#, kde-format
+msgctxt "@action:remember password"
+msgid "&Remember"
+msgstr "&Ingat"
+
+#: ui/passwordbar.cpp:30
+#, kde-format
+msgctxt "@action:never for this site"
+msgid "Ne&ver for this site"
+msgstr "Ja&ngan pernah untuk situs ini"
+
+#: ui/passwordbar.cpp:34
+#, kde-format
+msgctxt "@action:not now"
+msgid "N&ot now"
+msgstr "T&idak sekarang"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, closeButton)
+#: ui/searchbar.ui:23
+#, kde-format
+msgid "Close the search bar"
+msgstr "Tutup bilah pencarian"
+
+#. i18n: ectx: property (text), widget (QLabel, searchInfo)
+#: ui/searchbar.ui:36
+#, kde-format
+msgctxt "label for input line to find text"
+msgid "&Find:"
+msgstr "&Temukan:"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, nextButton)
+#: ui/searchbar.ui:59
+#, kde-format
+msgid "Find the next match for the current search phrase"
+msgstr "Temukan kecocokan selanjutnya untuk frasa pencarian saat ini"
+
+#. i18n: ectx: property (text), widget (QToolButton, nextButton)
+#: ui/searchbar.ui:62
+#, kde-format
+msgid "&Next"
+msgstr "&Selanjutnya"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, previousButton)
+#. i18n: ectx: property (toolTip), widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:78 ui/searchbar.ui:94
+#, kde-format
+msgid "Find the previous match for the current search phrase"
+msgstr "Temukan kecocokan sebelumnya untuk frasa pencarian saat ini"
+
+#. i18n: ectx: property (text), widget (QToolButton, previousButton)
+#: ui/searchbar.ui:81
+#, kde-format
+msgid "&Previous"
+msgstr "&Sebelumnya"
+
+#. i18n: ectx: property (text), widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:97
+#, kde-format
+msgid "&Options"
+msgstr "&Opsi"
+
+#. i18n: ectx: property (text), item, widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:126
+#, kde-format
+msgid "&Match Case"
+msgstr "&Sama Persis"
+
+#. i18n: ectx: property (text), item, widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:137
+#, kde-format
+msgid "&Search As You Type"
+msgstr "&Cari Seperti Yang Anda Ketik"
+
+#. i18n: ectx: property (text), item, widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:145
+#, kde-format
+msgid "&Highlight All Matches"
+msgstr "&Sorot Semua Yang Cocok"
+
+#. i18n: ectx: property (toolTip), item, widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:148
+#, kde-format
+msgid "Highlight Matches"
+msgstr "Sorot Yang Cocok"
+
+#: webpage.cpp:130
+#, kde-format
+msgid "The download manager (%1) could not be found in your installation."
+msgstr "Pengelola unduhan (%1) tidak dapat ditemukan pada sistem Anda."
+
+#: webpage.cpp:131
+#, kde-format
+msgid ""
+"Try to reinstall it and make sure that it is available in $PATH. \n"
+"\n"
+"The integration will be disabled."
+msgstr ""
+"Cobalah menginstal ulang dan pastikan ia tersedia pada $PATH. \n"
+"\n"
+"Integrasi akan dinonfungsikan."
+
+#: webpage.cpp:191
+#, kde-format
+msgid ""
+"<html><body><h3>Unable to display error message</h3><p>The error template "
+"file <em>error.html</em> could not be found.</p></body></html>"
+msgstr ""
+"<html><body><h3>Tidak dapat menampilkan pesan error</h3><p>File templat "
+"galat <em>error.html</em> tidak ditemukan.</p></body></html>"
+
+#: webpage.cpp:197
+#, kde-format
+msgid "Error: %1"
+msgstr "Galat: %1"
+
+#: webpage.cpp:202
+#, kde-format
+msgid "The requested operation could not be completed"
+msgstr "Operasi yang diminta tidak dapat diselesaikan"
+
+#: webpage.cpp:209
+#, kde-format
+msgid "Technical Reason: %1"
+msgstr "Alasan Teknis: %1"
+
+#: webpage.cpp:214
+#, kde-format
+msgid "Details of the Request:"
+msgstr "Perincian Permintaan:"
+
+#. i18n, and once for HTML.
+#: webpage.cpp:217
+#, kde-format
+msgid "URL: %1"
+msgstr "URL: %1"
+
+#. i18n, and once for HTML.
+#: webpage.cpp:223
+#, kde-format
+msgid "Protocol: %1"
+msgstr "Protokol: %1"
+
+#: webpage.cpp:227
+#, kde-format
+msgid "Date and Time: %1"
+msgstr "Tanggal dan Waktu: %1"
+
+#. i18n, and once for HTML.
+#: webpage.cpp:231
+#, kde-format
+msgid "Additional Information: %1"
+msgstr "Informasi Tambahan: %1"
+
+#: webpage.cpp:233
+#, kde-format
+msgid "Description:"
+msgstr "Deskripsi:"
+
+#: webpage.cpp:240
+#, kde-format
+msgid "Possible Causes:"
+msgstr "Penyebab:"
+
+#: webpage.cpp:248
+#, kde-format
+msgid "Possible Solutions:"
+msgstr "Solusi:"
+
+#: webpage.cpp:280 webpage.cpp:284
+#, kde-format
+msgid "Choose files to upload"
+msgstr "Pilih file untuk diunggah"
+
+#: webpage.cpp:385
+#, kde-format
+msgid ""
+"<qt><p>To display the requested web page again, the browser needs to resend "
+"information you have previously submitted.</p><p>If you were shopping online "
+"and made a purchase, click the Cancel button to prevent a duplicate purchase."
+"Otherwise, click the Continue button to display the webpage again.</p>"
+msgstr ""
+"<qt><p>Untuk menampilkan kembali halaman web yang diminta, browser perlu "
+"mengirim ulang informasi yang telah Anda ajukan sebelumnya.</p><p>Jika Anda "
+"sedang berbelanja online dan melakukan pembelian, klik tombol Batal untuk "
+"mencegah pembelian rangkap. Jika tidak, klik tombol Lanjut untuk menampilkan "
+"halaman web kembali.</p>"
+
+#: webpage.cpp:392
+#, kde-format
+msgid "Resubmit Information"
+msgstr "Ajukan Ulang Informasi"
+
+#: webpage.cpp:631
+#, kde-format
+msgid ""
+"This site is attempting to access information about your physical location.\n"
+"Do you want to allow it access?"
+msgstr ""
+"Situs ini mencoba mengakses informasi tentang lokasi fisik Anda.\n"
+"Apakah Anda mengizinkannya?"
+
+#: webpage.cpp:635 webpage.cpp:752 webpage.cpp:763
+#, kde-format
+msgid "Network Transmission"
+msgstr "Transmisi Jaringan"
+
+#: webpage.cpp:636
+#, kde-format
+msgid "Allow access"
+msgstr "Izinkan akses"
+
+#: webpage.cpp:711
+#, kde-format
+msgid ""
+"<qt>This untrusted page links to<br/><b>%1</b>.<br/>Do you want to follow "
+"the link?</qt>"
+msgstr ""
+"<qt>Halaman yang tidak terpercaya ini menaut ke<br/><b>%1</b>.<br/>Apakah "
+"Anda ingin mengikuti tautan tersebut?</qt>"
+
+#: webpage.cpp:713
+#, kde-format
+msgid "Security Warning"
+msgstr "Peringatan Keamanan"
+
+#: webpage.cpp:714
+#, kde-format
+msgctxt "follow link despite of security warning"
+msgid "Follow"
+msgstr "Ikuti"
+
+#: webpage.cpp:716
+#, kde-format
+msgid "Security Alert"
+msgstr "Peringatan Keamanan"
+
+#: webpage.cpp:717
+#, kde-format
+msgid "<qt>Access by untrusted page to<br/><b>%1</b><br/> denied.</qt>"
+msgstr ""
+"<qt>Akses oleh halaman yang tidak terpercaya ke<br/><b>%1</b><br/> ditolak.</"
+"qt>"
+
+#: webpage.cpp:745
+#, kde-format
+msgid ""
+"Warning: This is a secure form but it is attempting to send your data back "
+"unencrypted.\n"
+"A third party may be able to intercept and view this information.\n"
+"Are you sure you want to send the data unencrypted?"
+msgstr ""
+"Peringatan: Ini adalah formulir yang aman namun mencoba mengirim data Anda "
+"kembali tanpa enkripsi.\n"
+"Pihak ketiga mungkin bisa mencegat dan melihat informasi ini.\n"
+"Apakah Anda yakin ingin mengirim data yang tidak terenkripsi?"
+
+#: webpage.cpp:753
+#, kde-format
+msgid "&Send Unencrypted"
+msgstr "&Kirim Tanpa Enkripsi"
+
+#: webpage.cpp:760
+#, kde-format
+msgid ""
+"This site is attempting to submit form data via email.\n"
+"Do you want to continue?"
+msgstr ""
+"Situs ini mencoba mengajukan data formulir via surel.\n"
+"Apakah Anda ingin melanjutkan?"
+
+#: webpage.cpp:764
+#, kde-format
+msgid "&Send Email"
+msgstr "&Kirim Surel"
+
+#: webpage.cpp:813
+#, kde-format
+msgid ""
+"<qt>Do you want to allow this site to attach the following files to the "
+"email message?</qt>"
+msgstr ""
+"<qt>Apakah Anda mengizinkan situs ini untuk menampirkan file berikut ke "
+"pesan surel?</qt>"
+
+#: webpage.cpp:815
+#, kde-format
+msgid "Email Attachment Confirmation"
+msgstr "Konfirmasi Pelampiran Surel"
+
+#: webpage.cpp:816
+#, kde-format
+msgid "&Allow attachments"
+msgstr "&Izinkan lampiran"
+
+#: webpage.cpp:817
+#, kde-format
+msgid "&Ignore attachments"
+msgstr "&Abaikan lampiran"
+
+#: webpage.cpp:831
+#, kde-format
+msgid ""
+"This site attempted to attach a file from your computer in the form "
+"submission. The attachment was removed for your protection."
+msgstr ""
+"Situs ini mencoba melampirkan file dari komputer Anda dalam bentuk "
+"pengajuan. Lampiran telah dihapus untuk proteksi Anda."
+
+#: webpage.cpp:834
+#, kde-format
+msgid "Attachment Removed"
+msgstr "Lampiran Dihapus"
+
+#: webpage.cpp:902
+#, kde-format
+msgid ""
+"This site is requesting to open a new popup window.\n"
+"Do you want to allow this?"
+msgstr ""
+"Situs ini meminta untuk membuka jendela munculan baru.\n"
+"Apakah Anda mengizinkannya?"
+
+#: webpage.cpp:904
+#, kde-format
+msgid ""
+"<qt>This site is requesting to open a popup window to<p>%1</p><br/>Do you "
+"want to allow this?</qt>"
+msgstr ""
+"<qt>Situs ini meminta untuk membuka jendela munculan ke<p>%1</p><br/>Apakah "
+"Anda mengizinkannya?</qt>"
+
+#: webpage.cpp:908
+#, kde-format
+msgid "Javascript Popup Confirmation"
+msgstr "Konfirmasi Munculan Javascript"
+
+#: webpage.cpp:909
+#, kde-format
+msgid "Allow"
+msgstr "Izinkan"
+
+#: webpage.cpp:910
+#, kde-format
+msgid "Do Not Allow"
+msgstr "Jangan Izinkan"
+
+#: webpluginfactory.cpp:58
+#, kde-format
+msgid "Start Plugin"
+msgstr "Jalankan Pengaya"
+
+#: webview.cpp:299
+#, kde-format
+msgid "Access keys activated"
+msgstr "Kunci akses diaktifkan"
+
+#: webview.cpp:378
+#, kde-format
+msgctxt "Text direction"
+msgid "Direction"
+msgstr "Arah"
+
+#: webview.cpp:383
+#, kde-format
+msgid "Default"
+msgstr "Baku"
+
+#: webview.cpp:392
+#, kde-format
+msgid "Left to right"
+msgstr "Kiri ke kanan"
+
+#: webview.cpp:401
+#, kde-format
+msgid "Right to left"
+msgstr "Kanan ke kiri"
+
+#: webview.cpp:441
+#, kde-format
+msgid "Check Spelling..."
+msgstr "Periksa ejaan..."
+
+#: webview.cpp:447
+#, kde-format
+msgid "Spellcheck selection..."
+msgstr "Pilihan Periksa ejaan..."
+
+#: webview.cpp:474
+#, kde-format
+msgid "Save Image As..."
+msgstr "Simpan Citra Sebagai..."
+
+#: webview.cpp:479
+#, kde-format
+msgid "Send Image..."
+msgstr "Kirim Citra..."
+
+#: webview.cpp:484
+#, kde-format
+msgid "Copy Image URL"
+msgstr "Salin URL Citra"
+
+#: webview.cpp:489
+#, kde-format
+msgid "Copy Image"
+msgstr "Salin Citra"
+
+#: webview.cpp:495
+#, kde-format
+msgid "View Image (%1)"
+msgstr "Lihat Citra (%1)"
+
+#: webview.cpp:501
+#, kde-format
+msgid "Block Image..."
+msgstr "Blokir Citra..."
+
+#: webview.cpp:509
+#, kde-format
+msgid "Block Images From %1"
+msgstr "Blokir Citra Dari %1"
+
+#: webview.cpp:516
+#, kde-format
+msgctxt "@title:menu HTML frame/iframe"
+msgid "Frame"
+msgstr "Bingkai"
+
+#: webview.cpp:518
+#, kde-format
+msgid "Open in New &Window"
+msgstr "Buka di Jendela &Baru"
+
+#: webview.cpp:523
+#, kde-format
+msgid "Open in &This Window"
+msgstr "Buka di &Jendela Ini"
+
+#: webview.cpp:528
+#, kde-format
+msgid "Open in &New Tab"
+msgstr "Buka di &Tab Baru"
+
+#: webview.cpp:537
+#, kde-format
+msgid "Reload Frame"
+msgstr "Muat ulang Bingkai"
+
+#: webview.cpp:542
+#, kde-format
+msgid "Print Frame..."
+msgstr "Cetak Bingkai..."
+
+#: webview.cpp:552
+#, kde-format
+msgid "View Frame Source"
+msgstr "Lihat Sumber Bingkai"
+
+#: webview.cpp:566
+#, kde-format
+msgid "Block IFrame..."
+msgstr "Blokir IFrame..."
+
+#: webview.cpp:611 webview.cpp:644
+#, kde-format
+msgid "&Copy Text"
+msgstr "&Salin Teks"
+
+#: webview.cpp:621
+#, kde-format
+msgctxt "open selected url"
+msgid "Open '%1'"
+msgstr "Buka '%1'"
+
+#: webview.cpp:650
+#, kde-format
+msgid "&Copy Email Address"
+msgstr "&Salin Alamat Email"
+
+#: webview.cpp:656
+#, kde-format
+msgid "Copy Link &Text"
+msgstr "Salin &Teks Tautan"
+
+#: webview.cpp:662
+#, kde-format
+msgid "Copy Link &URL"
+msgstr "Salin &URL Tautan"
+
+#: webview.cpp:667
+#, kde-format
+msgid "&Save Link As..."
+msgstr "&Simpan Tautan Sebagai..."
+
+#: webview.cpp:688
+#, kde-format
+msgid "&Play"
+msgstr "&Main"
+
+#: webview.cpp:688
+#, kde-format
+msgid "&Pause"
+msgstr "&Jeda"
+
+#: webview.cpp:693
+#, kde-format
+msgid "Un&mute"
+msgstr "Ber&suara"
+
+#: webview.cpp:693
+#, kde-format
+msgid "&Mute"
+msgstr "&Bungkam"
+
+#: webview.cpp:698
+#, kde-format
+msgid "&Loop"
+msgstr "&Pengulangan"
+
+#: webview.cpp:705
+#, kde-format
+msgid "Show &Controls"
+msgstr "Tampilkan &Kendali"
+
+#: webview.cpp:718
+#, kde-format
+msgid "Sa&ve Video As..."
+msgstr "&Simpan Video Sebagai..."
+
+#: webview.cpp:719
+#, kde-format
+msgid "C&opy Video URL"
+msgstr "&Salin URL Video"
+
+#: webview.cpp:721
+#, kde-format
+msgid "Sa&ve Audio As..."
+msgstr "&Simpan Audio Sebagai..."
+
+#: webview.cpp:722
+#, kde-format
+msgid "C&opy Audio URL"
+msgstr "&Salin URL Audio"
+
+#: webview.cpp:724
+#, kde-format
+msgid "Sa&ve Media As..."
+msgstr "&Simpan Media Sebagai..."
+
+#: webview.cpp:725
+#, kde-format
+msgid "C&opy Media URL"
+msgstr "&Salin URL Media"
+
+#: webview.cpp:769
+#, kde-format
+msgctxt "Search \"search provider\" for \"text\""
+msgid "Search %1 for '%2'"
+msgstr "Cari %1 untuk '%2'"
+
+#: webview.cpp:780
+#, kde-format
+msgctxt "Search for \"text\" with"
+msgid "Search for '%1' with"
+msgstr "Cari '%1' dengan"
+
+#~ msgctxt "Program Name"
+#~ msgid "KWebKitPart"
+#~ msgstr "KWebKitPart"
+
+#~ msgctxt "Short Description"
+#~ msgid "QtWebKit Browser Engine Component"
+#~ msgstr "Komponen Mesin Penelusur QtWebKit"
+
+#~ msgid ""
+#~ "(C) 2009-2010 Dawit Alemayehu\n"
+#~ "(C) 2008-2010 Urs Wolfer\n"
+#~ "(C) 2007 Trolltech ASA"
+#~ msgstr ""
+#~ "(C) 2009-2010 Dawit Alemayehu\n"
+#~ "(C) 2008-2010 Urs Wolfer\n"
+#~ "(C) 2007 Trolltech ASA"
+
+#~ msgid "Dawit Alemayehu"
+#~ msgstr "Dawit Alemayehu"
+
+#~ msgid "Maintainer, Developer"
+#~ msgstr "Pemelihara, Pengembang"
+
+#~ msgid "Urs Wolfer"
+#~ msgstr "Urs Wolfer"
+
+#~ msgid "Michael Howell"
+#~ msgstr "Michael Howell"
+
+#~ msgid "Developer"
+#~ msgstr "Pengembang"
+
+#~ msgid "Laurent Montel"
+#~ msgstr "Laurent Montel"
+
+#~ msgid "Dirk Mueller"
+#~ msgstr "Dirk Mueller"
+
+#~ msgid "&Find:"
+#~ msgstr "&Temukan:"

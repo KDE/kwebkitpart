@@ -1,0 +1,880 @@
+# Translation of webenginepart.po into Serbian.
+# Slobodan Simic <slsimic@gmail.com>, 2010.
+# Chusslove Illich <caslav.ilic@gmx.net>, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017.
+# Dalibor Djuric <daliborddjuric@gmail.com>, 2010, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: webenginepart\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2019-05-20 02:41+0200\n"
+"PO-Revision-Date: 2017-12-03 22:53+0100\n"
+"Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
+"Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
+"Language: sr@ijekavianlatin\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+"X-Environment: kde\n"
+"X-Associated-UI-Catalogs: kwidgetsaddons5_qt\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Slobodan Simić"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "slsimic@gmail.com"
+
+#: kwebkitpart.cpp:90
+#, kde-format
+msgctxt "Program Name"
+msgid "KWebKitPart"
+msgstr "KWebKit dio"
+
+#: kwebkitpart.cpp:92
+#, kde-format
+msgctxt "Short Description"
+msgid "QtWebKit Browser Engine Component"
+msgstr "Motor za pregledače na osnovu WebKita"
+
+#: kwebkitpart.cpp:94
+#, kde-format
+msgid ""
+"(C) 2009-2010 Dawit Alemayehu\n"
+"(C) 2008-2010 Urs Wolfer\n"
+"(C) 2007 Trolltech ASA"
+msgstr ""
+"© 2009–2010, Davit Alemajehu\n"
+"© 2008–2010, Urs Volfer\n"
+"© 2007, Trolltech"
+
+#: kwebkitpart.cpp:98
+#, kde-format
+msgid "Dawit Alemayehu"
+msgstr "Davit Alemajehu"
+
+#: kwebkitpart.cpp:98 kwebkitpart.cpp:99
+#, kde-format
+msgid "Maintainer, Developer"
+msgstr "održavalac i programer"
+
+#: kwebkitpart.cpp:99
+#, kde-format
+msgid "Urs Wolfer"
+msgstr "Urs Volfer"
+
+#: kwebkitpart.cpp:100
+#, kde-format
+msgid "Michael Howell"
+msgstr "Majkl Hauel"
+
+#: kwebkitpart.cpp:100 kwebkitpart.cpp:101 kwebkitpart.cpp:102
+#, kde-format
+msgid "Developer"
+msgstr "programer"
+
+#: kwebkitpart.cpp:101
+#, kde-format
+msgid "Laurent Montel"
+msgstr "Loren Montel"
+
+#: kwebkitpart.cpp:102
+#, kde-format
+msgid "Dirk Mueller"
+msgstr "Dirk Miler"
+
+#: kwebkitpart.cpp:190 webview.cpp:561
+#, kde-format
+msgid "Save &Frame As..."
+msgstr "Sačuvaj &okvir kao..."
+
+#: kwebkitpart.cpp:194
+#, kde-format
+msgid "Print Preview"
+msgstr "Pregled pred štampanje"
+
+#: kwebkitpart.cpp:198
+#, kde-format
+msgctxt "zoom in action"
+msgid "Zoom In"
+msgstr "Uveličaj"
+
+#: kwebkitpart.cpp:205
+#, kde-format
+msgctxt "zoom out action"
+msgid "Zoom Out"
+msgstr "Umanji"
+
+#: kwebkitpart.cpp:212
+#, kde-format
+msgctxt "reset zoom action"
+msgid "Actual Size"
+msgstr "Stvarna veličina"
+
+#: kwebkitpart.cpp:217
+#, kde-format
+msgid "Zoom Text Only"
+msgstr "Uveličaj samo tekst"
+
+#: kwebkitpart.cpp:225
+#, kde-format
+msgid "Zoom To DPI"
+msgstr "Uveličaj na tpi"
+
+#: kwebkitpart.cpp:237
+#, kde-format
+msgid "Set &Encoding"
+msgstr "Postavi &kodiranje"
+
+#: kwebkitpart.cpp:241
+#, kde-format
+msgid "View Do&cument Source"
+msgstr "Prikaži izvor &dokumenta"
+
+#: kwebkitpart.cpp:246
+#, kde-format
+msgctxt "Secure Sockets Layer"
+msgid "View SSL Information"
+msgstr "Prikaži SSL podatke"
+
+#: kwebkitpart.cpp:250
+#, kde-format
+msgid "Toggle Caret Mode"
+msgstr "Obrni režim kursora"
+
+#: kwebkitpart.cpp:257
+#, kde-format
+msgctxt "find action \"whats this\" text"
+msgid ""
+"<h3>Find text</h3>Shows a dialog that allows you to find text on the "
+"displayed page."
+msgstr ""
+"<h3>Nađi tekst</h3>Prikazuje dijalog pomoću kojeg možete tražiti tekst na "
+"prikazanoj stranici."
+
+#: kwebkitpart.cpp:589
+#, kde-format
+msgid "This site is not secured with SSL, or its SSL information is not valid."
+msgstr "Ovaj sajt nije obezbeđen SSL‑om, ili SSL podaci nisu dobri."
+
+#: kwebkitpart.cpp:590
+#, kde-format
+msgctxt "Secure Sockets Layer"
+msgid "SSL"
+msgstr "SSL"
+
+#: kwebkitpart.cpp:681
+#, kde-format
+msgctxt ""
+"status bar text when hovering email links; looks like \"Email: xy@kde.org - "
+"CC: z@kde.org -BCC: x@kde.org - Subject: Hi translator\""
+msgid "Email: "
+msgstr "e‑pošta: "
+
+#: kwebkitpart.cpp:709
+#, kde-format
+msgctxt ""
+"status bar text when hovering email links; looks like \"Email: xy@kde.org - "
+"CC: z@kde.org -BCC: x@kde.org - Subject: Hi translator\""
+msgid " - CC: "
+msgstr " — CC: "
+
+#: kwebkitpart.cpp:711
+#, kde-format
+msgctxt ""
+"status bar text when hovering email links; looks like \"Email: xy@kde.org - "
+"CC: z@kde.org -BCC: x@kde.org - Subject: Hi translator\""
+msgid " - BCC: "
+msgstr " — BCC: "
+
+#: kwebkitpart.cpp:713
+#, kde-format
+msgctxt ""
+"status bar text when hovering email links; looks like \"Email: xy@kde.org - "
+"CC: z@kde.org -BCC: x@kde.org - Subject: Hi translator\""
+msgid " - Subject: "
+msgstr " — tema: "
+
+#: kwebkitpart.cpp:717 kwebkitpart.cpp:727
+#, kde-format
+msgid " (In new window)"
+msgstr " (u novom prozoru)"
+
+#: kwebkitpart.cpp:725
+#, kde-format
+msgid " (In parent frame)"
+msgstr " (u roditeljskom okviru)"
+
+#: kwebkitpart.cpp:789
+#, kde-format
+msgid "<qt>Do you want to search for <b>%1</b>?</qt>"
+msgstr "<qt>Želite li da potražite <b>%1</b>?</qt>"
+
+#: kwebkitpart.cpp:790
+#, kde-format
+msgid "Internet Search"
+msgstr "Pretraga Interneta"
+
+#: kwebkitpart.cpp:790
+#, kde-format
+msgid "&Search"
+msgstr "&Traži"
+
+# rewrite-msgid: /caching/storing/
+#: kwebkitpart.cpp:813
+#, kde-format
+msgid "&Allow password caching for this site"
+msgstr "&Dozvoli skladištenje lozinki za ovaj sajt"
+
+# rewrite-msgid: /cached/stored/
+#: kwebkitpart.cpp:816
+#, kde-format
+msgid "Remove all cached passwords for this site"
+msgstr "Ukloni uskladištene lozinke za ovaj sajt"
+
+#: kwebkitpart.cpp:819
+#, kde-format
+msgid "&Close Wallet"
+msgstr "&Zatvori novčanik"
+
+#: kwebkitpart.cpp:877
+#, kde-format
+msgid "Close window?"
+msgstr "Zatvoriti prozor?"
+
+#: kwebkitpart.cpp:877
+#, kde-format
+msgid "Confirmation Required"
+msgstr "Potrebna je potvrda"
+
+#. i18n("<html>Do you want to grant the site <b>%1</b> "
+#. "access to information about your current physical location?",
+#. url.host()));
+#: kwebkitpart.cpp:908
+#, kde-format
+msgid ""
+"<html>Do you want to grant the site access to information about your current "
+"physical location?"
+msgstr ""
+"<html>Želite li da dozvolite sajtu pristup podacima o vašoj tekućoj fizičkoj "
+"lokaciji?</html>"
+
+#: kwebkitpart.cpp:955
+#, kde-format
+msgid ""
+"<html>Do you want %1 to remember the login information for <b>%2</b>?</html>"
+msgstr "<html>Želite li da %1 upamti podatke o prijavi za <b>%2</b>?</html>"
+
+#. i18n: ectx: ToolBar (htmlToolBar)
+#: kwebkitpart.rc:28
+#, kde-format
+msgid "HTML Toolbar"
+msgstr "HTML traka"
+
+# >> @title:window
+#: kwebkitpart_ext.cpp:422 kwebkitpart_ext.cpp:509
+#, kde-format
+msgid "Add URL to Filter"
+msgstr "Dodavanje URL‑a u filter"
+
+#: kwebkitpart_ext.cpp:423 kwebkitpart_ext.cpp:510
+#, kde-format
+msgid "Enter the URL:"
+msgstr "Unesite URL:"
+
+#: networkaccessmanager.cpp:52
+#, kde-format
+msgid "Blocked by ad filter"
+msgstr "Blokirano filterom reklama"
+
+#: settings/webkitsettings.cpp:904
+#, kde-format
+msgid "Filter error"
+msgstr "Greška filtera"
+
+#: ui/featurepermissionbar.cpp:36
+#, kde-format
+msgctxt "@action:deny access"
+msgid "&Deny access"
+msgstr "&Odbij pristup"
+
+#: ui/featurepermissionbar.cpp:40
+#, kde-format
+msgctxt "@action:grant access"
+msgid "&Grant access"
+msgstr "&Dozvoli pristup"
+
+#: ui/passwordbar.cpp:41
+#, kde-format
+msgctxt "@action:remember password"
+msgid "&Remember"
+msgstr "&Upamti"
+
+#: ui/passwordbar.cpp:45
+#, kde-format
+msgctxt "@action:never for this site"
+msgid "Ne&ver for this site"
+msgstr "&Nikada za ovaj sajt"
+
+#: ui/passwordbar.cpp:49
+#, kde-format
+msgctxt "@action:not now"
+msgid "N&ot now"
+msgstr "Ne &sada"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, closeButton)
+#: ui/searchbar.ui:23
+#, kde-format
+msgid "Close the search bar"
+msgstr "Zatvori traku pretrage"
+
+#. i18n: ectx: property (text), widget (QLabel, searchInfo)
+#: ui/searchbar.ui:36
+#, kde-format
+msgctxt "label for input line to find text"
+msgid "&Find:"
+msgstr "&Nađi:"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, nextButton)
+#: ui/searchbar.ui:59
+#, kde-format
+msgid "Find the next match for the current search phrase"
+msgstr "Nađi sljedeće poklapanje sa zadatim izrazom"
+
+#. i18n: ectx: property (text), widget (QToolButton, nextButton)
+#: ui/searchbar.ui:62
+#, kde-format
+msgid "&Next"
+msgstr "&Sljedeće"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, previousButton)
+#. i18n: ectx: property (toolTip), widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:78 ui/searchbar.ui:94
+#, kde-format
+msgid "Find the previous match for the current search phrase"
+msgstr "Nađi prethodno poklapanje sa zadatim izrazom"
+
+#. i18n: ectx: property (text), widget (QToolButton, previousButton)
+#: ui/searchbar.ui:81
+#, kde-format
+msgid "&Previous"
+msgstr "&Prethodno"
+
+#. i18n: ectx: property (text), widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:97
+#, kde-format
+msgid "&Options"
+msgstr "&Opcije"
+
+#. i18n: ectx: property (text), item, widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:126
+#, kde-format
+msgid "&Match Case"
+msgstr "Poklopi &veličinu"
+
+#. i18n: ectx: property (text), item, widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:137
+#, kde-format
+msgid "&Search As You Type"
+msgstr "&Traži dok kucam"
+
+#. i18n: ectx: property (text), item, widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:145
+#, kde-format
+msgid "&Highlight All Matches"
+msgstr "&Istakni sva poklapanja"
+
+#. i18n: ectx: property (toolTip), item, widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:148
+#, kde-format
+msgid "Highlight Matches"
+msgstr "Istakni poklapanja"
+
+#: webpage.cpp:143
+#, kde-format
+msgid "The download manager (%1) could not be found in your installation."
+msgstr "Menadžer preuzimanja (%1) nije pronađen u ovoj instalaciji."
+
+#: webpage.cpp:144
+#, kde-format
+msgid ""
+"Try to reinstall it and make sure that it is available in $PATH. \n"
+"\n"
+"The integration will be disabled."
+msgstr ""
+"Ponovo ga instalirajte i proverite da li je dostupan u sistemskoj putanji. \n"
+"\n"
+"Integracija će biti isključena."
+
+#: webpage.cpp:202
+#, kde-format
+msgid ""
+"<html><body><h3>Unable to display error message</h3><p>The error template "
+"file <em>error.html</em> could not be found.</p></body></html>"
+msgstr ""
+"<html><h3>Ne mogu da prikažem poruku greške</h3><p>Fajl šablona greške "
+"<tt>error.html</tt> ne može se naći.</p></html>"
+
+#: webpage.cpp:208
+#, kde-format
+msgid "Error: %1"
+msgstr "Greška: %1"
+
+#: webpage.cpp:213
+#, kde-format
+msgid "The requested operation could not be completed"
+msgstr "Traženi postupak nije mogao da se dovrši"
+
+#: webpage.cpp:220
+#, kde-format
+msgid "Technical Reason: %1"
+msgstr "Tehnički razlog: %1"
+
+#: webpage.cpp:225
+#, kde-format
+msgid "Details of the Request:"
+msgstr "Detalji zahtjeva:"
+
+#. i18n, and once for HTML.
+#: webpage.cpp:228
+#, kde-format
+msgid "URL: %1"
+msgstr "URL: %1"
+
+#. i18n, and once for HTML.
+#: webpage.cpp:234
+#, kde-format
+msgid "Protocol: %1"
+msgstr "Protokol: %1"
+
+#: webpage.cpp:238
+#, kde-format
+msgid "Date and Time: %1"
+msgstr "Datum i vrijeme: %1"
+
+#. i18n, and once for HTML.
+#: webpage.cpp:242
+#, kde-format
+msgid "Additional Information: %1"
+msgstr "Dodatne informacije: %1"
+
+#: webpage.cpp:244
+#, kde-format
+msgid "Description:"
+msgstr "Opis:"
+
+#: webpage.cpp:251
+#, kde-format
+msgid "Possible Causes:"
+msgstr "Mogući uzroci:"
+
+#: webpage.cpp:259
+#, kde-format
+msgid "Possible Solutions:"
+msgstr "Moguća rješenja:"
+
+# >> @title:window
+#: webpage.cpp:291 webpage.cpp:295
+#, kde-format
+msgid "Choose files to upload"
+msgstr "Izbor fajlova za otpremanje"
+
+#: webpage.cpp:396
+#, kde-format
+msgid ""
+"<qt><p>To display the requested web page again, the browser needs to resend "
+"information you have previously submitted.</p><p>If you were shopping online "
+"and made a purchase, click the Cancel button to prevent a duplicate purchase."
+"Otherwise, click the Continue button to display the webpage again.</p>"
+msgstr ""
+"<qt><p>Da bi ponovo prikazao zatraženu veb stranicu, pregledač mora ponovo "
+"da pošalje podatke koje ste ranije već predali.</p><p>Ako ste kupovali na "
+"vezi i poručili nešto, kliknite na dugme <i>Odustani</i> da sprečite duplu "
+"porudžbinu. U suprotnom, kliknite na dugme <i>Nastavi</i> da ponovo "
+"prikažete stranicu.</p></qt>"
+
+# >> @title:window
+#: webpage.cpp:403
+#, kde-format
+msgid "Resubmit Information"
+msgstr "Ponovna predaja podataka"
+
+#: webpage.cpp:642
+#, kde-format
+msgid ""
+"This site is attempting to access information about your physical location.\n"
+"Do you want to allow it access?"
+msgstr ""
+"Ovaj sajt pokušava da pristupi podacima o vašoj fizičkoj lokaciji.\n"
+"Želite li da mu dozvolite pristup?"
+
+#: webpage.cpp:646 webpage.cpp:763 webpage.cpp:774
+#, kde-format
+msgid "Network Transmission"
+msgstr "Mrežni prenos"
+
+#: webpage.cpp:647
+#, kde-format
+msgid "Allow access"
+msgstr "Dozvoli pristup"
+
+#: webpage.cpp:722
+#, kde-format
+msgid ""
+"<qt>This untrusted page links to<br/><b>%1</b>.<br/>Do you want to follow "
+"the link?</qt>"
+msgstr ""
+"<qt>Ova nepouzdana stranica daje vezu ka<br/><b>%1</b>.<br/>Želite li da "
+"ispratite vezu?</qt>"
+
+#: webpage.cpp:724
+#, kde-format
+msgid "Security Warning"
+msgstr "Bezbjednosno upozorenje"
+
+#: webpage.cpp:725
+#, kde-format
+msgctxt "follow link despite of security warning"
+msgid "Follow"
+msgstr "Isprati"
+
+#: webpage.cpp:727
+#, kde-format
+msgid "Security Alert"
+msgstr "Bezbjednosna uzbuna"
+
+#: webpage.cpp:728
+#, kde-format
+msgid "<qt>Access by untrusted page to<br/><b>%1</b><br/> denied.</qt>"
+msgstr "<qt>Pristup nepouzdanoj stranici ka<br/><b>%1</b><br/>odbijen.</qt>"
+
+#: webpage.cpp:756
+#, kde-format
+msgid ""
+"Warning: This is a secure form but it is attempting to send your data back "
+"unencrypted.\n"
+"A third party may be able to intercept and view this information.\n"
+"Are you sure you want to send the data unencrypted?"
+msgstr ""
+"Upozorenje: ovo je osiguran formular ali pokušava da pošalje vaše podatke "
+"nešifrovano.\n"
+"Treća strana bi mogla da presretne i vidi ove podatke.\n"
+"Želite li zaista da ovi podaci budu poslati nešifrovano?"
+
+#: webpage.cpp:764
+#, kde-format
+msgid "&Send Unencrypted"
+msgstr "Pošalji &nešifrovano"
+
+#: webpage.cpp:771
+#, kde-format
+msgid ""
+"This site is attempting to submit form data via email.\n"
+"Do you want to continue?"
+msgstr ""
+"Ovaj sajt pokušava da pošalje podatke iz formulara e‑poštom.\n"
+"Želite li da nastavite?"
+
+#: webpage.cpp:775
+#, kde-format
+msgid "&Send Email"
+msgstr "Pošalji &e‑poštom"
+
+#: webpage.cpp:824
+#, kde-format
+msgid ""
+"<qt>Do you want to allow this site to attach the following files to the "
+"email message?</qt>"
+msgstr ""
+"<qt>Želite li da dozvolite ovom sajtu da priloži sljedeće fajlove uz poruku "
+"e‑pošte?</qt>"
+
+#: webpage.cpp:826
+#, kde-format
+msgid "Email Attachment Confirmation"
+msgstr "Potvrda priloga e‑pošte"
+
+#: webpage.cpp:827
+#, kde-format
+msgid "&Allow attachments"
+msgstr "&Dozvoli priloge"
+
+#: webpage.cpp:828
+#, kde-format
+msgid "&Ignore attachments"
+msgstr "&Zanemari priloge"
+
+#: webpage.cpp:842
+#, kde-format
+msgid ""
+"This site attempted to attach a file from your computer in the form "
+"submission. The attachment was removed for your protection."
+msgstr ""
+"Ovaj sajt je pokušao da priloži fajl sa vašeg računara pri predaji "
+"formulara. Prilog uklonjen radi vaše zaštite."
+
+#: webpage.cpp:845
+#, kde-format
+msgid "Attachment Removed"
+msgstr "Prilog uklonjen"
+
+#: webpage.cpp:913
+#, kde-format
+msgid ""
+"This site is requesting to open a new popup window.\n"
+"Do you want to allow this?"
+msgstr ""
+"Ovaj sajt traži da otvori novi iskačući prozor.\n"
+"Želite li da dozvolite ovo?"
+
+#: webpage.cpp:915
+#, kde-format
+msgid ""
+"<qt>This site is requesting to open a popup window to<p>%1</p><br/>Do you "
+"want to allow this?</qt>"
+msgstr ""
+"<qt>Ovaj sajt traži da otvori iskačući prozor do<p>%1</p><br/>Želite li da "
+"dozvolite ovo?</qt>"
+
+#: webpage.cpp:919
+#, kde-format
+msgid "Javascript Popup Confirmation"
+msgstr "Potvrda JavaScript iskakanja"
+
+#: webpage.cpp:920
+#, kde-format
+msgid "Allow"
+msgstr "Dozvoli"
+
+# rewrite-msgid: /Do Not Allow/Deny/
+#: webpage.cpp:921
+#, kde-format
+msgid "Do Not Allow"
+msgstr "Odbij"
+
+#: webpluginfactory.cpp:72
+#, kde-format
+msgid "Start Plugin"
+msgstr "Pokreni priključak"
+
+#: webview.cpp:313
+#, kde-format
+msgid "Access keys activated"
+msgstr "Pristupni tasteri aktivirani"
+
+#: webview.cpp:392
+#, kde-format
+msgctxt "Text direction"
+msgid "Direction"
+msgstr "Smjer"
+
+#: webview.cpp:397
+#, kde-format
+msgid "Default"
+msgstr "podrazumijevani"
+
+#: webview.cpp:406
+#, kde-format
+msgid "Left to right"
+msgstr "zdesna ulijevo"
+
+#: webview.cpp:415
+#, kde-format
+msgid "Right to left"
+msgstr "slijeva udesno"
+
+#: webview.cpp:455
+#, kde-format
+msgid "Check Spelling..."
+msgstr "Proveri pravopis..."
+
+#: webview.cpp:461
+#, kde-format
+msgid "Spellcheck selection..."
+msgstr "Proveri pravopis izbora..."
+
+#: webview.cpp:488
+#, kde-format
+msgid "Save Image As..."
+msgstr "Sačuvaj sliku kao..."
+
+#: webview.cpp:493
+#, kde-format
+msgid "Send Image..."
+msgstr "Pošalji sliku..."
+
+#: webview.cpp:498
+#, kde-format
+msgid "Copy Image URL"
+msgstr "Kopiraj URL slike"
+
+#: webview.cpp:503
+#, kde-format
+msgid "Copy Image"
+msgstr "Kopiraj sliku"
+
+#: webview.cpp:509
+#, kde-format
+msgid "View Image (%1)"
+msgstr "Prikaži sliku (%1)"
+
+#: webview.cpp:515
+#, kde-format
+msgid "Block Image..."
+msgstr "Blokiraj sliku..."
+
+#: webview.cpp:523
+#, kde-format
+msgid "Block Images From %1"
+msgstr "Blokiraj slike sa %1"
+
+#: webview.cpp:530
+#, kde-format
+msgctxt "@title:menu HTML frame/iframe"
+msgid "Frame"
+msgstr "Okvir"
+
+#: webview.cpp:532
+#, kde-format
+msgid "Open in New &Window"
+msgstr "Otvori u novom &prozoru"
+
+#: webview.cpp:537
+#, kde-format
+msgid "Open in &This Window"
+msgstr "Otvori u &ovom prozoru"
+
+#: webview.cpp:542
+#, kde-format
+msgid "Open in &New Tab"
+msgstr "Otvori u novom &jezičku"
+
+#: webview.cpp:551
+#, kde-format
+msgid "Reload Frame"
+msgstr "Ponovo učitaj okvir"
+
+#: webview.cpp:556
+#, kde-format
+msgid "Print Frame..."
+msgstr "Štampaj okvir..."
+
+#: webview.cpp:566
+#, kde-format
+msgid "View Frame Source"
+msgstr "Prikaži izvor okvira"
+
+# >> IFrame is short for "inline frame".
+#: webview.cpp:580
+#, kde-format
+msgid "Block IFrame..."
+msgstr "Blokiraj utkani okvir..."
+
+#: webview.cpp:625 webview.cpp:658
+#, kde-format
+msgid "&Copy Text"
+msgstr "&Kopiraj tekst"
+
+#: webview.cpp:635
+#, kde-format
+msgctxt "open selected url"
+msgid "Open '%1'"
+msgstr "Otvori „%1“"
+
+#: webview.cpp:664
+#, kde-format
+msgid "&Copy Email Address"
+msgstr "&Kopiraj adresu e‑pošte"
+
+#: webview.cpp:670
+#, kde-format
+msgid "Copy Link &Text"
+msgstr "Kopiraj &tekst veze"
+
+#: webview.cpp:676
+#, kde-format
+msgid "Copy Link &URL"
+msgstr "Kopiraj &URL veze"
+
+#: webview.cpp:681
+#, kde-format
+msgid "&Save Link As..."
+msgstr "&Sačuvaj vezu kao..."
+
+#: webview.cpp:702
+#, kde-format
+msgid "&Play"
+msgstr "&Pusti"
+
+#: webview.cpp:702
+#, kde-format
+msgid "&Pause"
+msgstr "Pau&ziraj"
+
+#: webview.cpp:707
+#, kde-format
+msgid "Un&mute"
+msgstr "Po&jačaj"
+
+#: webview.cpp:707
+#, kde-format
+msgid "&Mute"
+msgstr "&Utišaj"
+
+#: webview.cpp:712
+#, kde-format
+msgid "&Loop"
+msgstr "Po&navljaj"
+
+#: webview.cpp:719
+#, kde-format
+msgid "Show &Controls"
+msgstr "Prikaži &kontrole"
+
+#: webview.cpp:732
+#, kde-format
+msgid "Sa&ve Video As..."
+msgstr "Sačuvaj &video kao..."
+
+#: webview.cpp:733
+#, kde-format
+msgid "C&opy Video URL"
+msgstr "Kopiraj URL vid&ea"
+
+#: webview.cpp:735
+#, kde-format
+msgid "Sa&ve Audio As..."
+msgstr "Sačuvaj &audio kao..."
+
+#: webview.cpp:736
+#, kde-format
+msgid "C&opy Audio URL"
+msgstr "&Kopiraj URL audija"
+
+#: webview.cpp:738
+#, kde-format
+msgid "Sa&ve Media As..."
+msgstr "Sačuvaj &medijum kao..."
+
+#: webview.cpp:739
+#, kde-format
+msgid "C&opy Media URL"
+msgstr "Kopiraj URL m&edijuma"
+
+#: webview.cpp:783
+#, kde-format
+msgctxt "Search \"search provider\" for \"text\""
+msgid "Search %1 for '%2'"
+msgstr "Potraži „%2“ pomoću %1|/|Potraži „%2“ $[ins-p %1]"
+
+#: webview.cpp:794
+#, kde-format
+msgctxt "Search for \"text\" with"
+msgid "Search for '%1' with"
+msgstr "Potraži „%1“ pomoću"

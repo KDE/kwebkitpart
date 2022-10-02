@@ -1,0 +1,938 @@
+# Translation of kwebkitpart.po to Euskara/Basque (eu).
+# Copyright (C) 2010-2020, This file is copyright:
+# This file is distributed under the same license as the kwebkitpart package.
+# KDE euskaratzeko proiektuko arduraduna <xalba@euskalnet.net>.
+#
+# Translators:
+# Iñigo Salvador Azurmendi <xalba@euskalnet.net>, 2010, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: kwebkitpart\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-06-16 00:17+0000\n"
+"PO-Revision-Date: 2020-04-09 20:59+0200\n"
+"Last-Translator: Iñigo Salvador Azurmendi <xalba@euskalnet.net>\n"
+"Language-Team: Basque <kde-i18n-eu@kde.org>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 19.12.3\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Iñigo Salvador Azurmendi"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "xalba@euskalnet.net"
+
+#: kwebkitpart.cpp:161 webview.cpp:547
+#, kde-format
+msgid "Save &Frame As..."
+msgstr "Gorde &markoa honela..."
+
+#: kwebkitpart.cpp:165
+#, kde-format
+msgid "Print Preview"
+msgstr "Inprimatze aurreikuspegia"
+
+#: kwebkitpart.cpp:169
+#, kde-format
+msgctxt "zoom in action"
+msgid "Zoom In"
+msgstr "Zooma gerturatu"
+
+#: kwebkitpart.cpp:176
+#, kde-format
+msgctxt "zoom out action"
+msgid "Zoom Out"
+msgstr "Zooma urrundu"
+
+#: kwebkitpart.cpp:183
+#, kde-format
+msgctxt "reset zoom action"
+msgid "Actual Size"
+msgstr "Uneko neurria"
+
+#: kwebkitpart.cpp:188
+#, kde-format
+msgid "Zoom Text Only"
+msgstr "Zooma testuari bakarrik"
+
+#: kwebkitpart.cpp:196
+#, kde-format
+msgid "Zoom To DPI"
+msgstr "Zooma DPIei"
+
+#: kwebkitpart.cpp:208
+#, kde-format
+msgid "Set &Encoding"
+msgstr "Ezarri &kodeketa"
+
+#: kwebkitpart.cpp:212
+#, kde-format
+msgid "View Do&cument Source"
+msgstr "Ikusi do&kumentuaren iturburua"
+
+#: kwebkitpart.cpp:217
+#, kde-format
+msgctxt "Secure Sockets Layer"
+msgid "View SSL Information"
+msgstr "Ikusi SSLren gaineko informazioa"
+
+#: kwebkitpart.cpp:221
+#, kde-format
+msgid "Toggle Caret Mode"
+msgstr "Txandakatu testu-kurtsore modua"
+
+#: kwebkitpart.cpp:228
+#, kde-format
+msgctxt "find action \"whats this\" text"
+msgid ""
+"<h3>Find text</h3>Shows a dialog that allows you to find text on the "
+"displayed page."
+msgstr ""
+"<h3>Testua aurkitu</h3>Bistaratutako orrialdean testua aurkitzen lagunduko "
+"dizun elkarrizketa bat erakusten du."
+
+#: kwebkitpart.cpp:568
+#, kde-format
+msgid "This site is not secured with SSL, or its SSL information is not valid."
+msgstr ""
+"Leku hau ez dago SSL bidez segurtatuta, edo bere SSL informazioa ez da "
+"balioduna."
+
+#: kwebkitpart.cpp:569
+#, kde-format
+msgctxt "Secure Sockets Layer"
+msgid "SSL"
+msgstr "SSL"
+
+#: kwebkitpart.cpp:659
+#, kde-format
+msgctxt ""
+"status bar text when hovering email links; looks like \"Email: xy@kde.org - "
+"CC: z@kde.org -BCC: x@kde.org - Subject: Hi translator\""
+msgid "Email: "
+msgstr "Post@: "
+
+#: kwebkitpart.cpp:687
+#, kde-format
+msgctxt ""
+"status bar text when hovering email links; looks like \"Email: xy@kde.org - "
+"CC: z@kde.org -BCC: x@kde.org - Subject: Hi translator\""
+msgid " - CC: "
+msgstr " - KK: "
+
+#: kwebkitpart.cpp:689
+#, kde-format
+msgctxt ""
+"status bar text when hovering email links; looks like \"Email: xy@kde.org - "
+"CC: z@kde.org -BCC: x@kde.org - Subject: Hi translator\""
+msgid " - BCC: "
+msgstr " - EKK: "
+
+#: kwebkitpart.cpp:691
+#, kde-format
+msgctxt ""
+"status bar text when hovering email links; looks like \"Email: xy@kde.org - "
+"CC: z@kde.org -BCC: x@kde.org - Subject: Hi translator\""
+msgid " - Subject: "
+msgstr " - Gaia: "
+
+#: kwebkitpart.cpp:695 kwebkitpart.cpp:705
+#, kde-format
+msgid " (In new window)"
+msgstr " (Leiho berrian)"
+
+#: kwebkitpart.cpp:703
+#, kde-format
+msgid " (In parent frame)"
+msgstr " (Guraso markoan)"
+
+#: kwebkitpart.cpp:767
+#, kde-format
+msgid "<qt>Do you want to search for <b>%1</b>?</qt>"
+msgstr "<qt><b>%1</b> bilatu nahi duzu?</qt>"
+
+#: kwebkitpart.cpp:768
+#, kde-format
+msgid "Internet Search"
+msgstr "Interneteko bilaketa"
+
+#: kwebkitpart.cpp:768
+#, kde-format
+msgid "&Search"
+msgstr "&Bilatu"
+
+#: kwebkitpart.cpp:791
+#, kde-format
+msgid "&Allow password caching for this site"
+msgstr "&Onartu leku honetako pasahitzak cacheatzea"
+
+#: kwebkitpart.cpp:794
+#, kde-format
+msgid "Remove all cached passwords for this site"
+msgstr "Ezabatu leku honetarako cacheatutako pasahitz guztiak"
+
+#: kwebkitpart.cpp:797
+#, kde-format
+msgid "&Close Wallet"
+msgstr "&Itxi zorroa"
+
+#: kwebkitpart.cpp:855
+#, kde-format
+msgid "Close window?"
+msgstr "Leihoa itxi?"
+
+#: kwebkitpart.cpp:855
+#, kde-format
+msgid "Confirmation Required"
+msgstr "Berrespena behar da"
+
+#. i18n("<html>Do you want to grant the site <b>%1</b> "
+#. "access to information about your current physical location?",
+#. url.host()));
+#: kwebkitpart.cpp:886
+#, kde-format
+msgid ""
+"<html>Do you want to grant the site access to information about your current "
+"physical location?"
+msgstr ""
+"<html>Lekuari zure uneko kokapen fisikoari buruzko informazioa atzitzea "
+"onartu nahi diozu?"
+
+#: kwebkitpart.cpp:933
+#, kde-format
+msgid ""
+"<html>Do you want %1 to remember the login information for <b>%2</b>?</html>"
+msgstr ""
+"<html>Nahi duzu %1-k <b>%2</b>(r)en saio hasteko informazioa gordetzea?</"
+"html>"
+
+#. i18n: ectx: ToolBar (htmlToolBar)
+#: kwebkitpart.rc:28
+#, kde-format
+msgid "HTML Toolbar"
+msgstr "HTML tresna barra"
+
+#: kwebkitpart_ext.cpp:409 kwebkitpart_ext.cpp:496
+#, kde-format
+msgid "Add URL to Filter"
+msgstr "Gehitu URLa iragazkiari"
+
+#: kwebkitpart_ext.cpp:410 kwebkitpart_ext.cpp:497
+#, kde-format
+msgid "Enter the URL:"
+msgstr "Sartu URLa:"
+
+#: networkaccessmanager.cpp:38
+#, kde-format
+msgid "Blocked by ad filter"
+msgstr "Iragarkien iragazkiak eragotzi du"
+
+#: settings/webkitsettings.cpp:891
+#, kde-format
+msgid "Filter error"
+msgstr "Iragazkiaren errorea"
+
+#: ui/featurepermissionbar.cpp:21
+#, kde-format
+msgctxt "@action:deny access"
+msgid "&Deny access"
+msgstr "&Ukatu atzitzea"
+
+#: ui/featurepermissionbar.cpp:25
+#, kde-format
+msgctxt "@action:grant access"
+msgid "&Grant access"
+msgstr "&Onartu atzitzea"
+
+#: ui/passwordbar.cpp:26
+#, kde-format
+msgctxt "@action:remember password"
+msgid "&Remember"
+msgstr "&Gogoratu"
+
+#: ui/passwordbar.cpp:30
+#, kde-format
+msgctxt "@action:never for this site"
+msgid "Ne&ver for this site"
+msgstr "&Inoiz ez leku honetarako"
+
+#: ui/passwordbar.cpp:34
+#, kde-format
+msgctxt "@action:not now"
+msgid "N&ot now"
+msgstr "&Orain ez"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, closeButton)
+#: ui/searchbar.ui:23
+#, kde-format
+msgid "Close the search bar"
+msgstr "itxi bilaketa-barra"
+
+#. i18n: ectx: property (text), widget (QLabel, searchInfo)
+#: ui/searchbar.ui:36
+#, kde-format
+msgctxt "label for input line to find text"
+msgid "&Find:"
+msgstr "&Aurkitu:"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, nextButton)
+#: ui/searchbar.ui:59
+#, kde-format
+msgid "Find the next match for the current search phrase"
+msgstr "Aurkitu uneko bilaketa esaldiarentzako hurrengo bat etortzea"
+
+#. i18n: ectx: property (text), widget (QToolButton, nextButton)
+#: ui/searchbar.ui:62
+#, kde-format
+msgid "&Next"
+msgstr "&Hurrengoa"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, previousButton)
+#. i18n: ectx: property (toolTip), widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:78 ui/searchbar.ui:94
+#, kde-format
+msgid "Find the previous match for the current search phrase"
+msgstr "Aurkitu uneko bilaketa esaldiarentzako aurreko bat etortzea"
+
+#. i18n: ectx: property (text), widget (QToolButton, previousButton)
+#: ui/searchbar.ui:81
+#, kde-format
+msgid "&Previous"
+msgstr "&Aurrekoa"
+
+#. i18n: ectx: property (text), widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:97
+#, kde-format
+msgid "&Options"
+msgstr "&Aukerak"
+
+#. i18n: ectx: property (text), item, widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:126
+#, kde-format
+msgid "&Match Case"
+msgstr "&Bereizi Maiuskula/minuskulak"
+
+#. i18n: ectx: property (text), item, widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:137
+#, kde-format
+msgid "&Search As You Type"
+msgstr "&Bilatu idatzi ahala"
+
+#. i18n: ectx: property (text), item, widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:145
+#, kde-format
+msgid "&Highlight All Matches"
+msgstr "&Nabarmendu bat etortze guztiak"
+
+#. i18n: ectx: property (toolTip), item, widget (QToolButton, optionsButton)
+#: ui/searchbar.ui:148
+#, kde-format
+msgid "Highlight Matches"
+msgstr "Nabarmendu bat etortzeak"
+
+#: webpage.cpp:130
+#, kde-format
+msgid "The download manager (%1) could not be found in your installation."
+msgstr "Jaitsiera kudeatzailea (%1) ezin izan da zure instalaketan aurkitu."
+
+#: webpage.cpp:131
+#, kde-format
+msgid ""
+"Try to reinstall it and make sure that it is available in $PATH. \n"
+"\n"
+"The integration will be disabled."
+msgstr ""
+"Saiatu berrinstalatzen eta ziurtatu $PATH-n eskuragarri dagoela. \n"
+"\n"
+"Integrazioa ezgaitu egingo da."
+
+#: webpage.cpp:191
+#, kde-format
+msgid ""
+"<html><body><h3>Unable to display error message</h3><p>The error template "
+"file <em>error.html</em> could not be found.</p></body></html>"
+msgstr ""
+"<html><body><h3>Ezin akats mezua bistaratu</h3><p>Akats txantiloi fitxategia "
+"<em>error.html</em> ezin izan da aurkitu.</p></body></html>"
+
+#: webpage.cpp:197
+#, kde-format
+msgid "Error: %1"
+msgstr "Akatsa: %1"
+
+#: webpage.cpp:202
+#, kde-format
+msgid "The requested operation could not be completed"
+msgstr "Eskatutako eragiketa ezin izan da osatu"
+
+#: webpage.cpp:209
+#, kde-format
+msgid "Technical Reason: %1"
+msgstr "Arrazoi teknikoa: %1"
+
+#: webpage.cpp:214
+#, kde-format
+msgid "Details of the Request:"
+msgstr "Eskaeraren xehetasunak:"
+
+#. i18n, and once for HTML.
+#: webpage.cpp:217
+#, kde-format
+msgid "URL: %1"
+msgstr "URL: %1"
+
+#. i18n, and once for HTML.
+#: webpage.cpp:223
+#, kde-format
+msgid "Protocol: %1"
+msgstr "Protokoloa: %1"
+
+#: webpage.cpp:227
+#, kde-format
+msgid "Date and Time: %1"
+msgstr "Data eta ordua: %1"
+
+#. i18n, and once for HTML.
+#: webpage.cpp:231
+#, kde-format
+msgid "Additional Information: %1"
+msgstr "Informazio osagarria: %1"
+
+#: webpage.cpp:233
+#, kde-format
+msgid "Description:"
+msgstr "Deskribapena:"
+
+#: webpage.cpp:240
+#, kde-format
+msgid "Possible Causes:"
+msgstr "Kausa posibleak:"
+
+#: webpage.cpp:248
+#, kde-format
+msgid "Possible Solutions:"
+msgstr "Konponbide posibleak:"
+
+#: webpage.cpp:280 webpage.cpp:284
+#, kde-format
+msgid "Choose files to upload"
+msgstr "Hautatu zama-igo beharreko fitxategiak"
+
+#: webpage.cpp:385
+#, kde-format
+msgid ""
+"<qt><p>To display the requested web page again, the browser needs to resend "
+"information you have previously submitted.</p><p>If you were shopping online "
+"and made a purchase, click the Cancel button to prevent a duplicate purchase."
+"Otherwise, click the Continue button to display the webpage again.</p>"
+msgstr ""
+"<qt><p>Eskatutako web-orria berriz azaltzeko, arakatzaileak aurrez bidali "
+"duzun informazioa birbidali behar du.</p><p>Lerroko erosketa bat egin "
+"baduzu, egin klik «Utzi» botoiari erosketa bikoiztea saihesteko. Bestela, "
+"egin klik «Jarraitu» botoiari web-orria berriz azaltzeko.</p>"
+
+#: webpage.cpp:392
+#, kde-format
+msgid "Resubmit Information"
+msgstr "Birbidali informazioa"
+
+#: webpage.cpp:631
+#, kde-format
+msgid ""
+"This site is attempting to access information about your physical location.\n"
+"Do you want to allow it access?"
+msgstr ""
+"Leku hau zure kokapen fisikoari buruzko informazioa atzitu nahian dabil.\n"
+"Hori atzitzea onartu nahi diozu?"
+
+#: webpage.cpp:635 webpage.cpp:752 webpage.cpp:763
+#, kde-format
+msgid "Network Transmission"
+msgstr "Sareko transmisioa"
+
+#: webpage.cpp:636
+#, kde-format
+msgid "Allow access"
+msgstr "Baimendu atzitzea"
+
+#: webpage.cpp:711
+#, kde-format
+msgid ""
+"<qt>This untrusted page links to<br/><b>%1</b>.<br/>Do you want to follow "
+"the link?</qt>"
+msgstr ""
+"<qt>Fidagarria ez den orrialde hau <br/><b>%1</b>-(e)ra estekatzen da.<br/"
+">Esteka jarraitu nahi duzu?</qt>"
+
+#: webpage.cpp:713
+#, kde-format
+msgid "Security Warning"
+msgstr "Segurtasun abisua"
+
+#: webpage.cpp:714
+#, kde-format
+msgctxt "follow link despite of security warning"
+msgid "Follow"
+msgstr "Jarraitu"
+
+#: webpage.cpp:716
+#, kde-format
+msgid "Security Alert"
+msgstr "Segurtasun alerta"
+
+#: webpage.cpp:717
+#, kde-format
+msgid "<qt>Access by untrusted page to<br/><b>%1</b><br/> denied.</qt>"
+msgstr ""
+"<qt>Konfidantzarik gabeko orri baten bitartez <br/><b>%1</b>(e)rako<br /> "
+"sarbidea ukatuta.</qt>"
+
+#: webpage.cpp:745
+#, kde-format
+msgid ""
+"Warning: This is a secure form but it is attempting to send your data back "
+"unencrypted.\n"
+"A third party may be able to intercept and view this information.\n"
+"Are you sure you want to send the data unencrypted?"
+msgstr ""
+"Abisua: Hau formulario seguru bat da baino zure datuak zifratu gabe "
+"bidaltzen saiatzen ari da.\n"
+"Hirugarrenek informazio hau harrapatu eta ikusi dezakete.\n"
+"Ziur zaude datuak zifratu gabe bidali nahi dituzula?"
+
+#: webpage.cpp:753
+#, kde-format
+msgid "&Send Unencrypted"
+msgstr "&Bidali zifratu gabe"
+
+#: webpage.cpp:760
+#, kde-format
+msgid ""
+"This site is attempting to submit form data via email.\n"
+"Do you want to continue?"
+msgstr ""
+"Leku hau formularioko datuak post@ bitartez bidaltzen saiatzen ari da.\n"
+"Jarraitu nahi duzu?"
+
+#: webpage.cpp:764
+#, kde-format
+msgid "&Send Email"
+msgstr "%Bidali post@"
+
+#: webpage.cpp:813
+#, kde-format
+msgid ""
+"<qt>Do you want to allow this site to attach the following files to the "
+"email message?</qt>"
+msgstr ""
+"<qt>Leku honi ondoko informazioa e-postara eransten utzi nahi diozu?</qt>"
+
+#: webpage.cpp:815
+#, kde-format
+msgid "Email Attachment Confirmation"
+msgstr "Post@ eranskinen berrespena"
+
+#: webpage.cpp:816
+#, kde-format
+msgid "&Allow attachments"
+msgstr "&Baimendu eranskinak"
+
+#: webpage.cpp:817
+#, kde-format
+msgid "&Ignore attachments"
+msgstr "&Jaramonik ez eranskinei"
+
+#: webpage.cpp:831
+#, kde-format
+msgid ""
+"This site attempted to attach a file from your computer in the form "
+"submission. The attachment was removed for your protection."
+msgstr ""
+"Gune hau zure konputagailuko fitxategi bat formularioaren bidalketan "
+"eransten saiatu da. Eranskina zure segurtasunerako kendu da."
+
+#: webpage.cpp:834
+#, kde-format
+msgid "Attachment Removed"
+msgstr "Eranskina ezabatuta"
+
+#: webpage.cpp:902
+#, kde-format
+msgid ""
+"This site is requesting to open a new popup window.\n"
+"Do you want to allow this?"
+msgstr ""
+"Leku hau leiho gainerakor berri bat irekitzea eskatzen ari da.\n"
+"Hori egiten utzi nahi diozu?"
+
+#: webpage.cpp:904
+#, kde-format
+msgid ""
+"<qt>This site is requesting to open a popup window to<p>%1</p><br/>Do you "
+"want to allow this?</qt>"
+msgstr ""
+"<qt>Leku hau <p>%1</p>(r)a leiho gainerakor bat irekitzea eskatzen ari da."
+"<br/>Hori egiten utzi nahi diozu?</qt>"
+
+#: webpage.cpp:908
+#, kde-format
+msgid "Javascript Popup Confirmation"
+msgstr "Javascript gainerakorraren berrespena"
+
+#: webpage.cpp:909
+#, kde-format
+msgid "Allow"
+msgstr "Baimendu"
+
+#: webpage.cpp:910
+#, kde-format
+msgid "Do Not Allow"
+msgstr "Ez baimendu"
+
+#: webpluginfactory.cpp:58
+#, kde-format
+msgid "Start Plugin"
+msgstr "Abiatu plugina"
+
+#: webview.cpp:299
+#, kde-format
+msgid "Access keys activated"
+msgstr "Sarbide-teklak aktibatu dira"
+
+#: webview.cpp:378
+#, kde-format
+msgctxt "Text direction"
+msgid "Direction"
+msgstr "Noranzkoa"
+
+#: webview.cpp:383
+#, kde-format
+msgid "Default"
+msgstr "Lehenetsia"
+
+#: webview.cpp:392
+#, kde-format
+msgid "Left to right"
+msgstr "Ezkerretik eskuinera"
+
+#: webview.cpp:401
+#, kde-format
+msgid "Right to left"
+msgstr "Eskuinetik ezkerrera"
+
+#: webview.cpp:441
+#, kde-format
+msgid "Check Spelling..."
+msgstr "Egiaztatu ortografia..."
+
+#: webview.cpp:447
+#, kde-format
+msgid "Spellcheck selection..."
+msgstr "Egiaztatu hautapenaren ortografia..."
+
+#: webview.cpp:474
+#, kde-format
+msgid "Save Image As..."
+msgstr "Gorde irudia honela..."
+
+#: webview.cpp:479
+#, kde-format
+msgid "Send Image..."
+msgstr "Bidali irudia..."
+
+#: webview.cpp:484
+#, kde-format
+msgid "Copy Image URL"
+msgstr "Kopiatu irudiaren helbidea"
+
+#: webview.cpp:489
+#, kde-format
+msgid "Copy Image"
+msgstr "Kopiatu irudia"
+
+#: webview.cpp:495
+#, kde-format
+msgid "View Image (%1)"
+msgstr "Ikusi irudia (%1)"
+
+#: webview.cpp:501
+#, kde-format
+msgid "Block Image..."
+msgstr "Eragotzi irudia..."
+
+#: webview.cpp:509
+#, kde-format
+msgid "Block Images From %1"
+msgstr "Eragotzi %1(e)ko irudiak"
+
+#: webview.cpp:516
+#, kde-format
+msgctxt "@title:menu HTML frame/iframe"
+msgid "Frame"
+msgstr "Markoa"
+
+#: webview.cpp:518
+#, kde-format
+msgid "Open in New &Window"
+msgstr "Ireki &leiho berrian"
+
+#: webview.cpp:523
+#, kde-format
+msgid "Open in &This Window"
+msgstr "Ireki leiho &honetan"
+
+#: webview.cpp:528
+#, kde-format
+msgid "Open in &New Tab"
+msgstr "Ireki fitxa &berrian"
+
+#: webview.cpp:537
+#, kde-format
+msgid "Reload Frame"
+msgstr "Markoa birzamatu"
+
+#: webview.cpp:542
+#, kde-format
+msgid "Print Frame..."
+msgstr "Inprimatu markoa..."
+
+#: webview.cpp:552
+#, kde-format
+msgid "View Frame Source"
+msgstr "Ikusi markoaren iturburua"
+
+#: webview.cpp:566
+#, kde-format
+msgid "Block IFrame..."
+msgstr "Eragotzi «IFrame» markoa..."
+
+#: webview.cpp:611 webview.cpp:644
+#, kde-format
+msgid "&Copy Text"
+msgstr "&Kopiatu testua"
+
+#: webview.cpp:621
+#, kde-format
+msgctxt "open selected url"
+msgid "Open '%1'"
+msgstr "Ireki '%1'"
+
+#: webview.cpp:650
+#, kde-format
+msgid "&Copy Email Address"
+msgstr "&Kopiatu post@ helbidea"
+
+#: webview.cpp:656
+#, kde-format
+msgid "Copy Link &Text"
+msgstr "Kopiatu estekako testua"
+
+#: webview.cpp:662
+#, kde-format
+msgid "Copy Link &URL"
+msgstr "Kopiatu estekako &URLa"
+
+#: webview.cpp:667
+#, kde-format
+msgid "&Save Link As..."
+msgstr "&Gorde esteka honela..."
+
+#: webview.cpp:688
+#, kde-format
+msgid "&Play"
+msgstr "&Jo"
+
+#: webview.cpp:688
+#, kde-format
+msgid "&Pause"
+msgstr "&Eten"
+
+#: webview.cpp:693
+#, kde-format
+msgid "Un&mute"
+msgstr "&Ozendu"
+
+#: webview.cpp:693
+#, kde-format
+msgid "&Mute"
+msgstr "&Isilarazi"
+
+#: webview.cpp:698
+#, kde-format
+msgid "&Loop"
+msgstr "&Begizta"
+
+#: webview.cpp:705
+#, kde-format
+msgid "Show &Controls"
+msgstr "Erakutsi &agintea"
+
+#: webview.cpp:718
+#, kde-format
+msgid "Sa&ve Video As..."
+msgstr "Gor&de bideoa honela..."
+
+#: webview.cpp:719
+#, kde-format
+msgid "C&opy Video URL"
+msgstr "K&opiatu bideoaren URLa"
+
+#: webview.cpp:721
+#, kde-format
+msgid "Sa&ve Audio As..."
+msgstr "Gor&de audioa honela..."
+
+#: webview.cpp:722
+#, kde-format
+msgid "C&opy Audio URL"
+msgstr "K&opiatu audioaren URLa"
+
+#: webview.cpp:724
+#, kde-format
+msgid "Sa&ve Media As..."
+msgstr "Gor&de euskarria honela..."
+
+#: webview.cpp:725
+#, kde-format
+msgid "C&opy Media URL"
+msgstr "K&opiatu euskarriaren URLa"
+
+#: webview.cpp:769
+#, kde-format
+msgctxt "Search \"search provider\" for \"text\""
+msgid "Search %1 for '%2'"
+msgstr "Bilatu %1 '%2'(r)entzat"
+
+#: webview.cpp:780
+#, kde-format
+msgctxt "Search for \"text\" with"
+msgid "Search for '%1' with"
+msgstr "Bilatu '%1' honekin"
+
+#~ msgctxt "Program Name"
+#~ msgid "KWebKitPart"
+#~ msgstr "KWebKitPart"
+
+#~ msgctxt "Short Description"
+#~ msgid "QtWebKit Browser Engine Component"
+#~ msgstr "QtWebKit arakatzailearen motore osagaia"
+
+#~ msgid ""
+#~ "(C) 2009-2010 Dawit Alemayehu\n"
+#~ "(C) 2008-2010 Urs Wolfer\n"
+#~ "(C) 2007 Trolltech ASA"
+#~ msgstr ""
+#~ "(C) 2009-2010 Dawit Alemayehu\n"
+#~ "(C) 2008-2010 Urs Wolfer\n"
+#~ "(C) 2007 Trolltech ASA"
+
+#~ msgid "Dawit Alemayehu"
+#~ msgstr "Dawit Alemayehu"
+
+#~ msgid "Maintainer, Developer"
+#~ msgstr "Mantentzailea, garatzailea"
+
+#~ msgid "Urs Wolfer"
+#~ msgstr "Urs Wolfer"
+
+#~ msgid "Michael Howell"
+#~ msgstr "Michael Howell"
+
+#~ msgid "Developer"
+#~ msgstr "Garatzailea"
+
+#~ msgid "Laurent Montel"
+#~ msgstr "Laurent Montel"
+
+#~ msgid "Dirk Mueller"
+#~ msgstr "Dirk Mueller"
+
+#~ msgid "&Find:"
+#~ msgstr "&Aurkitu:"
+
+#~ msgid "The SSL information for this site appears to be corrupt."
+#~ msgstr "Leku honetarako SSL informazioa hondatuta dagoela dirudi."
+
+#~ msgctxt "input dialog window title for selecting html elements"
+#~ msgid "Select elements"
+#~ msgstr "Elementuak hautatu"
+
+#~ msgctxt "input dialog text for selecting html elements"
+#~ msgid "Choose elements"
+#~ msgstr "Elementuak aukeratu"
+
+#~ msgid "%1 element selected"
+#~ msgid_plural "%1 elements selected"
+#~ msgstr[0] "elementu %1 hautatuta"
+#~ msgstr[1] "%1 elementu hautatuta"
+
+#~ msgid "&File"
+#~ msgstr "&Fitxategia"
+
+#~ msgid "New Window"
+#~ msgstr "Lehio berria"
+
+#~ msgid "Print"
+#~ msgstr "Inprimatu"
+
+#~ msgid "Close"
+#~ msgstr "Itxi"
+
+#~ msgid "&Edit"
+#~ msgstr "&Editatu"
+
+#~ msgid "Set Editable"
+#~ msgstr "Ezarri editagarri"
+
+#~ msgid "&View"
+#~ msgstr "&Ikusi"
+
+#~ msgid "Zoom &In"
+#~ msgstr "Zooma &gerturatu"
+
+#~ msgid "Zoom &Out"
+#~ msgstr "Zooma &urrundu"
+
+#~ msgid "Reset Zoom"
+#~ msgstr "Zooma berrezarri"
+
+#~ msgid "Dump HTML"
+#~ msgstr "HTML irauli"
+
+#~ msgid "F&ormat"
+#~ msgstr "F&ormatua"
+
+#~ msgid "Writing Direction"
+#~ msgstr "Idazteko norantza"
+
+#~ msgid "&Tools"
+#~ msgstr "&Tresnak"
+
+#~ msgid "Select elements..."
+#~ msgstr "Hautatu elementuak..."
+
+#~ msgid "KDELauncher"
+#~ msgstr "KDELauncher"
+
+#~ msgid "Accept"
+#~ msgstr "Onartu"
+
+#~ msgid "Reject"
+#~ msgstr "Ukatu"
+
+#~ msgid "Esc"
+#~ msgstr "Ihes"
+
+#~ msgid "Enter the text to search for here"
+#~ msgstr "Sartu hemen bilatu beharreko testua"
+
+#~ msgid "Do you want to store this password?"
+#~ msgstr "Pasahitz hau gorde nahi duzu?"
