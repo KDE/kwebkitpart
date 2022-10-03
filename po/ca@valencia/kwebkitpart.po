@@ -744,7 +744,7 @@ msgstr "Copia l'&URL de l'enllaç"
 #: webview.cpp:667
 #, kde-format
 msgid "&Save Link As..."
-msgstr "Guar&da l'enllaç com a..."
+msgstr "Anomena i gu&arda l'enllaç..."
 
 #: webview.cpp:688
 #, kde-format
