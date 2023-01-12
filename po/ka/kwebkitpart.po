@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kwebkitpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-06-16 00:17+0000\n"
-"PO-Revision-Date: 2022-10-08 10:43+0200\n"
+"PO-Revision-Date: 2023-01-11 06:20+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -42,7 +42,7 @@ msgstr "დასაბეჭდის გადახედვა"
 #, kde-format
 msgctxt "zoom in action"
 msgid "Zoom In"
-msgstr ""
+msgstr "გადიდება"
 
 #: kwebkitpart.cpp:176
 #, kde-format
@@ -64,7 +64,7 @@ msgstr "მხოლოდ ტექსტის გადიდება"
 #: kwebkitpart.cpp:196
 #, kde-format
 msgid "Zoom To DPI"
-msgstr ""
+msgstr "გადიდება DPI-მდე"
 
 #: kwebkitpart.cpp:208
 #, kde-format
@@ -80,7 +80,7 @@ msgstr "დოკუმენტის &წყაროს ჩვენება
 #, kde-format
 msgctxt "Secure Sockets Layer"
 msgid "View SSL Information"
-msgstr ""
+msgstr "SSL-ის ინფორმაციის ჩვენება"
 
 #: kwebkitpart.cpp:221
 #, kde-format
@@ -94,11 +94,13 @@ msgid ""
 "<h3>Find text</h3>Shows a dialog that allows you to find text on the "
 "displayed page."
 msgstr ""
+"<h3>ტექსტის ძებნა</h3>გაჩვენებთ ფანჯარას, რომელითაც ნაჩვენებ გვერდზე ტექსტის "
+"მოძებნა შეგიძლიათ."
 
 #: kwebkitpart.cpp:568
 #, kde-format
 msgid "This site is not secured with SSL, or its SSL information is not valid."
-msgstr ""
+msgstr "ეს ვებგვერდი არაა დაცული SSL-ით, ან SSL-ის ინფორმაცია არასწორია."
 
 #: kwebkitpart.cpp:569
 #, kde-format
@@ -112,7 +114,7 @@ msgctxt ""
 "status bar text when hovering email links; looks like \"Email: xy@kde.org - "
 "CC: z@kde.org -BCC: x@kde.org - Subject: Hi translator\""
 msgid "Email: "
-msgstr ""
+msgstr "ელფოსტა: "
 
 #: kwebkitpart.cpp:687
 #, kde-format
@@ -146,12 +148,12 @@ msgstr " (ახალ ფანჯარაში)"
 #: kwebkitpart.cpp:703
 #, kde-format
 msgid " (In parent frame)"
-msgstr ""
+msgstr " (მშობელ კადრში)"
 
 #: kwebkitpart.cpp:767
 #, kde-format
 msgid "<qt>Do you want to search for <b>%1</b>?</qt>"
-msgstr ""
+msgstr "<qt>გნებავთ, მოძებნოთ <b>%1</b>?</qt>"
 
 #: kwebkitpart.cpp:768
 #, kde-format
@@ -166,12 +168,12 @@ msgstr "&ძებნა"
 #: kwebkitpart.cpp:791
 #, kde-format
 msgid "&Allow password caching for this site"
-msgstr ""
+msgstr "&ამ საიტისთვის პაროლების დამახსოვრების დაშვება"
 
 #: kwebkitpart.cpp:794
 #, kde-format
 msgid "Remove all cached passwords for this site"
-msgstr ""
+msgstr "ამ საიტისთვის ყველა დამახსოვრებული პაროლის წაშლა"
 
 #: kwebkitpart.cpp:797
 #, kde-format
@@ -196,19 +198,21 @@ msgstr "საჭიროა თანხმობა"
 msgid ""
 "<html>Do you want to grant the site access to information about your current "
 "physical location?"
-msgstr ""
+msgstr "<html>გნებავთ ამ საიტს თქვენს ფიზიკურ მდებარეობასთან წვდომა მისცეთ?"
 
 #: kwebkitpart.cpp:933
 #, kde-format
 msgid ""
 "<html>Do you want %1 to remember the login information for <b>%2</b>?</html>"
 msgstr ""
+"<html>გნებავთ, %1 -მა დაიმახსოვროს თქვენი ავტორიზაციის დეტალები <b>%2</b>-"
+"სთვის?</html>"
 
 #. i18n: ectx: ToolBar (htmlToolBar)
 #: kwebkitpart.rc:28
 #, kde-format
 msgid "HTML Toolbar"
-msgstr ""
+msgstr "HTML -ის პანელი"
 
 #: kwebkitpart_ext.cpp:409 kwebkitpart_ext.cpp:496
 #, kde-format
@@ -223,7 +227,7 @@ msgstr "შეიყვანეთ URL:"
 #: networkaccessmanager.cpp:38
 #, kde-format
 msgid "Blocked by ad filter"
-msgstr ""
+msgstr "დაბლოკილია რეკლამის ფილტრის მიერ"
 
 #: settings/webkitsettings.cpp:891
 #, kde-format
@@ -277,7 +281,7 @@ msgstr "&ძიება:"
 #: ui/searchbar.ui:59
 #, kde-format
 msgid "Find the next match for the current search phrase"
-msgstr ""
+msgstr "მიმდინარე ძებნის ფრაზის შემდეგი დამთხვევის მოძებნა"
 
 #. i18n: ectx: property (text), widget (QToolButton, nextButton)
 #: ui/searchbar.ui:62
@@ -290,7 +294,7 @@ msgstr "&შემდეგი"
 #: ui/searchbar.ui:78 ui/searchbar.ui:94
 #, kde-format
 msgid "Find the previous match for the current search phrase"
-msgstr ""
+msgstr "მიმდინარე ძებნის ფრაზის წინა დამთხვევის მოძებნა"
 
 #. i18n: ectx: property (text), widget (QToolButton, previousButton)
 #: ui/searchbar.ui:81
@@ -331,7 +335,7 @@ msgstr "დამთხვევების გამოკვეთა"
 #: webpage.cpp:130
 #, kde-format
 msgid "The download manager (%1) could not be found in your installation."
-msgstr ""
+msgstr "გადმოწერების მმართველი (%1) თქვენს დაყენებულ პროგრამებში ვერ ვიპოვე."
 
 #: webpage.cpp:131
 #, kde-format
@@ -340,6 +344,9 @@ msgid ""
 "\n"
 "The integration will be disabled."
 msgstr ""
+"სცადეთ, თავიდან დააყენოთ ის და გახადოთ ხელმისაწვდომი $PATH-ში.\n"
+"\n"
+"ინტეგრაცია გაითიშება."
 
 #: webpage.cpp:191
 #, kde-format
@@ -347,6 +354,8 @@ msgid ""
 "<html><body><h3>Unable to display error message</h3><p>The error template "
 "file <em>error.html</em> could not be found.</p></body></html>"
 msgstr ""
+"<html><body><h3>შეცდომის შეტყობინების გამოტანის შეცდომა</h3><p>შეცდომის "
+"ნიმუშის ფაილი <em>error.html</em> ვერ ვიპოვე.</p></body></html>"
 
 #: webpage.cpp:197
 #, kde-format
@@ -409,7 +418,7 @@ msgstr "შესაძლო გადაწყვეტები:"
 #: webpage.cpp:280 webpage.cpp:284
 #, kde-format
 msgid "Choose files to upload"
-msgstr ""
+msgstr "აი"
 
 #: webpage.cpp:385
 #, kde-format
@@ -423,7 +432,7 @@ msgstr ""
 #: webpage.cpp:392
 #, kde-format
 msgid "Resubmit Information"
-msgstr ""
+msgstr "ინფორმაციის თავიდან გადაცემა"
 
 #: webpage.cpp:631
 #, kde-format
@@ -431,6 +440,9 @@ msgid ""
 "This site is attempting to access information about your physical location.\n"
 "Do you want to allow it access?"
 msgstr ""
+"ეს ვებგვერდი ცდილობს მოიპოვოს ინფორმაცია თქვენი ფიზიკური მდებარეობის "
+"შესახებ.\n"
+"გნებავთ, მისცეთ მას ეს წვდომა?"
 
 #: webpage.cpp:635 webpage.cpp:752 webpage.cpp:763
 #, kde-format
@@ -440,7 +452,7 @@ msgstr "ქელით გადაცემა"
 #: webpage.cpp:636
 #, kde-format
 msgid "Allow access"
-msgstr ""
+msgstr "წვდომის დაშვება"
 
 #: webpage.cpp:711
 #, kde-format
@@ -448,6 +460,8 @@ msgid ""
 "<qt>This untrusted page links to<br/><b>%1</b>.<br/>Do you want to follow "
 "the link?</qt>"
 msgstr ""
+"<qt>ეს არასანდო ვებგვერდი მიბმულია<br/><b>%1</b>.<br/>გნებავთ, მიჰყვეთ ბმულს?"
+"</qt>"
 
 #: webpage.cpp:713
 #, kde-format
@@ -468,7 +482,7 @@ msgstr "უსაფრთხოების გაფრთხილება"
 #: webpage.cpp:717
 #, kde-format
 msgid "<qt>Access by untrusted page to<br/><b>%1</b><br/> denied.</qt>"
-msgstr ""
+msgstr "<qt>წვდომა არასანდო გვერდადე<br/><b>%1</b><br/> აკრძალულია.</qt>"
 
 #: webpage.cpp:745
 #, kde-format
@@ -504,21 +518,22 @@ msgid ""
 "<qt>Do you want to allow this site to attach the following files to the "
 "email message?</qt>"
 msgstr ""
+"<qt>გნებავთ, მისცეთ ამ ვებგვერდს უფლება, ელფოსტებს ფაილები მიამაგროს?</qt>"
 
 #: webpage.cpp:815
 #, kde-format
 msgid "Email Attachment Confirmation"
-msgstr ""
+msgstr "ელფოსტაზე მიმაგრების დადასტურება"
 
 #: webpage.cpp:816
 #, kde-format
 msgid "&Allow attachments"
-msgstr ""
+msgstr "&მიმაგრებული ფაილების დაშვება"
 
 #: webpage.cpp:817
 #, kde-format
 msgid "&Ignore attachments"
-msgstr ""
+msgstr "&მიმაგრებული ფაილების იგნორი"
 
 #: webpage.cpp:831
 #, kde-format
@@ -532,7 +547,7 @@ msgstr ""
 #: webpage.cpp:834
 #, kde-format
 msgid "Attachment Removed"
-msgstr ""
+msgstr "მიმაგრებული ფაილი წაშლილია"
 
 #: webpage.cpp:902
 #, kde-format
@@ -540,6 +555,8 @@ msgid ""
 "This site is requesting to open a new popup window.\n"
 "Do you want to allow this?"
 msgstr ""
+"ეს საიტი ახალი მხტუნარა ფანჯრის გახსნას ცდილობს.\n"
+"დავუშვათ ეს?"
 
 #: webpage.cpp:904
 #, kde-format
@@ -547,11 +564,13 @@ msgid ""
 "<qt>This site is requesting to open a popup window to<p>%1</p><br/>Do you "
 "want to allow this?</qt>"
 msgstr ""
+"<qt>ეს ვებგვერდი ითხოვს მხტუნარა ფანჯრის გახსნას <p>%1</p><br/>დავუშვათ ეს?</"
+"qt>"
 
 #: webpage.cpp:908
 #, kde-format
 msgid "Javascript Popup Confirmation"
-msgstr ""
+msgstr "Javascript -ის მხტუნარის დადასტურება"
 
 #: webpage.cpp:909
 #, kde-format
@@ -566,12 +585,12 @@ msgstr "აკრძალვა"
 #: webpluginfactory.cpp:58
 #, kde-format
 msgid "Start Plugin"
-msgstr ""
+msgstr "დამატების გაშვება"
 
 #: webview.cpp:299
 #, kde-format
 msgid "Access keys activated"
-msgstr ""
+msgstr "წვდომის გასაღებები გააქტიურდა"
 
 #: webview.cpp:378
 #, kde-format
@@ -582,7 +601,7 @@ msgstr "მიმართულება"
 #: webview.cpp:383
 #, kde-format
 msgid "Default"
-msgstr ""
+msgstr "ნაგულისხმები"
 
 #: webview.cpp:392
 #, kde-format
@@ -602,7 +621,7 @@ msgstr "მართლწერის შემოწმება..."
 #: webview.cpp:447
 #, kde-format
 msgid "Spellcheck selection..."
-msgstr ""
+msgstr "მართლწერის შემოწმების არჩევანი..."
 
 #: webview.cpp:474
 #, kde-format
@@ -734,51 +753,51 @@ msgstr "&დადუმება"
 #: webview.cpp:698
 #, kde-format
 msgid "&Loop"
-msgstr ""
+msgstr "&მარყუჟი"
 
 #: webview.cpp:705
 #, kde-format
 msgid "Show &Controls"
-msgstr ""
+msgstr "&კონტროლების ჩვენება"
 
 #: webview.cpp:718
 #, kde-format
 msgid "Sa&ve Video As..."
-msgstr ""
+msgstr "&ვიდეოს შენახვა, როგორც..."
 
 #: webview.cpp:719
 #, kde-format
 msgid "C&opy Video URL"
-msgstr ""
+msgstr "&ვიდეოს ბმულის კოპირება"
 
 #: webview.cpp:721
 #, kde-format
 msgid "Sa&ve Audio As..."
-msgstr ""
+msgstr "&აუდიოს შენახვა, როგორც..."
 
 #: webview.cpp:722
 #, kde-format
 msgid "C&opy Audio URL"
-msgstr ""
+msgstr "აუდიოს ბმულის &კოპირება"
 
 #: webview.cpp:724
 #, kde-format
 msgid "Sa&ve Media As..."
-msgstr ""
+msgstr "მედიის შენახვა, როგორც..."
 
 #: webview.cpp:725
 #, kde-format
 msgid "C&opy Media URL"
-msgstr ""
+msgstr "მედიის ბმულის &კოპირება"
 
 #: webview.cpp:769
 #, kde-format
 msgctxt "Search \"search provider\" for \"text\""
 msgid "Search %1 for '%2'"
-msgstr ""
+msgstr "%1-ში %2-ის მოძებნა"
 
 #: webview.cpp:780
 #, kde-format
 msgctxt "Search for \"text\" with"
 msgid "Search for '%1' with"
-msgstr ""
+msgstr "'%1'-ის მოძებნა მოხდება"
