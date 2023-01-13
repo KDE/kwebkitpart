@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kwebkitpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-06-16 00:17+0000\n"
-"PO-Revision-Date: 2023-01-11 06:20+0100\n"
+"PO-Revision-Date: 2023-01-12 07:31+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -428,6 +428,11 @@ msgid ""
 "and made a purchase, click the Cancel button to prevent a duplicate purchase."
 "Otherwise, click the Continue button to display the webpage again.</p>"
 msgstr ""
+"<qt><p>მოთხოვნილი ვებგვერდის თავიდან საჩვენებლად ბრაუზერს ინფორმაციის, "
+"რომელიც უკვე გადაგზავნილია, თავიდან გაგზავნა ესაჭიროება.</p><p>თუ საყიდლებით "
+"იყავით დაკავებული და რამე შეიძინეთ, დააჭირეთ გაუქმებას, რათა ორჯერ შეძენა "
+"თავიდან აიცილოთ. სხვა შემთხვევაში დააჭირეთ გაგრძელების ღილაკს და ვებგვერდი "
+"თავიდან ჩაიტვირთება.</p>"
 
 #: webpage.cpp:392
 #, kde-format
@@ -492,6 +497,10 @@ msgid ""
 "A third party may be able to intercept and view this information.\n"
 "Are you sure you want to send the data unencrypted?"
 msgstr ""
+"ყურადღება: ეს დაცული ფორმაა, მაგრამ თქვენი მონაცემების დაუშიფრავის სახით "
+"გაგზავნას ცდილობს.\n"
+"მესამე მხარეს ამ მონაცემთა გადაჭერა და ნახვა შეუძლია.\n"
+"დარწმუნებული ბრძანდებით, რომ გნებავთ, ეს მონაცემები დაუშიფრავად გააგზავნოთ?"
 
 #: webpage.cpp:753
 #, kde-format
