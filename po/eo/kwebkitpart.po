@@ -1,13 +1,14 @@
-# Translation of webkitkde into esperanto.
+# Translation of kwebkitpart into esperanto.
+# Copyright (C) 2009 Free Software Foundation, Inc.
 # Axel Rousseau <axel@esperanto-jeunes.org>, 2009.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: webkitkde\n"
+"Project-Id-Version: kwebkitpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-06-16 00:17+0000\n"
-"PO-Revision-Date: 2015-03-25 21:53+0100\n"
-"Last-Translator: Axel Rousseau <axel.rousseau@esperanto-france.org>\n"
+"PO-Revision-Date: 2023-03-22 19:14+0100\n"
+"Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
@@ -60,10 +61,9 @@ msgid "Zoom Text Only"
 msgstr ""
 
 #: kwebkitpart.cpp:196
-#, fuzzy, kde-format
-#| msgid "Zoom In"
+#, kde-format
 msgid "Zoom To DPI"
-msgstr "Enzomi"
+msgstr ""
 
 #: kwebkitpart.cpp:208
 #, kde-format
@@ -76,11 +76,10 @@ msgid "View Do&cument Source"
 msgstr "Montri do&kumentofonton"
 
 #: kwebkitpart.cpp:217
-#, fuzzy, kde-format
-#| msgid "Additional Information: %1"
+#, kde-format
 msgctxt "Secure Sockets Layer"
 msgid "View SSL Information"
-msgstr "Aldonaj informoj: %1"
+msgstr ""
 
 #: kwebkitpart.cpp:221
 #, kde-format
@@ -139,10 +138,9 @@ msgid " - Subject: "
 msgstr ""
 
 #: kwebkitpart.cpp:695 kwebkitpart.cpp:705
-#, fuzzy, kde-format
-#| msgid "Open in New &Window"
+#, kde-format
 msgid " (In new window)"
-msgstr "Malfermi en nova &fenestro"
+msgstr ""
 
 #: kwebkitpart.cpp:703
 #, kde-format
@@ -422,22 +420,16 @@ msgid ""
 msgstr ""
 
 #: webpage.cpp:392
-#, fuzzy, kde-format
-#| msgid "Additional Information: %1"
+#, kde-format
 msgid "Resubmit Information"
-msgstr "Aldonaj informoj: %1"
+msgstr ""
 
 #: webpage.cpp:631
-#, fuzzy, kde-format
-#| msgid ""
-#| "This site is attempting to submit form data via email.\n"
-#| "Do you want to continue?"
+#, kde-format
 msgid ""
 "This site is attempting to access information about your physical location.\n"
 "Do you want to allow it access?"
 msgstr ""
-"Tiu retejo provas elsendi formularajn datumojn per retpoŝto.\n"
-"Ĉu vi volas permesi tion?"
 
 #: webpage.cpp:635 webpage.cpp:752 webpage.cpp:763
 #, kde-format
@@ -542,16 +534,11 @@ msgid "Attachment Removed"
 msgstr ""
 
 #: webpage.cpp:902
-#, fuzzy, kde-format
-#| msgid ""
-#| "This site is attempting to submit form data via email.\n"
-#| "Do you want to continue?"
+#, kde-format
 msgid ""
 "This site is requesting to open a new popup window.\n"
 "Do you want to allow this?"
 msgstr ""
-"Tiu retejo provas elsendi formularajn datumojn per retpoŝto.\n"
-"Ĉu vi volas permesi tion?"
 
 #: webpage.cpp:904
 #, kde-format
@@ -627,10 +614,9 @@ msgid "Send Image..."
 msgstr "Sendi bildon..."
 
 #: webview.cpp:484
-#, fuzzy, kde-format
-#| msgid "Copy Image"
+#, kde-format
 msgid "Copy Image URL"
-msgstr "Kopii bildon"
+msgstr ""
 
 #: webview.cpp:489
 #, kde-format
@@ -643,10 +629,9 @@ msgid "View Image (%1)"
 msgstr "Vidigi bildon (%1)"
 
 #: webview.cpp:501
-#, fuzzy, kde-format
-#| msgid "Send Image..."
+#, kde-format
 msgid "Block Image..."
-msgstr "Sendi bildon..."
+msgstr ""
 
 #: webview.cpp:509
 #, kde-format
@@ -690,10 +675,9 @@ msgid "View Frame Source"
 msgstr "Montri fonton de la enpaĝa kadro"
 
 #: webview.cpp:566
-#, fuzzy, kde-format
-#| msgid "Send Image..."
+#, kde-format
 msgid "Block IFrame..."
-msgstr "Sendi bildon..."
+msgstr ""
 
 #: webview.cpp:611 webview.cpp:644
 #, kde-format
@@ -707,22 +691,19 @@ msgid "Open '%1'"
 msgstr "Malfermi '%1'"
 
 #: webview.cpp:650
-#, fuzzy, kde-format
-#| msgid "Copy Email Address"
+#, kde-format
 msgid "&Copy Email Address"
-msgstr "Kopii retpoŝtadreson"
+msgstr "&Kopii retpoŝtadreson"
 
 #: webview.cpp:656
-#, fuzzy, kde-format
-#| msgid "&Copy Text"
+#, kde-format
 msgid "Copy Link &Text"
-msgstr "&Kopii tekston"
+msgstr ""
 
 #: webview.cpp:662
-#, fuzzy, kde-format
-#| msgid "&Copy Link Address"
+#, kde-format
 msgid "Copy Link &URL"
-msgstr "&Kopii ligilan adreson"
+msgstr ""
 
 #: webview.cpp:667
 #, kde-format
@@ -760,10 +741,9 @@ msgid "Show &Controls"
 msgstr ""
 
 #: webview.cpp:718
-#, fuzzy, kde-format
-#| msgid "Save Image As..."
+#, kde-format
 msgid "Sa&ve Video As..."
-msgstr "Konservi bildon kiel..."
+msgstr ""
 
 #: webview.cpp:719
 #, kde-format
@@ -771,10 +751,9 @@ msgid "C&opy Video URL"
 msgstr ""
 
 #: webview.cpp:721
-#, fuzzy, kde-format
-#| msgid "&Save Link As..."
+#, kde-format
 msgid "Sa&ve Audio As..."
-msgstr "&Konservi ligilon kiel..."
+msgstr ""
 
 #: webview.cpp:722
 #, kde-format
@@ -782,10 +761,9 @@ msgid "C&opy Audio URL"
 msgstr ""
 
 #: webview.cpp:724
-#, fuzzy, kde-format
-#| msgid "Save Image As..."
+#, kde-format
 msgid "Sa&ve Media As..."
-msgstr "Konservi bildon kiel..."
+msgstr ""
 
 #: webview.cpp:725
 #, kde-format
@@ -793,74 +771,13 @@ msgid "C&opy Media URL"
 msgstr ""
 
 #: webview.cpp:769
-#, fuzzy, kde-format
-#| msgid "Search for '%1' with"
+#, kde-format
 msgctxt "Search \"search provider\" for \"text\""
 msgid "Search %1 for '%2'"
-msgstr "Serĉi '%1' per"
+msgstr ""
 
 #: webview.cpp:780
 #, kde-format
 msgctxt "Search for \"text\" with"
 msgid "Search for '%1' with"
 msgstr "Serĉi '%1' per"
-
-#~ msgid "Dawit Alemayehu"
-#~ msgstr "Dawit Alemayehu"
-
-#~ msgid "Urs Wolfer"
-#~ msgstr "Urs Wolfer"
-
-#~ msgid "Michael Howell"
-#~ msgstr "Michael Howell"
-
-#~ msgid "Developer"
-#~ msgstr "Kreinto"
-
-#~ msgid "Laurent Montel"
-#~ msgstr "Laurent Montel"
-
-#~ msgid "Dirk Mueller"
-#~ msgstr "Dirk Mueller"
-
-#~ msgid "&File"
-#~ msgstr "&Dosiero"
-
-#~ msgid "Print"
-#~ msgstr "Presi"
-
-#~ msgid "Close"
-#~ msgstr "Fermi"
-
-#~ msgid "&Edit"
-#~ msgstr "&Redakti"
-
-#~ msgid "&View"
-#~ msgstr "&Rigardi"
-
-#~ msgid "Zoom &In"
-#~ msgstr "Zo&mi"
-
-#~ msgid "Zoom &Out"
-#~ msgstr "Ma&lzomi"
-
-#~ msgid "F&ormat"
-#~ msgstr "F&ormato"
-
-#~ msgid "&Tools"
-#~ msgstr "&Iloj"
-
-#~ msgid "Accept"
-#~ msgstr "Akcepti"
-
-#~ msgid "Reject"
-#~ msgstr "Malakcepti"
-
-#~ msgid "Esc"
-#~ msgstr "Esc"
-
-#~ msgid "Enter the text to search for here"
-#~ msgstr "Enmetu la serĉendan tekston tie"
-
-#~ msgid "Do you want to store this password?"
-#~ msgstr "Ĉu vi volas konservi la pasvorton?"
