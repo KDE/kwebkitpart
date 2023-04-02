@@ -2,13 +2,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Michał Lachowski <michal@lachowski.info>, 2010.
-# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2011, 2012, 2014, 2015, 2017, 2019, 2020, 2021.
+# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2011, 2012, 2014, 2015, 2017, 2019, 2020, 2021, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-06-16 00:17+0000\n"
-"PO-Revision-Date: 2021-01-03 10:10+0100\n"
+"PO-Revision-Date: 2023-04-01 09:55+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Lokalize 20.12.1\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -278,7 +278,7 @@ msgstr "Zamknij pasek wyszukiwania"
 #, kde-format
 msgctxt "label for input line to find text"
 msgid "&Find:"
-msgstr "&Znajdź:"
+msgstr "&Poszukaj:"
 
 #. i18n: ectx: property (toolTip), widget (QToolButton, nextButton)
 #: ui/searchbar.ui:59
@@ -481,7 +481,7 @@ msgstr "Ostrzeżenie o niebezpieczeństwie"
 #, kde-format
 msgctxt "follow link despite of security warning"
 msgid "Follow"
-msgstr "Kliknij na link mimo to"
+msgstr "Śledź"
 
 #: webpage.cpp:716
 #, kde-format
@@ -768,7 +768,7 @@ msgstr "W&ycisz"
 #: webview.cpp:698
 #, kde-format
 msgid "&Loop"
-msgstr "&Zapętlij"
+msgstr "Zapęt&lij"
 
 #: webview.cpp:705
 #, kde-format
