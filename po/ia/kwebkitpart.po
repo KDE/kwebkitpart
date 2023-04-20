@@ -35,7 +35,7 @@ msgstr "Salva un &quadro como ..."
 #: kwebkitpart.cpp:165
 #, kde-format
 msgid "Print Preview"
-msgstr "Vista preliminari de imprimer"
+msgstr "Vista preliminar de imprimer"
 
 #: kwebkitpart.cpp:169
 #, kde-format
