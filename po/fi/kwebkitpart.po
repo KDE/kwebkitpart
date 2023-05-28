@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: kwebkitpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2021-06-16 00:17+0000\n"
-"PO-Revision-Date: 2017-12-03 20:55+0900\n"
-"Last-Translator: Lasse Liehu <lasse.liehu@gmail.com>\n"
+"PO-Revision-Date: 2023-05-18 14:05+0300\n"
+"Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-POT-Import-Date: 2012-12-01 22:20:04+0000\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.04.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -71,17 +71,17 @@ msgstr "Muuta vain tekstin kokoa"
 #: kwebkitpart.cpp:196
 #, kde-format
 msgid "Zoom To DPI"
-msgstr "Zoomaa DPI:hin"
+msgstr "Lähennä DPI:hin"
 
 #: kwebkitpart.cpp:208
 #, kde-format
 msgid "Set &Encoding"
-msgstr "Aseta koo&daus"
+msgstr "Aseta &merkistö"
 
 #: kwebkitpart.cpp:212
 #, kde-format
 msgid "View Do&cument Source"
-msgstr "Näytä asiakirjan &lähdekoodi"
+msgstr "Näytä tiedoston &lähdekoodi"
 
 #: kwebkitpart.cpp:217
 #, kde-format
@@ -177,17 +177,17 @@ msgstr "&Etsi"
 #: kwebkitpart.cpp:791
 #, kde-format
 msgid "&Allow password caching for this site"
-msgstr "&Salli salasanavälimuisti tälle sivustolle"
+msgstr "&Käytä tässä sivustossa salasanavälimuistia"
 
 #: kwebkitpart.cpp:794
 #, kde-format
 msgid "Remove all cached passwords for this site"
-msgstr "Poista kaikki tämän sivuston salasanat välimuistista"
+msgstr "Poista kaikki sivuston salasanat välimuistista"
 
 #: kwebkitpart.cpp:797
 #, kde-format
 msgid "&Close Wallet"
-msgstr "S&ulje lompakko"
+msgstr "Sulje &lompakko"
 
 #: kwebkitpart.cpp:855
 #, kde-format
@@ -197,7 +197,7 @@ msgstr "Suljetaanko ikkuna?"
 #: kwebkitpart.cpp:855
 #, kde-format
 msgid "Confirmation Required"
-msgstr "Vahvistus tarvitaan"
+msgstr "Vaaditaan vahvistus"
 
 #. i18n("<html>Do you want to grant the site <b>%1</b> "
 #. "access to information about your current physical location?",
@@ -207,14 +207,14 @@ msgstr "Vahvistus tarvitaan"
 msgid ""
 "<html>Do you want to grant the site access to information about your current "
 "physical location?"
-msgstr "<html>Haluatko antaa sivuston lukea nykyinen fyysinen sijaintisi?"
+msgstr "<html>Haluatko antaa sivuston lukea nykyisen fyysisen sijaintisi?"
 
 #: kwebkitpart.cpp:933
 #, kde-format
 msgid ""
 "<html>Do you want %1 to remember the login information for <b>%2</b>?</html>"
 msgstr ""
-"<html>Haluatko ohjelman %1 muistavan kirjautumistiedot sivulle <b>%2</b>?</"
+"<html>Haluatko ohjelman %1 muistavan sivun <b>%2</b> kirjautumistiedot?</"
 "html>"
 
 #. i18n: ectx: ToolBar (htmlToolBar)
