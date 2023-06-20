@@ -77,7 +77,7 @@ msgstr "Achegar aos PPP"
 #: kwebkitpart.cpp:208
 #, kde-format
 msgid "Set &Encoding"
-msgstr "Estabelecer a &codificación"
+msgstr "Definir a &codificación"
 
 #: kwebkitpart.cpp:212
 #, kde-format
@@ -364,7 +364,7 @@ msgid ""
 "<html><body><h3>Unable to display error message</h3><p>The error template "
 "file <em>error.html</em> could not be found.</p></body></html>"
 msgstr ""
-"<html><body><h3>Non se pode mostrar a mensaxe de erro</h3><p>Non se puido "
+"<html><body><h3>Non se pode amosar a mensaxe de erro</h3><p>Non se puido "
 "atopar o ficheiro co modelo para os erros, <em>error.html</em>.</p></body></"
 "html>"
 
@@ -439,11 +439,11 @@ msgid ""
 "and made a purchase, click the Cancel button to prevent a duplicate purchase."
 "Otherwise, click the Continue button to display the webpage again.</p>"
 msgstr ""
-"<qt><p>Para volver mostrar a páxina web solicitada, o navegador ten que "
+"<qt><p>Para volver amosar a páxina web solicitada, o navegador ten que "
 "volver enviar a información que enviou anteriormente.</p><p>Se estaba "
 "facendo compras por Internet, prema o botón de «Cancelar» para evitar "
 "realizar a mesma compra dúas veces. En caso contrario, prema o botón de "
-"«Continuar» para mostrar de novo a páxina.</p>"
+"«Continuar» para amosar de novo a páxina.</p>"
 
 #: webpage.cpp:392
 #, kde-format
@@ -481,7 +481,7 @@ msgstr ""
 #: webpage.cpp:713
 #, kde-format
 msgid "Security Warning"
-msgstr "Advertencia de seguranza"
+msgstr "Advertencia de seguridade"
 
 #: webpage.cpp:714
 #, kde-format
@@ -492,7 +492,7 @@ msgstr "Seguir"
 #: webpage.cpp:716
 #, kde-format
 msgid "Security Alert"
-msgstr "Alerta de seguranza"
+msgstr "Alerta de seguridade"
 
 #: webpage.cpp:717
 #, kde-format
@@ -781,7 +781,7 @@ msgstr "&Bucle"
 #: webview.cpp:705
 #, kde-format
 msgid "Show &Controls"
-msgstr "Mostrar os &controis"
+msgstr "Amosar os &controis"
 
 #: webview.cpp:718
 #, kde-format
