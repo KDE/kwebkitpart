@@ -642,7 +642,7 @@ msgstr "Correcció ortogràfica de la selecció..."
 #: webview.cpp:474
 #, kde-format
 msgid "Save Image As..."
-msgstr "Guarda la imatge com a..."
+msgstr "Anomena i guarda la imatge..."
 
 #: webview.cpp:479
 #, kde-format
