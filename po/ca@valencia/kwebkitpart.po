@@ -162,7 +162,7 @@ msgstr "<qt>Voleu buscar <b>%1</b>?</qt>"
 #: kwebkitpart.cpp:768
 #, kde-format
 msgid "Internet Search"
-msgstr "Busca a Internet"
+msgstr "Busca en Internet"
 
 #: kwebkitpart.cpp:768
 #, kde-format
