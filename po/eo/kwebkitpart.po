@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kwebkitpart\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-05 12:28+0000\n"
-"PO-Revision-Date: 2023-03-22 19:14+0100\n"
+"PO-Revision-Date: 2024-01-08 22:51+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -35,7 +35,7 @@ msgstr "Konservi &enpaĝan kadron kiel..."
 #: kwebkitpart.cpp:165
 #, kde-format
 msgid "Print Preview"
-msgstr ""
+msgstr "Presita antaŭvido"
 
 #: kwebkitpart.cpp:169
 #, kde-format
@@ -53,22 +53,22 @@ msgstr "Elzomi"
 #, kde-format
 msgctxt "reset zoom action"
 msgid "Actual Size"
-msgstr ""
+msgstr "Reala Grandeco"
 
 #: kwebkitpart.cpp:188
 #, kde-format
 msgid "Zoom Text Only"
-msgstr ""
+msgstr "Zoom Nur Teksto"
 
 #: kwebkitpart.cpp:196
 #, kde-format
 msgid "Zoom To DPI"
-msgstr ""
+msgstr "Zomi al DPI"
 
 #: kwebkitpart.cpp:208
 #, kde-format
 msgid "Set &Encoding"
-msgstr ""
+msgstr "M&eti Kodigon"
 
 #: kwebkitpart.cpp:212
 #, kde-format
@@ -79,12 +79,12 @@ msgstr "Montri do&kumentofonton"
 #, kde-format
 msgctxt "Secure Sockets Layer"
 msgid "View SSL Information"
-msgstr ""
+msgstr "Rigardi SSL-Informojn"
 
 #: kwebkitpart.cpp:221
 #, kde-format
 msgid "Toggle Caret Mode"
-msgstr ""
+msgstr "Baskuligi Tajpmontrilan Reĝimon"
 
 #: kwebkitpart.cpp:228
 #, kde-format
@@ -93,11 +93,14 @@ msgid ""
 "<h3>Find text</h3>Shows a dialog that allows you to find text on the "
 "displayed page."
 msgstr ""
+"<h3>Trovi tekston</h3>Montras dialogon, kiu ebligas al vi trovi tekston sur "
+"la montrata paĝo."
 
 #: kwebkitpart.cpp:568
 #, kde-format
 msgid "This site is not secured with SSL, or its SSL information is not valid."
 msgstr ""
+"Ĉi tiu retejo ne estas sekurigita per SSL, aŭ ĝiaj SSL-informoj ne validas."
 
 #: kwebkitpart.cpp:569
 #, kde-format
@@ -119,7 +122,7 @@ msgctxt ""
 "status bar text when hovering email links; looks like \"Email: xy@kde.org - "
 "CC: z@kde.org -BCC: x@kde.org - Subject: Hi translator\""
 msgid " - CC: "
-msgstr ""
+msgstr "- CC:"
 
 #: kwebkitpart.cpp:689
 #, kde-format
@@ -127,7 +130,7 @@ msgctxt ""
 "status bar text when hovering email links; looks like \"Email: xy@kde.org - "
 "CC: z@kde.org -BCC: x@kde.org - Subject: Hi translator\""
 msgid " - BCC: "
-msgstr ""
+msgstr "- BCC:"
 
 #: kwebkitpart.cpp:691
 #, kde-format
@@ -135,22 +138,22 @@ msgctxt ""
 "status bar text when hovering email links; looks like \"Email: xy@kde.org - "
 "CC: z@kde.org -BCC: x@kde.org - Subject: Hi translator\""
 msgid " - Subject: "
-msgstr ""
+msgstr "- Temo:"
 
 #: kwebkitpart.cpp:695 kwebkitpart.cpp:705
 #, kde-format
 msgid " (In new window)"
-msgstr ""
+msgstr "(En nova fenestro)"
 
 #: kwebkitpart.cpp:703
 #, kde-format
 msgid " (In parent frame)"
-msgstr ""
+msgstr "(En gepatra kadro)"
 
 #: kwebkitpart.cpp:767
 #, kde-format
 msgid "<qt>Do you want to search for <b>%1</b>?</qt>"
-msgstr ""
+msgstr "<qt>Ĉu vi volas serĉi <b>%1</b>?</qt>"
 
 #: kwebkitpart.cpp:768
 #, kde-format
@@ -165,12 +168,12 @@ msgstr "&Serĉi"
 #: kwebkitpart.cpp:791
 #, kde-format
 msgid "&Allow password caching for this site"
-msgstr ""
+msgstr "&Permesi pasvortan kaŝmemorigon por ĉi tiu retejo"
 
 #: kwebkitpart.cpp:794
 #, kde-format
 msgid "Remove all cached passwords for this site"
-msgstr ""
+msgstr "Forigu ĉiujn konservitajn pasvortojn por ĉi tiu retejo"
 
 #: kwebkitpart.cpp:797
 #, kde-format
@@ -196,12 +199,15 @@ msgid ""
 "<html>Do you want to grant the site access to information about your current "
 "physical location?"
 msgstr ""
+"<html>Ĉu vi volas doni al la retejo aliron al informoj pri via nuna fizika "
+"loko?"
 
 #: kwebkitpart.cpp:933
 #, kde-format
 msgid ""
 "<html>Do you want %1 to remember the login information for <b>%2</b>?</html>"
 msgstr ""
+"<html>Ĉu vi volas, ke %1 memoru la salutinformojn por <b>%2</b>?</html>"
 
 #. i18n: ectx: ToolBar (htmlToolBar)
 #: kwebkitpart.rc:28
@@ -212,17 +218,17 @@ msgstr "HTML-ilobreto"
 #: kwebkitpart_ext.cpp:409 kwebkitpart_ext.cpp:496
 #, kde-format
 msgid "Add URL to Filter"
-msgstr ""
+msgstr "Aldoni URL al Filtrilo"
 
 #: kwebkitpart_ext.cpp:410 kwebkitpart_ext.cpp:497
 #, kde-format
 msgid "Enter the URL:"
-msgstr ""
+msgstr "Enigu la URL:"
 
 #: networkaccessmanager.cpp:38
 #, kde-format
 msgid "Blocked by ad filter"
-msgstr ""
+msgstr "Blokita de reklamfiltrilo"
 
 #: settings/webkitsettings.cpp:891
 #, kde-format
@@ -233,31 +239,31 @@ msgstr "Filtrila eraro"
 #, kde-format
 msgctxt "@action:deny access"
 msgid "&Deny access"
-msgstr ""
+msgstr "Ne &doni aliron"
 
 #: ui/featurepermissionbar.cpp:25
 #, kde-format
 msgctxt "@action:grant access"
 msgid "&Grant access"
-msgstr ""
+msgstr "Do&ni aliron"
 
 #: ui/passwordbar.cpp:26
 #, kde-format
 msgctxt "@action:remember password"
 msgid "&Remember"
-msgstr ""
+msgstr "Memo&ri"
 
 #: ui/passwordbar.cpp:30
 #, kde-format
 msgctxt "@action:never for this site"
 msgid "Ne&ver for this site"
-msgstr ""
+msgstr "Nen&iam por ĉi tiu retejo"
 
 #: ui/passwordbar.cpp:34
 #, kde-format
 msgctxt "@action:not now"
 msgid "N&ot now"
-msgstr ""
+msgstr "Ne n&un"
 
 #. i18n: ectx: property (toolTip), widget (QToolButton, closeButton)
 #: ui/searchbar.ui:23
@@ -270,7 +276,7 @@ msgstr "Fermi la serĉobreton"
 #, kde-format
 msgctxt "label for input line to find text"
 msgid "&Find:"
-msgstr ""
+msgstr "&Trovi:"
 
 #. i18n: ectx: property (toolTip), widget (QToolButton, nextButton)
 #: ui/searchbar.ui:59
@@ -307,30 +313,30 @@ msgstr "&Opcioj"
 #: ui/searchbar.ui:126
 #, kde-format
 msgid "&Match Case"
-msgstr ""
+msgstr "&Kongrui Usklecon"
 
 #. i18n: ectx: property (text), item, widget (QToolButton, optionsButton)
 #: ui/searchbar.ui:137
 #, kde-format
 msgid "&Search As You Type"
-msgstr ""
+msgstr "&Serĉi Dum Vi Tajpas"
 
 #. i18n: ectx: property (text), item, widget (QToolButton, optionsButton)
 #: ui/searchbar.ui:145
 #, kde-format
 msgid "&Highlight All Matches"
-msgstr ""
+msgstr "&Elstarigi Ĉiujn Kongruojn"
 
 #. i18n: ectx: property (toolTip), item, widget (QToolButton, optionsButton)
 #: ui/searchbar.ui:148
 #, kde-format
 msgid "Highlight Matches"
-msgstr ""
+msgstr "Emfazi Kongruojn"
 
 #: webpage.cpp:130
 #, kde-format
 msgid "The download manager (%1) could not be found in your installation."
-msgstr ""
+msgstr "La elŝuta administranto (%1) ne troveblas en via instalado."
 
 #: webpage.cpp:131
 #, kde-format
@@ -339,6 +345,9 @@ msgid ""
 "\n"
 "The integration will be disabled."
 msgstr ""
+"Provu reinstali ĝin kaj certigi ke ĝi estas disponebla en $PATH. \n"
+"\n"
+"La integriĝo estos malŝaltita."
 
 #: webpage.cpp:191
 #, kde-format
@@ -346,6 +355,8 @@ msgid ""
 "<html><body><h3>Unable to display error message</h3><p>The error template "
 "file <em>error.html</em> could not be found.</p></body></html>"
 msgstr ""
+"<html><body><h3>Ne eblas montri erarmesaĝon</h3><p>La erarŝablona dosiero "
+"<em>error.html</em> ne estis trovita.</p></body></body></em> html>"
 
 #: webpage.cpp:197
 #, kde-format
@@ -408,7 +419,7 @@ msgstr "Eblaj solvoj:"
 #: webpage.cpp:280 webpage.cpp:284
 #, kde-format
 msgid "Choose files to upload"
-msgstr ""
+msgstr "Elekti dosierojn por alŝuti"
 
 #: webpage.cpp:385
 #, kde-format
@@ -418,11 +429,15 @@ msgid ""
 "and made a purchase, click the Cancel button to prevent a duplicate purchase."
 "Otherwise, click the Continue button to display the webpage again.</p>"
 msgstr ""
+"<qt><p>Por montri la petitan retpaĝon denove, la retumilo devas resendi "
+"informojn, kiujn vi antaŭe sendis.</p><p>Se vi aĉetis interrete kaj faris "
+"aĉeton, alklaku la butonon Nuligi por malhelpi duplikaton. aĉeto.Alie, "
+"alklaku la butonon Daŭrigi por montri la retpaĝon denove.</p>"
 
 #: webpage.cpp:392
 #, kde-format
 msgid "Resubmit Information"
-msgstr ""
+msgstr "Resendi Informojn"
 
 #: webpage.cpp:631
 #, kde-format
@@ -430,6 +445,8 @@ msgid ""
 "This site is attempting to access information about your physical location.\n"
 "Do you want to allow it access?"
 msgstr ""
+"Ĉi tiu retejo provas aliri informojn pri via fizika loko.\n"
+"Ĉu vi volas permesi al ĝi aliri?"
 
 #: webpage.cpp:635 webpage.cpp:752 webpage.cpp:763
 #, kde-format
@@ -439,7 +456,7 @@ msgstr "Reta transsendo"
 #: webpage.cpp:636
 #, kde-format
 msgid "Allow access"
-msgstr ""
+msgstr "Permesi aliron"
 
 #: webpage.cpp:711
 #, kde-format
@@ -447,6 +464,8 @@ msgid ""
 "<qt>This untrusted page links to<br/><b>%1</b>.<br/>Do you want to follow "
 "the link?</qt>"
 msgstr ""
+"<qt>Ĉi tiu nefidinda paĝo ligas al<br/><b>%1</b>.<br/>Ĉu vi volas sekvi la "
+"ligilon?</qt>"
 
 #: webpage.cpp:713
 #, kde-format
@@ -467,7 +486,7 @@ msgstr "Sekurecaverto"
 #: webpage.cpp:717
 #, kde-format
 msgid "<qt>Access by untrusted page to<br/><b>%1</b><br/> denied.</qt>"
-msgstr ""
+msgstr "<qt>Aliro per nefidinda paĝo al<br/><b>%1</b><br/> malakceptita.</qt>"
 
 #: webpage.cpp:745
 #, kde-format
@@ -477,6 +496,10 @@ msgid ""
 "A third party may be able to intercept and view this information.\n"
 "Are you sure you want to send the data unencrypted?"
 msgstr ""
+"Averto: Ĉi tio estas sekura formo sed ĝi provas resendi viajn datumojn "
+"neĉifrite.\n"
+"Eble tria partio povos kapti kaj vidi ĉi tiun informon.\n"
+"Ĉu vi certas, ke vi volas sendi la datumojn neĉifrite?"
 
 #: webpage.cpp:753
 #, kde-format
@@ -503,21 +526,23 @@ msgid ""
 "<qt>Do you want to allow this site to attach the following files to the "
 "email message?</qt>"
 msgstr ""
+"<qt>Ĉu vi volas permesi al ĉi tiu retejo kunsendi la jenajn dosierojn al la "
+"retmesaĝo?</qt>"
 
 #: webpage.cpp:815
 #, kde-format
 msgid "Email Attachment Confirmation"
-msgstr ""
+msgstr "Retpoŝta Aldonaĵo Konfirmo"
 
 #: webpage.cpp:816
 #, kde-format
 msgid "&Allow attachments"
-msgstr ""
+msgstr "Permesi &aldonaĵojn"
 
 #: webpage.cpp:817
 #, kde-format
 msgid "&Ignore attachments"
-msgstr ""
+msgstr "&Ignori aldonaĵojn"
 
 #: webpage.cpp:831
 #, kde-format
@@ -531,7 +556,7 @@ msgstr ""
 #: webpage.cpp:834
 #, kde-format
 msgid "Attachment Removed"
-msgstr ""
+msgstr "Aldonaĵo Forigita"
 
 #: webpage.cpp:902
 #, kde-format
@@ -539,6 +564,8 @@ msgid ""
 "This site is requesting to open a new popup window.\n"
 "Do you want to allow this?"
 msgstr ""
+"Ĉi tiu retejo petas malfermi novan ŝprucfenestron.\n"
+"Ĉu vi volas permesi tion?"
 
 #: webpage.cpp:904
 #, kde-format
@@ -546,11 +573,13 @@ msgid ""
 "<qt>This site is requesting to open a popup window to<p>%1</p><br/>Do you "
 "want to allow this?</qt>"
 msgstr ""
+"<qt>Ĉi tiu retejo petas malfermi ŝprucfenestron al<p>%1</p><br/>Ĉu vi volas "
+"permesi ĉi tion?</qt>"
 
 #: webpage.cpp:908
 #, kde-format
 msgid "Javascript Popup Confirmation"
-msgstr ""
+msgstr "Javascript Ŝprucfenestro-Konfirmo"
 
 #: webpage.cpp:909
 #, kde-format
@@ -570,7 +599,7 @@ msgstr "Starti kromprogrameton"
 #: webview.cpp:299
 #, kde-format
 msgid "Access keys activated"
-msgstr ""
+msgstr "Alirŝlosiloj aktivigitaj"
 
 #: webview.cpp:378
 #, kde-format
@@ -586,22 +615,22 @@ msgstr "Defaŭlta"
 #: webview.cpp:392
 #, kde-format
 msgid "Left to right"
-msgstr ""
+msgstr "De maldekstre al dekstre"
 
 #: webview.cpp:401
 #, kde-format
 msgid "Right to left"
-msgstr ""
+msgstr "Dekstre al maldekstre"
 
 #: webview.cpp:441
 #, kde-format
 msgid "Check Spelling..."
-msgstr ""
+msgstr "Kontroli Ortografion..."
 
 #: webview.cpp:447
 #, kde-format
 msgid "Spellcheck selection..."
-msgstr ""
+msgstr "Elekto de literumkontrolo..."
 
 #: webview.cpp:474
 #, kde-format
@@ -616,7 +645,7 @@ msgstr "Sendi bildon..."
 #: webview.cpp:484
 #, kde-format
 msgid "Copy Image URL"
-msgstr ""
+msgstr "Kopii URL de Bildo"
 
 #: webview.cpp:489
 #, kde-format
@@ -631,12 +660,12 @@ msgstr "Vidigi bildon (%1)"
 #: webview.cpp:501
 #, kde-format
 msgid "Block Image..."
-msgstr ""
+msgstr "Bloki Bildon..."
 
 #: webview.cpp:509
 #, kde-format
 msgid "Block Images From %1"
-msgstr ""
+msgstr "Bloki Bildojn De %1"
 
 #: webview.cpp:516
 #, kde-format
@@ -677,7 +706,7 @@ msgstr "Montri fonton de la enpaĝa kadro"
 #: webview.cpp:566
 #, kde-format
 msgid "Block IFrame..."
-msgstr ""
+msgstr "Bloki IFrame..."
 
 #: webview.cpp:611 webview.cpp:644
 #, kde-format
@@ -698,12 +727,12 @@ msgstr "&Kopii retpoŝtadreson"
 #: webview.cpp:656
 #, kde-format
 msgid "Copy Link &Text"
-msgstr ""
+msgstr "Kopii Ligilan &Tekston"
 
 #: webview.cpp:662
 #, kde-format
 msgid "Copy Link &URL"
-msgstr ""
+msgstr "Kopii Ligilan &URL"
 
 #: webview.cpp:667
 #, kde-format
@@ -723,58 +752,58 @@ msgstr "&Paŭzi"
 #: webview.cpp:693
 #, kde-format
 msgid "Un&mute"
-msgstr ""
+msgstr "&Malsilentigi"
 
 #: webview.cpp:693
 #, kde-format
 msgid "&Mute"
-msgstr ""
+msgstr "&Mutigi"
 
 #: webview.cpp:698
 #, kde-format
 msgid "&Loop"
-msgstr ""
+msgstr "&Buklo"
 
 #: webview.cpp:705
 #, kde-format
 msgid "Show &Controls"
-msgstr ""
+msgstr "Montri &Regilojn"
 
 #: webview.cpp:718
 #, kde-format
 msgid "Sa&ve Video As..."
-msgstr ""
+msgstr "Konser&vi Vidaĵon Kiel..."
 
 #: webview.cpp:719
 #, kde-format
 msgid "C&opy Video URL"
-msgstr ""
+msgstr "K&opii Vidaĵan URL"
 
 #: webview.cpp:721
 #, kde-format
 msgid "Sa&ve Audio As..."
-msgstr ""
+msgstr "Konser&vi Aŭdaĵon kiel..."
 
 #: webview.cpp:722
 #, kde-format
 msgid "C&opy Audio URL"
-msgstr ""
+msgstr "K&opii Aŭdaĵ-URL"
 
 #: webview.cpp:724
 #, kde-format
 msgid "Sa&ve Media As..."
-msgstr ""
+msgstr "Konser&vi Aŭdvidaĵon Kiel..."
 
 #: webview.cpp:725
 #, kde-format
 msgid "C&opy Media URL"
-msgstr ""
+msgstr "K&opii Aŭdvidaĵan URL"
 
 #: webview.cpp:769
 #, kde-format
 msgctxt "Search \"search provider\" for \"text\""
 msgid "Search %1 for '%2'"
-msgstr ""
+msgstr "Priserĉi %1 por '%2'"
 
 #: webview.cpp:780
 #, kde-format
