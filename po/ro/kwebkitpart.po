@@ -1,14 +1,14 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 # Sergiu Bivol <sergiu@cip.md>, 2009, 2011.
-# Sergiu Bivol <sergiu@cip.md>, 2010, 2013.
+# Sergiu Bivol <sergiu@cip.md>, 2010, 2013, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: webkitkde\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-05 12:28+0000\n"
-"PO-Revision-Date: 2013-02-09 00:50+0200\n"
+"PO-Revision-Date: 2024-02-24 15:33+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
 "Language: ro\n"
@@ -17,6 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
+"X-Generator: Lokalize 21.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -62,11 +63,9 @@ msgid "Zoom Text Only"
 msgstr "Apropie numai textul"
 
 #: kwebkitpart.cpp:196
-#, fuzzy, kde-format
-#| msgctxt "zoom in action"
-#| msgid "Zoom In"
+#, kde-format
 msgid "Zoom To DPI"
-msgstr "Apropie"
+msgstr "Apropie la DPI"
 
 #: kwebkitpart.cpp:208
 #, kde-format
@@ -79,16 +78,15 @@ msgid "View Do&cument Source"
 msgstr "Afișează s&ursa documentului"
 
 #: kwebkitpart.cpp:217
-#, fuzzy, kde-format
-#| msgid "Resubmit Information"
+#, kde-format
 msgctxt "Secure Sockets Layer"
 msgid "View SSL Information"
-msgstr "Retrimite informații"
+msgstr "Vizualizare informații SSL"
 
 #: kwebkitpart.cpp:221
 #, kde-format
 msgid "Toggle Caret Mode"
-msgstr ""
+msgstr "Comută regimul de cursor"
 
 #: kwebkitpart.cpp:228
 #, kde-format
@@ -103,7 +101,7 @@ msgstr ""
 #: kwebkitpart.cpp:568
 #, kde-format
 msgid "This site is not secured with SSL, or its SSL information is not valid."
-msgstr ""
+msgstr "Acest sait nu e securizat cu SSL, sau informațiile SSL nu sunt valide."
 
 #: kwebkitpart.cpp:569
 #, kde-format
@@ -191,7 +189,7 @@ msgstr "Închideți fereastra?"
 #: kwebkitpart.cpp:855
 #, kde-format
 msgid "Confirmation Required"
-msgstr "Cerere de confirmare"
+msgstr "E necesară confirmarea"
 
 #. i18n("<html>Do you want to grant the site <b>%1</b> "
 #. "access to information about your current physical location?",
@@ -259,11 +257,10 @@ msgstr "&Reține"
 #, kde-format
 msgctxt "@action:never for this site"
 msgid "Ne&ver for this site"
-msgstr "&Niciodată pentru acest sait"
+msgstr "Ni&ciodată pentru acest sait"
 
 #: ui/passwordbar.cpp:34
-#, fuzzy, kde-format
-#| msgid "&Not Now"
+#, kde-format
 msgctxt "@action:not now"
 msgid "N&ot now"
 msgstr "&Nu acum"
@@ -439,16 +436,14 @@ msgid "Resubmit Information"
 msgstr "Retrimite informații"
 
 #: webpage.cpp:631
-#, fuzzy, kde-format
-#| msgid ""
-#| "This site is attempting to submit form data via email.\n"
-#| "Do you want to continue?"
+#, kde-format
 msgid ""
 "This site is attempting to access information about your physical location.\n"
 "Do you want to allow it access?"
 msgstr ""
-"Acest site încearcă să trimită datele formularului prin email.\n"
-"Sînteți sigur că doriți să continuați?"
+"Acest sait încearcă să acceseze informații despre amplasarea fizică a "
+"dumneavoastră\n"
+"Doriți să-i permiteți accesul?"
 
 #: webpage.cpp:635 webpage.cpp:752 webpage.cpp:763
 #, kde-format
@@ -456,10 +451,9 @@ msgid "Network Transmission"
 msgstr "Transmisiune prin rețea"
 
 #: webpage.cpp:636
-#, fuzzy, kde-format
-#| msgid "&Allow attachments"
+#, kde-format
 msgid "Allow access"
-msgstr "Permite &atașamente"
+msgstr "Permite accesul"
 
 #: webpage.cpp:711
 #, kde-format
@@ -501,6 +495,10 @@ msgid ""
 "A third party may be able to intercept and view this information.\n"
 "Are you sure you want to send the data unencrypted?"
 msgstr ""
+"Atenție: Acesta este un formular securizat care încearcă să trimită "
+"necriptat datele dumneavoastră.\n"
+"O terță parte ar putea intercepta datele și să vadă aceste informații.\n"
+"Sigur doriți să trimiteți date necriptate?"
 
 #: webpage.cpp:753
 #, kde-format
@@ -561,33 +559,27 @@ msgid "Attachment Removed"
 msgstr "Atașament eliminat"
 
 #: webpage.cpp:902
-#, fuzzy, kde-format
-#| msgid ""
-#| "This site is attempting to submit form data via email.\n"
-#| "Do you want to continue?"
+#, kde-format
 msgid ""
 "This site is requesting to open a new popup window.\n"
 "Do you want to allow this?"
 msgstr ""
-"Acest site încearcă să trimită datele formularului prin email.\n"
-"Sînteți sigur că doriți să continuați?"
+"Acest sait încearcă să deschidă o nouă fereastră contextuală.\n"
+"Doriți să permiteți aceasta?"
 
 #: webpage.cpp:904
-#, fuzzy, kde-format
-#| msgid ""
-#| "<qt>This untrusted page links to<br/><b>%1</b>.<br/>Do you want to follow "
-#| "the link?</qt>"
+#, kde-format
 msgid ""
 "<qt>This site is requesting to open a popup window to<p>%1</p><br/>Do you "
 "want to allow this?</qt>"
 msgstr ""
-"<qt>Această pagină care nu este de încredere conține o legătură către <br /"
-"><b>%1</b>.<br />Doriți să urmați legătura?</qt>"
+"<qt>Acest sait încearcă să deschidă o fereastră contextuală la<p>%1</p><br/"
+">Doriți să permiteți aceasta?</qt>"
 
 #: webpage.cpp:908
 #, kde-format
 msgid "Javascript Popup Confirmation"
-msgstr ""
+msgstr "Confirmare pentru fereastră contextuală Javascript"
 
 #: webpage.cpp:909
 #, kde-format
@@ -597,7 +589,7 @@ msgstr "Permite"
 #: webpage.cpp:910
 #, kde-format
 msgid "Do Not Allow"
-msgstr ""
+msgstr "Nu permite"
 
 #: webpluginfactory.cpp:58
 #, kde-format
