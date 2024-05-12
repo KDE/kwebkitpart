@@ -34,7 +34,7 @@ msgstr "txemaq@gmail.com"
 #: kwebkitpart.cpp:161 webview.cpp:547
 #, kde-format
 msgid "Save &Frame As..."
-msgstr "Guarda el &marc com a..."
+msgstr "Guarda el &marc com a…"
 
 #: kwebkitpart.cpp:165
 #, kde-format
@@ -539,7 +539,7 @@ msgstr ""
 #: webpage.cpp:815
 #, kde-format
 msgid "Email Attachment Confirmation"
-msgstr "Confirmació d'adjunt al correu"
+msgstr "Confirmeu l'adjunt al correu"
 
 #: webpage.cpp:816
 #, kde-format
@@ -586,7 +586,7 @@ msgstr ""
 #: webpage.cpp:908
 #, kde-format
 msgid "Javascript Popup Confirmation"
-msgstr "Confirmació de finestra emergent de JavaScript"
+msgstr "Confirmeu la finestra emergent de JavaScript"
 
 #: webpage.cpp:909
 #, kde-format
@@ -632,22 +632,22 @@ msgstr "De dreta a esquerra"
 #: webview.cpp:441
 #, kde-format
 msgid "Check Spelling..."
-msgstr "Comprovació d'ortografia..."
+msgstr "Comprovació d'ortografia…"
 
 #: webview.cpp:447
 #, kde-format
 msgid "Spellcheck selection..."
-msgstr "Correcció ortogràfica de la selecció..."
+msgstr "Correcció ortogràfica de la selecció…"
 
 #: webview.cpp:474
 #, kde-format
 msgid "Save Image As..."
-msgstr "Anomena i guarda la imatge..."
+msgstr "Anomena i guarda la imatge…"
 
 #: webview.cpp:479
 #, kde-format
 msgid "Send Image..."
-msgstr "Envia la imatge..."
+msgstr "Envia la imatge…"
 
 #: webview.cpp:484
 #, kde-format
@@ -667,7 +667,7 @@ msgstr "Visualitza la imatge (%1)"
 #: webview.cpp:501
 #, kde-format
 msgid "Block Image..."
-msgstr "Bloca la imatge..."
+msgstr "Bloca la imatge…"
 
 #: webview.cpp:509
 #, kde-format
@@ -703,7 +703,7 @@ msgstr "Actualitza el marc"
 #: webview.cpp:542
 #, kde-format
 msgid "Print Frame..."
-msgstr "Imprimix el marc..."
+msgstr "Imprimix el marc…"
 
 #: webview.cpp:552
 #, kde-format
@@ -713,7 +713,7 @@ msgstr "Visualitza el codi font del marc"
 #: webview.cpp:566
 #, kde-format
 msgid "Block IFrame..."
-msgstr "Bloca el marc..."
+msgstr "Bloca el marc…"
 
 #: webview.cpp:611 webview.cpp:644
 #, kde-format
@@ -744,7 +744,7 @@ msgstr "Copia l'&URL de l'enllaç"
 #: webview.cpp:667
 #, kde-format
 msgid "&Save Link As..."
-msgstr "Anomena i gu&arda l'enllaç..."
+msgstr "Anomena i gu&arda l'enllaç…"
 
 #: webview.cpp:688
 #, kde-format
@@ -779,7 +779,7 @@ msgstr "Mostra els &controls"
 #: webview.cpp:718
 #, kde-format
 msgid "Sa&ve Video As..."
-msgstr "Guarda el &vídeo com a..."
+msgstr "Anomena i guarda el &vídeo…"
 
 #: webview.cpp:719
 #, kde-format
@@ -789,7 +789,7 @@ msgstr "C&opia l'URL del vídeo"
 #: webview.cpp:721
 #, kde-format
 msgid "Sa&ve Audio As..."
-msgstr "Guarda l'à&udio com a..."
+msgstr "Anomena i guarda l'à&udio…"
 
 #: webview.cpp:722
 #, kde-format
@@ -799,7 +799,7 @@ msgstr "C&opia l'URL de l'àudio"
 #: webview.cpp:724
 #, kde-format
 msgid "Sa&ve Media As..."
-msgstr "Guar&da el suport com a..."
+msgstr "Anomena i &guarda el suport…"
 
 #: webview.cpp:725
 #, kde-format
