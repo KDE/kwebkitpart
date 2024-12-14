@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: webkitkde\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-05 12:28+0000\n"
-"PO-Revision-Date: 2023-11-16 22:11+0100\n"
+"PO-Revision-Date: 2024-12-13 22:24+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
@@ -771,7 +771,7 @@ msgstr "Activar o &son"
 #: webview.cpp:693
 #, kde-format
 msgid "&Mute"
-msgstr "Desactivar o &son"
+msgstr "&Silenciar"
 
 #: webview.cpp:698
 #, kde-format
